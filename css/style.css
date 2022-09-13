@@ -76,7 +76,7 @@ svg {
   body .hero .hero-buttons {
     display: flex;
     place-content: space-evenly;
-    margin: 5rem 3rem;
+    margin: 5rem 1rem;
   }
   body .hero .hero-buttons .explore-image-text {
     display: flex;
@@ -104,7 +104,7 @@ svg {
   }
   body .hero .hero-buttons .learnmore .learn-inside img {
     width: 0.9rem;
-    padding-inline: 0.5rem;
+    padding-inline: 0.3rem;
   }
   body .hero .right-col {
     text-align: center;
@@ -129,13 +129,13 @@ svg {
   body .hero .right-col .glass-bar .sub-name {
     font-size: 2vw;
   }
-  body .hero .right-col .glass-bar #ends {
+  body .hero .right-col .glass-bar .bidding-ends {
     display: none;
   }
   body .hero .right-col .glass-bar .countdown {
     display: flex;
     place-content: space-around;
-    margin: 3rem 4rem;
+    margin: 2rem;
   }
   body .hero .right-col .glass-bar .countdown .number {
     font-weight: bold;
@@ -154,7 +154,7 @@ svg {
     width: 10%;
   }
   body .hero .right-col .glass-bar .eth-price #price {
-    font-size: 3vw;
+    font-size: 3.5vw;
     margin-inline: 1rem;
   }
   body .hero .right-col .glass-bar #bottom-bid {
@@ -164,7 +164,7 @@ svg {
     margin: 3rem auto;
   }
   body .hero .right-col .glass-bar #place-bid #shopping-icon {
-    width: 1rem;
+    width: 0.8rem;
     margin-right: 0.8rem;
   }
   body .hero .right-col .glass-bar #place-bid span {
@@ -189,7 +189,7 @@ svg {
     align-items: center;
     text-align: center;
     padding: 1rem 5rem;
-    font-size: 2.5vw;
+    font-size: 3vw;
     margin-bottom: 10rem;
   }
   body .adv-text img {

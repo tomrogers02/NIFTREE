@@ -92,7 +92,7 @@ svg {
       .hero-buttons {
         display: flex;
         place-content: space-evenly;
-        margin: 5rem 3rem;
+        margin: 5rem 1rem;
         .explore-image-text {
           display: flex;
           justify-content: center;
@@ -121,7 +121,7 @@ svg {
 
             img {
               width: 0.9rem;
-              padding-inline: 0.5rem;
+              padding-inline: 0.3rem;
             }
           }
         }
@@ -153,13 +153,14 @@ svg {
             font-size: 2vw;
           }
 
-          #ends {
+          .bidding-ends {
             display: none;
+        
           }
           .countdown {
             display: flex;
             place-content: space-around;
-            margin: 3rem 4rem;
+            margin: 2rem;
 
             .number {
               font-weight: bold;
@@ -180,7 +181,7 @@ svg {
               width: 10%;
             }
             #price {
-              font-size: 3vw;
+              font-size: 3.5vw;
               margin-inline: 1rem;
             }
           }
@@ -192,7 +193,7 @@ svg {
             margin: 3rem auto;
 
             #shopping-icon {
-              width: 1rem;
+              width: .8rem;
               margin-right: 0.8rem;
             }
 
@@ -227,7 +228,7 @@ svg {
       align-items: center;
       text-align: center;
       padding: 1rem 5rem;
-      font-size: 2.5vw;
+      font-size: 3vw;
 
       margin-bottom: 10rem;
       img {
