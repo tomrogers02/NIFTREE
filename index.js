@@ -1,11 +1,15 @@
-// Timer for when NFT's bidding is over //
+//Mobile menu 
+//Loading screen?
+//Mobile carousel
+
+
 
 const countdown = () => {
     const countDate= new Date ('September 30, 2022 00:00:00');
     const now= new Date().getTime();
     const gap= countDate-now;
 
-    //How does time work?
+
 
     const second = 1000;
     const minute = second * 60;
