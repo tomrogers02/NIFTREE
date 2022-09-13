@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109.052" height="95.75" viewBox="0 0 109.052 95.75">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.757" x2="0.242" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ae5ecb"/>
+      <stop offset="1" stop-color="#7e6ef8"/>
+    </linearGradient>
+    <filter id="Polygon_2" x="0" y="0" width="109.052" height="95.75" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#8e8b8b" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_43" data-name="Group 43" transform="translate(7 6)">
+    <g transform="matrix(1, 0, 0, 1, -7, -6)" filter="url(#Polygon_2)">
+      <path id="Polygon_2-2" data-name="Polygon 2" d="M62.556,0a10,10,0,0,1,8.629,4.947L88.094,33.822a10,10,0,0,1,0,10.106L71.186,72.8a10,10,0,0,1-8.629,4.947H28.5A10,10,0,0,1,19.866,72.8L2.959,43.928a10,10,0,0,1,0-10.106L19.866,4.947A10,10,0,0,1,28.5,0Z" transform="translate(7 6)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Icon_ionic-ios-wallet" data-name="Icon ionic-ios-wallet" transform="translate(30.901 25.375)">
+      <path id="Path_50" data-name="Path 50" d="M28.406,11.25H7.594a4.222,4.222,0,0,0-4.219,4.219V27.281A4.222,4.222,0,0,0,7.594,31.5H28.406a4.222,4.222,0,0,0,4.219-4.219V15.469A4.222,4.222,0,0,0,28.406,11.25Z" transform="translate(-3.375 -4.499)" stroke="#fff" stroke-width="2.5" fill="url(#linear-gradient)"/>
+      <path id="Path_51" data-name="Path 51" d="M24.11,4.57,7.594,7.8C6.328,8.079,4.5,9.352,4.5,10.9A4.43,4.43,0,0,1,7.945,9.563h20.18V8.121a4.037,4.037,0,0,0-.977-2.644h0A3.325,3.325,0,0,0,24.11,4.57Z" transform="translate(-3.375 -4.499)" stroke="#fff" stroke-width="2.5" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

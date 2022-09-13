@@ -1,0 +1,1334 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
+:root {
+  --primary: #232838;
+  --secondary: #5ecb8c;
+  --tertiary: #ae5ecb;
+  --button-gradient: #6456d1;
+
+  --primary-button-font-size: 2.5vw;
+  --secondary-button-font-size: 2.5vw;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/*         Phone CSS         */
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 2rem;
+    color: white;
+    font-family: poppins;
+    background-color: var(--primary);
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-image: linear-gradient(
+        to right,
+        var(--tertiary),
+        var(--button-gradient)
+      );
+      border: none;
+      outline: none;
+      color: white;
+      border-radius: 0.5em;
+      font-size: var(--primary-button-font-size);
+      cursor: pointer;
+      padding: 0.7rem 1.4rem;
+      margin: auto;
+    }
+
+    .secondary-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      border: none;
+      outline: none;
+
+      border-radius: 0.5em;
+      font-size: var(--primary-button-font-size);
+      cursor: pointer;
+      padding: 0.7rem 1.4rem;
+      margin: auto;
+    }
+
+    header {
+      display: flex;
+      place-content: space-between;
+
+      #logo {
+        max-width: 8rem;
+      }
+
+      .desktop-nav {
+        display: none;
+      }
+    }
+
+    .hero {
+      .left-col {
+        padding: 8rem 0;
+
+        #title {
+          font-size: 8vw;
+          font-weight: 700;
+          padding-bottom: 2rem;
+          span {
+            color: var(--secondary);
+          }
+        }
+        #subhead {
+          font-size: 3vw;
+        }
+      }
+
+      .hero-buttons {
+        display: flex;
+        place-content: space-evenly;
+        margin: 5rem 3rem;
+        .explore-image-text {
+          display: flex;
+          justify-content: center;
+
+          img {
+            padding-inline: 0.3rem;
+            width: 0.9rem;
+          }
+          span {
+            padding-inline: 0.3rem;
+          }
+        }
+        .learnmore {
+          font-size: var(--primary-button-font-size);
+          display: flex;
+          justify-content: center;
+
+          .learn-inside {
+            display: flex;
+
+            .secondary-button {
+              color: var(--tertiary);
+              background: none;
+              border: 1px solid var(--tertiary);
+            }
+
+            img {
+              width: 0.9rem;
+              padding-inline: 0.5rem;
+            }
+          }
+        }
+      }
+
+      .right-col {
+        text-align: center;
+        padding-top: 2.5rem;
+
+        #nft-mobile {
+          margin: auto;
+          margin-block: 0 2rem;
+          width: 75%;
+        }
+
+        #nft-desktop {
+          display: none;
+        }
+        .glass-bar {
+          margin: 0 3rem;
+
+          .name {
+            font-size: 4vw;
+            font-weight: 700;
+            padding-bottom: 0.5rem;
+          }
+
+          .sub-name {
+            font-size: 2vw;
+          }
+
+          #ends {
+            display: none;
+          }
+          .countdown {
+            display: flex;
+            place-content: space-around;
+            margin: 3rem 4rem;
+
+            .number {
+              font-weight: bold;
+              font-size: 4vw;
+            }
+            .time-name {
+              font-size: 2.5vw;
+              margin-block: 0.5rem;
+            }
+          }
+
+          .eth-price {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+
+            #eth-symbol {
+              width: 10%;
+            }
+            #price {
+              font-size: 3vw;
+              margin-inline: 1rem;
+            }
+          }
+          #bottom-bid {
+            display: none;
+          }
+
+          #place-bid {
+            margin: 3rem auto;
+
+            #shopping-icon {
+              width: 1rem;
+              margin-right: 0.8rem;
+            }
+
+            span {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .mountain-text {
+      margin: 8rem 5rem 3rem 5rem;
+
+      p {
+        font-size: 5vw;
+        font-weight: bold;
+        text-align: center;
+
+        span {
+          color: var(--secondary);
+        }
+      }
+
+      img {
+        display: none;
+      }
+    }
+
+    .adv-text {
+      display: block;
+      align-items: center;
+      text-align: center;
+      padding: 1rem 5rem;
+      font-size: 2.5vw;
+
+      margin-bottom: 10rem;
+      img {
+        width: 22%;
+        margin: auto;
+        padding-block: 2rem;
+      }
+
+      #work {
+        display: none;
+      }
+    }
+
+    .trending {
+      margin: 5rem 1rem 0 1rem;
+      font-weight: bold;
+      text-align: center;
+
+      span {
+        color: var(--tertiary);
+      }
+    }
+
+    #nft-carousel {
+      #nft-2,
+      #nft-3 {
+        display: none;
+      }
+
+      .nft-card {
+        background-color: rgba(34, 33, 33, 0.175);
+        margin: 2rem 1.5rem 14rem 1.5rem;
+        border: 0.4px white solid;
+        border-radius: 0.6rem;
+
+        .nft-card-center {
+          margin: 1rem 2rem 0.5rem 2rem;
+          #nft-carousel-1 {
+            margin: auto;
+          }
+
+          #name {
+            font-size: 4vw;
+            font-weight: bold;
+            padding-block: 1rem;
+          }
+
+          .mid-section {
+            display: flex;
+            place-content: space-between;
+            align-items: center;
+
+            .owner {
+              display: flex;
+
+              img {
+                width: 24%;
+                padding-right: 0.5rem;
+              }
+
+              #ownded-by {
+                font-size: 2vw;
+                color: darkgrey;
+              }
+
+              #name-owner {
+                display: block;
+                font-size: 2.5vw;
+              }
+            }
+
+            .nft-price {
+              text-align: right;
+
+              #current {
+                font-size: 3vw;
+                color: darkgrey;
+              }
+            }
+          }
+        }
+
+        .bottom-section {
+          display: flex;
+          place-content: space-between;
+          margin-block: 2rem 1rem;
+
+          .history {
+            display: flex;
+            place-content: space-around;
+            align-items: center;
+            width: 30%;
+
+            #view-history {
+              font-size: 2vw;
+              padding-left: 0.1em;
+            }
+
+            img {
+              width: 22%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #learn-more-hero {
+    margin: 12rem 1rem;
+
+    #question {
+      font-size: 6vw;
+      font-family: poppins;
+
+      span {
+        color: var(--secondary);
+      }
+    }
+
+    #subtext {
+      font-size: 3vw;
+    }
+
+    #learn-more-button {
+      background-image: linear-gradient(to right, var(--secondary), #6fac8d);
+      margin: 4rem auto;
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+  .email-signup {
+    text-align: center;
+    margin-inline: 1rem;
+
+    #title {
+      font: 6vw bold;
+      margin-bottom: 2rem;
+      font-family: poppins;
+    }
+
+    #sub-head {
+      font-size: 3vw;
+      margin-bottom: 2rem;
+      font-family: poppins;
+    }
+
+    #email {
+      background-color: none;
+      width: 90%;
+      padding: 0.5rem;
+    }
+
+    input[type="email"] {
+      border: 2px solid var(--tertiary);
+      background-color: var(--primary);
+      margin-block: 2rem;
+    }
+  }
+
+  footer {
+    margin-block: 8rem;
+    .footer-name {
+      font-weight: bold;
+      font-size: 4vw;
+      padding-bottom: 2rem;
+    }
+
+    .list-title {
+      font-weight: bold;
+      font-size: 3.5vw;
+      padding: 2rem 0 1rem 0;
+    }
+
+    .paragraph {
+      font-size: 2.5vw;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding-block: 1rem;
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      place-content: space-around;
+      width: 60%;
+      margin: 4rem auto;
+    }
+    #copyright {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+  body {
+    margin: 4rem;
+    background-color: var(--primary);
+    font-family: poppins;
+    color: white;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-image: linear-gradient(
+        to right,
+        var(--tertiary),
+        var(--button-gradient)
+      );
+      border: none;
+      outline: none;
+      color: white;
+      border-radius: 0.3em;
+      font-size: 1vw;
+      cursor: pointer;
+      padding: 0.9em 1.8em;
+      margin: auto;
+    }
+
+    header {
+      display: flex;
+      place-content: space-between;
+
+      #hamburger {
+        display: none;
+      }
+
+      #logo {
+        width: 12%;
+      }
+      .desktop-nav {
+        display: flex;
+        place-content: space-between;
+
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 1.1vw;
+          color: white;
+          padding-right: 2rem;
+        }
+
+        .trio-icons {
+          display: flex;
+          place-content: space-evenly;
+
+          img {
+            max-width: 15%;
+            min-width: 5%;
+          }
+        }
+      }
+    }
+
+    .hero {
+      margin-block: 4.5rem;
+
+      .left-col {
+        #title {
+          font-weight: bold;
+          font-size: 4.2vw;
+
+          padding-right: 9rem;
+
+          span {
+            color: var(--secondary);
+          }
+        }
+
+        #subhead {
+          padding-right: 14rem;
+          font-size: 1.4vw;
+          margin-block: 1rem;
+        }
+
+        .hero-buttons {
+          display: flex;
+          margin-block: 6rem;
+
+          .explore-image-text {
+            margin-right: 2rem;
+          }
+
+          #rocket {
+            width: 18%;
+            padding-right: 0.4rem;
+          }
+
+          #learn-button {
+            background-image: none;
+            background-color: transparent;
+            border: 1.5px solid var(--tertiary);
+
+            #learn-arrow-img {
+              width: 18%;
+              padding-left: 0.4rem;
+            }
+          }
+        }
+      }
+
+      .right-col {
+        margin-block: 5rem;
+        .flex-box {
+          display: flex;
+          flex-direction: row-reverse;
+
+          .right-tablet-flex {
+            width: 60%;
+          }
+
+          .left-tablet-flex {
+            width: 40%;
+          }
+
+          #nft-mobile {
+            display: none;
+          }
+
+          #nft-desktop {
+          }
+
+          .glass-bar {
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .left-info {
+              .name {
+                font-size: 2vw;
+                font-weight: bold;
+              }
+              .sub-name {
+                margin-block: 0.3rem 2.5rem;
+                font-size: 1vw;
+              }
+
+              #bottom-bid {
+                font-size: 1vw;
+                padding-bottom: 0.8rem;
+              }
+              .eth-price {
+                display: flex;
+                font-size: 2vw;
+                margin-bottom: 1rem;
+
+                img {
+                  padding-right: 0.6rem;
+                }
+              }
+            }
+
+            .right-info {
+              .bidding-ends {
+                font-size: 0.9vw;
+              }
+
+              .countdown {
+                display: flex;
+                margin-bottom: 1rem;
+
+                .minute,
+                .hour,
+                .second {
+                  font-size: 1.8vw;
+                }
+
+                .hours-timer {
+                  padding: 0.8rem;
+                  text-align: center;
+
+                  .time-name {
+                    font-size: 1vw;
+                  }
+                }
+
+                hr {
+                  display: none;
+                }
+              }
+              #place-bid {
+                padding: 0.75rem;
+                margin: 0;
+
+                span {
+                  font-size: 1.3vw;
+                }
+                img {
+                  padding-right: 0.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .tree-adv {
+      margin: 16rem 4rem;
+
+      #work {
+        font-size: 2vw;
+        font-weight: bold;
+      }
+      .icon-text {
+        display: flex;
+        .wallet,
+        .bitcoin,
+        .tree {
+          width: 33.33%;
+          padding: 2rem;
+          font-size: 1.3vw;
+        }
+
+        #wallet,
+        #bitcoin,
+        #tree {
+          width: 40%;
+          margin-bottom: 2rem;
+        }
+      }
+      .mountain-text {
+        display: none;
+      }
+    }
+
+    .trending {
+      margin: 2rem 5rem;
+      font-weight: bold;
+
+      span {
+        color: var(--tertiary);
+      }
+    }
+    #nft-carousel {
+      display: flex;
+      place-content: space-between;
+      margin-inline: 2rem;
+
+      .nft-card {
+        background: rgba(255, 255, 255, 0.15);
+        border: 0.5px solid white;
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(12.7px);
+
+        margin: 2rem 0.5rem;
+        border: 0.8px white solid;
+        border-radius: 0.8rem;
+
+        .nft-card-center {
+          margin: 1rem 1rem 0.5rem 1rem;
+
+          #name {
+            font-size: 1.4vw;
+            font-weight: bold;
+            padding-block: 1rem;
+          }
+
+          .mid-section {
+            display: flex;
+
+            align-items: center;
+
+            .owner {
+              display: flex;
+
+              img {
+                width: 20%;
+                padding-right: 0.5rem;
+              }
+
+              #ownded-by {
+                font-size: 0.8vw;
+                color: darkgrey;
+              }
+
+              #name-owner {
+                display: block;
+                font-size: 0.9vw;
+              }
+            }
+
+            .nft-price {
+              text-align: right;
+              font-size: 1.4vw;
+
+              #current {
+                font-size: 0.8vw;
+                color: darkgrey;
+              }
+            }
+          }
+        }
+
+        .bottom-section {
+          display: flex;
+          place-content: space-between;
+          margin-block: 1.5rem 1rem;
+
+          .history {
+            display: flex;
+            place-content: space-around;
+            align-items: center;
+            width: 40%;
+
+            #view-history {
+              font-size: 0.7vw;
+            }
+          }
+          img {
+            width: 20%;
+          }
+        }
+      }
+    }
+    #learn-more-hero {
+      display: flex;
+      margin: 10rem 5rem;
+
+      .left-section {
+        width: 80%;
+
+        #question {
+          font-size: 3vw;
+          font-weight: bold;
+
+          span {
+            color: var(--secondary);
+          }
+        }
+        #subtext {
+          font-size: 1vw;
+          padding-bottom: 3rem;
+          padding-right: 8rem;
+        }
+
+        #learn-more-button {
+          background-image: linear-gradient(
+            to right,
+            var(--secondary),
+            #6daf89
+          );
+          margin: 0;
+        }
+      }
+
+      .right-section {
+        columns: 3;
+        width: 60%;
+
+        img {
+          padding: 1rem;
+        }
+      }
+    }
+    .email-signup {
+      text-align: center;
+      #title {
+        margin-bottom: 2rem;
+        font-size: 2.5vw;
+      }
+      #sub-head {
+        font-size: 1vw;
+      }
+
+      .flex-button-email {
+        display: flex;
+        margin: auto;
+        margin-block: 2rem;
+        width: 40%;
+
+        #email {
+          background-color: none;
+          padding: 0.5rem;
+          width: 60%;
+          margin-inline: 1rem;
+        }
+
+        input[type="email"] {
+          border: 1px solid var(--tertiary);
+          border-radius: 0.4rem;
+          background-color: var(--primary);
+        }
+
+        button {
+          margin: 0;
+        }
+      }
+    }
+  }
+  footer {
+    margin-top: 15rem;
+
+    section {
+      display: flex;
+      .left-footer {
+        width: 50%;
+
+        .footer-links {
+          display: flex;
+
+          img {
+            margin: 2rem 1rem;
+          }
+        }
+
+        .footer-name {
+          font-size: 1.5vw;
+          padding-bottom: 2rem;
+        }
+
+        .paragraph {
+          margin-right: 7rem;
+        }
+      }
+
+      .right-footer {
+        width: 50%;
+
+        .list-one {
+          margin: 0 6rem;
+          .list-title {
+            font-weight: bold;
+            margin-bottom: 1rem;
+          }
+
+          ul {
+            margin: 0;
+            padding: 0;
+
+            a {
+              color: white;
+              text-decoration: none;
+              display: block;
+              padding: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+    #copyright {
+      text-align: center;
+      margin-block: 3rem;
+    }
+  }
+}
+
+/*     Desktop View      */
+
+@media only screen and (min-width: 901px) {
+  body {
+    margin: 4rem;
+    background-color: var(--primary);
+    font-family: poppins;
+    color: white;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-image: linear-gradient(
+        to right,
+        var(--tertiary),
+        var(--button-gradient)
+      );
+      border: none;
+      outline: none;
+      color: white;
+      border-radius: 0.3em;
+      font-size: 1vw;
+      cursor: pointer;
+      padding: 0.9em 1.8em;
+      margin: auto;
+    }
+
+    header {
+      display: flex;
+      place-content: space-between;
+
+      #hamburger {
+        display: none;
+      }
+
+      #logo {
+        width: 12%;
+      }
+      .desktop-nav {
+        display: flex;
+        place-content: space-between;
+
+        a {
+          text-decoration: none;
+          margin: 2rem;
+          font-weight: bold;
+          font-size: 1vw;
+          color: white;
+          padding-right: 2rem;
+        }
+
+        .trio-icons {
+          display: flex;
+          place-content: space-around;
+
+          img {
+            max-width: 20%;
+            min-width: 5%;
+          }
+        }
+      }
+    }
+
+    .hero {
+      display: flex;
+      margin-block: 4.5rem;
+
+      .left-col {
+        width: 50%;
+        #title {
+          font-weight: bold;
+          font-size: 3.8vw;
+
+          padding-right: 9rem;
+
+          span {
+            color: var(--secondary);
+          }
+        }
+
+        #subhead {
+          padding-right: 14rem;
+          font-size: 1.1vw;
+          margin-block: 1rem;
+        }
+
+        .hero-buttons {
+          display: flex;
+          margin-block: 3rem;
+          .explore-image-text {
+            margin-right: 2rem;
+          }
+
+          #rocket {
+            width: 18%;
+            padding-right: 0.4rem;
+          }
+
+          #learn-button {
+            background-image: none;
+            background-color: transparent;
+            border: 1.5px solid var(--tertiary);
+
+            #learn-arrow-img {
+              width: 18%;
+              padding-left: 0.4rem;
+            }
+          }
+        }
+      }
+
+      .right-col {
+        #nft-desktop {
+          min-width: 30%;
+          max-width: 35%;
+          position: absolute;
+          left: 60%;
+        }
+
+        #nft-mobile {
+          display: none;
+        }
+
+        .glass-bar {
+          position: absolute;
+          top: 63%;
+          width: 26%;
+
+          background: rgba(255, 255, 255, 0.15);
+          border: 0.5px solid white;
+          border-radius: 10px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(12.7px);
+
+          display: flex;
+          place-content: space-between;
+          padding: 1.2rem;
+
+          .left-info {
+            .name {
+              font-size: 1.2vw;
+              font-weight: bold;
+            }
+            .sub-name {
+              margin-block: 0.3rem 2.5rem;
+              font-size: 0.8vw;
+            }
+
+            #bottom-bid {
+              font-size: 0.8vw;
+              padding-bottom: 0.8rem;
+            }
+            .eth-price {
+              display: flex;
+              font-size: 1vw;
+              img {
+                padding-right: 0.6rem;
+              }
+            }
+          }
+
+          .right-info {
+            .bidding-ends {
+              font-size: 0.9vw;
+            }
+
+            .countdown {
+              display: flex;
+              margin-bottom: 1rem;
+
+              .minute,
+              .hour,
+              .second {
+                font-size: 1.1vw;
+              }
+
+              .hours-timer {
+                padding: 0.8rem;
+                text-align: center;
+
+                .time-name {
+                  font-size: 0.7vw;
+                }
+              }
+
+              hr {
+                display: none;
+              }
+            }
+            #place-bid {
+              padding: 0.9rem;
+              margin: auto;
+
+              span {
+                font-size: 0.8vw;
+              }
+              img {
+                padding-right: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .tree-adv {
+      margin: 16rem 5rem;
+
+      #work {
+        font-size: 1.4vw;
+        font-weight: bold;
+      }
+      .icon-text {
+        display: flex;
+        .wallet,
+        .bitcoin,
+        .tree {
+          padding: 2rem;
+        }
+      }
+      .mountain-text {
+        display: none;
+      }
+    }
+
+    .trending {
+      margin: 2rem 10rem;
+      font-weight: bold;
+
+      span {
+        color: var(--tertiary);
+      }
+    }
+    #nft-carousel {
+      display: flex;
+      place-content: space-around;
+      margin-inline: 9rem;
+
+      .nft-card {
+        background: rgba(255, 255, 255, 0.15);
+        border: 0.5px solid white;
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(12.7px);
+
+        margin: 2rem 1rem;
+        border: 0.8px white solid;
+        border-radius: 0.8rem;
+
+        .nft-card-center {
+          margin: 1rem 1rem 0.5rem 1rem;
+
+          #name {
+            font-size: 1.4vw;
+            font-weight: bold;
+            padding-block: 1rem;
+          }
+
+          .mid-section {
+            display: flex;
+            place-content: space-between;
+            align-items: center;
+
+            .owner {
+              display: flex;
+
+              img {
+                width: 20%;
+                padding-right: 0.5rem;
+              }
+
+              #ownded-by {
+                font-size: 0.8vw;
+                color: darkgrey;
+              }
+
+              #name-owner {
+                display: block;
+                font-size: 0.9vw;
+              }
+            }
+
+            .nft-price {
+              text-align: right;
+
+              #current {
+                font-size: 0.8vw;
+                color: darkgrey;
+              }
+            }
+          }
+        }
+
+        .bottom-section {
+          display: flex;
+          place-content: space-between;
+          margin-block: 1.5rem 1rem;
+
+          .history {
+            display: flex;
+            place-content: space-around;
+            align-items: center;
+            width: 40%;
+
+            #view-history {
+              font-size: 0.7vw;
+            }
+          }
+        }
+      }
+    }
+    #learn-more-hero {
+      display: flex;
+      margin: 10rem 8rem;
+
+      .left-section {
+        width: 80%;
+
+        #question {
+          font-size: 3vw;
+          font-weight: bold;
+          padding-right: 15rem;
+
+          span {
+            color: var(--secondary);
+          }
+        }
+        #subtext {
+          font-size: 1vw;
+          padding-bottom: 3rem;
+          padding-right: 8rem;
+        }
+
+        #learn-more-button {
+          background-image: linear-gradient(
+            to right,
+            var(--secondary),
+            #6daf89
+          );
+          margin: 0;
+        }
+      }
+
+      .right-section {
+        columns: 3;
+        width: 60%;
+
+        img {
+          padding: 1rem;
+          width: 90%;
+        }
+      }
+    }
+    .email-signup {
+      text-align: center;
+      #title {
+        margin-bottom: 2rem;
+        font-size: 2.5vw;
+      }
+      #sub-head {
+        font-size: 1vw;
+      }
+
+      .flex-button-email {
+        display: flex;
+        margin: auto;
+        margin-block: 2rem;
+        width: 40%;
+
+        #email {
+          background-color: none;
+          padding: 0.5rem;
+          width: 60%;
+          margin-inline: 1rem;
+        }
+
+        input[type="email"] {
+          border: 1px solid var(--tertiary);
+          border-radius: 0.4rem;
+          background-color: var(--primary);
+        }
+
+        button {
+          margin: 0;
+        }
+      }
+    }
+  }
+  footer {
+    margin-top: 15rem;
+
+    section {
+      display: flex;
+      .left-footer {
+        width: 50%;
+
+        .footer-links {
+          display: flex;
+
+          img {
+            margin: 2rem 1rem;
+          }
+        }
+
+        .footer-name {
+          font-size: 1.5vw;
+          padding-bottom: 2rem;
+        }
+
+        .paragraph {
+          margin-right: 7rem;
+        }
+      }
+
+      .right-footer {
+        width: 50%;
+
+        .list-one {
+          margin: 0 6rem;
+          .list-title {
+            font-weight: bold;
+            margin-bottom: 1rem;
+          }
+
+          ul {
+            margin: 0;
+            padding: 0;
+
+            a {
+              color: white;
+              text-decoration: none;
+              display: block;
+              padding: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+    #copyright {
+      text-align: center;
+      margin-block: 3rem;
+    }
+  }
+}

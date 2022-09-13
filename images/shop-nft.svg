@@ -1,0 +1,14 @@
+<svg id="Group_366" data-name="Group 366" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.666" height="44.117" viewBox="0 0 51.666 44.117">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.322" y1="1" x2="0.739" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ae5ecb"/>
+      <stop offset="1" stop-color="#7e6ef8"/>
+    </linearGradient>
+  </defs>
+  <path id="Polygon_6" data-name="Polygon 6" d="M33.017,0a10,10,0,0,1,8.629,4.947l7.061,12.058a10,10,0,0,1,0,10.106L41.646,39.17a10,10,0,0,1-8.629,4.947H18.649A10,10,0,0,1,10.02,39.17L2.959,27.111a10,10,0,0,1,0-10.106L10.02,4.947A10,10,0,0,1,18.649,0Z" fill="url(#linear-gradient)"/>
+  <g id="Icon_feather-shopping-bag" data-name="Icon feather-shopping-bag" transform="translate(18.488 13.897)">
+    <path id="Path_140" data-name="Path 140" d="M6.948,3,4.5,6.264V17.69a1.632,1.632,0,0,0,1.632,1.632H17.558A1.632,1.632,0,0,0,19.19,17.69V6.264L16.742,3Z" transform="translate(-4.5 -3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_141" data-name="Path 141" d="M4.5,9H19.19" transform="translate(-4.5 -5.736)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_142" data-name="Path 142" d="M18.529,15A3.264,3.264,0,0,1,12,15" transform="translate(-7.919 -8.471)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
