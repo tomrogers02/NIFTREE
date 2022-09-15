@@ -381,7 +381,8 @@ body #nft-carousel-two #nft-3 {
     margin-top: 8rem;
   }
   footer .footer-name {
-    font-size: 15vw;
+    font-size: 4vw;
+    padding-bottom: 2rem;
   }
   footer div .left-footer {
     width: 50%;
@@ -590,7 +591,7 @@ body .right-col .flex-box .glass-bar .right-info .countdown .second {
     color: var(--tertiary);
   }
   #nft-carousel-one .title {
-    font-size: 2.2vw;
+    font-size: 2.5vw;
     margin-bottom: 2rem;
   }
   #nft-carousel-one .nft-multicolour-showcase {
@@ -618,7 +619,7 @@ body .right-col .flex-box .glass-bar .right-info .countdown .second {
     text-align: center;
   }
   #explain-cards .section-heading {
-    font-size: 2.2vw;
+    font-size: 2.5vw;
   }
   #explain-cards .section-heading span {
     color: var(--secondary);
@@ -657,9 +658,11 @@ body .right-col .flex-box .glass-bar .right-info .countdown .second {
   #explain-cards .explain-section .steps #step-name {
     font-size: 1.8vw;
   }
-  #explain-cards .explain-section .steps #number {
+  #explain-cards .explain-section .steps .number {
     text-align: left;
-    font-size: 2vw;
+    font-size: 2.5vw;
+    color: var(--tertiary);
+    padding: 1.2rem;
   }
   #explain-cards .explain-section #step-1,
 #explain-cards .explain-section #step-2,
@@ -1066,7 +1069,7 @@ body .hero .right-col .glass-bar .right-info .countdown .second {
     color: var(--secondary);
   }
   body #explain-cards .section-sub-heading {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
   body #explain-cards .section-sub-heading span {
     color: var(--tertiary);
@@ -1081,8 +1084,8 @@ body .hero .right-col .glass-bar .right-info .countdown .second {
     border-radius: 0.5rem;
     background-color: #1d212e;
   }
-  body #explain-cards .explain-section .steps #number {
-    margin: 2rem;
+  body #explain-cards .explain-section .steps .number {
+    margin: 1.8rem;
     font-size: 1.5vw;
     font-weight: bold;
     color: var(--tertiary);

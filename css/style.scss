@@ -468,7 +468,8 @@ svg {
   footer {
     margin-top: 8rem;
     .footer-name {
-      font-size: 15vw;
+      font-size: 4vw;
+      padding-bottom: 2rem;
     }
 
     div {
@@ -733,7 +734,7 @@ svg {
     }
 
     .title {
-      font-size: 2.2vw;
+      font-size: 2.5vw;
       margin-bottom: 2rem;
     }
 
@@ -768,7 +769,7 @@ svg {
     text-align: center;
 
     .section-heading {
-      font-size: 2.2vw;
+      font-size: 2.5vw;
 
       span {
         color: var(--secondary);
@@ -813,9 +814,11 @@ svg {
           font-size: 1.8vw;
         }
 
-        #number {
+        .number {
           text-align: left;
-          font-size: 2vw;
+          font-size: 2.5vw;
+          color: var(--tertiary);
+          padding:1.2rem;
         }
       }
 
@@ -1312,7 +1315,7 @@ svg {
       }
 
       .section-sub-heading {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
         span {
           color: var(--tertiary);
         }
@@ -1328,8 +1331,8 @@ svg {
           border-radius: 0.5rem;
           background-color: #1d212e;
 
-          #number {
-            margin: 2rem;
+          .number {
+            margin: 1.8rem;
             font-size: 1.5vw;
             font-weight: bold;
             color: var(--tertiary);
