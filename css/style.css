@@ -117,8 +117,8 @@ svg {
   }
   body .hero .right-col #nft-mobile {
     margin: auto;
-    margin-block: 0 2rem;
-    width: 75%;
+    margin-block: 0 1rem;
+    width: 95%;
   }
   body .hero .right-col #nft-desktop {
     display: none;
@@ -127,12 +127,12 @@ svg {
     margin: 0 3rem;
   }
   body .hero .right-col .glass-bar .name {
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: 700;
     padding-bottom: 0.5rem;
   }
   body .hero .right-col .glass-bar .sub-name {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
   body .hero .right-col .glass-bar .bidding-ends {
     display: none;
@@ -140,7 +140,7 @@ svg {
   body .hero .right-col .glass-bar .countdown {
     display: flex;
     place-content: space-around;
-    margin: 2rem;
+    margin: 1rem;
   }
   body .hero .right-col .glass-bar .countdown .number {
     font-weight: bold;
@@ -159,7 +159,7 @@ svg {
     width: 10%;
   }
   body .hero .right-col .glass-bar .eth-price #price {
-    font-size: 3.5vw;
+    font-size: 4vw;
     margin-inline: 1rem;
   }
   body .hero .right-col .glass-bar #bottom-bid {
@@ -175,6 +175,9 @@ svg {
   body .hero .right-col .glass-bar #place-bid span {
     font-weight: bold;
   }
+  body #wallet-sponsors {
+    margin-block: 4rem 0;
+  }
   body #nft-carousel-one {
     text-align: center;
   }
@@ -183,15 +186,15 @@ body #nft-carousel-one .nft-multicolour-showcase #blue-nft {
     display: none;
   }
   body #nft-carousel-one .nft-multicolour-showcase img {
-    width: 80%;
+    width: 85%;
     margin: auto;
   }
   body #nft-carousel-one .title {
-    font-size: 3vw;
+    font-size: 4vw;
     margin-bottom: 2rem;
   }
   body #nft-carousel-one .sub-title {
-    font-size: 2.5vw;
+    font-size: 3vw;
     color: var(--tertiary);
   }
   body #nft-carousel-one .nft {
@@ -203,25 +206,25 @@ body #nft-carousel-one .nft-multicolour-showcase #blue-nft {
     bottom: 10%;
   }
   body #nft-carousel-one .nft .nft-overlay .nft-name {
-    font-size: 3vw;
+    font-size: 3.5vw;
     margin-block: 1rem;
   }
   body #nft-carousel-one .nft .nft-overlay button {
     background: white;
     color: black;
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
   body #explain-cards {
     text-align: center;
   }
   body #explain-cards .section-heading {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   body #explain-cards .section-heading span {
     color: var(--secondary);
   }
   body #explain-cards .section-sub-heading {
-    font-size: 2.5vw;
+    font-size: 3vw;
     margin-bottom: 1.5rem;
   }
   body #explain-cards .section-sub-heading span {
@@ -241,20 +244,19 @@ body #nft-carousel-one .nft-multicolour-showcase #blue-nft {
     margin: 0.7rem;
     padding: 0.3rem;
   }
-  body #explain-cards .explain-section .steps #number {
-    font-size: 1.5vw;
+  body #explain-cards .explain-section .steps .number {
+    padding-inline: 0.8rem;
     font-weight: bold;
     color: var(--tertiary);
-    padding-inline: 1rem;
+    font-size: 3vw;
   }
   body #explain-cards .explain-section .steps hr {
     margin-inline: 1rem;
     height: 2.5rem;
-    margin-right: 2rem;
-    border: 0.2px solid white;
+    border: 0.1px solid white;
   }
   body #explain-cards .explain-section .steps #step-name {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   body #explain-cards .explain-section .steps #number {
     text-align: left;
@@ -267,8 +269,8 @@ body #explain-cards .explain-section #step-4 {
     margin-inline: 1rem;
   }
   body .trending {
-    font-weight: bold;
     text-align: center;
+    font-size: 4vw;
   }
   body .trending span {
     color: var(--tertiary);
@@ -279,12 +281,11 @@ body #nft-carousel-two #nft-3 {
   }
   body #nft-carousel-two .nft-card {
     background-color: rgba(34, 33, 33, 0.175);
-    margin: 2rem 1.5rem 14rem 1.5rem;
     border: 0.4px white solid;
     border-radius: 0.6rem;
   }
   body #nft-carousel-two .nft-card .nft-card-center {
-    margin: 1rem 2rem 0.5rem 2rem;
+    margin: 1rem 1rem 0.5rem 1rem;
   }
   body #nft-carousel-two .nft-card .nft-card-center #nft-carousel-1 {
     margin: auto;
@@ -292,7 +293,7 @@ body #nft-carousel-two #nft-3 {
   body #nft-carousel-two .nft-card .nft-card-center #name {
     font-size: 4vw;
     font-weight: bold;
-    padding-block: 1rem;
+    padding-block: 0.6rem;
   }
   body #nft-carousel-two .nft-card .nft-card-center .mid-section {
     display: flex;
@@ -302,17 +303,17 @@ body #nft-carousel-two #nft-3 {
   body #nft-carousel-two .nft-card .nft-card-center .mid-section .owner {
     display: flex;
   }
-  body #nft-carousel-two .nft-card .nft-card-center .mid-section .owner img {
-    width: 24%;
+  body #nft-carousel-two .nft-card .nft-card-center .mid-section .owner #owner-nft-image {
+    width: 18%;
     padding-right: 0.5rem;
   }
   body #nft-carousel-two .nft-card .nft-card-center .mid-section .owner #ownded-by {
-    font-size: 2vw;
+    font-size: 2.5vw;
     color: darkgrey;
   }
   body #nft-carousel-two .nft-card .nft-card-center .mid-section .owner #name-owner {
     display: block;
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
   body #nft-carousel-two .nft-card .nft-card-center .mid-section .nft-price {
     text-align: right;
@@ -333,11 +334,8 @@ body #nft-carousel-two #nft-3 {
     width: 30%;
   }
   body #nft-carousel-two .nft-card .bottom-section .history #view-history {
-    font-size: 2vw;
+    font-size: 2.5vw;
     padding-left: 0.1em;
-  }
-  body #nft-carousel-two .nft-card .bottom-section .history img {
-    width: 22%;
   }
   #tree-plant #question {
     font-size: 6vw;
@@ -379,35 +377,30 @@ body #nft-carousel-two #nft-3 {
     background-color: var(--primary);
     margin-block: 2rem;
   }
+  footer {
+    margin-top: 8rem;
+  }
   footer .footer-name {
-    font-weight: bold;
-    font-size: 4vw;
-    padding-bottom: 2rem;
+    font-size: 15vw;
   }
-  footer .list-title {
-    font-weight: bold;
-    font-size: 3.5vw;
-    padding: 2rem 0 1rem 0;
+  footer div .left-footer {
+    width: 50%;
   }
-  footer .paragraph {
-    font-size: 2.5vw;
+  footer div .left-footer .footer-links {
+    display: none;
   }
-  footer ul {
-    list-style-type: none;
+  footer div .left-footer .paragraph {
+    display: none;
+  }
+  footer div .right-footer ul {
+    padding: 1rem 0rem;
     margin: 0;
-    padding: 0;
   }
-  footer ul a {
+  footer div .right-footer a {
     text-decoration: none;
     color: white;
     display: block;
-    padding-block: 1rem;
-  }
-  footer .footer-links {
-    display: flex;
-    place-content: space-around;
-    width: 60%;
-    margin: 4rem auto;
+    padding-block: 0.5rem;
   }
   footer #copyright {
     text-align: center;
@@ -807,51 +800,53 @@ body .right-col .flex-box .glass-bar .right-info .countdown .second {
   .email-signup .flex-button-email button {
     margin: 0;
   }
+  footer {
+    margin-top: 12rem;
+  }
+  footer .footer-name {
+    font-size: 1.5vw;
+    padding-bottom: 2rem;
+  }
+  footer div {
+    display: flex;
+  }
+  footer div .left-footer {
+    width: 50%;
+    display: block;
+  }
+  footer div .left-footer .footer-links img {
+    margin: 1rem;
+  }
+  footer div .left-footer .footer-links .paragraph {
+    margin-right: 7rem;
+    font-size: 1.5vw;
+  }
+  footer div .right-footer {
+    width: 50%;
+  }
+  footer div .right-footer .list-one {
+    display: block;
+    margin: 0 6rem;
+  }
+  footer div .right-footer .list-one .list-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  footer div .right-footer .list-one ul {
+    margin: 0;
+    padding: 0;
+  }
+  footer div .right-footer .list-one ul a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+  }
+  footer div #copyright {
+    text-align: center;
+    margin-block: 3rem;
+  }
 }
-footer section {
-  display: flex;
-}
-footer section .left-footer {
-  width: 50%;
-}
-footer section .left-footer .footer-links {
-  display: flex;
-}
-footer section .left-footer .footer-links img {
-  margin: 2rem 1rem;
-}
-footer section .left-footer .footer-name {
-  font-size: 1.5vw;
-  padding-bottom: 2rem;
-}
-footer section .left-footer .paragraph {
-  margin-right: 7rem;
-}
-footer section .right-footer {
-  width: 50%;
-}
-footer section .right-footer .list-one {
-  margin: 0 6rem;
-}
-footer section .right-footer .list-one .list-title {
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-footer section .right-footer .list-one ul {
-  margin: 0;
-  padding: 0;
-}
-footer section .right-footer .list-one ul a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 0.5rem;
-}
-footer #copyright {
-  text-align: center;
-  margin-block: 3rem;
-}
-
 /*     Desktop View      */
 @media only screen and (min-width: 901px) {
   body {
@@ -1240,46 +1235,49 @@ body #explain-cards .explain-section #step-4 {
   body .email-signup .flex-button-email button {
     margin: 0;
   }
-  footer section {
-    display: flex;
+  footer {
+    margin-top: 12rem;
   }
-  footer section .left-footer {
-    width: 50%;
-  }
-  footer section .left-footer .footer-links {
-    display: flex;
-  }
-  footer section .left-footer .footer-links img {
-    margin: 2rem 1rem;
-  }
-  footer section .left-footer .footer-name {
+  footer .footer-name {
     font-size: 1.5vw;
     padding-bottom: 2rem;
   }
-  footer section .left-footer .paragraph {
-    margin-right: 7rem;
+  footer div {
+    display: flex;
   }
-  footer section .right-footer {
+  footer div .left-footer {
+    width: 50%;
+    display: block;
+  }
+  footer div .left-footer .footer-links img {
+    margin: 1rem;
+  }
+  footer div .left-footer .footer-links .paragraph {
+    margin-right: 7rem;
+    font-size: 1.5vw;
+  }
+  footer div .right-footer {
     width: 50%;
   }
-  footer section .right-footer .list-one {
+  footer div .right-footer .list-one {
+    display: block;
     margin: 0 6rem;
   }
-  footer section .right-footer .list-one .list-title {
+  footer div .right-footer .list-one .list-title {
     font-weight: bold;
     margin-bottom: 1rem;
   }
-  footer section .right-footer .list-one ul {
+  footer div .right-footer .list-one ul {
     margin: 0;
     padding: 0;
   }
-  footer section .right-footer .list-one ul a {
+  footer div .right-footer .list-one ul a {
     color: white;
     text-decoration: none;
     display: block;
     padding: 0.5rem;
   }
-  footer #copyright {
+  footer div #copyright {
     text-align: center;
     margin-block: 3rem;
   }

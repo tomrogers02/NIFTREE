@@ -33,7 +33,6 @@ svg {
 
     section {
       margin: 10rem 1rem;
-     
     }
 
     button {
@@ -139,8 +138,8 @@ svg {
 
         #nft-mobile {
           margin: auto;
-          margin-block: 0 2rem;
-          width: 75%;
+          margin-block: 0 1rem;
+          width: 95%;
         }
 
         #nft-desktop {
@@ -150,13 +149,13 @@ svg {
           margin: 0 3rem;
 
           .name {
-            font-size: 4vw;
+            font-size: 5vw;
             font-weight: 700;
             padding-bottom: 0.5rem;
           }
 
           .sub-name {
-            font-size: 2vw;
+            font-size: 2.5vw;
           }
 
           .bidding-ends {
@@ -165,7 +164,7 @@ svg {
           .countdown {
             display: flex;
             place-content: space-around;
-            margin: 2rem;
+            margin: 1rem;
 
             .number {
               font-weight: bold;
@@ -186,7 +185,7 @@ svg {
               width: 10%;
             }
             #price {
-              font-size: 3.5vw;
+              font-size: 4vw;
               margin-inline: 1rem;
             }
           }
@@ -210,9 +209,12 @@ svg {
       }
     }
 
+    #wallet-sponsors {
+      margin-block: 4rem 0;
+    }
+
     #nft-carousel-one {
       text-align: center;
-     
 
       .nft-multicolour-showcase {
         #yellow-nft,
@@ -221,18 +223,18 @@ svg {
         }
 
         img {
-          width: 80%;
+          width: 85%;
           margin: auto;
         }
       }
 
       .title {
-        font-size: 3vw;
+        font-size: 4vw;
         margin-bottom: 2rem;
       }
 
       .sub-title {
-        font-size: 2.5vw;
+        font-size: 3vw;
         color: var(--tertiary);
       }
 
@@ -245,14 +247,14 @@ svg {
           bottom: 10%;
 
           .nft-name {
-            font-size: 3vw;
+            font-size: 3.5vw;
             margin-block: 1rem;
           }
 
           button {
             background: white;
             color: black;
-            font-size: 2vw;
+            font-size: 2.5vw;
           }
         }
       }
@@ -260,10 +262,9 @@ svg {
 
     #explain-cards {
       text-align: center;
-      
 
       .section-heading {
-        font-size: 3vw;
+        font-size: 4vw;
 
         span {
           color: var(--secondary);
@@ -271,7 +272,7 @@ svg {
       }
 
       .section-sub-heading {
-        font-size: 2.5vw;
+        font-size: 3vw;
         margin-bottom: 1.5rem;
         span {
           color: var(--tertiary);
@@ -292,22 +293,22 @@ svg {
           margin: 0.7rem;
           padding: 0.3rem;
 
-          #number {
-            font-size: 1.5vw;
+          .number {
+            padding-inline: 0.8rem;
             font-weight: bold;
             color: var(--tertiary);
-            padding-inline: 1rem;
+            font-size: 3vw;
           }
 
           hr {
             margin-inline: 1rem;
             height: 2.5rem;
-            margin-right: 2rem;
-            border: 0.2px solid white;
+
+            border: 0.1px solid white;
           }
 
           #step-name {
-            font-size: 2vw;
+            font-size: 3vw;
           }
 
           #number {
@@ -326,8 +327,8 @@ svg {
     }
 
     .trending {
-      font-weight: bold;
       text-align: center;
+      font-size: 4vw;
 
       span {
         color: var(--tertiary);
@@ -335,7 +336,6 @@ svg {
     }
 
     #nft-carousel-two {
-      
       #nft-2,
       #nft-3 {
         display: none;
@@ -343,12 +343,11 @@ svg {
 
       .nft-card {
         background-color: rgba(34, 33, 33, 0.175);
-        margin: 2rem 1.5rem 14rem 1.5rem;
         border: 0.4px white solid;
         border-radius: 0.6rem;
 
         .nft-card-center {
-          margin: 1rem 2rem 0.5rem 2rem;
+          margin: 1rem 1rem 0.5rem 1rem;
           #nft-carousel-1 {
             margin: auto;
           }
@@ -356,7 +355,7 @@ svg {
           #name {
             font-size: 4vw;
             font-weight: bold;
-            padding-block: 1rem;
+            padding-block: 0.6rem;
           }
 
           .mid-section {
@@ -366,20 +365,19 @@ svg {
 
             .owner {
               display: flex;
-
-              img {
-                width: 24%;
+              #owner-nft-image {
+                width: 18%;
                 padding-right: 0.5rem;
               }
 
               #ownded-by {
-                font-size: 2vw;
+                font-size: 2.5vw;
                 color: darkgrey;
               }
 
               #name-owner {
                 display: block;
-                font-size: 2.5vw;
+                font-size: 3vw;
               }
             }
 
@@ -406,12 +404,8 @@ svg {
             width: 30%;
 
             #view-history {
-              font-size: 2vw;
+              font-size: 2.5vw;
               padding-left: 0.1em;
-            }
-
-            img {
-              width: 22%;
             }
           }
         }
@@ -420,7 +414,6 @@ svg {
   }
 
   #tree-plant {
-
     #question {
       font-size: 6vw;
       font-family: poppins;
@@ -446,7 +439,6 @@ svg {
 
   .email-signup {
     text-align: center;
-    
 
     #title {
       font: 6vw bold;
@@ -474,40 +466,35 @@ svg {
   }
 
   footer {
+    margin-top: 8rem;
     .footer-name {
-      font-weight: bold;
-      font-size: 4vw;
-      padding-bottom: 2rem;
+      font-size: 15vw;
     }
 
-    .list-title {
-      font-weight: bold;
-      font-size: 3.5vw;
-      padding: 2rem 0 1rem 0;
-    }
+    div {
+      .left-footer {
+        width: 50%;
 
-    .paragraph {
-      font-size: 2.5vw;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-
-      a {
-        text-decoration: none;
-        color: white;
-        display: block;
-        padding-block: 1rem;
+        .footer-links {
+          display: none;
+        }
+        .paragraph {
+          display: none;
+        }
       }
-    }
 
-    .footer-links {
-      display: flex;
-      place-content: space-around;
-      width: 60%;
-      margin: 4rem auto;
+      .right-footer {
+        ul {
+          padding: 1rem 0rem;
+          margin: 0;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          display: block;
+          padding-block: 0.5rem;
+        }
+      }
     }
     #copyright {
       text-align: center;
@@ -523,10 +510,8 @@ svg {
     color: white;
 
     section {
-      margin: 12rem 2rem
+      margin: 12rem 2rem;
     }
-
-
 
     button {
       display: flex;
@@ -741,7 +726,6 @@ svg {
 
   #nft-carousel-one {
     text-align: center;
-   
 
     .sub-title {
       font-size: 1.2vw;
@@ -782,7 +766,6 @@ svg {
 
   #explain-cards {
     text-align: center;
-  
 
     .section-heading {
       font-size: 2.2vw;
@@ -846,7 +829,6 @@ svg {
   }
 
   .trending {
-    
     font-weight: bold;
 
     span {
@@ -856,7 +838,6 @@ svg {
   #nft-carousel-two {
     display: flex;
     place-content: space-between;
-    
 
     .nft-card {
       background: rgba(255, 255, 255, 0.15);
@@ -1004,60 +985,61 @@ svg {
       }
     }
   }
-}
-footer {
-  
-
-  section {
-    display: flex;
-    .left-footer {
-      width: 50%;
-
-      .footer-links {
-        display: flex;
-
-        img {
-          margin: 2rem 1rem;
-        }
-      }
-
-      .footer-name {
-        font-size: 1.5vw;
-        padding-bottom: 2rem;
-      }
-
-      .paragraph {
-        margin-right: 7rem;
-      }
+  footer {
+    margin-top: 12rem;
+    .footer-name {
+      font-size: 1.5vw;
+      padding-bottom: 2rem;
     }
+    div {
+      display: flex;
 
-    .right-footer {
-      width: 50%;
+      .left-footer {
+        width: 50%;
+        display: block;
 
-      .list-one {
-        margin: 0 6rem;
-        .list-title {
-          font-weight: bold;
-          margin-bottom: 1rem;
-        }
+        .footer-links {
+          img {
+            margin: 1rem;
+          }
 
-        ul {
-          margin: 0;
-          padding: 0;
-
-          a {
-            color: white;
-            text-decoration: none;
-            display: block;
-            padding: 0.5rem;
+          .paragraph {
+            margin-right: 7rem;
+            font-size: 1.5vw;
           }
         }
       }
+
+      .right-footer {
+        width: 50%;
+
+        .list-one {
+          display: block;
+          margin: 0 6rem;
+          .list-title {
+            font-weight: bold;
+            margin-bottom: 1rem;
+          }
+
+          ul {
+            margin: 0;
+            padding: 0;
+
+            a {
+              color: white;
+              text-decoration: none;
+              display: block;
+              padding: 0.5rem;
+            }
+          }
+        }
+      }
+
+      #copyright {
+        text-align: center;
+        margin-block: 3rem;
+      }
     }
-  }
-  #copyright {
-    text-align: center;
-    margin-block: 3rem;
   }
 }
 
@@ -1072,7 +1054,6 @@ footer {
 
     section {
       margin: 14rem 8rem;
-     
     }
 
     button {
@@ -1141,7 +1122,6 @@ footer {
     .hero {
       display: flex;
       margin: 3.5rem 0rem;
-   
 
       .left-col {
         width: 50%;
@@ -1276,14 +1256,12 @@ footer {
     }
 
     #wallet-sponsors {
-      width:60%;
-      margin:auto;
-      margin-block:6rem;
-
+      width: 60%;
+      margin: auto;
+      margin-block: 6rem;
     }
-    #nft-carousel-one{
+    #nft-carousel-one {
       text-align: center;
-      
 
       .sub-title {
         font-size: 1vw;
@@ -1324,7 +1302,6 @@ footer {
 
     #explain-cards {
       text-align: center;
- 
 
       .section-heading {
         font-size: 2vw;
@@ -1388,10 +1365,8 @@ footer {
       }
     }
     #nft-carousel-two {
-      
       display: flex;
       place-content: space-around;
-      
 
       .nft-card {
         background: rgba(255, 255, 255, 0.15);
@@ -1543,27 +1518,27 @@ footer {
     }
   }
   footer {
-
-    section {
+    margin-top: 12rem;
+    .footer-name {
+      font-size: 1.5vw;
+      padding-bottom: 2rem;
+    }
+    div {
       display: flex;
+
       .left-footer {
         width: 50%;
+        display: block;
 
         .footer-links {
-          display: flex;
-
           img {
-            margin: 2rem 1rem;
+            margin: 1rem;
           }
-        }
 
-        .footer-name {
-          font-size: 1.5vw;
-          padding-bottom: 2rem;
-        }
-
-        .paragraph {
-          margin-right: 7rem;
+          .paragraph {
+            margin-right: 7rem;
+            font-size: 1.5vw;
+          }
         }
       }
 
@@ -1571,6 +1546,7 @@ footer {
         width: 50%;
 
         .list-one {
+          display: block;
           margin: 0 6rem;
           .list-title {
             font-weight: bold;
@@ -1590,10 +1566,11 @@ footer {
           }
         }
       }
-    }
-    #copyright {
-      text-align: center;
-      margin-block: 3rem;
+
+      #copyright {
+        text-align: center;
+        margin-block: 3rem;
+      }
     }
   }
 }
