@@ -1,6 +1,4 @@
-<!--Rename classes and ID's so responsive design is clearer--> 
 <!--Add alts to images-->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +13,7 @@
   <body>
     <header>
       <img src="images/logo.svg" alt="" id="logo" />
-      <section class="desktop-nav">
+      <div class="desktop-nav">
         <ul>
           <a href="">Marketplace</a>
           <a href="">Our Project</a>
@@ -27,11 +25,11 @@
           <img src="images/profile.svg" alt="" id="profile" />
           <img src="images/wallet-icon-desktop.svg" alt="" id="wallet" />
         </div>
-      </section>
+      </div>
       <img src="images/Hamburger.svg" alt="" id="hamburger" />
     </header>
 
-    <section class="hero">
+    <div class="hero">
       <div class="left-col">
         <div id="title">Let’s replant the <span>earth</span>, the fun way.</div>
         <div id="subhead">
@@ -104,152 +102,182 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="tree-adv">
-      <div class="mountain-text">
-        <p id="12-trees">
-          For every NFT sold, <span>12 trees</span> are planted.
-        </p>
-        <img src="images/tree-line.svg" alt="" id="tree-background" />
-      </div>
+    <img src="images/wallet-sponsors.png" alt="" id="wallet-sponsors" />
 
-      <div class="adv-text">
-        <p id="work">How does it work?</p>
-
-        <div class="icon-text">
-          <div class="wallet">
-            <img src="images/wallet.svg" alt="" id="wallet" />
-            <p>Connect your virtual wallet (Metamask, Phantom, PayPal).</p>
+    <section id="nft-carousel-one">
+      <div class="sub-title">This weeks</div>
+      <div class="title">Trending Collections</div>
+      <div class="nft-multicolour-showcase">
+        <div class="nft" id="yellow-nft">
+          <img src="images/yellow-nft.png" alt="" />
+          <div class="nft-overlay">
+            <div class="nft-name">Yellow Street</div>
+            <button>View</button>
           </div>
+        </div>
 
-          <div class="bitcoin">
-            <img src="images/bitcoin.svg" alt="" id="bitcoin" />
-            <p>
-              Buy and sell your favourite artworks easily through our state of
-              the art trading view.
-            </p>
+        <div class="nft" id="pink-nft">
+          <img src="images/pink-nft.png" alt="" />
+          <div class="nft-overlay">
+            <div class="nft-name">Pink Gang</div>
+            <button>View</button>
           </div>
+        </div>
 
-          <div class="tree">
-            <img src="images/tree.svg" alt="" id="tree" />
-            <p>
-              A tree is planted in one of our five plant sites around the globe.
-            </p>
+        <div class="nft" id="blue-nft">
+          <img src="images/blue-nft.png" alt="" />
+          <div class="nft-overlay">
+            <div class="nft-name">Blue Stuff</div>
+            <button>View</button>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="trending">THIS WEEKS <span>LOUDEST</span> CHARACTERS</div>
+    <section id="explain-cards">
+      <div class="section-heading">
+        12 <span>Trees</span> Are Planted For Every NFT
+      </div>
+      <div class="section-sub-heading"><span>But</span> how does it work?</div>
+      <div class="explain-section">
+        <div class="steps" id="step-1">
+          <div id="number">01</div>
+          <hr />
+          <div id="step-name">Wallet</div>
+        </div>
 
-    <section id="nft-carousel">
-      <div class="nft-card">
-        <div class="nft-card-center">
-          <img src="images/nft-1.svg" alt="" id="nft-carousel-1" />
+        <div class="steps" id="step-2">
+          <div id="number">02</div>
+          <hr />
+          <div id="step-name">Trade</div>
+        </div>
 
-          <div class="nft-card-text">
-            <div id="name">Bulliens</div>
+        <div class="steps" id="step-3">
+          <div id="number">03</div>
+          <hr />
+          <div id="step-name">Portfolio</div>
+        </div>
+        <div class="steps" id="step-4">
+          <div id="number">04</div>
+          <hr />
+          <div id="step-name">Trees</div>
+        </div>
+      </div>
+    </section>
 
-            <div class="mid-section">
-              <div class="owner">
-                <img src="images/nft-owner-1.svg" alt="" />
+    <section id="nft-carousel-title">
+      <div class="trending">THIS WEEKS <span>LOUDEST</span> CHARACTERS</div>
 
-                <div class="name-owner">
-                  <div id="ownded-by">Owned by</div>
-                  <div id="name-owner">NFTOWNER1</div>
+      <div id="nft-carousel-two">
+        <div class="nft-card">
+          <div class="nft-card-center">
+            <img src="images/nft-1.svg" alt="" id="nft-carousel-1" />
+
+            <div class="nft-card-text">
+              <div id="name">Bulliens</div>
+
+              <div class="mid-section">
+                <div class="owner">
+                  <img src="images/nft-owner-1.svg" alt="" />
+
+                  <div class="name-owner">
+                    <div id="ownded-by">Owned by</div>
+                    <div id="name-owner">NFTOWNER1</div>
+                  </div>
+                </div>
+
+                <div class="nft-price">
+                  <div id="current">Current Price</div>
+                  <div id="price">3 ETH</div>
                 </div>
               </div>
 
-              <div class="nft-price">
-                <div id="current">Current Price</div>
-                <div id="price">3 ETH</div>
-              </div>
-            </div>
+              <div class="bottom-section">
+                <div class="history">
+                  <img src="images/history-icon.svg" alt="" />
+                  <div id="view-history">View History</div>
+                </div>
 
-            <div class="bottom-section">
-              <div class="history">
-                <img src="images/history-icon.svg" alt="" />
-                <div id="view-history">View History</div>
+                <img src="images/shop-nft.svg" alt="" />
               </div>
-
-              <img src="images/shop-nft.svg" alt="" />
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="nft-card" id="nft-2">
-        <div class="nft-card-center">
-          <img src="images/nft-2.svg" alt="" />
+        <div class="nft-card" id="nft-2">
+          <div class="nft-card-center">
+            <img src="images/nft-2.svg" alt="" />
 
-          <div class="nft-card-text">
-            <div id="name">Futura Ape</div>
+            <div class="nft-card-text">
+              <div id="name">Futura Ape</div>
 
-            <div class="mid-section">
-              <div class="owner">
-                <img src="images/nft-owner-1.svg" alt="" />
+              <div class="mid-section">
+                <div class="owner">
+                  <img src="images/nft-owner-1.svg" alt="" />
 
-                <div class="name-owner">
-                  <div id="ownded-by">Owned by</div>
-                  <div id="name-owner">NFTOWNER1</div>
+                  <div class="name-owner">
+                    <div id="ownded-by">Owned by</div>
+                    <div id="name-owner">NFTOWNER1</div>
+                  </div>
+                </div>
+
+                <div class="nft-price">
+                  <div id="current">Current Price</div>
+                  <div id="price">6 ETH</div>
                 </div>
               </div>
 
-              <div class="nft-price">
-                <div id="current">Current Price</div>
-                <div id="price">6 ETH</div>
-              </div>
-            </div>
+              <div class="bottom-section">
+                <div class="history">
+                  <img src="images/history-icon.svg" alt="" />
+                  <div id="view-history">View History</div>
+                </div>
 
-            <div class="bottom-section">
-              <div class="history">
-                <img src="images/history-icon.svg" alt="" />
-                <div id="view-history">View History</div>
+                <img src="images/shop-nft.svg" alt="" id="shop-button" />
               </div>
-
-              <img src="images/shop-nft.svg" alt="" id="shop-button" />
             </div>
           </div>
         </div>
-      </div>
-      <div class="nft-card" id="nft-3">
-        <div class="nft-card-center">
-          <img src="images/nft-3.svg" alt="" />
+        <div class="nft-card" id="nft-3">
+          <div class="nft-card-center">
+            <img src="images/nft-3.svg" alt="" />
 
-          <div class="nft-card-text">
-            <div id="name">Batmobile</div>
+            <div class="nft-card-text">
+              <div id="name">Batmobile</div>
 
-            <div class="mid-section">
-              <div class="owner">
-                <img src="images/nft-owner-1.svg" alt="" />
+              <div class="mid-section">
+                <div class="owner">
+                  <img src="images/nft-owner-1.svg" alt="" />
 
-                <div class="name-owner">
-                  <div id="ownded-by">Owned by</div>
-                  <div id="name-owner">NFTOWNER1</div>
+                  <div class="name-owner">
+                    <div id="ownded-by">Owned by</div>
+                    <div id="name-owner">NFTOWNER1</div>
+                  </div>
+                </div>
+
+                <div class="nft-price">
+                  <div id="current">Current Price</div>
+                  <div id="price">5 ETH</div>
                 </div>
               </div>
 
-              <div class="nft-price">
-                <div id="current">Current Price</div>
-                <div id="price">5 ETH</div>
-              </div>
-            </div>
+              <div class="bottom-section">
+                <div class="history">
+                  <img src="images/history-icon.svg" alt="" />
+                  <div id="view-history">View History</div>
+                </div>
 
-            <div class="bottom-section">
-              <div class="history">
-                <img src="images/history-icon.svg" alt="" />
-                <div id="view-history">View History</div>
+                <img src="images/shop-nft.svg" alt="" />
               </div>
-
-              <img src="images/shop-nft.svg" alt="" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="learn-more-hero">
+    <section id="tree-plant">
       <div class="left-section">
         <p id="question">But, Where Are The <span>Trees</span> Planted?</p>
         <p id="subtext">

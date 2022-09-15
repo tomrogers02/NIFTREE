@@ -1,10 +1,8 @@
 /*Add more utility classes for colours, font sizes etc */
-/*Reseacrh font sizes best for paragraphs, titles etc for different devices etc*/
+/*Research font sizes best for paragraphs, titles etc for different devices etc*/
 /*Organise big chunks of code into classes, ie positions, colour etc*/
 /*Make picture collage look nicer*/
 /*Add image overlays for the tree section with quick overviews of each country*/
-
-
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
@@ -32,6 +30,11 @@ svg {
     color: white;
     font-family: poppins;
     background-color: var(--primary);
+
+    section {
+      margin: 10rem 1rem;
+     
+    }
 
     button {
       display: flex;
@@ -207,45 +210,122 @@ svg {
       }
     }
 
-    .mountain-text {
-      margin: 8rem 5rem 3rem 5rem;
+    #nft-carousel-one {
+      text-align: center;
+     
 
-      p {
-        font-size: 5vw;
-        font-weight: bold;
-        text-align: center;
+      .nft-multicolour-showcase {
+        #yellow-nft,
+        #blue-nft {
+          display: none;
+        }
+
+        img {
+          width: 80%;
+          margin: auto;
+        }
+      }
+
+      .title {
+        font-size: 3vw;
+        margin-bottom: 2rem;
+      }
+
+      .sub-title {
+        font-size: 2.5vw;
+        color: var(--tertiary);
+      }
+
+      .nft {
+        position: relative;
+
+        .nft-overlay {
+          position: absolute;
+          width: 100%;
+          bottom: 10%;
+
+          .nft-name {
+            font-size: 3vw;
+            margin-block: 1rem;
+          }
+
+          button {
+            background: white;
+            color: black;
+            font-size: 2vw;
+          }
+        }
+      }
+    }
+
+    #explain-cards {
+      text-align: center;
+      
+
+      .section-heading {
+        font-size: 3vw;
 
         span {
           color: var(--secondary);
         }
       }
 
-      img {
-        display: none;
-      }
-    }
-
-    .adv-text {
-      display: block;
-      align-items: center;
-      text-align: center;
-      padding: 1rem 5rem;
-      font-size: 3vw;
-
-      margin-bottom: 10rem;
-      img {
-        width: 22%;
-        margin: auto;
-        padding-block: 2rem;
+      .section-sub-heading {
+        font-size: 2.5vw;
+        margin-bottom: 1.5rem;
+        span {
+          color: var(--tertiary);
+        }
       }
 
-      #work {
-        display: none;
+      .explain-section {
+        display: flex;
+        flex-direction: column;
+        place-content: space-between;
+
+        .steps {
+          border: 1px solid #bfbfbf;
+          border-radius: 0.5rem;
+          background-color: #1d212e;
+          display: flex;
+          align-items: center;
+          margin: 0.7rem;
+          padding: 0.3rem;
+
+          #number {
+            font-size: 1.5vw;
+            font-weight: bold;
+            color: var(--tertiary);
+            padding-inline: 1rem;
+          }
+
+          hr {
+            margin-inline: 1rem;
+            height: 2.5rem;
+            margin-right: 2rem;
+            border: 0.2px solid white;
+          }
+
+          #step-name {
+            font-size: 2vw;
+          }
+
+          #number {
+            text-align: left;
+            font-size: 2vw;
+          }
+        }
+
+        #step-1,
+        #step-2,
+        #step-3,
+        #step-4 {
+          margin-inline: 1rem;
+        }
       }
     }
 
     .trending {
-      margin: 5rem 1rem 0 1rem;
       font-weight: bold;
       text-align: center;
 
@@ -254,7 +334,8 @@ svg {
       }
     }
 
-    #nft-carousel {
+    #nft-carousel-two {
+      
       #nft-2,
       #nft-3 {
         display: none;
@@ -338,8 +419,7 @@ svg {
     }
   }
 
-  #learn-more-hero {
-    margin: 12rem 1rem;
+  #tree-plant {
 
     #question {
       font-size: 6vw;
@@ -366,7 +446,7 @@ svg {
 
   .email-signup {
     text-align: center;
-    margin-inline: 1rem;
+    
 
     #title {
       font: 6vw bold;
@@ -394,7 +474,6 @@ svg {
   }
 
   footer {
-    margin-block: 8rem;
     .footer-name {
       font-weight: bold;
       font-size: 4vw;
@@ -442,6 +521,12 @@ svg {
     background-color: var(--primary);
     font-family: poppins;
     color: white;
+
+    section {
+      margin: 12rem 2rem
+    }
+
+
 
     button {
       display: flex;
@@ -550,7 +635,6 @@ svg {
           #learn-arrow-img {
             width: 10%;
             padding-left: 0.3rem;
-            
           }
         }
       }
@@ -572,9 +656,6 @@ svg {
 
         #nft-mobile {
           display: none;
-        }
-
-        #nft-desktop {
         }
 
         .glass-bar {
@@ -652,47 +733,130 @@ svg {
       }
     }
   }
-  .tree-adv {
-    margin: 16rem 4rem;
 
-    #work {
-      font-size: 2vw;
-      font-weight: bold;
+  #wallet-sponsors {
+    margin: 8rem auto;
+    width: 80%;
+  }
+
+  #nft-carousel-one {
+    text-align: center;
+   
+
+    .sub-title {
+      font-size: 1.2vw;
+      color: var(--tertiary);
     }
-    .icon-text {
+
+    .title {
+      font-size: 2.2vw;
+      margin-bottom: 2rem;
+    }
+
+    .nft-multicolour-showcase {
+      margin: auto;
       display: flex;
-      .wallet,
-      .bitcoin,
-      .tree {
-        width: 33.33%;
-        padding: 2rem;
-        font-size: 1.3vw;
-      }
+      align-items: flex-end;
 
-      #wallet,
-      #bitcoin,
-      #tree {
-        width: 40%;
-        margin-bottom: 2rem;
+      .nft {
+        position: relative;
+
+        .nft-overlay {
+          position: absolute;
+          width: 100%;
+          bottom: 10%;
+
+          .nft-name {
+            font-size: 1.6vw;
+            margin-block: 1rem;
+          }
+
+          button {
+            background: white;
+            color: black;
+          }
+        }
       }
     }
-    .mountain-text {
-      display: none;
+  }
+
+  #explain-cards {
+    text-align: center;
+  
+
+    .section-heading {
+      font-size: 2.2vw;
+
+      span {
+        color: var(--secondary);
+      }
+    }
+
+    .section-sub-heading {
+      font-size: 1.3vw;
+      margin-bottom: 1.5rem;
+      span {
+        color: var(--tertiary);
+      }
+    }
+
+    .explain-section {
+      display: flex;
+      flex-direction: column;
+      place-content: space-between;
+
+      .steps {
+        border: 1px solid #bfbfbf;
+        border-radius: 0.5rem;
+        background-color: #1d212e;
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+        padding: 1rem;
+
+        #number {
+          font-size: 1.5vw;
+          font-weight: bold;
+          color: var(--tertiary);
+        }
+
+        hr {
+          margin-inline: 1rem;
+          height: 2.5rem;
+          margin-right: 2rem;
+        }
+
+        #step-name {
+          font-size: 1.8vw;
+        }
+
+        #number {
+          text-align: left;
+          font-size: 2vw;
+        }
+      }
+
+      #step-1,
+      #step-2,
+      #step-3,
+      #step-4 {
+        margin-inline: 1rem;
+      }
     }
   }
 
   .trending {
-    margin: 2rem 5rem;
+    
     font-weight: bold;
 
     span {
       color: var(--tertiary);
     }
   }
-  #nft-carousel {
+  #nft-carousel-two {
     display: flex;
     place-content: space-between;
-    margin-inline: 2rem;
+    
 
     .nft-card {
       background: rgba(255, 255, 255, 0.15);
@@ -771,9 +935,8 @@ svg {
       }
     }
   }
-  #learn-more-hero {
+  #tree-plant {
     display: flex;
-    margin: 10rem 5rem;
 
     .left-section {
       width: 80%;
@@ -843,7 +1006,7 @@ svg {
   }
 }
 footer {
-  margin-top: 15rem;
+  
 
   section {
     display: flex;
@@ -906,6 +1069,11 @@ footer {
     background-color: var(--primary);
     font-family: poppins;
     color: white;
+
+    section {
+      margin: 14rem 8rem;
+     
+    }
 
     button {
       display: flex;
@@ -972,7 +1140,8 @@ footer {
 
     .hero {
       display: flex;
-      margin-block: 4.5rem;
+      margin: 3.5rem 0rem;
+   
 
       .left-col {
         width: 50%;
@@ -1105,38 +1274,124 @@ footer {
         }
       }
     }
-    .tree-adv {
-      margin: 16rem 5rem;
 
-      #work {
-        font-size: 1.4vw;
-        font-weight: bold;
+    #wallet-sponsors {
+      width:60%;
+      margin:auto;
+      margin-block:6rem;
+
+    }
+    #nft-carousel-one{
+      text-align: center;
+      
+
+      .sub-title {
+        font-size: 1vw;
+        color: var(--tertiary);
       }
-      .icon-text {
+
+      .title {
+        font-size: 2vw;
+        margin-bottom: 2rem;
+      }
+
+      .nft-multicolour-showcase {
+        margin: auto;
         display: flex;
-        .wallet,
-        .bitcoin,
-        .tree {
-          padding: 2rem;
+        align-items: flex-end;
+
+        .nft {
+          position: relative;
+
+          .nft-overlay {
+            position: absolute;
+            width: 100%;
+            bottom: 10%;
+
+            .nft-name {
+              font-size: 1.6vw;
+              margin-block: 1rem;
+            }
+
+            button {
+              background: white;
+              color: black;
+            }
+          }
         }
       }
-      .mountain-text {
-        display: none;
+    }
+
+    #explain-cards {
+      text-align: center;
+ 
+
+      .section-heading {
+        font-size: 2vw;
+
+        span {
+          color: var(--secondary);
+        }
+      }
+
+      .section-sub-heading {
+        margin-bottom: 1.5rem;
+        span {
+          color: var(--tertiary);
+        }
+      }
+
+      .explain-section {
+        display: flex;
+        place-content: space-between;
+        height: 350px;
+
+        .steps {
+          border: 1px solid #bfbfbf;
+          border-radius: 0.5rem;
+          background-color: #1d212e;
+
+          #number {
+            margin: 2rem;
+            font-size: 1.5vw;
+            font-weight: bold;
+            color: var(--tertiary);
+          }
+
+          hr {
+            margin-inline: 3rem;
+          }
+
+          #step-name {
+            text-align: left;
+            transform: rotate(90deg);
+            margin-top: 8rem;
+            font-size: 1.5vw;
+          }
+        }
+
+        #step-1,
+        #step-2,
+        #step-3,
+        #step-4 {
+          flex-grow: 1;
+          margin-inline: 1rem;
+        }
       }
     }
 
     .trending {
-      margin: 2rem 10rem;
       font-weight: bold;
 
       span {
         color: var(--tertiary);
       }
     }
-    #nft-carousel {
+    #nft-carousel-two {
+      
       display: flex;
       place-content: space-around;
-      margin-inline: 9rem;
+      
 
       .nft-card {
         background: rgba(255, 255, 255, 0.15);
@@ -1211,9 +1466,8 @@ footer {
         }
       }
     }
-    #learn-more-hero {
+    #tree-plant {
       display: flex;
-      margin: 10rem 8rem;
 
       .left-section {
         width: 80%;
@@ -1289,7 +1543,6 @@ footer {
     }
   }
   footer {
-    margin-top: 15rem;
 
     section {
       display: flex;
