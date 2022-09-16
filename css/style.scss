@@ -329,6 +329,7 @@ svg {
     .trending {
       text-align: center;
       font-size: 4vw;
+      margin-bottom: 1.5rem;
 
       span {
         color: var(--tertiary);
@@ -1372,11 +1373,11 @@ svg {
       place-content: space-around;
 
       .nft-card {
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.048);
         border: 0.5px solid white;
         border-radius: 10px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(12.7px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.302);
+        backdrop-filter: blur(15px);
 
         margin: 2rem 1rem;
         border: 0.8px white solid;

@@ -271,6 +271,7 @@ body #explain-cards .explain-section #step-4 {
   body .trending {
     text-align: center;
     font-size: 4vw;
+    margin-bottom: 1.5rem;
   }
   body .trending span {
     color: var(--tertiary);
@@ -1117,12 +1118,12 @@ body #explain-cards .explain-section #step-4 {
     place-content: space-around;
   }
   body #nft-carousel-two .nft-card {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.048);
     border: 0.5px solid white;
     border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    -webkit-backdrop-filter: blur(12.7px);
-            backdrop-filter: blur(12.7px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.302);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
     margin: 2rem 1rem;
     border: 0.8px white solid;
     border-radius: 0.8rem;
