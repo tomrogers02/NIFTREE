@@ -72,14 +72,15 @@ svg {
     max-width: 8rem;
   }
   body header #desktop-nav {
-    display: none;
     position: fixed;
     right: 0;
     top: 0;
-    width: 60%;
+    width: 50%;
     height: 100vh;
-    background-color: #1d212d;
+    background-color: #212534;
     padding: 2.5rem;
+    transform: translateX(100%);
+    transition: 0.2s ease;
   }
   body header #desktop-nav #mobile-exit {
     float: right;
@@ -103,6 +104,8 @@ svg {
   }
   body header #desktop-nav[data-visible=true] {
     display: block;
+    transform: translateX(0%);
+    transition: 0.2s ease-out;
   }
   body .hero {
     margin-inline: 2rem;
