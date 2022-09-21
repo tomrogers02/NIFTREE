@@ -66,12 +66,43 @@ svg {
     place-content: space-between;
     padding: 2rem;
     background-color: var(--primary);
+    z-index: 999;
   }
   body header #logo {
     max-width: 8rem;
   }
-  body header .desktop-nav {
+  body header #desktop-nav {
     display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: #1d212d;
+    padding: 2.5rem;
+  }
+  body header #desktop-nav #mobile-exit {
+    float: right;
+    width: 8%;
+  }
+  body header #desktop-nav ul {
+    text-align: right;
+    margin-top: 3rem;
+  }
+  body header #desktop-nav ul a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding-block: 1rem;
+  }
+  body header #desktop-nav ul #mobile-nav-buttons {
+    padding: 0;
+  }
+  body header #desktop-nav .trio-icons {
+    display: none;
+  }
+  body header #desktop-nav[data-visible=true] {
+    display: block;
   }
   body .hero {
     margin-inline: 2rem;
@@ -214,6 +245,7 @@ body #nft-carousel-one .nft-multicolour-showcase #blue-nft {
     position: absolute;
     width: 100%;
     bottom: 10%;
+    z-index: 1;
   }
   body #nft-carousel-one .nft .nft-overlay .nft-name {
     font-size: 3.5vw;
@@ -463,28 +495,34 @@ body #nft-carousel-two #nft-3 {
     display: flex;
     place-content: space-between;
   }
-  body header #hamburger {
+  body header #mobile-cta {
+    display: none;
+  }
+  body header #mobile-exit {
     display: none;
   }
   body header #logo {
     width: 12%;
   }
-  body header .desktop-nav {
+  body header #desktop-nav {
     display: flex;
     place-content: space-between;
   }
-  body header .desktop-nav a {
+  body header #desktop-nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1vw;
     color: white;
     padding-right: 2rem;
   }
-  body header .desktop-nav .trio-icons {
+  body header #desktop-nav #mobile-nav-buttons {
+    display: none;
+  }
+  body header #desktop-nav .trio-icons {
     display: flex;
     place-content: space-evenly;
   }
-  body header .desktop-nav .trio-icons img {
+  body header #desktop-nav .trio-icons img {
     max-width: 15%;
     min-width: 5%;
   }
@@ -902,20 +940,23 @@ body .right-col .flex-box .glass-bar .right-info .countdown .second {
     display: flex;
     place-content: space-between;
   }
-  body header #hamburger {
+  body header #mobile-cta {
+    display: none;
+  }
+  body header #mobile-exit {
     display: none;
   }
   body header #logo {
     width: 10%;
   }
-  body header .desktop-nav {
+  body header #desktop-nav {
     display: flex;
     place-content: space-around;
   }
-  body header .desktop-nav ul {
+  body header #desktop-nav ul {
     width: 100%;
   }
-  body header .desktop-nav ul a {
+  body header #desktop-nav ul a {
     text-decoration: none;
     margin: 1.5rem;
     font-weight: bold;
@@ -923,17 +964,20 @@ body .right-col .flex-box .glass-bar .right-info .countdown .second {
     color: white;
     padding-right: 1rem;
   }
-  body header .desktop-nav .trio-icons {
+  body header #desktop-nav ul #mobile-nav-buttons {
+    display: none;
+  }
+  body header #desktop-nav .trio-icons {
     display: flex;
     place-content: space-between;
     width: 40%;
   }
-  body header .desktop-nav .trio-icons img {
+  body header #desktop-nav .trio-icons img {
     width: 27%;
   }
-  body header .desktop-nav .trio-icons #search:hover,
-body header .desktop-nav .trio-icons #profile:hover,
-body header .desktop-nav .trio-icons #wallet:hover {
+  body header #desktop-nav .trio-icons #search:hover,
+body header #desktop-nav .trio-icons #profile:hover,
+body header #desktop-nav .trio-icons #wallet:hover {
     transform: scale(1.05);
     transition: 0.3s ease;
   }

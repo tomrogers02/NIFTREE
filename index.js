@@ -30,3 +30,32 @@ const countdown = () => {
 };
 
 setInterval(countdown,1000)
+
+const primaryNav =document.getElementById('desktop-nav');
+const navToggle =document.getElementById('mobile-cta');
+const mobileExit =document.getElementById('mobile-exit');
+
+navToggle.addEventListener('click',() => {
+    const visibility = primaryNav.getAttribute('data-visible')
+
+    console.log(visibility);
+
+    if (visibility === "false") {
+        primaryNav.setAttribute("data-visible",true);
+    }
+
+});
+
+mobileExit.addEventListener('click',() => {
+    const visibility = primaryNav.getAttribute("data-visible")
+
+    console.log(visibility)
+
+    if (visibility === "true") {
+        primaryNav.setAttribute("data-visible",false)
+    }
+
+});
+
+
+

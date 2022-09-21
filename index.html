@@ -13,20 +13,31 @@
   <body>
     <header>
       <img src="images/logo.svg" alt="" id="logo" />
-      <div class="desktop-nav">
-        <ul>
-          <a href="">Marketplace</a>
-          <a href="">Our Project</a>
-          <a href="">Your impact</a>
-        </ul>
+      <img src="images/Hamburger.svg" alt="" id="mobile-cta" class="hamburger"/>
 
-        <div class="trio-icons">
-          <img src="images/search.svg" alt="" id="search" />
-          <img src="images/profile.svg" alt="" id="profile" />
-          <img src="images/wallet-icon-desktop.svg" alt="" id="wallet" />
-        </div>
-      </div>
-      <img src="images/Hamburger.svg" alt="" id="hamburger" />
+      <nav id="desktop-nav" data-visible="false">
+        
+          <img src="images/mobile-exit.png" alt="" id="mobile-exit" />
+
+          <ul class="nav-menu">
+            <a href="">Marketplace</a>
+            <a href="">Our Project</a>
+            <a href="">Your impact</a>
+
+            <ul id="mobile-nav-buttons">
+              <a href="">Account</a>
+              <a href="">Wallet</a>
+            </ul>
+          </ul>
+
+          <div class="trio-icons">
+            <img src="images/search.svg" alt="" id="search" />
+            <img src="images/profile.svg" alt="" id="profile" />
+            <img src="images/wallet-icon-desktop.svg" alt="" id="wallet" />
+          </div>
+        
+      </nav>
+     
     </header>
 
     <div class="hero">
@@ -180,7 +191,11 @@
 
               <div class="mid-section">
                 <div class="owner">
-                  <img src="images/nft-owner-1.svg" alt="" id="owner-nft-image" />
+                  <img
+                    src="images/nft-owner-1.svg"
+                    alt=""
+                    id="owner-nft-image"
+                  />
 
                   <div class="name-owner">
                     <div id="ownded-by">Owned by</div>
@@ -315,9 +330,7 @@
   <footer>
     <div class="footer-name">The Boring Stuff...</div>
     <div>
-      
       <div class="left-footer">
-        
         <div class="paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

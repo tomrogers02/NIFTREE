@@ -76,14 +76,57 @@ svg {
       place-content: space-between;
       padding:2rem;
       background-color: var(--primary);
+      z-index: 999;
       
 
       #logo {
         max-width: 8rem;
+      
       }
 
-      .desktop-nav {
+      #desktop-nav {
         display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width:60%;
+        height:100vh;
+        background-color: #1d212d; 
+        padding:2.5rem;
+        
+        #mobile-exit {
+          float: right;
+          width:8%;
+          
+          
+        }
+
+        ul {
+          text-align: right;
+          margin-top:3rem;
+          a{
+            color: white;
+            display: block;
+            text-decoration: none;
+            padding-block:1rem;
+          }
+
+          #mobile-nav-buttons {
+            padding:0;
+          }
+
+
+        }
+
+        
+  
+        .trio-icons {
+          display: none;
+        }
+
+      }
+      #desktop-nav[data-visible="true"]{
+        display: block;
       }
     }
 
@@ -224,6 +267,7 @@ svg {
     #nft-carousel-one {
       text-align: center;
       
+      
 
       .nft-multicolour-showcase {
         #yellow-nft,
@@ -248,12 +292,14 @@ svg {
       }
 
       .nft {
-        position: relative;
+       position: relative;
+        
 
         .nft-overlay {
           position: absolute;
           width: 100%;
           bottom: 10%;
+          z-index: 1;
 
           .nft-name {
             font-size: 3.5vw;
@@ -515,7 +561,10 @@ svg {
       text-align: center;
     }
   }
+
+
 }
+
 
 @media only screen and (max-width: 999px) and (min-width: 601px) {
   body {
@@ -567,14 +616,18 @@ svg {
       display: flex;
       place-content: space-between;
 
-      #hamburger {
+      #mobile-cta {
+        display: none;
+      }
+
+      #mobile-exit {
         display: none;
       }
 
       #logo {
         width: 12%;
       }
-      .desktop-nav {
+      #desktop-nav {
         display: flex;
         place-content: space-between;
 
@@ -584,6 +637,10 @@ svg {
           font-size: 1.1vw;
           color: white;
           padding-right: 2rem;
+        }
+
+        #mobile-nav-buttons {
+          display: none;
         }
 
         .trio-icons {
@@ -1107,14 +1164,18 @@ svg {
       display: flex;
       place-content: space-between;
 
-      #hamburger {
+      #mobile-cta {
+        display: none;
+      }
+
+      #mobile-exit{
         display: none;
       }
 
       #logo {
         width: 10%;
       }
-      .desktop-nav {
+      #desktop-nav {
         display: flex;
         place-content: space-around;
         ul {
@@ -1126,6 +1187,10 @@ svg {
             font-size: 1vw;
             color: white;
             padding-right: 1rem;
+          }
+
+          #mobile-nav-buttons {
+            display: none;
           }
         }
 
