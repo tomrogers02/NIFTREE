@@ -158,7 +158,7 @@ svg {
           }
           span {
             padding-inline: 0.3rem;
-            font-size: 2.1vw;
+            font-size: 2.2vw;
           }
         }
         .learnmore {
@@ -172,6 +172,9 @@ svg {
             img {
               width: 0.9rem;
               padding-inline: 0.3rem;
+            }
+            span {
+              font-size: 2.2vw;
             }
           }
         }
@@ -342,21 +345,26 @@ svg {
             place-content: space-between;
             padding-block: 1rem;
 
-            .nft-name,
+            .nft-name{ 
+              font-weight: bold;
+              margin-bottom: 0.8rem;
+
+            }
             .price {
               font-weight: bold;
               margin-bottom: 0.5rem;
             }
 
             .owner {
-              font-size: 2vw;
+              font-size: 2.4vw;
             }
 
             .right-text {
               text-align: right;
 
               button {
-                padding: 0.6rem 1rem;
+                padding: 0.5rem 1rem;
+                align-items: center;
 
                 img {
                   margin-right: 0.3rem;

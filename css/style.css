@@ -141,7 +141,7 @@ svg {
   }
   body .hero .hero-buttons .explore-image-text span {
     padding-inline: 0.3rem;
-    font-size: 2.1vw;
+    font-size: 2.2vw;
   }
   body .hero .hero-buttons .learnmore {
     font-size: var(--primary-button-font-size);
@@ -154,6 +154,9 @@ svg {
   body .hero .hero-buttons .learnmore .learn-inside img {
     width: 0.9rem;
     padding-inline: 0.3rem;
+  }
+  body .hero .hero-buttons .learnmore .learn-inside span {
+    font-size: 2.2vw;
   }
   body .hero .right-col {
     text-align: center;
@@ -291,19 +294,23 @@ body #nft-carousel-two #nft-card-3 {
     place-content: space-between;
     padding-block: 1rem;
   }
-  body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .nft-name,
-body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .price {
+  body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .nft-name {
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+  }
+  body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .price {
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
   body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .owner {
-    font-size: 2vw;
+    font-size: 2.4vw;
   }
   body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .right-text {
     text-align: right;
   }
   body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .right-text button {
-    padding: 0.6rem 1rem;
+    padding: 0.5rem 1rem;
+    align-items: center;
   }
   body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .right-text button img {
     margin-right: 0.3rem;
