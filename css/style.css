@@ -38,6 +38,7 @@ svg {
     border: none;
     outline: none;
     color: white;
+    font-weight: bold;
     border-radius: 0.5em;
     font-size: var(--primary-button-font-size);
     cursor: pointer;
@@ -79,8 +80,9 @@ svg {
     height: 100vh;
     background-color: #212534;
     padding: 2.5rem;
-    transform: translateX(100%);
+    transform: translateX(110%);
     transition: 0.2s ease;
+    box-shadow: 1px 0px 10px #222636 inset;
   }
   body header #desktop-nav #mobile-exit {
     float: right;
@@ -139,6 +141,7 @@ svg {
   }
   body .hero .hero-buttons .explore-image-text span {
     padding-inline: 0.3rem;
+    font-size: 2.1vw;
   }
   body .hero .hero-buttons .learnmore {
     font-size: var(--primary-button-font-size);
@@ -182,7 +185,7 @@ svg {
   body .hero .right-col .glass-bar .countdown {
     display: flex;
     place-content: space-around;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
   }
   body .hero .right-col .glass-bar .countdown .number {
     font-weight: bold;
@@ -201,7 +204,7 @@ svg {
     width: 12%;
   }
   body .hero .right-col .glass-bar .eth-price #price {
-    font-size: 3.2vw;
+    font-size: 3.5vw;
     margin-inline: 1rem 0;
   }
   body .hero .right-col .glass-bar #bottom-bid {
@@ -258,60 +261,7 @@ body #nft-carousel-one .nft-multicolour-showcase #blue-nft {
     background: white;
     color: black;
     font-size: 2.5vw;
-  }
-  body #explain-cards {
-    text-align: center;
-  }
-  body #explain-cards .section-heading {
-    font-size: 4vw;
-  }
-  body #explain-cards .section-heading span {
-    color: var(--secondary);
-  }
-  body #explain-cards .section-sub-heading {
-    font-size: 3vw;
-    margin-bottom: 1.5rem;
-  }
-  body #explain-cards .section-sub-heading span {
-    color: var(--tertiary);
-  }
-  body #explain-cards .explain-section {
-    display: flex;
-    flex-direction: column;
-    place-content: space-between;
-  }
-  body #explain-cards .explain-section .steps {
-    border: 1px solid #bfbfbf;
-    border-radius: 0.5rem;
-    background-color: #1d212e;
-    display: flex;
-    align-items: center;
-    margin: 0.7rem;
-    padding: 0.3rem;
-  }
-  body #explain-cards .explain-section .steps .number {
-    padding-inline: 0.8rem;
     font-weight: bold;
-    color: var(--tertiary);
-    font-size: 3vw;
-  }
-  body #explain-cards .explain-section .steps hr {
-    margin-inline: 1rem;
-    height: 2.5rem;
-    border: 0.1px solid white;
-  }
-  body #explain-cards .explain-section .steps #step-name {
-    font-size: 3vw;
-  }
-  body #explain-cards .explain-section .steps #number {
-    text-align: left;
-    font-size: 2vw;
-  }
-  body #explain-cards .explain-section #step-1,
-body #explain-cards .explain-section #step-2,
-body #explain-cards .explain-section #step-3,
-body #explain-cards .explain-section #step-4 {
-    margin-inline: 1rem;
   }
   body .trending {
     text-align: center;
@@ -357,6 +307,7 @@ body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .price {
   }
   body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .right-text button img {
     margin-right: 0.3rem;
+    width: 23%;
   }
   body #nft-carousel-two .nft-card .bottom-section {
     display: flex;
@@ -421,7 +372,7 @@ body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .price {
   }
   footer .footer-name {
     font-size: 4vw;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
   }
   footer div .left-footer {
     width: 50%;
@@ -434,7 +385,7 @@ body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .price {
   }
   footer div .right-footer ul {
     padding: 1rem 0rem;
-    margin: 0;
+    margin: 0 0 2rem 0;
   }
   footer div .right-footer a {
     text-decoration: none;
