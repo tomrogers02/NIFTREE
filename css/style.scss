@@ -403,29 +403,28 @@ svg {
           .nft-card-text {
             display: flex;
             place-content: space-between;
-            padding-block:1rem;
-          
-    
-            .nft-name,.price {
+            padding-block: 1rem;
+
+            .nft-name,
+            .price {
               font-weight: bold;
-              margin-bottom:.5rem;
+              margin-bottom: 0.5rem;
             }
-    
+
             .owner {
-              font-size:2vw;
+              font-size: 2vw;
             }
-    
+
             .right-text {
               text-align: right;
-    
-              button{
-                padding:.6rem 1rem;
-    
+
+              button {
+                padding: 0.6rem 1rem;
+
                 img {
-                  margin-right:.3rem;
+                  margin-right: 0.3rem;
                 }
               }
-             
             }
           }
         }
@@ -882,6 +881,7 @@ svg {
 
   .trending {
     font-weight: bold;
+    text-align: center;
 
     span {
       color: var(--tertiary);
@@ -908,50 +908,35 @@ svg {
         .nft-card-text {
           display: flex;
           place-content: space-between;
-          padding-block:1rem;
-  
-          .nft-name,.price {
+          padding-block: 1rem;
+
+          .nft-name,
+          .price {
             font-weight: bold;
-            margin-bottom:.5rem;
-            font-size:1.5vw;
+            margin-bottom: 0.5rem;
+            font-size: 1.3vw;
           }
-  
+
           .owner {
-            font-size:.9vw;
+            font-size: 0.9vw;
           }
-  
+
           .right-text {
             text-align: right;
-  
-            button{
-              padding:.6rem 1rem;
-  
+
+            button {
+              padding: 0.4rem .7rem;
+
               img {
-                margin-right:.3rem;
+                margin-right: 0.3rem;
+                width: 25%;
+              }
+
+              .view-text {
+                font-size:.9vw;
               }
             }
-           
           }
-        } 
-      }
-
-      .bottom-section {
-        display: flex;
-        place-content: space-between;
-        margin-block: 1.5rem 1rem;
-
-        .history {
-          display: flex;
-          place-content: space-around;
-          align-items: center;
-          width: 40%;
-
-          #view-history {
-            font-size: 0.7vw;
-          }
-        }
-        img {
-          width: 20%;
         }
       }
     }
@@ -1002,14 +987,14 @@ svg {
       font-size: 2.5vw;
     }
     #sub-head {
-      font-size: 1vw;
+      font-size: 1.3vw;
     }
 
     .flex-button-email {
       display: flex;
       margin: auto;
       margin-block: 2rem;
-      width: 40%;
+      width: 80%;
 
       #email {
         background-color: none;
@@ -1026,6 +1011,7 @@ svg {
 
       button {
         margin: 0;
+        padding:.5rem .9rem;
       }
     }
   }
@@ -1043,16 +1029,17 @@ svg {
       .left-footer {
         width: 50%;
         display: block;
+        .paragraph {
+          font-size:1.3vw;
+        }
 
         .footer-links {
+          margin-block:2rem;
           img {
             margin: 1rem;
           }
 
-          .paragraph {
-            margin-right: 7rem;
-            font-size: .5vw;
-          }
+        
         }
       }
 
@@ -1076,6 +1063,7 @@ svg {
               text-decoration: none;
               display: block;
               padding: 0.5rem;
+              font-size: 1.4vw;
             }
           }
         }
@@ -1431,6 +1419,7 @@ svg {
 
   .trending {
     font-weight: bold;
+    text-align: center;
 
     span {
       color: var(--tertiary);
@@ -1462,7 +1451,7 @@ svg {
           .nft-name,
           .price {
             font-weight: bold;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.7rem;
           }
 
           .owner {
@@ -1473,10 +1462,15 @@ svg {
             text-align: right;
 
             button {
-              padding: 0.6rem 1rem;
+              padding: 0.5rem 0.9rem;
 
               img {
                 margin-right: 0.3rem;
+                width: 27%;
+              }
+
+              .view-text {
+                font-size: 0.8vw;
               }
             }
           }
