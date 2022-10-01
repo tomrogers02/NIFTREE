@@ -228,7 +228,7 @@ svg {
     margin-bottom: 2rem;
   }
   body #nft-carousel-one .sub-title {
-    font-size: 3vw;
+    font-size: 4vw;
     color: var(--tertiary);
   }
   body #nft-carousel-one .media-scroller {
@@ -248,13 +248,13 @@ svg {
     z-index: 1;
   }
   body #nft-carousel-one .media-scroller .nft .nft-overlay .nft-name {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     margin-block: 1rem;
   }
   body #nft-carousel-one .media-scroller .nft .nft-overlay button {
     background: white;
     color: black;
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-weight: bold;
   }
   body .trending {
@@ -265,11 +265,18 @@ svg {
   body .trending span {
     color: var(--tertiary);
   }
-  body #nft-carousel-two #nft-card-2,
-body #nft-carousel-two #nft-card-3 {
-    display: none;
+  body #nft-carousel-title {
+    margin: 7rem 0;
   }
-  body #nft-carousel-two .nft-card {
+  body #nft-carousel-title .nft-carousel-two {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 70%;
+    gap: 2rem;
+    align-items: flex-end;
+    overflow-x: scroll;
+  }
+  body #nft-carousel-title .nft-carousel-two .nft-card {
     background: rgba(255, 255, 255, 0.048);
     border-radius: 10px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.302);
@@ -277,134 +284,122 @@ body #nft-carousel-two #nft-card-3 {
             backdrop-filter: blur(15px);
     padding-top: 0.1rem;
   }
-  body #nft-carousel-two .nft-card .nft-card-center {
+  body #nft-carousel-title .nft-carousel-two .nft-card .nft-card-center {
     margin: 1rem 1rem 0.5rem 1rem;
   }
-  body #nft-carousel-two .nft-card .nft-card-center #nft-carousel-1 {
+  body #nft-carousel-title .nft-carousel-two .nft-card .nft-card-center #nft-carousel-1 {
     margin: auto;
   }
-  body #nft-carousel-two .nft-card .nft-card-center .nft-card-text {
+  body #nft-carousel-title .nft-carousel-two .nft-card .nft-card-center .nft-card-text {
     display: flex;
     place-content: space-between;
     padding-block: 1rem;
   }
-  body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .nft-name {
+  body #nft-carousel-title .nft-carousel-two .nft-card .nft-card-center .nft-card-text .nft-name {
     font-weight: bold;
     margin-bottom: 0.8rem;
   }
-  body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .price {
+  body #nft-carousel-title .nft-carousel-two .nft-card .nft-card-center .nft-card-text .price {
     font-weight: bold;
     margin-bottom: 0.8rem;
   }
-  body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .owner {
+  body #nft-carousel-title .nft-carousel-two .nft-card .nft-card-center .nft-card-text .owner {
     font-size: 2.4vw;
   }
-  body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .right-text {
+  body #nft-carousel-title .nft-carousel-two .nft-card .nft-card-center .nft-card-text .right-text {
     text-align: right;
   }
-  body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .right-text button {
+  body #nft-carousel-title .nft-carousel-two .nft-card .nft-card-center .nft-card-text .right-text button {
     padding: 0.7rem 1.1rem;
     align-items: center;
   }
-  body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .right-text button img {
+  body #nft-carousel-title .nft-carousel-two .nft-card .nft-card-center .nft-card-text .right-text button img {
     margin-right: 0.3rem;
     width: 25%;
   }
-  body #nft-carousel-two .nft-card .nft-card-center .nft-card-text .right-text button .view-text {
+  body #nft-carousel-title .nft-carousel-two .nft-card .nft-card-center .nft-card-text .right-text button .view-text {
     font-size: 2.6vw;
   }
-  body #nft-carousel-two .nft-card .bottom-section {
-    display: flex;
-    place-content: space-between;
-    margin-block: 2rem 1rem;
-  }
-  body #nft-carousel-two .nft-card .bottom-section .history {
-    display: flex;
-    place-content: space-around;
-    align-items: center;
-    width: 30%;
-  }
-  body #nft-carousel-two .nft-card .bottom-section .history #view-history {
-    font-size: 2.5vw;
-    padding-left: 0.1em;
-  }
-  #tree-plant #question {
-    font-size: 8vw;
-    font-family: poppins;
-  }
-  #tree-plant #question span {
-    color: var(--secondary);
-  }
-  #tree-plant #subtext {
-    font-size: 3vw;
-  }
-  #tree-plant #learn-more-button {
-    background-image: linear-gradient(to right, var(--secondary), #6fac8d);
-    margin: 4rem auto;
-  }
-  #tree-plant img {
-    display: none;
-  }
-  .email-signup {
-    text-align: center;
-    margin-inline: 2rem;
-  }
-  .email-signup #title {
-    font: 6vw bold;
-    margin-bottom: 2rem;
-    font-family: poppins;
-  }
-  .email-signup #sub-head {
-    font-size: 3vw;
-    margin-bottom: 2rem;
-    font-family: poppins;
-  }
-  .email-signup #email {
-    background-color: none;
-    width: 80%;
-    padding: 0.5rem;
-  }
-  .email-signup input[type=email] {
-    border: 2px solid var(--tertiary);
-    background-color: var(--primary);
-    margin-block: 2rem;
-  }
-  .email-signup button {
-    font-size: 3vw;
-  }
-  footer {
-    background-color: #171a24;
-    box-shadow: 0 2px 15px #171a24;
-    margin-top: 8rem;
-    padding: 2rem;
-  }
-  footer .footer-name {
-    font-size: 4vw;
-    padding-bottom: 4rem;
-  }
-  footer div .left-footer {
-    width: 50%;
-  }
-  footer div .left-footer .footer-links {
-    display: none;
-  }
-  footer div .left-footer .paragraph {
-    display: none;
-  }
-  footer div .right-footer ul {
-    padding: 1rem 0rem;
-    margin: 0 0 2rem 0;
-  }
-  footer div .right-footer a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding-block: 0.5rem;
-  }
-  footer #copyright {
-    text-align: center;
-  }
 }
+#tree-plant #question {
+  font-size: 8vw;
+  font-family: poppins;
+}
+#tree-plant #question span {
+  color: var(--secondary);
+}
+#tree-plant #subtext {
+  font-size: 3vw;
+}
+#tree-plant #learn-more-button {
+  background-image: linear-gradient(to right, var(--secondary), #6fac8d);
+  margin: 4rem auto;
+}
+#tree-plant img {
+  display: none;
+}
+
+.email-signup {
+  text-align: center;
+  margin-inline: 2rem;
+}
+.email-signup #title {
+  font: 6vw bold;
+  margin-bottom: 2rem;
+  font-family: poppins;
+}
+.email-signup #sub-head {
+  font-size: 3vw;
+  margin-bottom: 2rem;
+  font-family: poppins;
+}
+.email-signup #email {
+  background-color: none;
+  width: 80%;
+  padding: 0.5rem;
+}
+.email-signup input[type=email] {
+  border: 2px solid var(--tertiary);
+  background-color: var(--primary);
+  margin-block: 2rem;
+}
+.email-signup button {
+  font-size: 3vw;
+}
+
+footer {
+  background-color: #171a24;
+  box-shadow: 0 2px 15px #171a24;
+  margin-top: 8rem;
+  padding: 2rem;
+}
+footer .footer-name {
+  font-size: 4vw;
+  padding-bottom: 4rem;
+}
+footer div .left-footer {
+  width: 50%;
+}
+footer div .left-footer .footer-links {
+  display: none;
+}
+footer div .left-footer .paragraph {
+  display: none;
+}
+footer div .right-footer ul {
+  padding: 1rem 0rem;
+  margin: 0 0 2rem 0;
+}
+footer div .right-footer a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding-block: 0.5rem;
+}
+footer #copyright {
+  text-align: center;
+}
+
 @media only screen and (max-width: 999px) and (min-width: 601px) {
   body {
     margin: 4rem;

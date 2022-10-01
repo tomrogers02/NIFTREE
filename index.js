@@ -64,4 +64,9 @@ window.addEventListener('load', () => {
     scrollElement.scrollLeft =  (scrollElement.scrollWidth - scrollElement.clientWidth ) / 2;
   });
 
+  window.addEventListener('load', () => {
+    let scrollElement = document.querySelector('.nft-carousel-two');
+    scrollElement.scrollLeft =  (scrollElement.scrollWidth - scrollElement.clientWidth ) / 2;
+  });
+
 
