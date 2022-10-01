@@ -59,3 +59,9 @@ mobileExit.addEventListener('click',() => {
 
 
 
+window.addEventListener('load', () => {
+    let scrollElement = document.querySelector('.media-scroller');
+    scrollElement.scrollLeft =  (scrollElement.scrollWidth - scrollElement.clientWidth ) / 2;
+  });
+
+

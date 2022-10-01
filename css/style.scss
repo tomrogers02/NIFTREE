@@ -260,18 +260,7 @@ svg {
 
     #nft-carousel-one {
       text-align: center;
-
-      .nft-multicolour-showcase {
-        #yellow-nft,
-        #blue-nft {
-          display: none;
-        }
-
-        img {
-          width: 85%;
-          margin: auto;
-        }
-      }
+      margin: 0;
 
       .title {
         font-size: 5vw;
@@ -283,25 +272,34 @@ svg {
         color: var(--tertiary);
       }
 
-      .nft {
-        position: relative;
+      .media-scroller {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 79%;
+        align-items:flex-end;
+        overflow-x: scroll;
 
-        .nft-overlay {
-          position: absolute;
-          width: 100%;
-          bottom: 10%;
-          z-index: 1;
 
-          .nft-name {
-            font-size: 3.5vw;
-            margin-block: 1rem;
-          }
+        .nft {
+          position: relative;
 
-          button {
-            background: white;
-            color: black;
-            font-size: 2.5vw;
-            font-weight: bold;
+          .nft-overlay {
+            position: absolute;
+            width: 100%;
+            bottom: 10%;
+            z-index: 1;
+
+            .nft-name {
+              font-size: 3.5vw;
+              margin-block: 1rem;
+            }
+
+            button {
+              background: white;
+              color: black;
+              font-size: 2.5vw;
+              font-weight: bold;
+            }
           }
         }
       }
@@ -329,8 +327,7 @@ svg {
         border-radius: 10px;
         box-shadow: 0 2px 15px rgba(0, 0, 0, 0.302);
         backdrop-filter: blur(15px);
-        padding-top:.1rem;
-  
+        padding-top: 0.1rem;
 
         .nft-card-center {
           margin: 1rem 1rem 0.5rem 1rem;
@@ -448,8 +445,8 @@ svg {
       background-color: var(--primary);
       margin-block: 2rem;
     }
-    button{
-      font-size:3vw;
+    button {
+      font-size: 3vw;
     }
   }
 
@@ -684,9 +681,7 @@ svg {
         img {
           width: 85%;
           float: right;
-          
         }
-
       }
     }
   }
@@ -999,7 +994,6 @@ svg {
             font-size: 1vw;
             color: white;
             padding-right: 1rem;
-          
           }
 
           #mobile-nav-buttons {
@@ -1084,7 +1078,7 @@ svg {
     margin-block: 6rem;
   }
 
-  #wallet-sponsors-mobile{
+  #wallet-sponsors-mobile {
     display: none;
   }
 

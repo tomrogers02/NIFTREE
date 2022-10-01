@@ -221,14 +221,7 @@ svg {
   }
   body #nft-carousel-one {
     text-align: center;
-  }
-  body #nft-carousel-one .nft-multicolour-showcase #yellow-nft,
-body #nft-carousel-one .nft-multicolour-showcase #blue-nft {
-    display: none;
-  }
-  body #nft-carousel-one .nft-multicolour-showcase img {
-    width: 85%;
-    margin: auto;
+    margin: 0;
   }
   body #nft-carousel-one .title {
     font-size: 5vw;
@@ -238,20 +231,27 @@ body #nft-carousel-one .nft-multicolour-showcase #blue-nft {
     font-size: 3vw;
     color: var(--tertiary);
   }
-  body #nft-carousel-one .nft {
+  body #nft-carousel-one .media-scroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 79%;
+    align-items: flex-end;
+    overflow-x: scroll;
+  }
+  body #nft-carousel-one .media-scroller .nft {
     position: relative;
   }
-  body #nft-carousel-one .nft .nft-overlay {
+  body #nft-carousel-one .media-scroller .nft .nft-overlay {
     position: absolute;
     width: 100%;
     bottom: 10%;
     z-index: 1;
   }
-  body #nft-carousel-one .nft .nft-overlay .nft-name {
+  body #nft-carousel-one .media-scroller .nft .nft-overlay .nft-name {
     font-size: 3.5vw;
     margin-block: 1rem;
   }
-  body #nft-carousel-one .nft .nft-overlay button {
+  body #nft-carousel-one .media-scroller .nft .nft-overlay button {
     background: white;
     color: black;
     font-size: 2.5vw;
