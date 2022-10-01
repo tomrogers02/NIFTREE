@@ -92,7 +92,7 @@ svg {
         top: 0;
         width: 50%;
         height: 100vh;
-        background-color: #212534;
+        background-color: #1b1f2b;
         padding: 2.5rem;
         transform: translateX(110%);
         transition: 0.2s ease;
@@ -108,6 +108,7 @@ svg {
           margin-top: 3rem;
           a {
             color: white;
+            font-weight: bold;
             display: block;
             text-decoration: none;
             padding-block: 1rem;
@@ -132,7 +133,7 @@ svg {
     .hero {
       margin-inline: 2rem;
       .left-col {
-        padding: 8rem 0;
+        padding: 5rem 0;
 
         #title {
           font-size: 10vw;
@@ -225,18 +226,18 @@ svg {
             }
           }
           .bidding-ends {
-            margin-block: 4rem 0rem;
+            margin-block: 2rem 0rem;
           }
           .countdown {
             display: flex;
             justify-content: center;
             margin-block: 2rem 4rem;
             text-align: center;
-            font-size: 3.5vw;
+            font-size: 4.5vw;
             margin-inline: 2.7rem;
 
             .time-name {
-              font-size: 2vw;
+              font-size: 3vw;
             }
           }
 
@@ -398,8 +399,7 @@ svg {
 
   #tree-plant {
     #question {
-      font-size: 8
-      vw;
+      font-size: 8vw;
       font-family: poppins;
 
       span {
