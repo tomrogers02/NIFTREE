@@ -685,7 +685,7 @@ footer {
       margin-bottom: 2rem;
     }
 
-    .nft-multicolour-showcase {
+    .media-scroller {
       margin: auto;
       display: flex;
       align-items: flex-end;
@@ -720,7 +720,7 @@ footer {
       color: var(--tertiary);
     }
   }
-  #nft-carousel-two {
+  .nft-carousel-two {
     display: flex;
     place-content: space-between;
 
@@ -1135,7 +1135,7 @@ footer {
       margin-bottom: 2rem;
     }
 
-    .nft-multicolour-showcase {
+    .media-scroller {
       margin: auto;
       display: flex;
       align-items: flex-end;
@@ -1214,7 +1214,13 @@ footer {
       color: var(--tertiary);
     }
   }
-  #nft-carousel-two {
+
+  .nft-carousel-two-link {
+    color: var(--tertiary);
+    text-align: center;
+    font-size: 1vw;
+  }
+  .nft-carousel-two {
     display: flex;
     place-content: space-between;
 
@@ -1258,7 +1264,7 @@ footer {
             text-align: right;
 
             button {
-              padding: 0.6rem 1rem;
+              padding: 0.7rem 1.1rem;
 
               img {
                 margin-right: 0.3rem;
@@ -1266,7 +1272,7 @@ footer {
               }
 
               .view-text {
-                font-size: 0.8vw;
+                font-size: 1vw;
               }
             }
           }
@@ -1298,7 +1304,7 @@ footer {
 
       #email {
         background-color: none;
-        padding: 0.5rem;
+        padding: 0.8rem;
         width: 60%;
         margin-inline: 1rem;
       }
@@ -1310,7 +1316,15 @@ footer {
       }
 
       button {
-        margin: 0;
+        
+        font-size: 1vw;
+        
+      }
+
+      button:focus {
+        background-image: none;
+        background-color:var(--secondary);
+      
       }
     }
   }
