@@ -222,8 +222,7 @@ svg {
             background-color: #bd9ba4;
             border-radius: 1rem;
 
-            
-            margin-block:2rem;
+            margin-block: 2rem;
             padding: 2rem 2rem 0 2rem;
 
             #seeds-box-title {
@@ -246,7 +245,6 @@ svg {
               width: 80%;
               margin-inline: auto;
             }
-
           }
           #start-impact {
             margin-block: 3rem;
@@ -254,12 +252,12 @@ svg {
             #start-title {
               font-size: 6.5vw;
               font-weight: bold;
-  
+
               span {
                 color: var(--secondary);
               }
             }
-  
+
             button {
               background-image: linear-gradient(
                 to right,
@@ -267,15 +265,12 @@ svg {
                 #6fac8d
               );
               margin: 2rem auto;
-             
             }
-  
+
             #start-secondary-link {
-              
               a {
                 color: white;
                 font-size: 2.2vw;
-
               }
             }
           }
@@ -288,7 +283,7 @@ svg {
             border-radius: 1rem;
 
             padding: 2rem 2rem 0 2rem;
-            margin-block:2rem;
+            margin-block: 2rem;
 
             #welcome-box-title {
               font-size: 4.2vw;
@@ -315,7 +310,7 @@ svg {
             background-color: #85d196;
             width: 75%;
             border-radius: 1rem;
-            
+
             padding: 2rem 2rem 0 2rem;
 
             #twitter-box-title {
@@ -510,140 +505,141 @@ svg {
       }
     }
     #impact-adv {
-      display: flex;
-      place-content: space-between;
+      #section-title {
+        font-size: 3vw;
 
-      .left-adv {
-        width: 50%;
-        margin-right: 5rem;
-
-        #section-title {
-          font-size: 3vw;
-
-          span {
-            color: var(--secondary);
-          }
-        }
-
-        #section-sub-title {
-          font-size: 1vw;
-          margin-bottom: 7vw;
-        }
-
-        .seeds-desktop-box {
-          width: 75%;
-          background-color: #bd9ba4;
-          border-radius: 1rem;
-
-          padding: 2rem 2rem 0 2rem;
-
-          #seeds-box-title {
-            font-size: 2.2vw;
-            font-weight: bold;
-            margin-bottom: 0.8rem;
-          }
-
-          #seeds-box-subtitle {
-            font-size: 1vw;
-            margin-bottom: 3rem;
-          }
-
-          #seeds-ipad,
-          #seeds-mobile {
-            display: none;
-          }
-
-          #seeds-desktop {
-            width: 70%;
-            margin-inline: auto;
-          }
-        }
-
-        #start-impact {
-          margin-block: 3rem;
-          #start-title {
-            font-size: 2vw;
-
-            span {
-              color: var(--secondary);
-            }
-          }
-
-          button {
-            background-image: linear-gradient(
-              to right,
-              var(--secondary),
-              #6fac8d
-            );
-            margin: 2rem 0 1rem 0;
-            font-size: 1.2vw;
-          }
-
-          #start-secondary-link {
-            a {
-              color: white;
-              font-size: 0.8vw;
-            }
-          }
+        span {
+          color: var(--secondary);
         }
       }
-      .right-adv {
-        width: 50%;
 
-        .welcome-desktop-box {
-          background-color: #eabd2a;
-          width: 75%;
-          border-radius: 1rem;
+      #section-sub-title {
+        font-size: 1vw;
+        margin-bottom: 7vw;
+      }
+      .flex-box-impact-cards {
+        display: flex;
+        place-content: space-between;
 
-          padding: 2rem 2rem 0 2rem;
-          margin-bottom: 6vw;
+        .left-adv {
+          width: 50%;
+          margin-right: 5rem;
 
-          #welcome-box-title {
-            font-size: 2.2vw;
-            font-weight: bold;
-            margin-bottom: 0.8rem;
+          .seeds-desktop-box {
+            width: 75%;
+            background-color: #bd9ba4;
+            border-radius: 1rem;
+
+            padding: 2rem 2rem 0 2rem;
+
+            #seeds-box-title {
+              font-size: 2.2vw;
+              font-weight: bold;
+              margin-bottom: 0.8rem;
+            }
+
+            #seeds-box-subtitle {
+              font-size: 1vw;
+              margin-bottom: 3rem;
+            }
+
+            #seeds-ipad,
+            #seeds-mobile {
+              display: none;
+            }
+
+            #seeds-desktop {
+              width: 70%;
+              margin-inline: auto;
+            }
           }
-          #welcome-box-subtitle {
-            font-size: 1vw;
-            margin-bottom: 3rem;
-          }
 
-          #welcome-ipad,
-          #welcome-mobile {
-            display: none;
-          }
+          #start-impact {
+            margin-block: 3rem;
+            #start-title {
+              font-size: 2vw;
 
-          #welcome-desktop {
-            width: 70%;
-            margin-inline: auto;
+              span {
+                color: var(--secondary);
+              }
+            }
+
+            button {
+              background-image: linear-gradient(
+                to right,
+                var(--secondary),
+                #6fac8d
+              );
+              margin: 2rem 0 1rem 0;
+              font-size: 1.2vw;
+            }
+
+            #start-secondary-link {
+              a {
+                color: white;
+                font-size: 0.8vw;
+              }
+            }
           }
         }
+        .right-adv {
+          width: 50%;
 
-        .twitter-desktop-box {
-          background-color: #85d196;
-          width: 75%;
-          border-radius: 1rem;
+          .welcome-desktop-box {
+            background-color: #eabd2a;
+            width: 75%;
+            border-radius: 1rem;
 
-          padding: 2rem 2rem 0 2rem;
+            padding: 2rem 2rem 0 2rem;
+            margin-bottom: 6vw;
 
-          #twitter-box-title {
-            font-size: 2.2vw;
-            font-weight: bold;
-            margin-bottom: 0.8rem;
+            #welcome-box-title {
+              font-size: 2.2vw;
+              font-weight: bold;
+              margin-bottom: 0.8rem;
+            }
+            #welcome-box-subtitle {
+              font-size: 1vw;
+              margin-bottom: 3rem;
+            }
+
+            #welcome-ipad,
+            #welcome-mobile {
+              display: none;
+            }
+
+            #welcome-desktop {
+              width: 70%;
+              margin-inline: auto;
+            }
           }
-          #twitter-box-subtitle {
-            font-size: 1vw;
-            margin-bottom: 3rem;
-          }
 
-          #twitter-ipad,
-          #twitter-mobile {
-            display: none;
-          }
+          .twitter-desktop-box {
+            background-color: #85d196;
+            width: 75%;
+            border-radius: 1rem;
 
-          #twitter-desktop {
-            width: 70%;
-            margin-inline: auto;
+            padding: 2rem 2rem 0 2rem;
+
+            #twitter-box-title {
+              font-size: 2.2vw;
+              font-weight: bold;
+              margin-bottom: 0.8rem;
+            }
+            #twitter-box-subtitle {
+              font-size: 1vw;
+              margin-bottom: 3rem;
+            }
+
+            #twitter-ipad,
+            #twitter-mobile {
+              display: none;
+            }
+
+            #twitter-desktop {
+              width: 70%;
+              margin-inline: auto;
+            }
           }
         }
       }
@@ -826,140 +822,144 @@ svg {
       }
     }
     #impact-adv {
-      display: flex;
-      place-content: space-between;
+      #section-title {
+        font-size: 3vw;
+        width:50%;
+        margin-bottom:1rem;
 
-      .left-adv {
-        width: 50%;
-        margin-right: 5rem;
-
-        #section-title {
-          font-size: 3vw;
-
-          span {
-            color: var(--secondary);
-          }
-        }
-
-        #section-sub-title {
-          font-size: 1vw;
-          margin-bottom: 7vw;
-        }
-
-        .seeds-desktop-box {
-          width: 75%;
-          background-color: #bd9ba4;
-          border-radius: 1rem;
-
-          padding: 2rem 2rem 0 2rem;
-
-          #seeds-box-title {
-            font-size: 2.2vw;
-            font-weight: bold;
-            margin-bottom: 0.8rem;
-          }
-
-          #seeds-box-subtitle {
-            font-size: 1vw;
-            margin-bottom: 3rem;
-          }
-
-          #seeds-ipad,
-          #seeds-mobile {
-            display: none;
-          }
-
-          #seeds-desktop {
-            width: 70%;
-            margin-inline: auto;
-          }
-        }
-
-        #start-impact {
-          margin-block: 3rem;
-          #start-title {
-            font-size: 2vw;
-
-            span {
-              color: var(--secondary);
-            }
-          }
-
-          button {
-            background-image: linear-gradient(
-              to right,
-              var(--secondary),
-              #6fac8d
-            );
-            margin: 2rem 0 1rem 0;
-            font-size: 1.2vw;
-          }
-
-          #start-secondary-link {
-            a {
-              color: white;
-              font-size: 0.8vw;
-            }
-          }
+        span {
+          color: var(--secondary);
+          
         }
       }
-      .right-adv {
-        width: 50%;
 
-        .welcome-desktop-box {
-          background-color: #eabd2a;
-          width: 75%;
-          border-radius: 1rem;
+      #section-sub-title {
+        font-size: 1.2vw;
+        margin-bottom: 7vw;
+        width:50%;
+      }
+      .flex-box-impact-cards {
+        display: flex;
+        place-content: space-between;
+        .left-adv {
+          width: 50%;
+          margin-right: 5rem;
 
-          padding: 2rem 2rem 0 2rem;
-          margin-bottom: 6vw;
+          .seeds-desktop-box {
+            width: 75%;
+            background-color: #bd9ba4;
+            border-radius: 1rem;
 
-          #welcome-box-title {
-            font-size: 2.2vw;
-            font-weight: bold;
-            margin-bottom: 0.8rem;
+            padding: 2rem 2rem 0 2rem;
+
+            #seeds-box-title {
+              font-size: 2.2vw;
+              font-weight: bold;
+              margin-bottom: 0.8rem;
+            }
+
+            #seeds-box-subtitle {
+              font-size: 1vw;
+              margin-bottom: 3rem;
+            }
+
+            #seeds-ipad,
+            #seeds-mobile {
+              display: none;
+            }
+
+            #seeds-desktop {
+              width: 70%;
+              margin-inline: auto;
+            }
           }
-          #welcome-box-subtitle {
-            font-size: 1vw;
-            margin-bottom: 3rem;
-          }
 
-          #welcome-ipad,
-          #welcome-mobile {
-            display: none;
-          }
+          #start-impact {
+            margin-block: 3rem;
+            #start-title {
+              font-size: 2vw;
 
-          #welcome-desktop {
-            width: 70%;
-            margin-inline: auto;
+              span {
+                color: var(--secondary);
+              }
+            }
+
+            button {
+              background-image: linear-gradient(
+                to right,
+                var(--secondary),
+                #6fac8d
+              );
+              margin: 2rem 0 1rem 0;
+              font-size: 1.2vw;
+            }
+
+            #start-secondary-link {
+              a {
+                color: white;
+                font-size: 0.8vw;
+              }
+            }
           }
         }
+        .right-adv {
+          width: 50%;
 
-        .twitter-desktop-box {
-          background-color: #85d196;
-          width: 75%;
-          border-radius: 1rem;
+          .welcome-desktop-box {
+            background-color: #eabd2a;
+            width: 75%;
+            border-radius: 1rem;
 
-          padding: 2rem 2rem 0 2rem;
+            padding: 2rem 2rem 0 2rem;
+            margin-bottom: 6vw;
 
-          #twitter-box-title {
-            font-size: 2.2vw;
-            font-weight: bold;
-            margin-bottom: 0.8rem;
+            #welcome-box-title {
+              font-size: 2.2vw;
+              font-weight: bold;
+              margin-bottom: 0.8rem;
+            }
+            #welcome-box-subtitle {
+              font-size: 1vw;
+              margin-bottom: 3rem;
+            }
+
+            #welcome-ipad,
+            #welcome-mobile {
+              display: none;
+            }
+
+            #welcome-desktop {
+              width: 70%;
+              margin-inline: auto;
+            }
           }
-          #twitter-box-subtitle {
-            font-size: 1vw;
-            margin-bottom: 3rem;
-          }
 
-          #twitter-ipad,
-          #twitter-mobile {
-            display: none;
-          }
+          .twitter-desktop-box {
+            background-color: #85d196;
+            width: 75%;
+            border-radius: 1rem;
 
-          #twitter-desktop {
-            width: 70%;
-            margin-inline: auto;
+            padding: 2rem 2rem 0 2rem;
+
+            #twitter-box-title {
+              font-size: 2.2vw;
+              font-weight: bold;
+              margin-bottom: 0.8rem;
+            }
+            #twitter-box-subtitle {
+              font-size: 1vw;
+              margin-bottom: 3rem;
+            }
+
+            #twitter-ipad,
+            #twitter-mobile {
+              display: none;
+            }
+
+            #twitter-desktop {
+              width: 70%;
+              margin-inline: auto;
+            }
           }
         }
       }
