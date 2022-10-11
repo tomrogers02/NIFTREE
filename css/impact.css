@@ -8,7 +8,7 @@
   --primary-button-font-size: 2.5vw;
   --secondary-button-font-size: 2.5vw;
   --mobile-hero-title-fs: 10vw;
-  --mobile-hero-sub-title-fs: 2.5vw;
+  --mobile-hero-sub-title-fs: 3.5vw;
   --desktop-hero-title-fs: 4vw;
   --desktop-hero-sub-title: 1.2vw;
 }
@@ -134,7 +134,7 @@ svg {
   }
   body .hero .left-hero #secondary-link a {
     color: white;
-    font-size: 2vw;
+    font-size: 3vw;
   }
   body .hero .right-hero #mountain-svg {
     display: none;
@@ -146,18 +146,20 @@ svg {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
-    font-size: 3vw;
+    font-size: 3.5vw;
+    font-weight: bold;
     width: 60%;
     margin-inline: auto;
   }
   body .hero .right-hero .right-col-facts-flex .tree-facts img {
-    width: 15%;
+    width: 20%;
     padding-right: 1rem;
   }
   body .hero .right-hero .right-col-facts-flex .turbine-facts {
     display: flex;
     align-items: center;
-    font-size: 3vw;
+    font-size: 3.5vw;
+    font-weight: bold;
     width: 60%;
     margin-inline: auto;
   }
@@ -168,17 +170,14 @@ svg {
   body #impact-adv #section-title {
     font-size: 6.5vw;
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
   body #impact-adv #section-title span {
     color: var(--secondary);
   }
   body #impact-adv #section-sub-title {
     font-size: 3.5vw;
-  }
-  body #impact-adv .flex-box-impact-cards {
-    display: flex;
-    flex-direction: column-reverse;
+    margin-bottom: 3vw;
   }
   body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box {
     width: 75%;
@@ -204,24 +203,8 @@ body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-mobi
     width: 80%;
     margin-inline: auto;
   }
-  body #impact-adv .flex-box-impact-cards .left-adv #start-impact {
-    margin-block: 3rem;
-    text-align: center;
-  }
-  body #impact-adv .flex-box-impact-cards .left-adv #start-impact #start-title {
-    font-size: 6.5vw;
-    font-weight: bold;
-  }
-  body #impact-adv .flex-box-impact-cards .left-adv #start-impact #start-title span {
-    color: var(--secondary);
-  }
-  body #impact-adv .flex-box-impact-cards .left-adv #start-impact button {
-    background-image: linear-gradient(to right, var(--secondary), #6fac8d);
-    margin: 2rem auto;
-  }
-  body #impact-adv .flex-box-impact-cards .left-adv #start-impact #start-secondary-link a {
-    color: white;
-    font-size: 2.2vw;
+  body #impact-adv .flex-box-impact-cards .left-adv .start-impact {
+    display: none;
   }
   body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box {
     background-color: #eabd2a;
@@ -269,6 +252,25 @@ body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter
   body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter-desktop {
     width: 70%;
     margin-inline: auto;
+  }
+  body .start-impact {
+    margin-block: 5rem;
+    text-align: center;
+  }
+  body .start-impact .start-title {
+    font-size: 6.5vw;
+    font-weight: bold;
+  }
+  body .start-impact .start-title span {
+    color: var(--secondary);
+  }
+  body .start-impact button {
+    background-image: linear-gradient(to right, var(--secondary), #6fac8d);
+    margin: 2rem auto;
+  }
+  body .start-impact .start-secondary-link a {
+    color: white;
+    font-size: 3vw;
   }
 }
 @media only screen and (max-width: 999px) and (min-width: 601px) {
@@ -557,7 +559,7 @@ body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter
     display: none;
   }
   body header #logo {
-    width: 55%;
+    width: 60%;
   }
   body header #desktop-nav {
     display: flex;
@@ -648,19 +650,6 @@ body header #desktop-nav .trio-icons #wallet:hover {
   body .hero .flex-box-hero .right-hero .right-col-facts-flex .turbine-facts #sequestered {
     font-size: 0.8vw;
   }
-  body #impact-adv #section-title {
-    font-size: 3vw;
-    width: 50%;
-    margin-bottom: 1rem;
-  }
-  body #impact-adv #section-title span {
-    color: var(--secondary);
-  }
-  body #impact-adv #section-sub-title {
-    font-size: 1.2vw;
-    margin-bottom: 7vw;
-    width: 50%;
-  }
   body #impact-adv .flex-box-impact-cards {
     display: flex;
     place-content: space-between;
@@ -668,6 +657,17 @@ body header #desktop-nav .trio-icons #wallet:hover {
   body #impact-adv .flex-box-impact-cards .left-adv {
     width: 50%;
     margin-right: 5rem;
+  }
+  body #impact-adv .flex-box-impact-cards .left-adv #section-title {
+    font-size: 3vw;
+    margin-bottom: 1rem;
+  }
+  body #impact-adv .flex-box-impact-cards .left-adv #section-title span {
+    color: var(--secondary);
+  }
+  body #impact-adv .flex-box-impact-cards .left-adv #section-sub-title {
+    font-size: 1.2vw;
+    margin-bottom: 7vw;
   }
   body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box {
     width: 75%;
@@ -692,23 +692,26 @@ body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-mobi
     width: 70%;
     margin-inline: auto;
   }
-  body #impact-adv .flex-box-impact-cards .left-adv #start-impact {
-    margin-block: 3rem;
+  body #impact-adv .flex-box-impact-cards .left-adv .start-impact-right-col-mobile-reverse {
+    display: flex;
   }
-  body #impact-adv .flex-box-impact-cards .left-adv #start-impact #start-title {
+  body #impact-adv .flex-box-impact-cards .left-adv .start-impact {
+    margin-block: 4rem;
+  }
+  body #impact-adv .flex-box-impact-cards .left-adv .start-impact .start-title {
     font-size: 2vw;
   }
-  body #impact-adv .flex-box-impact-cards .left-adv #start-impact #start-title span {
+  body #impact-adv .flex-box-impact-cards .left-adv .start-impact .start-title span {
     color: var(--secondary);
   }
-  body #impact-adv .flex-box-impact-cards .left-adv #start-impact button {
+  body #impact-adv .flex-box-impact-cards .left-adv .start-impact button {
     background-image: linear-gradient(to right, var(--secondary), #6fac8d);
     margin: 2rem 0 1rem 0;
     font-size: 1.2vw;
   }
-  body #impact-adv .flex-box-impact-cards .left-adv #start-impact #start-secondary-link a {
+  body #impact-adv .flex-box-impact-cards .left-adv .start-impact .start-secondary-link a {
     color: white;
-    font-size: 0.8vw;
+    font-size: 1vw;
   }
   body #impact-adv .flex-box-impact-cards .right-adv {
     width: 50%;
@@ -718,7 +721,7 @@ body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-mobi
     width: 75%;
     border-radius: 1rem;
     padding: 2rem 2rem 0 2rem;
-    margin-bottom: 6vw;
+    margin-bottom: 10vw;
   }
   body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome-box-title {
     font-size: 2.2vw;
@@ -759,5 +762,8 @@ body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter
   body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter-desktop {
     width: 70%;
     margin-inline: auto;
+  }
+  body #impact-adv #start-impact-desktop-display {
+    display: none;
   }
 }/*# sourceMappingURL=impact.css.map */

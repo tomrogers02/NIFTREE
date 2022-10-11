@@ -10,7 +10,7 @@
   --secondary-button-font-size: 2.5vw;
 
   --mobile-hero-title-fs: 10vw;
-  --mobile-hero-sub-title-fs: 2.5vw;
+  --mobile-hero-sub-title-fs: 3.5vw;
 
   --desktop-hero-title-fs: 4vw;
   --desktop-hero-sub-title: 1.2vw;
@@ -156,7 +156,7 @@ svg {
           text-align: center;
           a {
             color: white;
-            font-size: 2vw;
+            font-size: 3vw;
           }
         }
       }
@@ -172,12 +172,13 @@ svg {
             display: flex;
             align-items: center;
             margin-bottom: 2rem;
-            font-size: 3vw;
+            font-size: 3.5vw;
+            font-weight:bold;
             width: 60%;
             margin-inline: auto;
 
             img {
-              width: 15%;
+              width: 20%;
               padding-right: 1rem;
             }
           }
@@ -185,7 +186,8 @@ svg {
           .turbine-facts {
             display: flex;
             align-items: center;
-            font-size: 3vw;
+            font-size: 3.5vw;
+            font-weight:bold;
             width: 60%;
             margin-inline: auto;
 
@@ -202,7 +204,7 @@ svg {
       #section-title {
         font-size: 6.5vw;
         font-weight: bold;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
 
         span {
           color: var(--secondary);
@@ -210,11 +212,12 @@ svg {
       }
       #section-sub-title {
         font-size: 3.5vw;
+        margin-bottom:3vw;
       }
 
       .flex-box-impact-cards {
-        display: flex;
-        flex-direction: column-reverse;
+        //display: flex;
+        //flex-direction: column-reverse;
 
         .left-adv {
           .seeds-desktop-box {
@@ -246,33 +249,10 @@ svg {
               margin-inline: auto;
             }
           }
-          #start-impact {
-            margin-block: 3rem;
-            text-align: center;
-            #start-title {
-              font-size: 6.5vw;
-              font-weight: bold;
 
-              span {
-                color: var(--secondary);
-              }
-            }
-
-            button {
-              background-image: linear-gradient(
-                to right,
-                var(--secondary),
-                #6fac8d
-              );
-              margin: 2rem auto;
-            }
-
-            #start-secondary-link {
-              a {
-                color: white;
-                font-size: 2.2vw;
-              }
-            }
+        
+          .start-impact {
+            display: none;
           }
         }
 
@@ -335,6 +315,37 @@ svg {
           }
         }
       }
+
+    }
+    .start-impact {
+      
+        margin-block: 5rem;
+        text-align: center;
+        .start-title {
+          font-size: 6.5vw;
+          font-weight: bold;
+
+          span {
+            color: var(--secondary);
+          }
+        }
+
+        button {
+          background-image: linear-gradient(
+            to right,
+            var(--secondary),
+            #6fac8d
+          );
+          margin: 2rem auto;
+        }
+
+        .start-secondary-link {
+          a {
+            color: white;
+            font-size: 3vw;
+          }
+        }
+      
     }
   }
 }
@@ -704,7 +715,7 @@ svg {
       }
 
       #logo {
-        width: 55%;
+        width: 60%;
       }
       #desktop-nav {
         display: flex;
@@ -755,6 +766,7 @@ svg {
           #title {
             font-size: var(--desktop-hero-title-fs);
             font-weight: bold;
+            
           }
 
           #sub-text {
@@ -822,28 +834,30 @@ svg {
       }
     }
     #impact-adv {
-      #section-title {
-        font-size: 3vw;
-        width:50%;
-        margin-bottom:1rem;
-
-        span {
-          color: var(--secondary);
-          
-        }
-      }
-
-      #section-sub-title {
-        font-size: 1.2vw;
-        margin-bottom: 7vw;
-        width:50%;
-      }
+ 
       .flex-box-impact-cards {
         display: flex;
         place-content: space-between;
         .left-adv {
           width: 50%;
           margin-right: 5rem;
+
+          #section-title {
+            font-size: 3vw;
+            
+            margin-bottom:1rem;
+    
+            span {
+              color: var(--secondary);
+              
+            }
+          }
+    
+          #section-sub-title {
+            font-size: 1.2vw;
+            margin-bottom: 7vw;
+          
+          }
 
           .seeds-desktop-box {
             width: 75%;
@@ -874,9 +888,13 @@ svg {
             }
           }
 
-          #start-impact {
-            margin-block: 3rem;
-            #start-title {
+          .start-impact-right-col-mobile-reverse {
+            display: flex;
+          }
+
+          .start-impact {
+            margin-block: 4rem;
+            .start-title {
               font-size: 2vw;
 
               span {
@@ -894,16 +912,18 @@ svg {
               font-size: 1.2vw;
             }
 
-            #start-secondary-link {
+            .start-secondary-link {
               a {
                 color: white;
-                font-size: 0.8vw;
+                font-size:1vw;
               }
             }
           }
         }
         .right-adv {
           width: 50%;
+          
+        
 
           .welcome-desktop-box {
             background-color: #eabd2a;
@@ -911,7 +931,7 @@ svg {
             border-radius: 1rem;
 
             padding: 2rem 2rem 0 2rem;
-            margin-bottom: 6vw;
+            margin-bottom: 10vw;
 
             #welcome-box-title {
               font-size: 2.2vw;
@@ -963,6 +983,11 @@ svg {
           }
         }
       }
+      #start-impact-desktop-display {
+        display: none;
+      }
+
     }
+   
   }
 }
