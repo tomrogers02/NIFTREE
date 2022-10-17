@@ -113,6 +113,76 @@ svg {
     transform: translateX(0%);
     transition: 0.2s ease-out;
   }
+  body header #wallet-desktop-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #1b1f2b;
+    padding: 2.5rem;
+    transform: translateX(110%);
+    transition: 0.2s ease;
+    box-shadow: 1px 0px 10px #222636 inset;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex {
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex .pop-up-title {
+    font-weight: bold;
+    font-size: 3.5vw;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex img {
+    width: 8%;
+    height: 8%;
+    transform: scale(1);
+    transition: 0.3s ease;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex img:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+  }
+  body header #wallet-desktop-menu .pop-up-sub {
+    margin-top: 3rem;
+    font-size: 2.1vw;
+  }
+  body header #wallet-desktop-menu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 2rem 0;
+  }
+  body header #wallet-desktop-menu ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.2vw;
+  }
+  body header #wallet-desktop-menu ul .logo-name-flex {
+    display: flex;
+    align-items: center;
+    border: 0.1px solid rgb(98, 98, 98);
+    padding: 1rem;
+  }
+  body header #wallet-desktop-menu ul #rev-box {
+    border-radius: 0 0 0.8rem 0.8rem;
+  }
+  body header #wallet-desktop-menu ul #rev-logo {
+    width: 6%;
+  }
+  body header #wallet-desktop-menu ul #meta-box {
+    border-radius: 0.8rem 0.8rem 0 0;
+  }
+  body header #wallet-desktop-menu ul img {
+    width: 7%;
+    margin-right: 2rem;
+  }
+  body header #wallet-desktop-menu[data-visible=true] {
+    display: block;
+    transform: translateX(0%);
+    transition: 0.2s ease-out;
+  }
   body .hero {
     margin-inline: 2rem;
   }
@@ -807,6 +877,7 @@ footer #copyright {
     display: flex;
     place-content: space-around;
     align-items: center;
+    z-index: 2;
   }
   body header #desktop-nav ul {
     width: 100%;
@@ -827,16 +898,92 @@ footer #copyright {
     place-content: space-between;
     width: 30%;
   }
-  body header #desktop-nav .trio-icons img {
-    width: 80%;
-    transform: scale(1);
-    transition: 0.3s ease;
+  body header #desktop-nav .trio-icons #wallet {
+    width: 45%;
+    margin-left: 1rem;
   }
-  body header #desktop-nav .trio-icons #search:hover,
-body header #desktop-nav .trio-icons #profile:hover,
+  body header #desktop-nav .trio-icons #profile:hover,
 body header #desktop-nav .trio-icons #wallet:hover {
     transform: scale(1.05);
     transition: 0.3s ease;
+  }
+  body header #wallet-desktop-menu {
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 36%;
+    height: 100vh;
+    background-color: #1b1f2b;
+    transform: translateX(110%);
+    transition: 0.2s ease;
+    box-shadow: 1px 0px 10px #222636 inset;
+  }
+  body header #wallet-desktop-menu .wallet-pop-up-box {
+    background-color: #1e2030;
+    margin: 12rem 1.5rem 1.5rem 1.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2px 1px 10px #1b1e2a;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex {
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex .pop-up-title {
+    font-weight: bold;
+    font-size: 1.5vw;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex img {
+    width: 4%;
+    height: 4%;
+    transform: scale(1);
+    transition: 0.3s ease;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex img:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+  }
+  body header #wallet-desktop-menu .pop-up-sub {
+    margin-top: 3rem;
+  }
+  body header #wallet-desktop-menu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 2rem 0;
+  }
+  body header #wallet-desktop-menu ul a {
+    text-decoration: none;
+    color: white;
+  }
+  body header #wallet-desktop-menu ul .logo-name-flex {
+    display: flex;
+    align-items: center;
+    border: 0.1px solid rgb(98, 98, 98);
+    padding: 1rem;
+  }
+  body header #wallet-desktop-menu ul .logo-name-flex:hover {
+    box-shadow: 0.5px 0.5px 5px rgb(104, 104, 104);
+  }
+  body header #wallet-desktop-menu ul #rev-box {
+    border-radius: 0 0 0.8rem 0.8rem;
+  }
+  body header #wallet-desktop-menu ul #rev-logo {
+    width: 6%;
+  }
+  body header #wallet-desktop-menu ul #meta-box {
+    border-radius: 0.8rem 0.8rem 0 0;
+  }
+  body header #wallet-desktop-menu ul img {
+    width: 7%;
+    margin-right: 2rem;
+  }
+  body header #wallet-desktop-menu[data-visible=true] {
+    display: block;
+    transform: translateX(0%);
+    transition: 0.2s ease-out;
   }
   .hero {
     display: flex;

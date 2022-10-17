@@ -58,6 +58,36 @@ mobileExit.addEventListener('click',() => {
 });
 
 
+const walletNav =document.getElementById('wallet-desktop-menu');
+const walletToggle =document.getElementById('wallet');
+const walletExit=document.getElementById('wallet-exit-btn');
+
+walletToggle.addEventListener('click',() => {
+    const visibility = walletNav.getAttribute('data-visible')
+
+    console.log(visibility);
+
+    if (visibility === "false") {
+        walletNav.setAttribute("data-visible",true);
+    }
+
+});
+
+walletExit.addEventListener('click',() => {
+    const visibility = walletNav.getAttribute("data-visible")
+
+    console.log(visibility)
+    
+
+    if (visibility === "true") {
+        walletNav.setAttribute("data-visible",false)
+    }
+
+});
+
+
+
+
 
 window.addEventListener('load', () => {
     let scrollElement = document.querySelector('.media-scroller');

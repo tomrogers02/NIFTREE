@@ -724,6 +724,7 @@ svg {
         display: flex;
         place-content: space-around;
         align-items: center;
+        z-index: 2;
         ul {
           width: 100%;
 
@@ -731,7 +732,7 @@ svg {
             text-decoration: none;
             margin: 1.5rem;
             font-weight: bold;
-            font-size: .9vw;
+            font-size: 0.9vw;
             color: white;
             padding-right: 1rem;
           }
@@ -746,13 +747,11 @@ svg {
           place-content: space-between;
           width: 30%;
 
-          img {
-            width:80%;
-            transform: scale(1);
-            transition: 0.3s ease;
+          #wallet {
+            width: 45%;
+            margin-left: 1rem;
           }
 
-          #search:hover,
           #profile:hover,
           #wallet:hover {
             transform: scale(1.05);
@@ -760,8 +759,100 @@ svg {
           }
         }
       }
-    }
+      #wallet-desktop-menu {
+        z-index: 1;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 36%;
+        height: 100vh;
+        background-color: #1b1f2b;
 
+        transform: translateX(110%);
+        transition: 0.2s ease;
+        box-shadow: 1px 0px 10px #222636 inset;
+
+        .wallet-pop-up-box {
+          background-color: #1e2030;
+          margin: 12rem 1.5rem 1.5rem 1.5rem;
+          padding: 2rem;
+          border-radius: 1rem;
+          box-shadow: 2px 1px 10px #1b1e2a;
+        }
+
+        .pop-up-title-exit-flex {
+          display: flex;
+          place-content: space-between;
+          align-items: center;
+          .pop-up-title {
+            font-weight: bold;
+            font-size: 1.5vw;
+          }
+
+          img {
+            width: 4%;
+            height: 4%;
+            transform: scale(1);
+          transition: 0.3s ease;
+          }
+          img:hover {
+            transform: scale(1.1) ;
+            transition: .2s ease;
+          }
+        }
+
+        .pop-up-sub {
+          margin-top: 3rem;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+
+          padding: 0;
+          margin: 2rem 0;
+
+          a {
+            text-decoration: none;
+            color: white;
+          }
+
+          .logo-name-flex {
+            display: flex;
+            align-items: center;
+            border: 0.1px solid rgb(98, 98, 98);
+            padding: 1rem;
+          }
+
+          .logo-name-flex:hover{
+            box-shadow: .5px .5px 5px rgb(104, 104, 104);
+          }
+
+          #rev-box {
+            border-radius: 0 0 0.8rem 0.8rem;
+          }
+
+          #rev-logo {
+            width: 6%;
+          }
+
+          #meta-box {
+            border-radius: 0.8rem 0.8rem 0 0;
+          }
+
+          img {
+            width: 7%;
+            margin-right: 2rem;
+          }
+        }
+      }
+
+      #wallet-desktop-menu[data-visible="true"] {
+        display: block;
+        transform: translateX(0%);
+        transition: 0.2s ease-out;
+      }
+    }
     .hero {
       .flex-box-hero {
         display: flex;
