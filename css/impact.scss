@@ -415,13 +415,17 @@ svg {
       #desktop-nav {
         display: flex;
         place-content: space-between;
+        align-items: center;
+        
+       
 
         a {
           text-decoration: none;
           font-weight: bold;
-          font-size: 1.1vw;
+          font-size: 1.3vw;
           color: white;
-          padding-right: 2rem;
+          margin-left:1rem;
+          
         }
 
         #mobile-nav-buttons {
@@ -430,11 +434,11 @@ svg {
 
         .trio-icons {
           display: flex;
-          place-content: space-around;
+          
 
           img {
-            max-width: 15%;
-            min-width: 5%;
+            max-width: 70%;
+            min-width: 65%;
           }
         }
       }
@@ -704,7 +708,6 @@ svg {
     header {
       display: flex;
       place-content: space-between;
-      align-items: center;
 
       #mobile-cta {
         display: none;
@@ -715,18 +718,20 @@ svg {
       }
 
       #logo {
-        width: 60%;
+        width: 50%;
       }
       #desktop-nav {
         display: flex;
         place-content: space-around;
+        align-items: center;
         ul {
           width: 100%;
+
           a {
             text-decoration: none;
             margin: 1.5rem;
             font-weight: bold;
-            font-size: 1vw;
+            font-size: .9vw;
             color: white;
             padding-right: 1rem;
           }
@@ -739,10 +744,10 @@ svg {
         .trio-icons {
           display: flex;
           place-content: space-between;
-          width: 40%;
+          width: 30%;
 
           img {
-            width: 27%;
+            width:80%;
             transform: scale(1);
             transition: 0.3s ease;
           }

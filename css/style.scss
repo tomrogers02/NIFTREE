@@ -526,6 +526,7 @@ footer {
     header {
       display: flex;
       place-content: space-between;
+      align-items: center;
 
       #mobile-cta {
         display: none;
@@ -536,18 +537,22 @@ footer {
       }
 
       #logo {
-        width: 12%;
+        width: 50%;
       }
       #desktop-nav {
         display: flex;
         place-content: space-between;
+        align-items: center;
+        
+       
 
         a {
           text-decoration: none;
           font-weight: bold;
-          font-size: 1.1vw;
+          font-size: 1.3vw;
           color: white;
-          padding-right: 2rem;
+          margin-left:1rem;
+          
         }
 
         #mobile-nav-buttons {
@@ -556,11 +561,11 @@ footer {
 
         .trio-icons {
           display: flex;
-          place-content: space-evenly;
+          
 
           img {
-            max-width: 15%;
-            min-width: 5%;
+            max-width: 70%;
+            min-width: 65%;
           }
         }
       }
@@ -966,18 +971,20 @@ footer {
       }
 
       #logo {
-        width: 10%;
+        width: 50%;
       }
       #desktop-nav {
         display: flex;
         place-content: space-around;
+        align-items: center;
         ul {
           width: 100%;
+          
           a {
             text-decoration: none;
             margin: 1.5rem;
             font-weight: bold;
-            font-size: 1vw;
+            font-size: .9vw;
             color: white;
             padding-right: 1rem;
           }
@@ -990,10 +997,10 @@ footer {
         .trio-icons {
           display: flex;
           place-content: space-between;
-          width: 40%;
+          width: 30%;
 
           img {
-            width: 27%;
+            width:80%;
             transform: scale(1);
             transition: 0.3s ease;
           }

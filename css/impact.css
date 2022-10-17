@@ -328,24 +328,24 @@ body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter
   body header #desktop-nav {
     display: flex;
     place-content: space-between;
+    align-items: center;
   }
   body header #desktop-nav a {
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1vw;
+    font-size: 1.3vw;
     color: white;
-    padding-right: 2rem;
+    margin-left: 1rem;
   }
   body header #desktop-nav #mobile-nav-buttons {
     display: none;
   }
   body header #desktop-nav .trio-icons {
     display: flex;
-    place-content: space-around;
   }
   body header #desktop-nav .trio-icons img {
-    max-width: 15%;
-    min-width: 5%;
+    max-width: 70%;
+    min-width: 65%;
   }
   body .hero .flex-box-hero {
     display: flex;
@@ -550,7 +550,6 @@ body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter
   body header {
     display: flex;
     place-content: space-between;
-    align-items: center;
   }
   body header #mobile-cta {
     display: none;
@@ -559,11 +558,12 @@ body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter
     display: none;
   }
   body header #logo {
-    width: 60%;
+    width: 50%;
   }
   body header #desktop-nav {
     display: flex;
     place-content: space-around;
+    align-items: center;
   }
   body header #desktop-nav ul {
     width: 100%;
@@ -572,7 +572,7 @@ body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter
     text-decoration: none;
     margin: 1.5rem;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 0.9vw;
     color: white;
     padding-right: 1rem;
   }
@@ -582,10 +582,10 @@ body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter
   body header #desktop-nav .trio-icons {
     display: flex;
     place-content: space-between;
-    width: 40%;
+    width: 30%;
   }
   body header #desktop-nav .trio-icons img {
-    width: 27%;
+    width: 80%;
     transform: scale(1);
     transition: 0.3s ease;
   }
