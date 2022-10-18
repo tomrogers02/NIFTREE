@@ -132,7 +132,6 @@ svg {
   }
   body header #wallet-desktop-menu .pop-up-title-exit-flex .pop-up-title {
     font-weight: bold;
-    font-size: 3.5vw;
   }
   body header #wallet-desktop-menu .pop-up-title-exit-flex img {
     width: 8%;
@@ -146,7 +145,6 @@ svg {
   }
   body header #wallet-desktop-menu .pop-up-sub {
     margin-top: 3rem;
-    font-size: 2.1vw;
   }
   body header #wallet-desktop-menu ul {
     display: flex;
@@ -157,7 +155,6 @@ svg {
   body header #wallet-desktop-menu ul a {
     text-decoration: none;
     color: white;
-    font-size: 2.2vw;
   }
   body header #wallet-desktop-menu ul .logo-name-flex {
     display: flex;
@@ -166,16 +163,16 @@ svg {
     padding: 1rem;
   }
   body header #wallet-desktop-menu ul #rev-box {
-    border-radius: 0 0 0.8rem 0.8rem;
+    border-radius: 0 0 0.6rem 0.6rem;
   }
   body header #wallet-desktop-menu ul #rev-logo {
     width: 6%;
   }
   body header #wallet-desktop-menu ul #meta-box {
-    border-radius: 0.8rem 0.8rem 0 0;
+    border-radius: 0.6rem 0.6rem 0 0;
   }
   body header #wallet-desktop-menu ul img {
-    width: 7%;
+    width: 10%;
     margin-right: 2rem;
   }
   body header #wallet-desktop-menu[data-visible=true] {
