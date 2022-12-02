@@ -5,7 +5,7 @@
 
 
 const countdown = () => {
-    const countDate= new Date ('October 10, 2022 00:00:00');
+    const countDate= new Date ('December 30, 2022 00:00:00');
     const now= new Date().getTime();
     const gap= countDate-now;
 
@@ -86,6 +86,31 @@ walletExit.addEventListener('click',() => {
 });
 
 
+const filterPopUp =document.getElementById('filter-pop-up-menu');
+const filterToggle =document.getElementById('filter-dropdown')
+const filterExit =document.getElementById('filter-mobile-exit-btn')
+
+filterToggle.addEventListener('click',()=> {
+    const visibility = filterPopUp.getAttribute('data-visible')
+
+    console.log(visibility);
+
+    if (visibility === "false") {
+        filterPopUp.setAttribute("data-visible",true);
+    }
+
+});
+
+filterExit.addEventListener('click',() => {
+    const visibility=filterPopUp.getAttribute('data-visible')
+
+    console.log(visibility)
+
+    if (visibility === "true") {
+        filterPopUp.setAttribute("data-visible",false);
+    }
+
+});
 
 
 
@@ -98,5 +123,8 @@ window.addEventListener('load', () => {
     let scrollElement = document.querySelector('.nft-carousel-two');
     scrollElement.scrollLeft =  (scrollElement.scrollWidth - scrollElement.clientWidth ) / 2;
   });
+
+  
+
 
 

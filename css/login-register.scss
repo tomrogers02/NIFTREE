@@ -128,6 +128,95 @@ svg {
         transform: translateX(0%);
         transition: 0.2s ease-out;
       }
+
+      #wallet-desktop-menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: #1b1f2b;
+        padding: 2.5rem;
+        transform: translateX(110%);
+        transition: 0.2s ease;
+        box-shadow: 1px 0px 10px #222636 inset;
+   
+
+        .pop-up-title-exit-flex {
+          display: flex;
+          place-content: space-between;
+          align-items: center;
+          
+          .pop-up-title {
+            font-weight: bold;
+          
+          }
+
+          
+
+          img {
+            width: 8%;
+            height: 8%;
+            transform: scale(1);
+          transition: 0.3s ease;
+          }
+          img:hover {
+            transform: scale(1.1) ;
+            transition: .2s ease;
+          }
+        }
+
+        .pop-up-sub {
+          margin-top: 3rem;
+          
+        
+            
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+
+          padding: 0;
+          margin: 2rem 0;
+
+          a {
+            text-decoration: none;
+            color: white;
+           
+          }
+
+          .logo-name-flex {
+            display: flex;
+            align-items: center;
+            border: 0.1px solid rgb(98, 98, 98);
+            padding: 1rem;
+          }
+
+          #rev-box {
+            border-radius: 0 0 0.6rem 0.6rem;
+          }
+
+          #rev-logo {
+            width: 6%;
+          }
+
+          #meta-box {
+            border-radius: 0.6rem 0.6rem 0 0;
+          }
+
+          img {
+            width: 10%;
+            margin-right: 2rem;
+          }
+        }
+        
+      }
+      #wallet-desktop-menu[data-visible="true"] {
+        display: block;
+        transform: translateX(0%);
+        transition: 0.2s ease-out;
+      }
     }
   }
   .box-center {

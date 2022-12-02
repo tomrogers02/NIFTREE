@@ -7,10 +7,6 @@
   --button-gradient: #6456d1;
   --primary-button-font-size: 2.5vw;
   --secondary-button-font-size: 2.5vw;
-  --mobile-hero-title-fs: 10vw;
-  --mobile-hero-sub-title-fs: 3.5vw;
-  --desktop-hero-title-fs: 4vw;
-  --desktop-hero-sub-title: 1.2vw;
 }
 
 img,
@@ -19,6 +15,7 @@ svg {
   display: block;
 }
 
+/*         Phone CSS         */
 @media only screen and (max-width: 600px) {
   body {
     margin: 0;
@@ -26,9 +23,6 @@ svg {
     color: white;
     font-family: poppins;
     background-color: var(--primary);
-  }
-  body section {
-    margin: 10rem 2.5rem;
   }
   body button {
     display: flex;
@@ -40,7 +34,7 @@ svg {
     color: white;
     font-weight: bold;
     border-radius: 0.5em;
-    font-size: 2.8vw;
+    font-size: var(--primary-button-font-size);
     cursor: pointer;
     padding: 0.7rem 1.4rem;
     margin: auto;
@@ -67,7 +61,7 @@ svg {
     place-content: space-between;
     padding: 2rem;
     background-color: var(--primary);
-    z-index: 999;
+    z-index: 99;
   }
   body header #logo {
     max-width: 6rem;
@@ -180,58 +174,96 @@ svg {
     transform: translateX(0%);
     transition: 0.2s ease-out;
   }
-  .box-center {
-    width: 70%;
+  body .flex-box-hero {
+    margin: 3rem 2.5rem;
+  }
+  body .flex-box-hero .left-flex-hero .mobile-filter-menus {
+    display: flex;
+    place-content: space-between;
+  }
+  body .flex-box-hero .left-flex-hero .mobile-filter-menus #filter-dropdown, body .flex-box-hero .left-flex-hero .mobile-filter-menus #sort-by-dropdown {
+    display: flex;
     margin: auto;
-    margin-top: 6rem;
-    text-align: center;
-  }
-  .box-center .login-header {
-    font-size: 5vw;
-    font-weight: bold;
-  }
-  .box-center input {
-    display: block;
-    background-image: none;
-    margin: auto;
-  }
-  .box-center input[type=text] {
+    padding: 0.8rem 2.5rem;
     border: 1px solid white;
-    border-radius: 0.1rem;
+    border-radius: 0.5rem;
+  }
+  body .flex-box-hero .left-flex-hero .mobile-filter-menus #filter-dropdown #filter-title, body .flex-box-hero .left-flex-hero .mobile-filter-menus #filter-dropdown #sort-by-title, body .flex-box-hero .left-flex-hero .mobile-filter-menus #sort-by-dropdown #filter-title, body .flex-box-hero .left-flex-hero .mobile-filter-menus #sort-by-dropdown #sort-by-title {
+    margin-left: 0.3rem;
+  }
+  body .flex-box-hero .left-flex-hero .filter-title, body .flex-box-hero .left-flex-hero .category-check-flex {
+    display: none;
+  }
+  body #filter-pop-up-menu {
     background-color: var(--primary);
-    margin-block: 2rem;
-    width: 90%;
-    padding: 0.6rem;
+    width: 80%;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    padding: 3rem 2.5rem;
+    transform: translateX(110%);
   }
-  .box-center input::-moz-placeholder {
-    color: white;
-    font-size: 2.5vw;
+  body #filter-pop-up-menu .pop-up-header {
+    display: flex;
+    place-content: space-between;
   }
-  .box-center input:-ms-input-placeholder {
-    color: white;
-    font-size: 2.5vw;
+  body #filter-pop-up-menu .pop-up-header img {
+    width: 8%;
   }
-  .box-center input::placeholder {
-    color: white;
-    font-size: 2.5vw;
-  }
-  .box-center input,
-.box-center select,
-.box-center textarea {
-    color: white;
-  }
-  .box-center button {
-    background-image: linear-gradient(to right, var(--secondary), #6fac8d);
-    font-size: 2.5vw;
+  body #filter-pop-up-menu .pop-up-header #pop-up-title {
+    font-size: 4.5vw;
     font-weight: bold;
   }
-  .box-center .register-link {
-    margin-top: 2rem;
+  body #filter-pop-up-menu[data-visible=true] {
+    display: block;
+    transform: translateX(0%);
+    transition: 0.2s ease-out;
   }
-  .box-center .register-link a {
-    text-decoration: none;
-    font-size: 2vw;
-    color: white;
+  body .nft-card {
+    background: rgba(255, 255, 255, 0.048);
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.302);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    padding-top: 0.1rem;
+    margin-bottom: 2rem;
+  }
+  body .nft-card .nft-card-center {
+    margin: 1rem 1rem 0.5rem 1rem;
+  }
+  body .nft-card .nft-card-center #nft-carousel-1 {
+    margin: auto;
+  }
+  body .nft-card .nft-card-center .nft-card-text {
+    display: flex;
+    place-content: space-between;
+    padding-block: 1rem;
+  }
+  body .nft-card .nft-card-center .nft-card-text .nft-name {
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+  }
+  body .nft-card .nft-card-center .nft-card-text .price {
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+  }
+  body .nft-card .nft-card-center .nft-card-text .owner {
+    font-size: 2.4vw;
+  }
+  body .nft-card .nft-card-center .nft-card-text .right-text {
+    text-align: right;
+  }
+  body .nft-card .nft-card-center .nft-card-text .right-text button {
+    padding: 0.7rem 1.1rem;
+    align-items: center;
+  }
+  body .nft-card .nft-card-center .nft-card-text .right-text button img {
+    margin-right: 0.3rem;
+    width: 25%;
+  }
+  body .nft-card .nft-card-center .nft-card-text .right-text button .view-text {
+    font-size: 2.6vw;
   }
   footer {
     background-color: #171a24;
@@ -340,112 +372,6 @@ svg {
     max-width: 70%;
     min-width: 65%;
   }
-  body .box-center {
-    width: 60%;
-    margin: auto;
-    margin-top: 6rem;
-    text-align: center;
-    background-color: #242838;
-    border-radius: 1rem;
-    padding: 3rem;
-    box-shadow: 2px 1px 10px #202432;
-  }
-  body .box-center .login-header {
-    font-size: 2vw;
-    font-weight: bold;
-  }
-  body .box-center input {
-    display: block;
-    background-image: none;
-    margin: auto;
-  }
-  body .box-center input[type=text] {
-    border: 1px solid white;
-    border-radius: 0.1rem;
-    background-color: var(--primary);
-    margin-block: 2rem;
-    width: 90%;
-    padding: 0.6rem;
-  }
-  body .box-center input::-moz-placeholder {
-    color: white;
-    font-size: vw;
-  }
-  body .box-center input:-ms-input-placeholder {
-    color: white;
-    font-size: vw;
-  }
-  body .box-center input::placeholder {
-    color: white;
-    font-size: vw;
-  }
-  body .box-center input,
-body .box-center select,
-body .box-center textarea {
-    color: white;
-  }
-  body .box-center button {
-    background-image: linear-gradient(to right, var(--secondary), #6fac8d);
-    font-size: 1.5vw;
-    font-weight: bold;
-  }
-  body .box-center .register-link a {
-    text-decoration: none;
-    margin-top: 1rem;
-    font-size: 0.9vw;
-    color: white;
-  }
-  footer {
-    margin: 3rem -4rem 0 -4rem;
-    padding: 4rem;
-    background-color: #1b1f2c;
-  }
-  footer .footer-name {
-    font-size: 1.5vw;
-    padding-bottom: 2rem;
-  }
-  footer div {
-    display: flex;
-  }
-  footer div .left-footer {
-    width: 50%;
-    display: block;
-  }
-  footer div .left-footer .paragraph {
-    font-size: 1.3vw;
-  }
-  footer div .left-footer .footer-links {
-    margin-block: 2rem;
-  }
-  footer div .left-footer .footer-links img {
-    margin: 1rem;
-  }
-  footer div .right-footer {
-    width: 50%;
-  }
-  footer div .right-footer .list-one {
-    display: block;
-    margin: 0 6rem;
-  }
-  footer div .right-footer .list-one .list-title {
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  footer div .right-footer .list-one ul {
-    margin: 0;
-    padding: 0;
-  }
-  footer div .right-footer .list-one ul a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 0.5rem;
-    font-size: 1.4vw;
-  }
-  footer div #copyright {
-    text-align: center;
-    margin-block: 3rem;
-  }
 }
 @media only screen and (min-width: 1000px) {
   body {
@@ -455,7 +381,7 @@ body .box-center textarea {
     color: white;
   }
   body section {
-    margin: 14rem 8rem;
+    margin: 3rem 0;
   }
   body button {
     display: flex;
@@ -607,63 +533,72 @@ body header #desktop-nav .trio-icons #wallet:hover {
     transform: translateX(0%);
     transition: 0.2s ease-out;
   }
-  body .box-center {
-    width: 30%;
-    margin: auto;
-    margin-top: 6rem;
-    text-align: center;
-    background-color: #242838;
-    border-radius: 1rem;
-    padding: 3rem;
-    box-shadow: 2px 1px 10px #202432;
+  body section .flex-box-hero {
+    display: flex;
   }
-  body .box-center .login-header {
-    font-size: 2vw;
+  body section .flex-box-hero .left-flex-hero {
+    width: 100%;
+  }
+  body section .flex-box-hero .left-flex-hero .filter-title {
+    font-size: 1.5vw;
     font-weight: bold;
   }
-  body .box-center input {
-    display: block;
-    background-image: none;
-    margin: auto;
+  body section .flex-box-hero .left-flex-hero ul {
+    padding: 0 1.5rem 0 0;
+    margin: 2rem 0;
   }
-  body .box-center input[type=text] {
-    border: 1px solid white;
-    border-radius: 0.1rem;
-    background-color: var(--primary);
-    margin-block: 2rem;
-    width: 90%;
-    padding: 0.6rem;
+  body section .flex-box-hero .left-flex-hero ul .category {
+    margin-bottom: 0.5rem;
   }
-  body .box-center input::-moz-placeholder {
-    color: white;
-    font-size: 0.9vw;
+  body section .flex-box-hero .left-flex-hero ul .category-check-flex {
+    display: flex;
+    place-content: space-between;
   }
-  body .box-center input:-ms-input-placeholder {
-    color: white;
-    font-size: 0.9vw;
+  body section .flex-box-hero .right-flex-hero .column {
+    display: flex;
   }
-  body .box-center input::placeholder {
-    color: white;
-    font-size: 0.9vw;
+  body section .flex-box-hero .right-flex-hero .nft-card {
+    background: rgba(255, 255, 255, 0.048);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.302);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    margin: 1rem 0.4rem;
+    border-radius: 0.8rem;
+    transform: scale(1);
+    transition: 0.3s ease;
   }
-  body .box-center input,
-body .box-center select,
-body .box-center textarea {
-    color: white;
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center {
+    margin: 1rem 1rem 0.5rem 1rem;
   }
-  body .box-center button {
-    background-image: linear-gradient(to right, var(--secondary), #6fac8d);
-    font-size: 1.1vw;
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text {
+    display: flex;
+    place-content: space-between;
+    padding-block: 1.3rem;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .nft-name,
+body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .price {
     font-weight: bold;
+    margin-bottom: 1.2rem;
   }
-  body .box-center .register-link a {
-    text-decoration: none;
-    margin-top: 1rem;
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .owner {
     font-size: 0.9vw;
-    color: white;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text {
+    text-align: right;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text button {
+    padding: 0.7rem 1.1rem;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text button img {
+    margin-right: 0.3rem;
+    width: 27%;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text button .view-text {
+    font-size: 1vw;
   }
   footer {
-    margin: 4rem -4rem 0rem -4rem;
+    margin: 2rem -4rem;
     padding: 4rem;
     background-color: #1b1f2c;
     z-index: 0;
@@ -711,4 +646,4 @@ body .box-center textarea {
     text-align: center;
     margin-block: 3rem;
   }
-}/*# sourceMappingURL=login-register.css.map */
+}/*# sourceMappingURL=marketplace.css.map */

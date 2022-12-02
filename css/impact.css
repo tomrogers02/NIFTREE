@@ -114,6 +114,73 @@ svg {
     transform: translateX(0%);
     transition: 0.2s ease-out;
   }
+  body header #wallet-desktop-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #1b1f2b;
+    padding: 2.5rem;
+    transform: translateX(110%);
+    transition: 0.2s ease;
+    box-shadow: 1px 0px 10px #222636 inset;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex {
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex .pop-up-title {
+    font-weight: bold;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex img {
+    width: 8%;
+    height: 8%;
+    transform: scale(1);
+    transition: 0.3s ease;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex img:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+  }
+  body header #wallet-desktop-menu .pop-up-sub {
+    margin-top: 3rem;
+  }
+  body header #wallet-desktop-menu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 2rem 0;
+  }
+  body header #wallet-desktop-menu ul a {
+    text-decoration: none;
+    color: white;
+  }
+  body header #wallet-desktop-menu ul .logo-name-flex {
+    display: flex;
+    align-items: center;
+    border: 0.1px solid rgb(98, 98, 98);
+    padding: 1rem;
+  }
+  body header #wallet-desktop-menu ul #rev-box {
+    border-radius: 0 0 0.6rem 0.6rem;
+  }
+  body header #wallet-desktop-menu ul #rev-logo {
+    width: 6%;
+  }
+  body header #wallet-desktop-menu ul #meta-box {
+    border-radius: 0.6rem 0.6rem 0 0;
+  }
+  body header #wallet-desktop-menu ul img {
+    width: 10%;
+    margin-right: 2rem;
+  }
+  body header #wallet-desktop-menu[data-visible=true] {
+    display: block;
+    transform: translateX(0%);
+    transition: 0.2s ease-out;
+  }
   body .hero .left-hero {
     margin: 6rem 2rem;
   }
