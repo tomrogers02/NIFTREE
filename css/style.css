@@ -1004,6 +1004,9 @@ body header #desktop-nav .trio-icons #wallet:hover {
     display: flex;
     margin-block: 6rem 0;
   }
+  .hero .left-col .hero-buttons a {
+    text-decoration: none;
+  }
   .hero .left-col .hero-buttons .explore-image-text {
     margin-right: 2rem;
   }
@@ -1089,6 +1092,9 @@ body header #desktop-nav .trio-icons #wallet:hover {
     margin: auto;
     display: flex;
     align-items: flex-end;
+  }
+  #nft-carousel-one .media-scroller a {
+    color: white;
   }
   #nft-carousel-one .media-scroller .nft {
     position: relative;

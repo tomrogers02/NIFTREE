@@ -1216,6 +1216,10 @@ footer {
       .hero-buttons {
         display: flex;
         margin-block: 6rem 0;
+        
+        a {
+          text-decoration: none;
+        }
 
         .explore-image-text {
           margin-right: 2rem;
@@ -1323,6 +1327,10 @@ footer {
       margin: auto;
       display: flex;
       align-items: flex-end;
+
+      a {
+        color: white;
+      }
 
       .nft {
         position: relative;

@@ -181,17 +181,22 @@ svg {
     display: flex;
     place-content: space-between;
   }
-  body .flex-box-hero .left-flex-hero .mobile-filter-menus #filter-dropdown, body .flex-box-hero .left-flex-hero .mobile-filter-menus #sort-by-dropdown {
+  body .flex-box-hero .left-flex-hero .mobile-filter-menus #filter-dropdown,
+body .flex-box-hero .left-flex-hero .mobile-filter-menus #sort-by-dropdown {
     display: flex;
     margin: auto;
     padding: 0.8rem 2.5rem;
     border: 1px solid white;
     border-radius: 0.5rem;
   }
-  body .flex-box-hero .left-flex-hero .mobile-filter-menus #filter-dropdown #filter-title, body .flex-box-hero .left-flex-hero .mobile-filter-menus #filter-dropdown #sort-by-title, body .flex-box-hero .left-flex-hero .mobile-filter-menus #sort-by-dropdown #filter-title, body .flex-box-hero .left-flex-hero .mobile-filter-menus #sort-by-dropdown #sort-by-title {
+  body .flex-box-hero .left-flex-hero .mobile-filter-menus #filter-dropdown #filter-title,
+body .flex-box-hero .left-flex-hero .mobile-filter-menus #filter-dropdown #sort-by-title,
+body .flex-box-hero .left-flex-hero .mobile-filter-menus #sort-by-dropdown #filter-title,
+body .flex-box-hero .left-flex-hero .mobile-filter-menus #sort-by-dropdown #sort-by-title {
     margin-left: 0.3rem;
   }
-  body .flex-box-hero .left-flex-hero .filter-title, body .flex-box-hero .left-flex-hero .category-check-flex {
+  body .flex-box-hero .left-flex-hero .filter-title,
+body .flex-box-hero .left-flex-hero .category-check-flex {
     display: none;
   }
   body #filter-pop-up-menu {
@@ -201,19 +206,43 @@ svg {
     z-index: 100;
     position: absolute;
     top: 0;
-    padding: 3rem 2.5rem;
-    transform: translateX(110%);
+    padding: 2.5rem;
+    transform: translateX(-110%);
+    transition: 0.2s ease-out;
   }
   body #filter-pop-up-menu .pop-up-header {
     display: flex;
     place-content: space-between;
+    align-items: center;
   }
   body #filter-pop-up-menu .pop-up-header img {
-    width: 8%;
+    width: 5%;
+    height: 5%;
   }
   body #filter-pop-up-menu .pop-up-header #pop-up-title {
-    font-size: 4.5vw;
+    font-size: 5vw;
     font-weight: bold;
+  }
+  body #filter-pop-up-menu .filter-pop-lists {
+    margin-top: 2rem;
+  }
+  body #filter-pop-up-menu .filter-pop-lists .filter-pop-lists {
+    font-weight: bold;
+    font-size: 4.6vw;
+    margin-bottom: 1.4rem;
+  }
+  body #filter-pop-up-menu .filter-pop-lists ul {
+    padding: 0;
+  }
+  body #filter-pop-up-menu .filter-pop-lists ul .category-check-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  body #filter-pop-up-menu .filter-pop-lists ul .category-check-flex .category {
+    margin-bottom: 1rem;
+  }
+  body #filter-pop-up-menu .filter-pop-lists ul .category-check-flex input.active {
+    background-color: var(--tertiary);
   }
   body #filter-pop-up-menu[data-visible=true] {
     display: block;
@@ -536,6 +565,9 @@ body header #desktop-nav .trio-icons #wallet:hover {
   body section .flex-box-hero {
     display: flex;
   }
+  body section .flex-box-hero .mobile-filter-menus {
+    display: none;
+  }
   body section .flex-box-hero .left-flex-hero {
     width: 100%;
   }
@@ -597,52 +629,52 @@ body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-car
   body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text button .view-text {
     font-size: 1vw;
   }
-  footer {
+  body footer {
     margin: 2rem -4rem;
     padding: 4rem;
     background-color: #1b1f2c;
     z-index: 0;
   }
-  footer .footer-name {
+  body footer .footer-name {
     font-size: 1.5vw;
     padding-bottom: 2rem;
   }
-  footer div {
+  body footer div {
     display: flex;
   }
-  footer div .left-footer {
+  body footer div .left-footer {
     width: 50%;
     display: block;
   }
-  footer div .left-footer .footer-links img {
+  body footer div .left-footer .footer-links img {
     margin: 1rem;
   }
-  footer div .left-footer .footer-links .paragraph {
+  body footer div .left-footer .footer-links .paragraph {
     margin-right: 7rem;
     font-size: 1.5vw;
   }
-  footer div .right-footer {
+  body footer div .right-footer {
     width: 50%;
   }
-  footer div .right-footer .list-one {
+  body footer div .right-footer .list-one {
     display: block;
     margin: 0 6rem;
   }
-  footer div .right-footer .list-one .list-title {
+  body footer div .right-footer .list-one .list-title {
     font-weight: bold;
     margin-bottom: 1rem;
   }
-  footer div .right-footer .list-one ul {
+  body footer div .right-footer .list-one ul {
     margin: 0;
     padding: 0;
   }
-  footer div .right-footer .list-one ul a {
+  body footer div .right-footer .list-one ul a {
     color: white;
     text-decoration: none;
     display: block;
     padding: 0.5rem;
   }
-  footer div #copyright {
+  body footer div #copyright {
     text-align: center;
     margin-block: 3rem;
   }
