@@ -44,6 +44,7 @@ navToggle.addEventListener('click', () => {
     }
 
 });
+2
 
 mobileExit.addEventListener('click', () => {
     const visibility = primaryNav.getAttribute("data-visible")

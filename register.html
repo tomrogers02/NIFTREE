@@ -1,145 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/login-register.css">
-</head>
-<body>
-  <header>
-    <a href="index.html">
-      <img src="images/logo.svg" alt="" id="logo" href="index.html" />
-    </a><img src="images/Hamburger.svg"
-      alt=""
-      id="mobile-cta"
-      class="hamburger"
-    />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+		<link rel="stylesheet" href="css/login-register.css" />
+	</head>
+	<body>
+		<header>
+			<a href="index.html">
+				<img src="images/logo.svg" alt="" id="logo" href="index.html" /> </a
+			><img
+				src="images/Hamburger.svg"
+				alt=""
+				id="mobile-cta"
+				class="hamburger"
+			/>
 
-    <nav id="desktop-nav" data-visible="false">
-      <img src="images/mobile-exit.png" alt="" id="mobile-exit" />
+			<nav id="desktop-nav" data-visible="false">
+				<img src="images/mobile-exit.png" alt="" id="mobile-exit" />
 
-      <ul class="nav-menu">
-        <a href="marketplace.html">Marketplace</a>
-        <a href="">Our Project</a>
-        <a href="impact.html">Your impact</a>
+				<ul class="nav-menu">
+					<a href="marketplace.html">Marketplace</a>
+					<a href="">Our Project</a>
+					<a href="impact.html">Your impact</a>
 
-        <ul id="mobile-nav-buttons">
-          <a href="login.html">Account</a>
-          <a href="">Wallet</a>
-        </ul>
-      </ul>
+					<ul id="mobile-nav-buttons">
+						<a href="login.html">Account</a>
 
-      <div class="trio-icons">
+						<div id="wallet">Wallet</div>
+					</ul>
+				</ul>
 
-        
-        <a href="login.html">
+				<div class="trio-icons">
+					<a href="login.html">
+						<img src="images/profile.svg" alt="" id="profile" />
+					</a>
+					<img src="images/wallet-icon-desktop.svg" alt="" id="wallet" />
+				</div>
+			</nav>
+			<div id="wallet-desktop-menu" data-visible="false">
+				<div class="wallet-pop-up-box">
+					<div class="pop-up-title-exit-flex">
+						<div class="pop-up-title">My Wallet</div>
+						<img src="images/wallet-exit.png" alt="" id="wallet-exit-btn" />
+					</div>
 
-          <img src="images/profile.svg" alt="" id="profile" />
+					<div class="pop-up-sub">
+						If you don’t have a wallet yet, set one up below.
+					</div>
+					<ul>
+						<div class="logo-name-flex" id="meta-box">
+							<img src="images/wallet-meta-logo.png" alt="" />
+							<a href="">MetaMask</a>
+						</div>
 
-        </a>
-        <img src="images/wallet-icon-desktop.svg" alt="" id="wallet" />
+						<div class="logo-name-flex">
+							<img src="images/wallet-coin-logo.png" alt="" />
+							<a href="">Coinbase</a>
+						</div>
+						<div class="logo-name-flex">
+							<img src="images/wallet-binance-logo.png" alt="" />
+							<a href="">Binance</a>
+						</div>
+						<div class="logo-name-flex" id="rev-box">
+							<img src="images/wallet-rev-logo.png" alt="" id="rev-logo" />
+							<a href="">Revolut</a>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</header>
 
+		<div class="box-center">
+			<div class="login-header">Let's make an impact</div>
+			<input type="text" name="" id="" placeholder="Email Address" />
+			<input type="text" name="" id="" placeholder="Full Name" />
+			<input type="text" name="" id="" placeholder="Password" />
+			<input type="text" name="" id="" placeholder="Confirm Password" />
+			<button>Register</button>
 
-        
-        
-      </div>
-      
-    </nav>
-    <div id="wallet-desktop-menu" data-visible="false">
-      <div class="wallet-pop-up-box">
-        <div class="pop-up-title-exit-flex">
-        <div class="pop-up-title">My Wallet</div>
-        <img src="images/wallet-exit.png" alt="" id="wallet-exit-btn">
-      </div>
-      
-      <div class="pop-up-sub">If you don’t have a wallet yet, set one up below.</div>
-      <ul>
-        <div class="logo-name-flex" id="meta-box">
-          <img src="images/wallet-meta-logo.png" alt="">
-          <a href="">MetaMask</a>
+			<div class="register-link">
+				<a href="login.html"> Already got an account? Login.</a>
+			</div>
+		</div>
 
-        </div>
-        
-        <div class="logo-name-flex">
-          <img src="images/wallet-coin-logo.png" alt="">
-          <a href="">Coinbase</a>
+		<script src="index.js"></script>
+	</body>
 
-        </div>
-        <div class="logo-name-flex">
-          <img src="images/wallet-binance-logo.png" alt="">
-          <a href="">Binance</a>
+	<footer>
+		<div class="footer-name">The Boring Stuff...</div>
+		<div>
+			<div class="left-footer">
+				<div class="paragraph">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam
+				</div>
 
-        </div>
-        <div class="logo-name-flex" id="rev-box">
-          <img src="images/wallet-rev-logo.png" alt="" id="rev-logo">
-          <a href="">Revolut</a>
+				<div class="footer-links">
+					<a href="">
+						<img src="images/footer-twitter.svg" alt="" />
+					</a>
 
-        </div>
-      </ul>
+					<a href="">
+						<img src="images/footer-google.svg" alt="" />
+					</a>
 
-      </div>
-      
-    </div>
-  </header>
+					<a href="">
+						<img src="images/footer-insta.svg" alt="" />
+					</a>
+				</div>
+			</div>
 
-      <div class="box-center">
-        <div class="login-header">Let's make an impact</div>
-        <input type="text" name="" id="" placeholder="Email Address">
-        <input type="text" name="" id="" placeholder="Full Name">
-        <input type="text" name="" id="" placeholder="Password">
-        <input type="text" name="" id="" placeholder="Confirm Password">
-        <button>Register</button>
+			<div class="right-footer">
+				<div class="list-one">
+					<div class="list-title">My Account</div>
+					<ul>
+						<a href="*">Collections</a>
+						<a href="*">History</a>
+						<a href="*">Portfolio</a>
+						<a href="*">Settings</a>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-        <div class="register-link">
-            <a href="login.html"> Already got an account? Login.</a>
-          
-        </div>
-      </div>
-    
-      <script src="index.js"></script>
-
-</body>
-
-<footer>
-  <div class="footer-name">The Boring Stuff...</div>
-  <div>
-    <div class="left-footer">
-      <div class="paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam
-      </div>
-
-      <div class="footer-links">
-        <a href="">
-          <img src="images/footer-twitter.svg" alt="" />
-        </a>
-
-        <a href="">
-          <img src="images/footer-google.svg" alt="" />
-        </a>
-
-        <a href="">
-          <img src="images/footer-insta.svg" alt="" />
-        </a>
-      </div>
-    </div>
-
-    <div class="right-footer">
-      <div class="list-one">
-        <div class="list-title">My Account</div>
-        <ul>
-          <a href="*">Collections</a>
-          <a href="*">History</a>
-          <a href="*">Portfolio</a>
-          <a href="*">Settings</a>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div id="copyright">@2022 NiFTREE NFT | All Rights Reserved.</div>
-</footer>
+		<div id="copyright">@2022 NiFTREE NFT | All Rights Reserved.</div>
+	</footer>
 </html>
