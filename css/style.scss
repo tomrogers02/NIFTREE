@@ -5,1576 +5,1679 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
 :root {
-  --primary: #232838;
-  --secondary: #5ecb8c;
-  --tertiary: #ae5ecb;
-  --button-gradient: #6456d1;
+	--primary: #232838;
+	--secondary: #5ecb8c;
+	--tertiary: #ae5ecb;
+	--button-gradient: #6456d1;
 
-  --primary-button-font-size: 2.5vw;
-  --secondary-button-font-size: 2.5vw;
+	--primary-button-font-size: 2.5vw;
+	--secondary-button-font-size: 2.5vw;
 }
 
 img,
 svg {
-  max-width: 100%;
-  display: block;
+	max-width: 100%;
+	display: block;
 }
 
 /*         Phone CSS         */
 
 @media only screen and (max-width: 600px) {
-  body {
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: poppins;
-    background-color: var(--primary);
-
-    section {
-      margin: 10rem 2.5rem;
-    }
-
-    button {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      background-image: linear-gradient(
-        to right,
-        var(--tertiary),
-        var(--button-gradient)
-      );
-      border: none;
-      outline: none;
-      color: white;
-      font-weight: bold;
-      border-radius: 0.5em;
-      font-size: var(--primary-button-font-size);
-      cursor: pointer;
-      padding: 0.7rem 1.4rem;
-      margin: auto;
-    }
-
-    .secondary-button {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      color: var(--tertiary);
-      background: none;
-      border: 1px solid var(--tertiary);
-      outline: none;
-
-      border-radius: 0.5em;
-      font-size: var(--primary-button-font-size);
-      cursor: pointer;
-      padding: 0.7rem 1.4rem;
-      margin: auto;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      display: flex;
-      place-content: space-between;
-      padding: 2rem;
-      background-color: var(--primary);
-      z-index: 999;
-
-      #logo {
-        max-width: 6rem;
-      }
-      .hamburger {
-        width: 10%;
-      }
-
-      #desktop-nav {
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 50%;
-        height: 100vh;
-        background-color: #1b1f2b;
-        padding: 2.5rem;
-        transform: translateX(110%);
-        transition: 0.2s ease;
-        box-shadow: 1px 0px 10px #222636 inset;
-
-        #mobile-exit {
-          float: right;
-          width: 8%;
-        }
-
-        ul {
-          text-align: right;
-          margin-top: 3rem;
-          a {
-            color: white;
-            font-weight: bold;
-            display: block;
-            text-decoration: none;
-            padding-block: 1rem;
-          }
-
-          #mobile-nav-buttons {
-            padding: 0;
-          }
-        }
-
-        .trio-icons {
-          display: none;
-        }
-      }
-      #desktop-nav[data-visible="true"] {
-        display: block;
-        transform: translateX(0%);
-        transition: 0.2s ease-out;
-      }
-
-      #wallet-desktop-menu {
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 50%;
-        height: 100vh;
-        background-color: #1b1f2b;
-        padding: 2.5rem;
-        transform: translateX(110%);
-        transition: 0.2s ease;
-        box-shadow: 1px 0px 10px #222636 inset;
-   
-
-        .pop-up-title-exit-flex {
-          display: flex;
-          place-content: space-between;
-          align-items: center;
-          
-          .pop-up-title {
-            font-weight: bold;
-          
-          }
-
-          
-
-          img {
-            width: 8%;
-            height: 8%;
-            transform: scale(1);
-          transition: 0.3s ease;
-          }
-          img:hover {
-            transform: scale(1.1) ;
-            transition: .2s ease;
-          }
-        }
-
-        .pop-up-sub {
-          margin-top: 3rem;
-          
-        
-            
-        }
-
-        ul {
-          display: flex;
-          flex-direction: column;
-
-          padding: 0;
-          margin: 2rem 0;
-
-          a {
-            text-decoration: none;
-            color: white;
-           
-          }
-
-          .logo-name-flex {
-            display: flex;
-            align-items: center;
-            border: 0.1px solid rgb(98, 98, 98);
-            padding: 1rem;
-          }
-
-          #rev-box {
-            border-radius: 0 0 0.6rem 0.6rem;
-          }
-
-          #rev-logo {
-            width: 6%;
-          }
-
-          #meta-box {
-            border-radius: 0.6rem 0.6rem 0 0;
-          }
-
-          img {
-            width: 10%;
-            margin-right: 2rem;
-          }
-        }
-        
-      }
-      #wallet-desktop-menu[data-visible="true"] {
-        display: block;
-        transform: translateX(0%);
-        transition: 0.2s ease-out;
-      }
-    }
-
-    .hero {
-      margin-inline: 2rem;
-      .left-col {
-        padding: 5rem 0;
-
-        #title {
-          font-size: 10vw;
-          font-weight: 700;
-          padding-bottom: 2rem;
-          span {
-            color: var(--secondary);
-          }
-        }
-        #subhead {
-          font-size: 3.5vw;
-        }
-      }
-
-      .hero-buttons {
-        display: flex;
-        place-content: space-evenly;
-        margin: 5rem 1rem;
-        .explore-image-text {
-          display: flex;
-          justify-content: center;
-
-          img {
-            padding-inline: 0.3rem;
-            width: 0.9rem;
-          }
-          span {
-            padding-inline: 0.3rem;
-            font-size: 2.5vw;
-          }
-        }
-        .learnmore {
-          font-size: var(--primary-button-font-size);
-          display: flex;
-          justify-content: center;
-
-          .learn-inside {
-            display: flex;
-
-            img {
-              width: 0.9rem;
-              padding-inline: 0.3rem;
-            }
-            span {
-              font-size: 2.5vw;
-            }
-          }
-        }
-      }
-
-      .right-col {
-        #nft-desktop {
-          display: none;
-        }
-      }
-    }
-
-    #wallet-sponsors-mobile {
-      width: 80%;
-      margin: auto;
-    }
-    #wallet-sponsors {
-      display: none;
-    }
-
-    #nft-showcase-1 {
-      .flexbox-showcase {
-        display: flex;
-        flex-direction: column-reverse;
-
-        .left-nft-showcase {
-          text-align: center;
-          .nft-name {
-            font-size: 6vw;
-            margin-top: 2rem;
-          }
-
-          .nft-owner-tick {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .nft-owner-name {
-              font-size: 2.2vw;
-            }
-
-            img {
-              width: 4%;
-              margin-left: 0.4rem;
-            }
-          }
-          .bidding-ends {
-            margin-block: 2rem 0rem;
-          }
-          .countdown {
-            display: flex;
-            justify-content: center;
-            margin-block: 2rem 4rem;
-            text-align: center;
-            font-size: 4.5vw;
-            margin-inline: 2.7rem;
-
-            .time-name {
-              font-size: 3vw;
-            }
-          }
-
-          button {
-            margin-top: 6vw;
-
-            span {
-              padding-left: 0.5rem;
-              font-size: 2.5vw;
-            }
-          }
-        }
-        .right-nft-showcase {
-          img {
-            margin: auto;
-          }
-        }
-      }
-    }
-
-    #nft-carousel-one {
-      text-align: center;
-      margin: 0;
-
-      .title {
-        font-size: 5vw;
-        margin-bottom: 2rem;
-      }
-
-      .sub-title {
-        font-size: 4vw;
-        color: var(--tertiary);
-      }
-
-      .media-scroller {
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 79%;
-        align-items: flex-end;
-        overflow-x: scroll;
-
-        .nft {
-          position: relative;
-
-          .nft-overlay {
-            position: absolute;
-            width: 100%;
-            bottom: 10%;
-            z-index: 1;
-
-            .nft-name {
-              font-size: 4.5vw;
-              margin-block: 1rem;
-            }
-
-            button {
-              background: white;
-              color: black;
-              font-size: 3vw;
-              font-weight: bold;
-            }
-          }
-        }
-      }
-    }
-
-    .trending {
-      text-align: center;
-      font-size: 5vw;
-      margin-bottom: 1.5rem;
-
-      span {
-        color: var(--tertiary);
-      }
-    }
-
-    #nft-carousel-title {
-      margin: 7rem 0;
-      .nft-carousel-two {
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 70%;
-        gap: 2rem;
-        align-items: flex-end;
-        overflow-x: scroll;
-
-        .nft-card {
-          background: rgba(255, 255, 255, 0.048);
-
-          border-radius: 10px;
-          box-shadow: 0 2px 15px rgba(0, 0, 0, 0.302);
-          backdrop-filter: blur(15px);
-          padding-top: 0.1rem;
-
-          .nft-card-center {
-            margin: 1rem 1rem 0.5rem 1rem;
-            #nft-carousel-1 {
-              margin: auto;
-            }
-
-            .nft-card-text {
-              display: flex;
-              place-content: space-between;
-              padding-block: 1rem;
-
-              .nft-name {
-                font-weight: bold;
-                margin-bottom: 0.8rem;
-              }
-              .price {
-                font-weight: bold;
-                margin-bottom: 0.8rem;
-              }
-
-              .owner {
-                font-size: 2.4vw;
-              }
-
-              .right-text {
-                text-align: right;
-
-                button {
-                  padding: 0.7rem 1.1rem;
-                  align-items: center;
-
-                  img {
-                    margin-right: 0.3rem;
-                    width: 25%;
-                  }
-
-                  .view-text {
-                    font-size: 2.6vw;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-#tree-plant {
-  #question {
-    font-size: 8vw;
-    font-family: poppins;
-
-    span {
-      color: var(--secondary);
-    }
-  }
-
-  #subtext {
-    font-size: 3vw;
-  }
-
-  #learn-more-button {
-    background-image: linear-gradient(to right, var(--secondary), #6fac8d);
-    margin: 4rem auto;
-  }
-
-  img {
-    display: none;
-  }
-}
-
-.email-signup {
-  text-align: center;
-  margin-inline: 2rem;
-
-  #title {
-    font: 6vw bold;
-    margin-bottom: 2rem;
-    font-family: poppins;
-  }
-
-  #sub-head {
-    font-size: 3vw;
-    margin-bottom: 2rem;
-    font-family: poppins;
-  }
-
-  #email {
-    background-color: none;
-    width: 80%;
-    padding: 0.5rem;
-  }
-
-  input[type="email"] {
-    border: 2px solid var(--tertiary);
-    background-color: var(--primary);
-    margin-block: 2rem;
-  }
-  button {
-    font-size: 3vw;
-  }
+	body {
+		margin: 0;
+		padding: 0;
+		color: white;
+		font-family: poppins;
+		background-color: var(--primary);
+
+		section {
+			margin: 10rem 2.5rem;
+		}
+
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			background-image: linear-gradient(
+				to right,
+				var(--tertiary),
+				var(--button-gradient)
+			);
+			border: none;
+			outline: none;
+			color: white;
+			font-weight: bold;
+			border-radius: 0.5em;
+			font-size: var(--primary-button-font-size);
+			cursor: pointer;
+			padding: 0.7rem 1.4rem;
+			margin: auto;
+		}
+
+		.secondary-button {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			color: var(--tertiary);
+			background: none;
+			border: 1px solid var(--tertiary);
+			outline: none;
+
+			border-radius: 0.5em;
+			font-size: var(--primary-button-font-size);
+			cursor: pointer;
+			padding: 0.7rem 1.4rem;
+			margin: auto;
+		}
+
+		header {
+			position: sticky;
+			top: 0;
+			display: flex;
+			place-content: space-between;
+			padding: 2rem;
+			background-color: var(--primary);
+			z-index: 999;
+
+			#logo {
+				max-width: 6rem;
+			}
+			.hamburger {
+				width: 10%;
+			}
+
+			#desktop-nav {
+				position: fixed;
+				right: 0;
+				top: 0;
+				width: 50%;
+				height: 100vh;
+				background-color: #1b1f2b;
+				padding: 2.5rem;
+				transform: translateX(110%);
+				transition: 0.2s ease;
+				box-shadow: 1px 0px 10px #222636 inset;
+
+				#mobile-exit {
+					float: right;
+					width: 8%;
+				}
+
+				ul {
+					text-align: right;
+					margin-top: 3rem;
+					a {
+						color: white;
+						font-weight: bold;
+						display: block;
+						text-decoration: none;
+						padding-block: 1rem;
+					}
+
+					#mobile-nav-buttons {
+						padding: 0;
+					}
+				}
+
+				.trio-icons {
+					display: none;
+				}
+			}
+			#desktop-nav[data-visible="true"] {
+				display: block;
+				transform: translateX(0%);
+				transition: 0.2s ease-out;
+			}
+
+			#wallet-desktop-menu {
+				position: fixed;
+				right: 0;
+				top: 0;
+				width: 50%;
+				height: 100vh;
+				background-color: #1b1f2b;
+				padding: 2.5rem;
+				transform: translateX(110%);
+				transition: 0.2s ease;
+				box-shadow: 1px 0px 10px #222636 inset;
+
+				.pop-up-title-exit-flex {
+					display: flex;
+					place-content: space-between;
+					align-items: center;
+
+					.pop-up-title {
+						font-weight: bold;
+					}
+
+					img {
+						width: 8%;
+						height: 8%;
+						transform: scale(1);
+						transition: 0.3s ease;
+					}
+					img:hover {
+						transform: scale(1.1);
+						transition: 0.2s ease;
+					}
+				}
+
+				.pop-up-sub {
+					margin-top: 3rem;
+				}
+
+				ul {
+					display: flex;
+					flex-direction: column;
+
+					padding: 0;
+					margin: 2rem 0;
+
+					a {
+						text-decoration: none;
+						color: white;
+					}
+
+					.logo-name-flex {
+						display: flex;
+						align-items: center;
+						border: 0.1px solid rgb(98, 98, 98);
+						padding: 1rem;
+					}
+
+					#rev-box {
+						border-radius: 0 0 0.6rem 0.6rem;
+					}
+
+					#rev-logo {
+						width: 6%;
+					}
+
+					#meta-box {
+						border-radius: 0.6rem 0.6rem 0 0;
+					}
+
+					img {
+						width: 10%;
+						margin-right: 2rem;
+					}
+				}
+			}
+			#wallet-desktop-menu[data-visible="true"] {
+				display: block;
+				transform: translateX(0%);
+				transition: 0.2s ease-out;
+			}
+		}
+
+		.hero {
+			margin-inline: 2rem;
+			.left-col {
+				padding: 5rem 0;
+
+				#title {
+					font-size: 10vw;
+					font-weight: 700;
+					padding-bottom: 2rem;
+					span {
+						color: var(--secondary);
+					}
+				}
+				#subhead {
+					font-size: 3.5vw;
+				}
+			}
+
+			.hero-buttons {
+				display: flex;
+				place-content: space-evenly;
+				margin: 5rem 1rem;
+				.explore-image-text {
+					display: flex;
+					justify-content: center;
+
+					a {
+						text-decoration: none;
+					}
+
+					img {
+						padding-inline: 0.3rem;
+						width: 0.9rem;
+					}
+					span {
+						padding-inline: 0.3rem;
+						font-size: 2.5vw;
+					}
+				}
+				.learnmore {
+					font-size: var(--primary-button-font-size);
+					display: flex;
+					justify-content: center;
+
+					.learn-inside {
+						display: flex;
+
+						img {
+							width: 0.9rem;
+							padding-inline: 0.3rem;
+						}
+						span {
+							font-size: 2.5vw;
+						}
+					}
+				}
+			}
+
+			.right-col {
+				#nft-desktop {
+					display: none;
+				}
+			}
+		}
+
+		#wallet-sponsors-mobile {
+			width: 80%;
+			margin: auto;
+		}
+		#wallet-sponsors {
+			display: none;
+		}
+
+		#nft-showcase-1 {
+			.flexbox-showcase {
+				display: flex;
+				flex-direction: column-reverse;
+
+				.left-nft-showcase {
+					text-align: center;
+					.nft-name {
+						font-size: 6vw;
+						margin-top: 2rem;
+					}
+
+					.nft-owner-tick {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
+						.nft-owner-name {
+							font-size: 2.2vw;
+						}
+
+						img {
+							width: 4%;
+							margin-left: 0.4rem;
+						}
+					}
+					.bidding-ends {
+						margin-block: 2rem 0rem;
+					}
+					.countdown {
+						display: flex;
+						justify-content: center;
+						margin-block: 2rem 4rem;
+						text-align: center;
+						font-size: 4.5vw;
+						margin-inline: 2.7rem;
+
+						.time-name {
+							font-size: 3vw;
+						}
+					}
+
+					button {
+						margin-top: 6vw;
+
+						span {
+							padding-left: 0.5rem;
+							font-size: 2.5vw;
+						}
+					}
+				}
+				.right-nft-showcase {
+					img {
+						margin: auto;
+					}
+				}
+			}
+		}
+
+		#nft-carousel-one {
+			text-align: center;
+			margin: 0;
+
+			.title {
+				font-size: 5vw;
+				margin-bottom: 2rem;
+			}
+
+			.sub-title {
+				font-size: 4vw;
+				color: var(--tertiary);
+			}
+
+			.media-scroller {
+				display: grid;
+				grid-auto-flow: column;
+				grid-auto-columns: 79%;
+				align-items: flex-end;
+				overflow-x: scroll;
+
+				.nft {
+					position: relative;
+
+					.nft-overlay {
+						position: absolute;
+						width: 100%;
+						bottom: 10%;
+						z-index: 1;
+
+						.nft-name {
+							font-size: 4.5vw;
+							margin-block: 1rem;
+							color: white;
+						}
+
+						button {
+							background: white;
+							color: black;
+							font-size: 3vw;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+
+		#nft-carousel-title {
+			margin: 0 0.8rem 5rem 0.8rem;
+			.trending {
+				text-align: center;
+				font-size: 5vw;
+
+				span {
+					color: var(--tertiary);
+				}
+			}
+			.nft-carousel-two-link {
+				text-align: center;
+				color: var(--tertiary);
+				margin-bottom: 1rem;
+			}
+
+			.nft-carousel-two {
+				display: grid;
+				grid-auto-flow: column;
+				grid-auto-columns: 82%;
+				gap: 2rem;
+
+				overflow-x: scroll;
+
+				.nft-card {
+					background: rgba(255, 255, 255, 0.048);
+
+					border-radius: 10px;
+					box-shadow: 0 2px 15px rgba(0, 0, 0, 0.302);
+					backdrop-filter: blur(15px);
+					padding-top: 0.1rem;
+
+					.nft-card-center {
+						margin: 1rem 1rem 0.5rem 1rem;
+						#nft-carousel-1 {
+							margin: auto;
+						}
+
+						.nft-card-text {
+							display: flex;
+							place-content: space-between;
+							padding-block: 1rem;
+
+							.nft-name {
+								font-weight: bold;
+								margin-bottom: 0.8rem;
+							}
+							.price {
+								font-weight: bold;
+								margin-bottom: 0.8rem;
+							}
+
+							.owner {
+								font-size: 2.4vw;
+							}
+
+							.right-text {
+								text-align: right;
+
+								button {
+									padding: 0.7rem 1.1rem;
+									align-items: center;
+
+									img {
+										margin-right: 0.3rem;
+										width: 25%;
+									}
+
+									.view-text {
+										font-size: 2.6vw;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	#tree-plant {
+		#question {
+			font-size: 8vw;
+			font-family: poppins;
+
+			span {
+				color: var(--secondary);
+			}
+		}
+
+		#subtext {
+			font-size: 3vw;
+		}
+
+		#learn-more-button {
+			background-image: linear-gradient(to right, var(--secondary), #6fac8d);
+			margin: 4rem auto;
+		}
+
+		img {
+			display: none;
+		}
+	}
+
+	.email-signup {
+		text-align: center;
+		margin-inline: 2rem;
+
+		#title {
+			font: 6vw bold;
+			margin-bottom: 2rem;
+			font-family: poppins;
+		}
+
+		#sub-head {
+			font-size: 3vw;
+			margin-bottom: 2rem;
+			font-family: poppins;
+		}
+
+		#email {
+			background-color: none;
+			width: 80%;
+			padding: 0.5rem;
+		}
+
+		input[type="email"] {
+			border: 2px solid var(--tertiary);
+			background-color: var(--primary);
+			margin-block: 2rem;
+		}
+		button {
+			font-size: 3vw;
+		}
+	}
 }
 
 footer {
-  background-color: #171a24;
-  box-shadow: 0 2px 15px #171a24;
-  margin-top: 8rem;
-  padding: 2rem;
-  .footer-name {
-    font-size: 4vw;
-    padding-bottom: 4rem;
-  }
+	background-color: #171a24;
+	box-shadow: 0 2px 15px #171a24;
+	margin-top: 8rem;
+	padding: 2rem;
+	.footer-name {
+		font-size: 4vw;
+		padding-bottom: 4rem;
+	}
 
-  div {
-    .left-footer {
-      width: 50%;
+	div {
+		.left-footer {
+			width: 50%;
 
-      .footer-links {
-        display: none;
-      }
-      .paragraph {
-        display: none;
-      }
-    }
+			.footer-links {
+				display: none;
+			}
+			.paragraph {
+				display: none;
+			}
+		}
 
-    .right-footer {
-      ul {
-        padding: 1rem 0rem;
-        margin: 0 0 2rem 0;
-      }
-      a {
-        text-decoration: none;
-        color: white;
-        display: block;
-        padding-block: 0.5rem;
-      }
-    }
-  }
-  #copyright {
-    text-align: center;
-  }
+		.right-footer {
+			ul {
+				padding: 1rem 0rem;
+				margin: 0 0 2rem 0;
+			}
+			a {
+				text-decoration: none;
+				color: white;
+				display: block;
+				padding-block: 0.5rem;
+			}
+		}
+	}
+	#copyright {
+		text-align: center;
+	}
 }
 
 @media only screen and (max-width: 999px) and (min-width: 601px) {
-  body {
-    margin: 4rem;
-    background-color: var(--primary);
-    font-family: poppins;
-    color: white;
-
-    section {
-      margin: 12rem 2rem;
-    }
-
-    button {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      background-image: linear-gradient(
-        to right,
-        var(--tertiary),
-        var(--button-gradient)
-      );
-      border: none;
-      outline: none;
-      color: white;
-      border-radius: 0.3em;
-      font-size: 1vw;
-      cursor: pointer;
-      padding: 0.9em 1.8em;
-      margin: auto;
-    }
-
-    .secondary-button {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      color: var(--tertiary);
-      background: none;
-      border: 1px solid var(--tertiary);
-      outline: none;
-
-      border-radius: 0.5em;
-      font-size: 1vw;
-      cursor: pointer;
-      padding: 0.9em 1.8em;
-      margin: auto;
-    }
-
-    header {
-      display: flex;
-      place-content: space-between;
-      align-items: center;
-
-      #mobile-cta {
-        display: none;
-      }
-
-      #mobile-exit {
-        display: none;
-      }
-
-      #logo {
-        width: 50%;
-      }
-      #desktop-nav {
-        display: flex;
-        place-content: space-between;
-        align-items: center;
-
-        a {
-          text-decoration: none;
-          font-weight: bold;
-          font-size: 1.3vw;
-          color: white;
-          margin-left: 1rem;
-        }
-
-        #mobile-nav-buttons {
-          display: none;
-        }
-
-        .trio-icons {
-          display: flex;
-
-          img {
-            max-width: 70%;
-            min-width: 65%;
-          }
-        }
-      }
-    }
-
-    .hero {
-      margin-block: 4.5rem;
-
-      .left-col {
-        #title {
-          font-weight: bold;
-          font-size: 4.2vw;
-
-          padding-right: 9rem;
-
-          span {
-            color: var(--secondary);
-          }
-        }
-
-        #subhead {
-          padding-right: 14rem;
-          font-size: 1.4vw;
-          margin-block: 1rem;
-        }
-
-        .hero-buttons {
-          display: flex;
-          margin-block: 6rem;
-
-          .explore-image-text {
-            margin-right: 2rem;
-          }
-
-          #rocket {
-            width: 18%;
-            padding-right: 0.4rem;
-          }
-
-          #learn-arrow-img {
-            width: 10%;
-            padding-left: 0.3rem;
-          }
-        }
-      }
-    }
-
-    .right-col {
-      #nft-desktop {
-        display: none;
-      }
-    }
-  }
-
-  #wallet-sponsors {
-    margin: 8rem auto;
-    width: 80%;
-  }
-
-  #wallet-sponsors-mobile {
-    display: none;
-  }
-
-  #nft-showcase-1 {
-    .flexbox-showcase {
-      display: flex;
-
-      .left-nft-showcase {
-        width: 50%;
-        .nft-name {
-          font-size: 2.5vw;
-          margin-top: 4rem;
-        }
-
-        .nft-owner-tick {
-          display: flex;
-        }
-        .bidding-ends {
-          margin-block: 4vw 0rem;
-        }
-        .countdown {
-          display: flex;
-          margin-block: 2vw 4rem;
-          text-align: center;
-          font-size: 1.3vw;
-          width: 60%;
-
-          .time-name {
-            font-size: 0.8vw;
-          }
-        }
-
-        button {
-          margin: 0;
-          margin-top: 6vw;
-
-          span {
-            padding-left: 0.5rem;
-            font-size: 0.9vw;
-          }
-        }
-      }
-      .right-nft-showcase {
-        img {
-          width: 85%;
-          float: right;
-        }
-      }
-    }
-  }
-
-  #nft-carousel-one {
-    text-align: center;
-
-    .sub-title {
-      font-size: 1.2vw;
-      color: var(--tertiary);
-    }
-
-    .title {
-      font-size: 2.5vw;
-      margin-bottom: 2rem;
-    }
-
-    .media-scroller {
-      margin: auto;
-      display: flex;
-      align-items: flex-end;
-
-      .nft {
-        position: relative;
-
-        .nft-overlay {
-          position: absolute;
-          width: 100%;
-          bottom: 10%;
-
-          .nft-name {
-            font-size: 1.6vw;
-            margin-block: 1rem;
-          }
-
-          button {
-            background: white;
-            color: black;
-          }
-        }
-      }
-    }
-  }
-
-  .trending {
-    font-weight: bold;
-    text-align: center;
-
-    span {
-      color: var(--tertiary);
-    }
-  }
-  .nft-carousel-two {
-    display: flex;
-    place-content: space-between;
-
-    .nft-card {
-      background: rgba(255, 255, 255, 0.15);
-      border: 0.5px solid white;
-      border-radius: 10px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(12.7px);
-
-      margin: 2rem 0.5rem;
-      border: 0.8px white solid;
-      border-radius: 0.8rem;
-
-      .nft-card-center {
-        margin: 1rem 1rem 0.5rem 1rem;
-
-        .nft-card-text {
-          display: flex;
-          place-content: space-between;
-          padding-block: 1rem;
-
-          .nft-name,
-          .price {
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-            font-size: 1.3vw;
-          }
-
-          .owner {
-            font-size: 0.9vw;
-          }
-
-          .right-text {
-            text-align: right;
-
-            button {
-              padding: 0.4rem 0.7rem;
-
-              img {
-                margin-right: 0.3rem;
-                width: 25%;
-              }
-
-              .view-text {
-                font-size: 0.9vw;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  #tree-plant {
-    display: flex;
-
-    .left-section {
-      width: 80%;
-
-      #question {
-        font-size: 3vw;
-        font-weight: bold;
-
-        span {
-          color: var(--secondary);
-        }
-      }
-      #subtext {
-        font-size: 1vw;
-        padding-bottom: 3rem;
-        padding-right: 8rem;
-      }
-
-      #learn-more-button {
-        background-image: linear-gradient(to right, var(--secondary), #6daf89);
-        margin: 0;
-      }
-    }
-
-    .right-section {
-      columns: 3;
-      width: 60%;
-
-      img {
-        padding: 1rem;
-      }
-    }
-  }
-  .email-signup {
-    text-align: center;
-    background-color: #202431;
-    margin-inline: 3rem;
-    padding: 4rem 2rem;
-    z-index: 999;
-    #title {
-      margin-bottom: 2rem;
-      font-size: 2.5vw;
-    }
-    #sub-head {
-      font-size: 1.3vw;
-    }
-
-    .flex-button-email {
-      display: flex;
-      margin: auto;
-      margin-block: 2rem;
-      width: 80%;
-
-      #email {
-        background-color: none;
-        padding: 0.5rem;
-        width: 80%;
-        margin-inline: 1rem;
-      }
-
-      input[type="email"] {
-        border: 1px solid var(--tertiary);
-        border-radius: 0.4rem;
-        background-color: var(--primary);
-      }
-
-      button {
-        margin: 0;
-        padding: 0.5rem 0.9rem;
-      }
-    }
-  }
-  footer {
-    margin: -4rem;
-    padding: 4rem;
-    background-color: #1b1f2c;
-    .footer-name {
-      font-size: 1.5vw;
-      padding-bottom: 2rem;
-    }
-    div {
-      display: flex;
-
-      .left-footer {
-        width: 50%;
-        display: block;
-        .paragraph {
-          font-size: 1.3vw;
-        }
-
-        .footer-links {
-          margin-block: 2rem;
-          img {
-            margin: 1rem;
-          }
-        }
-      }
-
-      .right-footer {
-        width: 50%;
-
-        .list-one {
-          display: block;
-          margin: 0 6rem;
-          .list-title {
-            font-weight: bold;
-            margin-bottom: 1rem;
-          }
-
-          ul {
-            margin: 0;
-            padding: 0;
-
-            a {
-              color: white;
-              text-decoration: none;
-              display: block;
-              padding: 0.5rem;
-              font-size: 1.4vw;
-            }
-          }
-        }
-      }
-
-      #copyright {
-        text-align: center;
-        margin-block: 3rem;
-      }
-    }
-  }
+	body {
+		margin: 4rem;
+		background-color: var(--primary);
+		font-family: poppins;
+		color: white;
+
+		section {
+			margin: 12rem 2rem;
+		}
+
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			background-image: linear-gradient(
+				to right,
+				var(--tertiary),
+				var(--button-gradient)
+			);
+			border: none;
+			outline: none;
+			color: white;
+			border-radius: 0.3em;
+			font-size: 1vw;
+			cursor: pointer;
+			padding: 0.9em 1.8em;
+			margin: auto;
+		}
+
+		.secondary-button {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			color: var(--tertiary);
+			background: none;
+			border: 1px solid var(--tertiary);
+			outline: none;
+
+			border-radius: 0.5em;
+			font-size: 1vw;
+			cursor: pointer;
+			padding: 0.9em 1.8em;
+			margin: auto;
+		}
+		header {
+			position: sticky;
+			top: 0;
+			display: flex;
+			place-content: space-between;
+			background-color: var(--primary);
+			z-index: 999;
+
+			#logo {
+				max-width: 6rem;
+			}
+			.hamburger {
+				width: 6%;
+			}
+
+			#desktop-nav {
+				position: fixed;
+				right: 0;
+				top: 0;
+				width: 50%;
+				height: 100vh;
+				background-color: #1b1f2b;
+				padding: 2.5rem;
+				transform: translateX(110%);
+				transition: 0.2s ease;
+				box-shadow: 1px 0px 10px #222636 inset;
+
+				#mobile-exit {
+					float: right;
+					width: 8%;
+				}
+
+				ul {
+					text-align: right;
+					margin-top: 3rem;
+					a {
+						color: white;
+						font-weight: bold;
+						display: block;
+						text-decoration: none;
+						padding-block: 1rem;
+					}
+
+					#mobile-nav-buttons {
+						padding: 0;
+					}
+				}
+
+				.trio-icons {
+					display: none;
+				}
+			}
+			#desktop-nav[data-visible="true"] {
+				display: block;
+				transform: translateX(0%);
+				transition: 0.2s ease-out;
+			}
+
+			#wallet-desktop-menu {
+				position: fixed;
+				right: 0;
+				top: 0;
+				width: 50%;
+				height: 100vh;
+				background-color: #1b1f2b;
+				padding: 2.5rem;
+				transform: translateX(110%);
+				transition: 0.2s ease;
+				box-shadow: 1px 0px 10px #222636 inset;
+
+				.pop-up-title-exit-flex {
+					display: flex;
+					place-content: space-between;
+					align-items: center;
+
+					.pop-up-title {
+						font-weight: bold;
+					}
+
+					img {
+						width: 8%;
+						height: 8%;
+						transform: scale(1);
+						transition: 0.3s ease;
+					}
+					img:hover {
+						transform: scale(1.1);
+						transition: 0.2s ease;
+					}
+				}
+
+				.pop-up-sub {
+					margin-top: 3rem;
+				}
+
+				ul {
+					display: flex;
+					flex-direction: column;
+
+					padding: 0;
+					margin: 2rem 0;
+
+					a {
+						text-decoration: none;
+						color: white;
+					}
+
+					.logo-name-flex {
+						display: flex;
+						align-items: center;
+						border: 0.1px solid rgb(98, 98, 98);
+						padding: 1rem;
+					}
+
+					#rev-box {
+						border-radius: 0 0 0.6rem 0.6rem;
+					}
+
+					#rev-logo {
+						width: 6%;
+					}
+
+					#meta-box {
+						border-radius: 0.6rem 0.6rem 0 0;
+					}
+
+					img {
+						width: 10%;
+						margin-right: 2rem;
+					}
+				}
+			}
+			#wallet-desktop-menu[data-visible="true"] {
+				display: block;
+				transform: translateX(0%);
+				transition: 0.2s ease-out;
+			}
+		}
+
+		.hero {
+			margin-block: 4.5rem;
+
+			.left-col {
+				#title {
+					font-weight: bold;
+					font-size: 4.2vw;
+
+					padding-right: 9rem;
+
+					span {
+						color: var(--secondary);
+					}
+				}
+
+				#subhead {
+					padding-right: 14rem;
+					font-size: 1.4vw;
+					margin-block: 1rem;
+				}
+
+				.hero-buttons {
+					display: flex;
+					margin-block: 6rem;
+
+					.explore-image-text {
+						margin-right: 2rem;
+
+						a {
+							text-decoration: none;
+						}
+					}
+
+					#rocket {
+						width: 18%;
+						padding-right: 0.4rem;
+					}
+
+					#learn-arrow-img {
+						width: 10%;
+						padding-left: 0.3rem;
+					}
+				}
+			}
+		}
+
+		.right-col {
+			#nft-desktop {
+				display: none;
+			}
+		}
+	}
+
+	#wallet-sponsors {
+		margin: 8rem auto;
+		width: 80%;
+	}
+
+	#wallet-sponsors-mobile {
+		display: none;
+	}
+
+	#nft-showcase-1 {
+		.flexbox-showcase {
+			display: flex;
+
+			.left-nft-showcase {
+				width: 50%;
+				.nft-name {
+					font-size: 2.5vw;
+					margin-top: 4rem;
+				}
+
+				.nft-owner-tick {
+					display: flex;
+				}
+				.bidding-ends {
+					margin-block: 4vw 0rem;
+				}
+				.countdown {
+					display: flex;
+					margin-block: 2vw 4rem;
+					text-align: center;
+					font-size: 1.3vw;
+					width: 60%;
+
+					.time-name {
+						font-size: 0.8vw;
+					}
+				}
+
+				button {
+					margin: 0;
+					margin-top: 6vw;
+
+					span {
+						padding-left: 0.5rem;
+						font-size: 0.9vw;
+					}
+				}
+			}
+			.right-nft-showcase {
+				img {
+					width: 85%;
+					float: right;
+				}
+			}
+		}
+	}
+
+	#nft-carousel-one {
+		text-align: center;
+
+		.sub-title {
+			font-size: 1.2vw;
+			color: var(--tertiary);
+		}
+
+		.title {
+			font-size: 2.5vw;
+			margin-bottom: 2rem;
+		}
+
+		.media-scroller {
+			margin: auto;
+			display: flex;
+			align-items: flex-end;
+
+			.nft {
+				position: relative;
+
+				.nft-overlay {
+					position: absolute;
+					width: 100%;
+					bottom: 10%;
+
+					.nft-name {
+						font-size: 1.6vw;
+						margin-block: 1rem;
+						color: white;
+					}
+
+					button {
+						background: white;
+						color: black;
+					}
+				}
+			}
+		}
+	}
+
+	#tree-plant {
+		display: flex;
+
+		.left-section {
+			width: 80%;
+
+			#question {
+				font-size: 3vw;
+				font-weight: bold;
+
+				span {
+					color: var(--secondary);
+				}
+			}
+			#subtext {
+				font-size: 1vw;
+				padding-bottom: 3rem;
+				padding-right: 8rem;
+			}
+
+			#learn-more-button {
+				background-image: linear-gradient(to right, var(--secondary), #6daf89);
+				margin: 0;
+			}
+		}
+
+		.right-section {
+			columns: 3;
+			width: 60%;
+
+			img {
+				padding: 1rem;
+			}
+		}
+	}
+
+	.trending {
+		font-weight: bold;
+		text-align: center;
+
+		span {
+			color: var(--tertiary);
+		}
+	}
+
+	.nft-carousel-two-link {
+		color: var(--tertiary);
+		text-align: center;
+	}
+	.nft-carousel-two {
+		display: flex;
+		place-content: space-between;
+
+		.nft-card {
+			background: rgba(255, 255, 255, 0.15);
+
+			border-radius: 10px;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+			backdrop-filter: blur(12.7px);
+
+			margin: 2rem 0.5rem;
+			border-radius: 0.8rem;
+
+			.nft-card-center {
+				margin: 1rem 1rem 0.5rem 1rem;
+
+				.nft-card-text {
+					display: flex;
+					place-content: space-between;
+					padding-block: 1rem;
+
+					.nft-name,
+					.price {
+						font-weight: bold;
+						margin-bottom: 0.5rem;
+						font-size: 1.3vw;
+					}
+
+					.owner {
+						font-size: 0.9vw;
+					}
+
+					.right-text {
+						text-align: right;
+
+						button {
+							padding: 0.4rem 0.7rem;
+
+							img {
+								margin-right: 0.3rem;
+								width: 25%;
+							}
+
+							.view-text {
+								font-size: 0.9vw;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.email-signup {
+		text-align: center;
+		background-color: #202431;
+		margin-inline: 3rem;
+		padding: 4rem 2rem;
+		z-index: 999;
+		#title {
+			margin-bottom: 2rem;
+			font-size: 2.5vw;
+		}
+		#sub-head {
+			font-size: 1.3vw;
+		}
+
+		.flex-button-email {
+			display: flex;
+			margin: auto;
+			margin-block: 2rem;
+			width: 80%;
+
+			#email {
+				background-color: none;
+				padding: 0.5rem;
+				width: 80%;
+				margin-inline: 1rem;
+			}
+
+			input[type="email"] {
+				border: 1px solid var(--tertiary);
+				border-radius: 0.4rem;
+				background-color: var(--primary);
+			}
+
+			button {
+				margin: 0;
+				padding: 0.5rem 0.9rem;
+			}
+		}
+	}
+	footer {
+		margin: -4rem;
+		padding: 4rem;
+		background-color: #1b1f2c;
+		.footer-name {
+			font-size: 1.5vw;
+			padding-bottom: 2rem;
+		}
+		div {
+			display: flex;
+
+			.left-footer {
+				width: 50%;
+				display: block;
+				.paragraph {
+					font-size: 1.3vw;
+				}
+
+				.footer-links {
+					margin-block: 2rem;
+					img {
+						margin: 1rem;
+					}
+				}
+			}
+
+			.right-footer {
+				width: 50%;
+
+				.list-one {
+					display: block;
+					margin: 0 6rem;
+					.list-title {
+						font-weight: bold;
+						margin-bottom: 1rem;
+					}
+
+					ul {
+						margin: 0;
+						padding: 0;
+
+						a {
+							color: white;
+							text-decoration: none;
+							display: block;
+							padding: 0.5rem;
+							font-size: 1.4vw;
+						}
+					}
+				}
+			}
+
+			#copyright {
+				text-align: center;
+				margin-block: 3rem;
+			}
+		}
+	}
 }
 
 /*     Desktop View      */
 
 @media only screen and (min-width: 1000px) {
-  body {
-    margin: 4rem;
-    background-color: var(--primary);
-    font-family: poppins;
-    color: white;
-
-    section {
-      margin: 14rem 8rem;
-    }
-
-    button {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      background-image: linear-gradient(
-        to right,
-        var(--tertiary),
-        var(--button-gradient)
-      );
-      border: none;
-      outline: none;
-      color: white;
-      border-radius: 0.3em;
-      font-size: 1vw;
-      cursor: pointer;
-      padding: 0.9em 1.8em;
-      margin: auto;
-      transform: scale(1);
-      transition: 0.3s ease;
-    }
-
-    button:hover {
-      transform: scale(1.03);
-      transition: 0.2s ease;
-    }
-
-    .secondary-button {
-      color: var(--tertiary);
-      background: none;
-      border: 1px solid var(--tertiary);
-    }
-
-    header {
-      display: flex;
-      place-content: space-between;
-
-      #mobile-cta {
-        display: none;
-      }
-
-      #mobile-exit {
-        display: none;
-      }
-
-      #logo {
-        width: 50%;
-      }
-      #desktop-nav {
-        display: flex;
-        place-content: space-around;
-        align-items: center;
-        z-index: 2;
-        ul {
-          width: 100%;
-
-          a {
-            text-decoration: none;
-            margin: 1.5rem;
-            font-weight: bold;
-            font-size: 0.9vw;
-            color: white;
-            padding-right: 1rem;
-          }
-
-          #mobile-nav-buttons {
-            display: none;
-          }
-        }
-
-        .trio-icons {
-          display: flex;
-          place-content: space-between;
-          width: 30%;
-
-          #wallet {
-            width: 45%;
-            margin-left: 1rem;
-          }
-
-          #profile:hover,
-          #wallet:hover {
-            transform: scale(1.05);
-            transition: 0.3s ease;
-          }
-        }
-      }
-      #wallet-desktop-menu {
-        z-index: 1;
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 36%;
-        height: 100vh;
-        background-color: #1b1f2b;
-
-        transform: translateX(110%);
-        transition: 0.2s ease;
-        box-shadow: 1px 0px 10px #222636 inset;
-
-        .wallet-pop-up-box {
-          background-color: #1e2030;
-          margin: 12rem 1.5rem 1.5rem 1.5rem;
-          padding: 2rem;
-          border-radius: 1rem;
-          box-shadow: 2px 1px 10px #1b1e2a;
-        }
-
-        .pop-up-title-exit-flex {
-          display: flex;
-          place-content: space-between;
-          align-items: center;
-          .pop-up-title {
-            font-weight: bold;
-            font-size: 1.5vw;
-          }
-
-          img {
-            width: 4%;
-            height: 4%;
-            transform: scale(1);
-          transition: 0.3s ease;
-          }
-          img:hover {
-            transform: scale(1.1) ;
-            transition: .2s ease;
-          }
-        }
-
-        .pop-up-sub {
-          margin-top: 3rem;
-        }
-
-        ul {
-          display: flex;
-          flex-direction: column;
-
-          padding: 0;
-          margin: 2rem 0;
-
-          a {
-            text-decoration: none;
-            color: white;
-          }
-
-          .logo-name-flex {
-            display: flex;
-            align-items: center;
-            border: 0.1px solid rgb(98, 98, 98);
-            padding: 1rem;
-          }
-
-          .logo-name-flex:hover{
-            box-shadow: .5px .5px 5px rgb(104, 104, 104);
-          }
-
-          #rev-box {
-            border-radius: 0 0 0.8rem 0.8rem;
-          }
-
-          #rev-logo {
-            width: 6%;
-          }
-
-          #meta-box {
-            border-radius: 0.8rem 0.8rem 0 0;
-          }
-
-          img {
-            width: 7%;
-            margin-right: 2rem;
-          }
-        }
-      }
-
-      #wallet-desktop-menu[data-visible="true"] {
-        display: block;
-        transform: translateX(0%);
-        transition: 0.2s ease-out;
-      }
-    }
-  }
-
-  .hero {
-    display: flex;
-
-    .left-col {
-      width: 50%;
-      margin-top: 6rem;
-      #title {
-        font-weight: bold;
-        font-size: 4vw;
-
-        span {
-          color: var(--secondary);
-        }
-      }
-
-      #subhead {
-        font-size: 1.2vw;
-        margin-block: 3rem;
-      }
-
-      .hero-buttons {
-        display: flex;
-        margin-block: 6rem 0;
-        
-        a {
-          text-decoration: none;
-        }
-
-        .explore-image-text {
-          margin-right: 2rem;
-        }
-
-        #rocket {
-          width: 18%;
-          padding-right: 0.4rem;
-        }
-
-        #learn-arrow-img {
-          width: 15%;
-          padding-left: 0.3rem;
-        }
-      }
-    }
-
-    .right-col {
-      margin-top: 2rem;
-      img {
-        width: 75%;
-        float: right;
-      }
-    }
-  }
-
-  #wallet-sponsors {
-    width: 60%;
-    margin: auto;
-    margin-block: 6rem;
-  }
-
-  #wallet-sponsors-mobile {
-    display: none;
-  }
-
-  #nft-showcase-1 {
-    .flexbox-showcase {
-      display: flex;
-
-      .left-nft-showcase {
-        width: 50%;
-        .nft-name {
-          font-size: 2.5vw;
-          margin-top: 4rem;
-        }
-
-        .nft-owner-tick {
-          display: flex;
-        }
-        .bidding-ends {
-          margin-block: 4vw 0rem;
-        }
-        .countdown {
-          display: flex;
-          margin-block: 2vw 4rem;
-          text-align: center;
-          font-size: 1.3vw;
-          width: 60%;
-
-          .time-name {
-            font-size: 0.8vw;
-          }
-        }
-
-        button {
-          margin: 0;
-          margin-top: 6vw;
-
-          span {
-            padding-left: 0.5rem;
-            font-size: 0.9vw;
-          }
-        }
-      }
-      .right-nft-showcase {
-        img {
-          width: 85%;
-          float: right;
-          transform: scale(1);
-          transition: 0.3s ease;
-        }
-        img:hover {
-          transform: scale(1.02);
-          transition: 0.3s ease;
-        }
-      }
-    }
-  }
-
-  #nft-carousel-one {
-    text-align: center;
-
-    .sub-title {
-      font-size: 1vw;
-      color: var(--tertiary);
-    }
-
-    .title {
-      font-size: 2vw;
-      margin-bottom: 2rem;
-    }
-
-    .media-scroller {
-      margin: auto;
-      display: flex;
-      align-items: flex-end;
-
-      a {
-        color: white;
-      }
-
-      .nft {
-        position: relative;
-        transform: scale(1);
-        transition: 0.3s ease;
-
-        .nft-overlay {
-          position: absolute;
-          width: 100%;
-          bottom: 10%;
-
-          .nft-name {
-            font-size: 1.6vw;
-            margin-block: 1rem;
-          }
-
-          button {
-            background: white;
-            color: black;
-          }
-        }
-      }
-
-      .nft:hover {
-        transform: scale(1.01);
-        transition: 0.3s ease;
-      }
-    }
-  }
-  #tree-plant {
-    display: flex;
-
-    .left-section {
-      width: 80%;
-
-      #question {
-        font-size: 3vw;
-        font-weight: bold;
-        padding-right: 15rem;
-
-        span {
-          color: var(--secondary);
-        }
-      }
-      #subtext {
-        font-size: 1vw;
-        padding-bottom: 3rem;
-        padding-right: 8rem;
-      }
-
-      #learn-more-button {
-        background-image: linear-gradient(to right, var(--secondary), #6daf89);
-        margin: 0;
-      }
-    }
-
-    .right-section {
-      columns: 3;
-      width: 60%;
-
-      img {
-        padding: 1rem;
-        width: 90%;
-      }
-    }
-  }
-
-  .trending {
-    text-align: center;
-    font-size: 2vw;
-
-    span {
-      color: var(--tertiary);
-    }
-  }
-
-  .nft-carousel-two-link {
-    color: var(--tertiary);
-    text-align: center;
-    font-size: 1vw;
-  }
-  .nft-carousel-two {
-    display: flex;
-    place-content: space-between;
-
-    .nft-card:hover {
-      transform: scale(1.01);
-      transition: 0.3s ease;
-    }
-
-    .nft-card {
-      background: rgba(255, 255, 255, 0.048);
-
-      border-radius: 10px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.302);
-      backdrop-filter: blur(15px);
-
-      margin: 2rem 1rem;
-      border-radius: 0.8rem;
-
-      transform: scale(1);
-      transition: 0.3s ease;
-
-      .nft-card-center {
-        margin: 1rem 1rem 0.5rem 1rem;
-
-        .nft-card-text {
-          display: flex;
-          place-content: space-between;
-          padding-block: 1.3rem;
-
-          .nft-name,
-          .price {
-            font-weight: bold;
-            margin-bottom: 1.2rem;
-          }
-
-          .owner {
-            font-size: 0.9vw;
-          }
-
-          .right-text {
-            text-align: right;
-
-            button {
-              padding: 0.7rem 1.1rem;
-
-              img {
-                margin-right: 0.3rem;
-                width: 27%;
-              }
-
-              .view-text {
-                font-size: 1vw;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .email-signup {
-    text-align: center;
-    background-color: #202431;
-    margin-inline: 3rem;
-    padding: 6rem 2em;
-    z-index: 999;
-
-    #title {
-      margin-bottom: 2rem;
-      font-size: 2.5vw;
-    }
-    #sub-head {
-      font-size: 1vw;
-    }
-
-    .flex-button-email {
-      display: flex;
-      margin: auto;
-      margin-block: 2rem;
-      width: 50%;
-
-      #email {
-        background-color: none;
-        padding: 0.8rem;
-        width: 60%;
-        margin-inline: 1rem;
-      }
-
-      input[type="email"] {
-        border: 1px solid var(--tertiary);
-        border-radius: 0.4rem;
-        background-color: var(--primary);
-      }
-
-      button {
-        font-size: 1vw;
-      }
-
-      button:focus {
-        background-image: none;
-        background-color: var(--secondary);
-      }
-    }
-  }
-
-  footer {
-    margin: -4rem;
-    padding: 4rem;
-    background-color: #1b1f2c;
-    z-index: 0;
-    .footer-name {
-      font-size: 1.5vw;
-      padding-bottom: 2rem;
-    }
-    div {
-      display: flex;
-
-      .left-footer {
-        width: 50%;
-        display: block;
-
-        .footer-links {
-          img {
-            margin: 1rem;
-          }
-
-          .paragraph {
-            margin-right: 7rem;
-            font-size: 1.5vw;
-          }
-        }
-      }
-
-      .right-footer {
-        width: 50%;
-
-        .list-one {
-          display: block;
-          margin: 0 6rem;
-          .list-title {
-            font-weight: bold;
-            margin-bottom: 1rem;
-          }
-
-          ul {
-            margin: 0;
-            padding: 0;
-
-            a {
-              color: white;
-              text-decoration: none;
-              display: block;
-              padding: 0.5rem;
-            }
-          }
-        }
-      }
-
-      #copyright {
-        text-align: center;
-        margin-block: 3rem;
-      }
-    }
-  }
+	body {
+		margin: 4rem;
+		background-color: var(--primary);
+		font-family: poppins;
+		color: white;
+
+		section {
+			margin: 14rem 8rem;
+		}
+
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			background-image: linear-gradient(
+				to right,
+				var(--tertiary),
+				var(--button-gradient)
+			);
+			border: none;
+			outline: none;
+			color: white;
+			border-radius: 0.3em;
+			font-size: 1vw;
+			cursor: pointer;
+			padding: 0.9em 1.8em;
+			margin: auto;
+			transform: scale(1);
+			transition: 0.3s ease;
+		}
+
+		button:hover {
+			transform: scale(1.03);
+			transition: 0.2s ease;
+		}
+
+		.secondary-button {
+			color: var(--tertiary);
+			background: none;
+			border: 1px solid var(--tertiary);
+		}
+		header {
+			display: flex;
+			place-content: space-between;
+
+			#mobile-cta {
+				display: none;
+			}
+
+			#mobile-exit {
+				display: none;
+			}
+
+			#logo {
+				width: 50%;
+			}
+			#desktop-nav {
+				display: flex;
+				place-content: space-around;
+				align-items: center;
+				z-index: 2;
+				ul {
+					width: 100%;
+
+					a {
+						text-decoration: none;
+						margin: 1.5rem;
+						font-weight: bold;
+						font-size: 0.9vw;
+						color: white;
+						padding-right: 1rem;
+					}
+
+					#mobile-nav-buttons {
+						display: none;
+					}
+				}
+
+				.trio-icons {
+					display: flex;
+					place-content: space-between;
+					width: 30%;
+
+					#wallet {
+						width: 45%;
+						margin-left: 1rem;
+					}
+
+					#profile:hover,
+					#wallet:hover {
+						transform: scale(1.05);
+						transition: 0.3s ease;
+					}
+				}
+			}
+			#wallet-desktop-menu {
+				z-index: 1;
+				position: fixed;
+				right: 0;
+				top: 0;
+				width: 36%;
+				height: 100vh;
+				background-color: #1b1f2b;
+
+				transform: translateX(110%);
+				transition: 0.2s ease;
+				box-shadow: 1px 0px 10px #222636 inset;
+
+				.wallet-pop-up-box {
+					background-color: #1e2030;
+					margin: 12rem 1.5rem 1.5rem 1.5rem;
+					padding: 2rem;
+					border-radius: 1rem;
+					box-shadow: 2px 1px 10px #1b1e2a;
+				}
+
+				.pop-up-title-exit-flex {
+					display: flex;
+					place-content: space-between;
+					align-items: center;
+					.pop-up-title {
+						font-weight: bold;
+						font-size: 1.5vw;
+					}
+
+					img {
+						width: 4%;
+						height: 4%;
+						transform: scale(1);
+						transition: 0.3s ease;
+					}
+					img:hover {
+						transform: scale(1.1);
+						transition: 0.2s ease;
+					}
+				}
+
+				.pop-up-sub {
+					margin-top: 3rem;
+				}
+
+				ul {
+					display: flex;
+					flex-direction: column;
+
+					padding: 0;
+					margin: 2rem 0;
+
+					a {
+						text-decoration: none;
+						color: white;
+					}
+
+					.logo-name-flex {
+						display: flex;
+						align-items: center;
+						border: 0.1px solid rgb(98, 98, 98);
+						padding: 1rem;
+					}
+
+					.logo-name-flex:hover {
+						box-shadow: 0.5px 0.5px 5px rgb(104, 104, 104);
+					}
+
+					#rev-box {
+						border-radius: 0 0 0.8rem 0.8rem;
+					}
+
+					#rev-logo {
+						width: 6%;
+					}
+
+					#meta-box {
+						border-radius: 0.8rem 0.8rem 0 0;
+					}
+
+					img {
+						width: 7%;
+						margin-right: 2rem;
+					}
+				}
+			}
+
+			#wallet-desktop-menu[data-visible="true"] {
+				display: block;
+				transform: translateX(0%);
+				transition: 0.2s ease-out;
+			}
+		}
+	}
+
+	.hero {
+		display: flex;
+
+		.left-col {
+			width: 50%;
+			margin-top: 6rem;
+			#title {
+				font-weight: bold;
+				font-size: 4vw;
+
+				span {
+					color: var(--secondary);
+				}
+			}
+
+			#subhead {
+				font-size: 1.2vw;
+				margin-block: 3rem;
+			}
+
+			.hero-buttons {
+				display: flex;
+				margin-block: 6rem 0;
+
+				a {
+					text-decoration: none;
+				}
+
+				.explore-image-text {
+					margin-right: 2rem;
+				}
+
+				#rocket {
+					width: 18%;
+					padding-right: 0.4rem;
+				}
+
+				#learn-arrow-img {
+					width: 15%;
+					padding-left: 0.3rem;
+				}
+			}
+		}
+
+		.right-col {
+			margin-top: 2rem;
+			img {
+				width: 75%;
+				float: right;
+			}
+		}
+	}
+
+	#wallet-sponsors {
+		width: 60%;
+		margin: auto;
+		margin-block: 6rem;
+	}
+
+	#wallet-sponsors-mobile {
+		display: none;
+	}
+
+	#nft-showcase-1 {
+		.flexbox-showcase {
+			display: flex;
+
+			.left-nft-showcase {
+				width: 50%;
+				.nft-name {
+					font-size: 2.5vw;
+					margin-top: 4rem;
+				}
+
+				.nft-owner-tick {
+					display: flex;
+				}
+				.bidding-ends {
+					margin-block: 4vw 0rem;
+				}
+				.countdown {
+					display: flex;
+					margin-block: 2vw 4rem;
+					text-align: center;
+					font-size: 1.3vw;
+					width: 60%;
+
+					.time-name {
+						font-size: 0.8vw;
+					}
+				}
+
+				button {
+					margin: 0;
+					margin-top: 6vw;
+
+					span {
+						padding-left: 0.5rem;
+						font-size: 0.9vw;
+					}
+				}
+			}
+			.right-nft-showcase {
+				img {
+					width: 85%;
+					float: right;
+					transform: scale(1);
+					transition: 0.3s ease;
+				}
+				img:hover {
+					transform: scale(1.02);
+					transition: 0.3s ease;
+				}
+			}
+		}
+	}
+
+	#nft-carousel-one {
+		text-align: center;
+
+		.sub-title {
+			font-size: 1vw;
+			color: var(--tertiary);
+		}
+
+		.title {
+			font-size: 2vw;
+			margin-bottom: 2rem;
+		}
+
+		.media-scroller {
+			margin: auto;
+			display: flex;
+			align-items: flex-end;
+
+			a {
+				color: white;
+			}
+
+			.nft {
+				position: relative;
+				transform: scale(1);
+				transition: 0.3s ease;
+
+				.nft-overlay {
+					position: absolute;
+					width: 100%;
+					bottom: 10%;
+
+					.nft-name {
+						font-size: 1.6vw;
+						margin-block: 1rem;
+					}
+
+					button {
+						background: white;
+						color: black;
+					}
+				}
+			}
+
+			.nft:hover {
+				transform: scale(1.01);
+				transition: 0.3s ease;
+			}
+		}
+	}
+	#tree-plant {
+		display: flex;
+
+		.left-section {
+			width: 80%;
+
+			#question {
+				font-size: 3vw;
+				font-weight: bold;
+				padding-right: 15rem;
+
+				span {
+					color: var(--secondary);
+				}
+			}
+			#subtext {
+				font-size: 1vw;
+				padding-bottom: 3rem;
+				padding-right: 8rem;
+			}
+
+			#learn-more-button {
+				background-image: linear-gradient(to right, var(--secondary), #6daf89);
+				margin: 0;
+			}
+		}
+
+		.right-section {
+			columns: 3;
+			width: 60%;
+
+			img {
+				padding: 1rem;
+				width: 90%;
+			}
+		}
+	}
+
+	.trending {
+		text-align: center;
+		font-size: 2vw;
+
+		span {
+			color: var(--tertiary);
+		}
+	}
+
+	.nft-carousel-two-link {
+		color: var(--tertiary);
+		text-align: center;
+		font-size: 1vw;
+	}
+	.nft-carousel-two {
+		display: flex;
+		place-content: space-between;
+
+		.nft-card:hover {
+			transform: scale(1.01);
+			transition: 0.3s ease;
+		}
+
+		.nft-card {
+			background: rgba(255, 255, 255, 0.048);
+
+			border-radius: 10px;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.302);
+			backdrop-filter: blur(15px);
+
+			margin: 2rem 1rem;
+			border-radius: 0.8rem;
+
+			transform: scale(1);
+			transition: 0.3s ease;
+
+			.nft-card-center {
+				margin: 1rem 1rem 0.5rem 1rem;
+
+				.nft-card-text {
+					display: flex;
+					place-content: space-between;
+					padding-block: 1.3rem;
+
+					.nft-name,
+					.price {
+						font-weight: bold;
+						margin-bottom: 1.2rem;
+					}
+
+					.owner {
+						font-size: 0.9vw;
+					}
+
+					.right-text {
+						text-align: right;
+
+						button {
+							padding: 0.7rem 1.1rem;
+
+							img {
+								margin-right: 0.3rem;
+								width: 27%;
+							}
+
+							.view-text {
+								font-size: 1vw;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.email-signup {
+		text-align: center;
+		background-color: #202431;
+		margin-inline: 3rem;
+		padding: 6rem 2em;
+		z-index: 999;
+
+		#title {
+			margin-bottom: 2rem;
+			font-size: 2.5vw;
+		}
+		#sub-head {
+			font-size: 1vw;
+		}
+
+		.flex-button-email {
+			display: flex;
+			margin: auto;
+			margin-block: 2rem;
+			width: 50%;
+
+			#email {
+				background-color: none;
+				padding: 0.8rem;
+				width: 60%;
+				margin-inline: 1rem;
+			}
+
+			input[type="email"] {
+				border: 1px solid var(--tertiary);
+				border-radius: 0.4rem;
+				background-color: var(--primary);
+			}
+
+			button {
+				font-size: 1vw;
+			}
+
+			button:focus {
+				background-image: none;
+				background-color: var(--secondary);
+			}
+		}
+	}
+
+	footer {
+		margin: -4rem;
+		padding: 4rem;
+		background-color: #1b1f2c;
+		z-index: 0;
+		.footer-name {
+			font-size: 1.5vw;
+			padding-bottom: 2rem;
+		}
+		div {
+			display: flex;
+
+			.left-footer {
+				width: 50%;
+				display: block;
+
+				.footer-links {
+					img {
+						margin: 1rem;
+					}
+
+					.paragraph {
+						margin-right: 7rem;
+						font-size: 1.5vw;
+					}
+				}
+			}
+
+			.right-footer {
+				width: 50%;
+
+				.list-one {
+					display: block;
+					margin: 0 6rem;
+					.list-title {
+						font-weight: bold;
+						margin-bottom: 1rem;
+					}
+
+					ul {
+						margin: 0;
+						padding: 0;
+
+						a {
+							color: white;
+							text-decoration: none;
+							display: block;
+							padding: 0.5rem;
+						}
+					}
+				}
+			}
+
+			#copyright {
+				text-align: center;
+				margin-block: 3rem;
+			}
+		}
+	}
 }

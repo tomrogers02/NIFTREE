@@ -185,7 +185,7 @@ svg {
 body .flex-box-hero .left-flex-hero .mobile-filter-menus #sort-by-dropdown {
     display: flex;
     margin: auto;
-    padding: 0.8rem 2.5rem;
+    padding: 0.4rem 2.5rem;
     border: 1px solid white;
     border-radius: 0.5rem;
   }
@@ -234,14 +234,31 @@ body .flex-box-hero .left-flex-hero .category-check-flex {
   body #filter-pop-up-menu .filter-pop-lists ul {
     padding: 0;
   }
-  body #filter-pop-up-menu .filter-pop-lists ul .category-check-flex {
+  body #filter-pop-up-menu .filter-pop-lists ul .category-check-flex label {
+    cursor: pointer;
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 0.5rem;
   }
-  body #filter-pop-up-menu .filter-pop-lists ul .category-check-flex .category {
-    margin-bottom: 1rem;
+  body #filter-pop-up-menu .filter-pop-lists ul .category-check-flex input[type=checkbox] {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    left: 88%;
   }
-  body #filter-pop-up-menu .filter-pop-lists ul .category-check-flex input.active {
+  body #filter-pop-up-menu .filter-pop-lists ul .category-check-flex label::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    border: 0.05em solid white;
+    border-radius: 0.2rem;
+    position: absolute;
+    left: 88%;
+  }
+  body #filter-pop-up-menu .filter-pop-lists ul .category-check-flex label:hover::before,
+body #filter-pop-up-menu .filter-pop-lists ul .category-check-flex input[type=checkbox]:hover + label::before {
+    background-color: var(--secondary);
+  }
+  body #filter-pop-up-menu .filter-pop-lists ul .category-check-flex input[type=checkbox]:checked + label::before {
     background-color: var(--tertiary);
   }
   body #filter-pop-up-menu[data-visible=true] {
@@ -576,15 +593,35 @@ body header #desktop-nav .trio-icons #wallet:hover {
     font-weight: bold;
   }
   body section .flex-box-hero .left-flex-hero ul {
-    padding: 0 1.5rem 0 0;
-    margin: 2rem 0;
+    padding: 0;
+    margin-bottom: 2rem;
   }
-  body section .flex-box-hero .left-flex-hero ul .category {
-    margin-bottom: 0.5rem;
-  }
-  body section .flex-box-hero .left-flex-hero ul .category-check-flex {
+  body section .flex-box-hero .left-flex-hero ul .category-check-flex label {
+    cursor: pointer;
     display: flex;
-    place-content: space-between;
+    margin-bottom: 1rem;
+  }
+  body section .flex-box-hero .left-flex-hero ul .category-check-flex input[type=checkbox] {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    left: 20%;
+  }
+  body section .flex-box-hero .left-flex-hero ul .category-check-flex label::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    border: 0.1em solid white;
+    border-radius: 0.3rem;
+    position: absolute;
+    left: 20%;
+  }
+  body section .flex-box-hero .left-flex-hero ul .category-check-flex label:hover::before,
+body section .flex-box-hero .left-flex-hero ul .category-check-flex input[type=checkbox]:hover + label::before {
+    background-color: var(--secondary);
+  }
+  body section .flex-box-hero .left-flex-hero ul .category-check-flex input[type=checkbox]:checked + label::before {
+    background-color: var(--tertiary);
   }
   body section .flex-box-hero .right-flex-hero .column {
     display: flex;
@@ -601,7 +638,10 @@ body header #desktop-nav .trio-icons #wallet:hover {
     transition: 0.3s ease;
   }
   body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center {
-    margin: 1rem 1rem 0.5rem 1rem;
+    margin: 1rem 1rem 0.1rem 1rem;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center img {
+    border-radius: 0.5rem;
   }
   body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text {
     display: flex;
@@ -628,6 +668,9 @@ body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-car
   }
   body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text button .view-text {
     font-size: 1vw;
+  }
+  body section #filter-pop-up-menu {
+    display: none;
   }
   body footer {
     margin: 2rem -4rem;

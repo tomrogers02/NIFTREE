@@ -206,6 +206,9 @@ svg {
     display: flex;
     justify-content: center;
   }
+  body .hero .hero-buttons .explore-image-text a {
+    text-decoration: none;
+  }
   body .hero .hero-buttons .explore-image-text img {
     padding-inline: 0.3rem;
     width: 0.9rem;
@@ -317,6 +320,7 @@ svg {
   body #nft-carousel-one .media-scroller .nft .nft-overlay .nft-name {
     font-size: 4.5vw;
     margin-block: 1rem;
+    color: white;
   }
   body #nft-carousel-one .media-scroller .nft .nft-overlay button {
     background: white;
@@ -324,23 +328,26 @@ svg {
     font-size: 3vw;
     font-weight: bold;
   }
-  body .trending {
+  body #nft-carousel-title {
+    margin: 0 0.8rem 5rem 0.8rem;
+  }
+  body #nft-carousel-title .trending {
     text-align: center;
     font-size: 5vw;
-    margin-bottom: 1.5rem;
   }
-  body .trending span {
+  body #nft-carousel-title .trending span {
     color: var(--tertiary);
   }
-  body #nft-carousel-title {
-    margin: 7rem 0;
+  body #nft-carousel-title .nft-carousel-two-link {
+    text-align: center;
+    color: var(--tertiary);
+    margin-bottom: 1rem;
   }
   body #nft-carousel-title .nft-carousel-two {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 70%;
+    grid-auto-columns: 82%;
     gap: 2rem;
-    align-items: flex-end;
     overflow-x: scroll;
   }
   body #nft-carousel-title .nft-carousel-two .nft-card {
@@ -387,53 +394,51 @@ svg {
   body #nft-carousel-title .nft-carousel-two .nft-card .nft-card-center .nft-card-text .right-text button .view-text {
     font-size: 2.6vw;
   }
+  #tree-plant #question {
+    font-size: 8vw;
+    font-family: poppins;
+  }
+  #tree-plant #question span {
+    color: var(--secondary);
+  }
+  #tree-plant #subtext {
+    font-size: 3vw;
+  }
+  #tree-plant #learn-more-button {
+    background-image: linear-gradient(to right, var(--secondary), #6fac8d);
+    margin: 4rem auto;
+  }
+  #tree-plant img {
+    display: none;
+  }
+  .email-signup {
+    text-align: center;
+    margin-inline: 2rem;
+  }
+  .email-signup #title {
+    font: 6vw bold;
+    margin-bottom: 2rem;
+    font-family: poppins;
+  }
+  .email-signup #sub-head {
+    font-size: 3vw;
+    margin-bottom: 2rem;
+    font-family: poppins;
+  }
+  .email-signup #email {
+    background-color: none;
+    width: 80%;
+    padding: 0.5rem;
+  }
+  .email-signup input[type=email] {
+    border: 2px solid var(--tertiary);
+    background-color: var(--primary);
+    margin-block: 2rem;
+  }
+  .email-signup button {
+    font-size: 3vw;
+  }
 }
-#tree-plant #question {
-  font-size: 8vw;
-  font-family: poppins;
-}
-#tree-plant #question span {
-  color: var(--secondary);
-}
-#tree-plant #subtext {
-  font-size: 3vw;
-}
-#tree-plant #learn-more-button {
-  background-image: linear-gradient(to right, var(--secondary), #6fac8d);
-  margin: 4rem auto;
-}
-#tree-plant img {
-  display: none;
-}
-
-.email-signup {
-  text-align: center;
-  margin-inline: 2rem;
-}
-.email-signup #title {
-  font: 6vw bold;
-  margin-bottom: 2rem;
-  font-family: poppins;
-}
-.email-signup #sub-head {
-  font-size: 3vw;
-  margin-bottom: 2rem;
-  font-family: poppins;
-}
-.email-signup #email {
-  background-color: none;
-  width: 80%;
-  padding: 0.5rem;
-}
-.email-signup input[type=email] {
-  border: 2px solid var(--tertiary);
-  background-color: var(--primary);
-  margin-block: 2rem;
-}
-.email-signup button {
-  font-size: 3vw;
-}
-
 footer {
   background-color: #171a24;
   box-shadow: 0 2px 15px #171a24;
@@ -506,40 +511,124 @@ footer #copyright {
     margin: auto;
   }
   body header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     display: flex;
     place-content: space-between;
-    align-items: center;
-  }
-  body header #mobile-cta {
-    display: none;
-  }
-  body header #mobile-exit {
-    display: none;
+    background-color: var(--primary);
+    z-index: 999;
   }
   body header #logo {
-    width: 50%;
+    max-width: 6rem;
+  }
+  body header .hamburger {
+    width: 6%;
   }
   body header #desktop-nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #1b1f2b;
+    padding: 2.5rem;
+    transform: translateX(110%);
+    transition: 0.2s ease;
+    box-shadow: 1px 0px 10px #222636 inset;
+  }
+  body header #desktop-nav #mobile-exit {
+    float: right;
+    width: 8%;
+  }
+  body header #desktop-nav ul {
+    text-align: right;
+    margin-top: 3rem;
+  }
+  body header #desktop-nav ul a {
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    padding-block: 1rem;
+  }
+  body header #desktop-nav ul #mobile-nav-buttons {
+    padding: 0;
+  }
+  body header #desktop-nav .trio-icons {
+    display: none;
+  }
+  body header #desktop-nav[data-visible=true] {
+    display: block;
+    transform: translateX(0%);
+    transition: 0.2s ease-out;
+  }
+  body header #wallet-desktop-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #1b1f2b;
+    padding: 2.5rem;
+    transform: translateX(110%);
+    transition: 0.2s ease;
+    box-shadow: 1px 0px 10px #222636 inset;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex {
     display: flex;
     place-content: space-between;
     align-items: center;
   }
-  body header #desktop-nav a {
-    text-decoration: none;
+  body header #wallet-desktop-menu .pop-up-title-exit-flex .pop-up-title {
     font-weight: bold;
-    font-size: 1.3vw;
-    color: white;
-    margin-left: 1rem;
   }
-  body header #desktop-nav #mobile-nav-buttons {
-    display: none;
+  body header #wallet-desktop-menu .pop-up-title-exit-flex img {
+    width: 8%;
+    height: 8%;
+    transform: scale(1);
+    transition: 0.3s ease;
   }
-  body header #desktop-nav .trio-icons {
+  body header #wallet-desktop-menu .pop-up-title-exit-flex img:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+  }
+  body header #wallet-desktop-menu .pop-up-sub {
+    margin-top: 3rem;
+  }
+  body header #wallet-desktop-menu ul {
     display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 2rem 0;
   }
-  body header #desktop-nav .trio-icons img {
-    max-width: 70%;
-    min-width: 65%;
+  body header #wallet-desktop-menu ul a {
+    text-decoration: none;
+    color: white;
+  }
+  body header #wallet-desktop-menu ul .logo-name-flex {
+    display: flex;
+    align-items: center;
+    border: 0.1px solid rgb(98, 98, 98);
+    padding: 1rem;
+  }
+  body header #wallet-desktop-menu ul #rev-box {
+    border-radius: 0 0 0.6rem 0.6rem;
+  }
+  body header #wallet-desktop-menu ul #rev-logo {
+    width: 6%;
+  }
+  body header #wallet-desktop-menu ul #meta-box {
+    border-radius: 0.6rem 0.6rem 0 0;
+  }
+  body header #wallet-desktop-menu ul img {
+    width: 10%;
+    margin-right: 2rem;
+  }
+  body header #wallet-desktop-menu[data-visible=true] {
+    display: block;
+    transform: translateX(0%);
+    transition: 0.2s ease-out;
   }
   body .hero {
     margin-block: 4.5rem;
@@ -563,6 +652,9 @@ footer #copyright {
   }
   body .hero .left-col .hero-buttons .explore-image-text {
     margin-right: 2rem;
+  }
+  body .hero .left-col .hero-buttons .explore-image-text a {
+    text-decoration: none;
   }
   body .hero .left-col .hero-buttons #rocket {
     width: 18%;
@@ -647,10 +739,41 @@ footer #copyright {
   #nft-carousel-one .media-scroller .nft .nft-overlay .nft-name {
     font-size: 1.6vw;
     margin-block: 1rem;
+    color: white;
   }
   #nft-carousel-one .media-scroller .nft .nft-overlay button {
     background: white;
     color: black;
+  }
+  #tree-plant {
+    display: flex;
+  }
+  #tree-plant .left-section {
+    width: 80%;
+  }
+  #tree-plant .left-section #question {
+    font-size: 3vw;
+    font-weight: bold;
+  }
+  #tree-plant .left-section #question span {
+    color: var(--secondary);
+  }
+  #tree-plant .left-section #subtext {
+    font-size: 1vw;
+    padding-bottom: 3rem;
+    padding-right: 8rem;
+  }
+  #tree-plant .left-section #learn-more-button {
+    background-image: linear-gradient(to right, var(--secondary), #6daf89);
+    margin: 0;
+  }
+  #tree-plant .right-section {
+    -moz-columns: 3;
+         columns: 3;
+    width: 60%;
+  }
+  #tree-plant .right-section img {
+    padding: 1rem;
   }
   .trending {
     font-weight: bold;
@@ -659,19 +782,21 @@ footer #copyright {
   .trending span {
     color: var(--tertiary);
   }
+  .nft-carousel-two-link {
+    color: var(--tertiary);
+    text-align: center;
+  }
   .nft-carousel-two {
     display: flex;
     place-content: space-between;
   }
   .nft-carousel-two .nft-card {
     background: rgba(255, 255, 255, 0.15);
-    border: 0.5px solid white;
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     -webkit-backdrop-filter: blur(12.7px);
             backdrop-filter: blur(12.7px);
     margin: 2rem 0.5rem;
-    border: 0.8px white solid;
     border-radius: 0.8rem;
   }
   .nft-carousel-two .nft-card .nft-card-center {
@@ -703,36 +828,6 @@ footer #copyright {
   }
   .nft-carousel-two .nft-card .nft-card-center .nft-card-text .right-text button .view-text {
     font-size: 0.9vw;
-  }
-  #tree-plant {
-    display: flex;
-  }
-  #tree-plant .left-section {
-    width: 80%;
-  }
-  #tree-plant .left-section #question {
-    font-size: 3vw;
-    font-weight: bold;
-  }
-  #tree-plant .left-section #question span {
-    color: var(--secondary);
-  }
-  #tree-plant .left-section #subtext {
-    font-size: 1vw;
-    padding-bottom: 3rem;
-    padding-right: 8rem;
-  }
-  #tree-plant .left-section #learn-more-button {
-    background-image: linear-gradient(to right, var(--secondary), #6daf89);
-    margin: 0;
-  }
-  #tree-plant .right-section {
-    -moz-columns: 3;
-         columns: 3;
-    width: 60%;
-  }
-  #tree-plant .right-section img {
-    padding: 1rem;
   }
   .email-signup {
     text-align: center;
