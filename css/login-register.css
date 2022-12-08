@@ -530,23 +530,20 @@ body header #desktop-nav .trio-icons #wallet:hover {
     transition: 0.3s ease;
   }
   body header #wallet-desktop-menu {
-    z-index: 1;
     position: fixed;
+    overflow: hidden;
     right: 0;
     top: 0;
-    width: 36%;
+    width: 50%;
     height: 100vh;
     background-color: #1b1f2b;
+    padding: 2.6rem;
     transform: translateX(110%);
     transition: 0.2s ease;
     box-shadow: 1px 0px 10px #222636 inset;
   }
-  body header #wallet-desktop-menu .wallet-pop-up-box {
-    background-color: #1e2030;
-    margin: 12rem 1.5rem 1.5rem 1.5rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 2px 1px 10px #1b1e2a;
+  body header #wallet-desktop-menu body {
+    position: fixed;
   }
   body header #wallet-desktop-menu .pop-up-title-exit-flex {
     display: flex;
@@ -555,11 +552,10 @@ body header #desktop-nav .trio-icons #wallet:hover {
   }
   body header #wallet-desktop-menu .pop-up-title-exit-flex .pop-up-title {
     font-weight: bold;
-    font-size: 1.5vw;
   }
   body header #wallet-desktop-menu .pop-up-title-exit-flex img {
-    width: 4%;
-    height: 4%;
+    width: 8%;
+    height: 8%;
     transform: scale(1);
     transition: 0.3s ease;
   }
@@ -569,6 +565,7 @@ body header #desktop-nav .trio-icons #wallet:hover {
   }
   body header #wallet-desktop-menu .pop-up-sub {
     margin-top: 3rem;
+    font-size: 3.2vw;
   }
   body header #wallet-desktop-menu ul {
     display: flex;
@@ -579,27 +576,26 @@ body header #desktop-nav .trio-icons #wallet:hover {
   body header #wallet-desktop-menu ul a {
     text-decoration: none;
     color: white;
+    font-size: 3vw;
   }
   body header #wallet-desktop-menu ul .logo-name-flex {
     display: flex;
     align-items: center;
-    border: 0.1px solid rgb(98, 98, 98);
-    padding: 1rem;
-  }
-  body header #wallet-desktop-menu ul .logo-name-flex:hover {
-    box-shadow: 0.5px 0.5px 5px rgb(104, 104, 104);
+    border: 0.1px solid rgb(50, 50, 50);
+    padding: 0.8rem;
+    background-color: #171a24;
   }
   body header #wallet-desktop-menu ul #rev-box {
-    border-radius: 0 0 0.8rem 0.8rem;
+    border-radius: 0 0 0.6rem 0.6rem;
   }
   body header #wallet-desktop-menu ul #rev-logo {
-    width: 6%;
+    width: 7%;
   }
   body header #wallet-desktop-menu ul #meta-box {
-    border-radius: 0.8rem 0.8rem 0 0;
+    border-radius: 0.6rem 0.6rem 0 0;
   }
   body header #wallet-desktop-menu ul img {
-    width: 7%;
+    width: 10%;
     margin-right: 2rem;
   }
   body header #wallet-desktop-menu[data-visible=true] {
