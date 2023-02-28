@@ -1,23 +1,30 @@
-/*Organise big chunks of code into classes, ie positions, colour etc*/
-/*Make picture collage look nicer*/
-/*Add image overlays for the tree section with quick overviews of each country*/
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
 :root {
-	--primary: #232838;
+	--background: #191d29;
 	--secondary: #5ecb8c;
 	--tertiary: #ae5ecb;
 	--button-gradient: #6456d1;
+
+	--secondary-font-grey: #a7a7a7;
 
 	--primary-button-font-size: 2.5vw;
 	--secondary-button-font-size: 2.5vw;
 }
 
-img,
-svg {
+html {
+	background-color: var(--background);
+	color: white;
+	font-family: poppins;
+}
+
+img {
 	max-width: 100%;
 	display: block;
+}
+
+li {
+	list-style-type: none;
 }
 
 /*         Phone CSS         */
@@ -26,9 +33,6 @@ svg {
 	body {
 		margin: 0;
 		padding: 0;
-		color: white;
-		font-family: poppins;
-		background-color: var(--primary);
 
 		section {
 			margin: 10rem 2.5rem;
@@ -76,7 +80,7 @@ svg {
 			display: flex;
 			place-content: space-between;
 			padding: 2rem;
-			background-color: var(--primary);
+			background-color: var(--background);
 			z-index: 999;
 
 			#logo {
@@ -122,11 +126,6 @@ svg {
 				.trio-icons {
 					display: none;
 				}
-			}
-			#desktop-nav[data-visible="true"] {
-				display: block;
-				transform: translateX(0%);
-				transition: 0.2s ease-out;
 			}
 
 			#wallet-desktop-menu {
@@ -211,11 +210,6 @@ svg {
 						margin-right: 2rem;
 					}
 				}
-			}
-			#wallet-desktop-menu[data-visible="true"] {
-				display: block;
-				transform: translateX(0%);
-				transition: 0.2s ease-out;
 			}
 		}
 
@@ -346,6 +340,8 @@ svg {
 				.right-nft-showcase {
 					img {
 						margin: auto;
+						border-radius: 5px;
+						box-shadow: rgba(99, 99, 99, 0.467) 0px 2px 8px 0px;
 					}
 				}
 			}
@@ -374,26 +370,6 @@ svg {
 
 				.nft {
 					position: relative;
-
-					.nft-overlay {
-						position: absolute;
-						width: 100%;
-						bottom: 10%;
-						z-index: 1;
-
-						.nft-name {
-							font-size: 4.5vw;
-							margin-block: 1rem;
-							color: white;
-						}
-
-						button {
-							background: white;
-							color: black;
-							font-size: 3vw;
-							font-weight: bold;
-						}
-					}
 				}
 			}
 		}
@@ -413,173 +389,160 @@ svg {
 				color: var(--tertiary);
 				margin-bottom: 1rem;
 			}
+		}
 
-			.nft-carousel-two {
-				display: grid;
-				grid-auto-flow: column;
-				grid-auto-columns: 82%;
-				gap: 2rem;
+		#tree-plant {
+			#question {
+				font-size: 8vw;
+				font-family: poppins;
 
-				overflow-x: scroll;
+				span {
+					color: var(--secondary);
+				}
+			}
 
-				.nft-card {
-					background: rgba(255, 255, 255, 0.048);
+			#subtext {
+				font-size: 3vw;
+			}
 
-					border-radius: 10px;
-					box-shadow: 0 2px 15px rgba(0, 0, 0, 0.302);
-					backdrop-filter: blur(15px);
-					padding-top: 0.1rem;
+			#learn-more-button {
+				background-image: linear-gradient(to right, var(--secondary), #6fac8d);
+				margin: 4rem auto;
+			}
 
-					.nft-card-center {
-						margin: 1rem 1rem 0.5rem 1rem;
-						#nft-carousel-1 {
-							margin: auto;
+			img {
+				display: none;
+			}
+		}
+
+		.nft-carousel-two {
+			display: grid;
+			grid-auto-flow: column;
+			gap: 1rem;
+			align-items: flex-end;
+			overflow-x: scroll;
+
+			.nft-card {
+				background-color: #11131b;
+				border-radius: 10px;
+				box-shadow: rgba(21, 21, 21, 0.467) 0px 2px 20px 0px;
+
+				.nft-card-text {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					.nft-card-text-left {
+						padding: 1rem;
+						h4 {
+							margin: 0;
+							padding: 0;
 						}
 
-						.nft-card-text {
-							display: flex;
-							place-content: space-between;
-							padding-block: 1rem;
+						p {
+							font-size: 2vw;
+						}
+					}
 
-							.nft-name {
-								font-weight: bold;
-								margin-bottom: 0.8rem;
-							}
-							.price {
-								font-weight: bold;
-								margin-bottom: 0.8rem;
-							}
+					.price-icon {
+						display: flex;
+						align-items: center;
+						font-size: 3.5vw;
+						padding: 1rem;
 
-							.owner {
-								font-size: 2.4vw;
-							}
-
-							.right-text {
-								text-align: right;
-
-								button {
-									padding: 0.7rem 1.1rem;
-									align-items: center;
-
-									img {
-										margin-right: 0.3rem;
-										width: 25%;
-									}
-
-									.view-text {
-										font-size: 2.6vw;
-									}
-								}
-							}
+						i {
+							color: #f2a900;
 						}
 					}
 				}
-			}
-		}
-	}
-	#tree-plant {
-		#question {
-			font-size: 8vw;
-			font-family: poppins;
 
-			span {
-				color: var(--secondary);
+				img {
+					max-width: 300px;
+					height: 250px;
+					object-fit: cover;
+					border-radius: 8px;
+				}
 			}
 		}
 
-		#subtext {
-			font-size: 3vw;
-		}
+		.email-signup {
+			text-align: center;
+			margin-inline: 2rem;
 
-		#learn-more-button {
-			background-image: linear-gradient(to right, var(--secondary), #6fac8d);
-			margin: 4rem auto;
-		}
+			#title {
+				font: 6vw bold;
+				margin-bottom: 2rem;
+				font-family: poppins;
+			}
 
-		img {
-			display: none;
-		}
-	}
+			#sub-head {
+				font-size: 3vw;
+				margin-bottom: 2rem;
+				font-family: poppins;
+			}
 
-	.email-signup {
-		text-align: center;
-		margin-inline: 2rem;
+			#email {
+				background-color: none;
+				width: 80%;
+				padding: 0.5rem;
+			}
 
-		#title {
-			font: 6vw bold;
-			margin-bottom: 2rem;
-			font-family: poppins;
+			input[type="email"] {
+				border: 2px solid var(--tertiary);
+				background-color: var(--background);
+				margin-block: 2rem;
+			}
+			button {
+				font-size: 3vw;
+			}
 		}
+		footer {
+			background-color: #171a24;
+			box-shadow: 0 2px 15px #171a24;
+			margin-top: 8rem;
+			padding: 2rem;
+			.footer-name {
+				font-size: 4vw;
+				padding-bottom: 4rem;
+			}
 
-		#sub-head {
-			font-size: 3vw;
-			margin-bottom: 2rem;
-			font-family: poppins;
-		}
+			div {
+				.left-footer {
+					width: 50%;
 
-		#email {
-			background-color: none;
-			width: 80%;
-			padding: 0.5rem;
-		}
+					.footer-links {
+						display: none;
+					}
+					.paragraph {
+						display: none;
+					}
+				}
 
-		input[type="email"] {
-			border: 2px solid var(--tertiary);
-			background-color: var(--primary);
-			margin-block: 2rem;
-		}
-		button {
-			font-size: 3vw;
+				.right-footer {
+					ul {
+						padding: 1rem 0rem;
+						margin: 0 0 2rem 0;
+					}
+					a {
+						text-decoration: none;
+						color: white;
+						display: block;
+						padding-block: 0.5rem;
+					}
+				}
+			}
+			#copyright {
+				text-align: center;
+			}
 		}
 	}
 }
 
-footer {
-	background-color: #171a24;
-	box-shadow: 0 2px 15px #171a24;
-	margin-top: 8rem;
-	padding: 2rem;
-	.footer-name {
-		font-size: 4vw;
-		padding-bottom: 4rem;
-	}
-
-	div {
-		.left-footer {
-			width: 50%;
-
-			.footer-links {
-				display: none;
-			}
-			.paragraph {
-				display: none;
-			}
-		}
-
-		.right-footer {
-			ul {
-				padding: 1rem 0rem;
-				margin: 0 0 2rem 0;
-			}
-			a {
-				text-decoration: none;
-				color: white;
-				display: block;
-				padding-block: 0.5rem;
-			}
-		}
-	}
-	#copyright {
-		text-align: center;
-	}
-}
+/*        Tablet CSS       */
 
 @media only screen and (max-width: 999px) and (min-width: 601px) {
 	body {
 		margin: 4rem;
-		background-color: var(--primary);
-		font-family: poppins;
-		color: white;
 
 		section {
 			margin: 12rem 2rem;
@@ -624,7 +587,7 @@ footer {
 			top: 0;
 			display: flex;
 			place-content: space-between;
-			background-color: var(--primary);
+			background-color: var(--background);
 			z-index: 999;
 
 			#logo {
@@ -670,11 +633,6 @@ footer {
 				.trio-icons {
 					display: none;
 				}
-			}
-			#desktop-nav[data-visible="true"] {
-				display: block;
-				transform: translateX(0%);
-				transition: 0.2s ease-out;
 			}
 
 			#wallet-desktop-menu {
@@ -750,11 +708,6 @@ footer {
 						margin-right: 2rem;
 					}
 				}
-			}
-			#wallet-desktop-menu[data-visible="true"] {
-				display: block;
-				transform: translateX(0%);
-				transition: 0.2s ease-out;
 			}
 		}
 
@@ -863,6 +816,8 @@ footer {
 				img {
 					width: 85%;
 					float: right;
+					border-radius: 5px;
+					box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 				}
 			}
 		}
@@ -888,23 +843,6 @@ footer {
 
 			.nft {
 				position: relative;
-
-				.nft-overlay {
-					position: absolute;
-					width: 100%;
-					bottom: 10%;
-
-					.nft-name {
-						font-size: 1.6vw;
-						margin-block: 1rem;
-						color: white;
-					}
-
-					button {
-						background: white;
-						color: black;
-					}
-				}
 			}
 		}
 	}
@@ -934,15 +872,6 @@ footer {
 				margin: 0;
 			}
 		}
-
-		.right-section {
-			columns: 3;
-			width: 60%;
-
-			img {
-				padding: 1rem;
-			}
-		}
 	}
 
 	.trending {
@@ -960,54 +889,47 @@ footer {
 	}
 	.nft-carousel-two {
 		display: flex;
-		place-content: space-between;
+		justify-content: center;
+		gap: 1rem;
+		margin-top: 2rem;
 
 		.nft-card {
-			background: rgba(255, 255, 255, 0.15);
-
+			background-color: #11131b;
 			border-radius: 10px;
-			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-			backdrop-filter: blur(12.7px);
+			box-shadow: rgba(21, 21, 21, 0.467) 0px 2px 20px 0px;
 
-			margin: 2rem 0.5rem;
-			border-radius: 0.8rem;
-
-			.nft-card-center {
-				margin: 1rem 1rem 0.5rem 1rem;
-
-				.nft-card-text {
-					display: flex;
-					place-content: space-between;
-					padding-block: 1rem;
-
-					.nft-name,
-					.price {
-						font-weight: bold;
-						margin-bottom: 0.5rem;
-						font-size: 1.3vw;
+			.nft-card-text {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0 1rem 1rem 1rem;
+				.nft-card-text-left {
+					h4 {
+						margin: 0;
+						padding: 0;
 					}
 
-					.owner {
-						font-size: 0.9vw;
-					}
-
-					.right-text {
-						text-align: right;
-
-						button {
-							padding: 0.4rem 0.7rem;
-
-							img {
-								margin-right: 0.3rem;
-								width: 25%;
-							}
-
-							.view-text {
-								font-size: 0.9vw;
-							}
-						}
+					p {
+						font-size: 1vw;
 					}
 				}
+
+				.price-icon {
+					display: flex;
+					align-items: center;
+					font-size: 2vw;
+
+					i {
+						color: #f2a900;
+					}
+				}
+			}
+
+			img {
+				max-width: 300px;
+				height: 250px;
+				object-fit: cover;
+				border-radius: 8px;
 			}
 		}
 	}
@@ -1111,14 +1033,11 @@ footer {
 	}
 }
 
-/*     Desktop View      */
+/*     Desktop CSS     */
 
 @media only screen and (min-width: 1000px) {
 	body {
 		margin: 4rem;
-		background-color: var(--primary);
-		font-family: poppins;
-		color: white;
 
 		section {
 			margin: 14rem 8rem;
@@ -1155,6 +1074,7 @@ footer {
 			background: none;
 			border: 1px solid var(--tertiary);
 		}
+
 		header {
 			display: flex;
 			place-content: space-between;
@@ -1168,7 +1088,7 @@ footer {
 			}
 
 			#logo {
-				width: 50%;
+				width: 45%;
 			}
 			#desktop-nav {
 				display: flex;
@@ -1180,7 +1100,7 @@ footer {
 
 					a {
 						text-decoration: none;
-						margin: 1.5rem;
+						margin: 1.3rem;
 						font-weight: bold;
 						font-size: 0.9vw;
 						color: white;
@@ -1210,14 +1130,14 @@ footer {
 				}
 			}
 			#wallet-desktop-menu {
-				z-index: 1;
 				position: fixed;
+				overflow: hidden;
 				right: 0;
 				top: 0;
-				width: 36%;
+				width: 30%;
 				height: 100vh;
 				background-color: #1b1f2b;
-
+				padding: 2.6rem;
 				transform: translateX(110%);
 				transition: 0.2s ease;
 				box-shadow: 1px 0px 10px #222636 inset;
@@ -1296,12 +1216,6 @@ footer {
 					}
 				}
 			}
-
-			#wallet-desktop-menu[data-visible="true"] {
-				display: block;
-				transform: translateX(0%);
-				transition: 0.2s ease-out;
-			}
 		}
 	}
 
@@ -1313,7 +1227,7 @@ footer {
 			margin-top: 6rem;
 			#title {
 				font-weight: bold;
-				font-size: 4vw;
+				font-size: 3.8vw;
 
 				span {
 					color: var(--secondary);
@@ -1321,13 +1235,13 @@ footer {
 			}
 
 			#subhead {
-				font-size: 1.2vw;
-				margin-block: 3rem;
+				font-size: 1vw;
+				margin-block: 2rem;
 			}
 
 			.hero-buttons {
 				display: flex;
-				margin-block: 6rem 0;
+				margin-block: 4rem 0;
 
 				a {
 					text-decoration: none;
@@ -1352,7 +1266,7 @@ footer {
 		.right-col {
 			margin-top: 2rem;
 			img {
-				width: 75%;
+				width: 70%;
 				float: right;
 			}
 		}
@@ -1376,24 +1290,26 @@ footer {
 				width: 50%;
 				.nft-name {
 					font-size: 2.5vw;
-					margin-top: 4rem;
 				}
 
 				.nft-owner-tick {
 					display: flex;
+					margin-block: 0;
 				}
 				.bidding-ends {
-					margin-block: 4vw 0rem;
+					margin-block: 3vw 0rem;
+					color: var(--secondary-font-grey);
 				}
 				.countdown {
 					display: flex;
-					margin-block: 2vw 4rem;
+					margin-block: 1rem 4rem;
 					text-align: center;
 					font-size: 1.3vw;
 					width: 60%;
 
 					.time-name {
 						font-size: 0.8vw;
+						color: var(--secondary-font-grey);
 					}
 				}
 
@@ -1411,12 +1327,8 @@ footer {
 				img {
 					width: 85%;
 					float: right;
-					transform: scale(1);
-					transition: 0.3s ease;
-				}
-				img:hover {
-					transform: scale(1.02);
-					transition: 0.3s ease;
+					border-radius: 5px;
+					box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 				}
 			}
 		}
@@ -1443,35 +1355,12 @@ footer {
 			a {
 				color: white;
 			}
-
-			.nft {
-				position: relative;
-				transform: scale(1);
-				transition: 0.3s ease;
-
-				.nft-overlay {
-					position: absolute;
-					width: 100%;
-					bottom: 10%;
-
-					.nft-name {
-						font-size: 1.6vw;
-						margin-block: 1rem;
-					}
-
-					button {
-						background: white;
-						color: black;
-					}
-				}
-			}
-
-			.nft:hover {
-				transform: scale(1.01);
-				transition: 0.3s ease;
-			}
+		}
+		button {
+			margin-top: 2rem;
 		}
 	}
+
 	#tree-plant {
 		display: flex;
 
@@ -1498,16 +1387,6 @@ footer {
 				margin: 0;
 			}
 		}
-
-		.right-section {
-			columns: 3;
-			width: 60%;
-
-			img {
-				padding: 1rem;
-				width: 90%;
-			}
-		}
 	}
 
 	.trending {
@@ -1526,61 +1405,48 @@ footer {
 	}
 	.nft-carousel-two {
 		display: flex;
-		place-content: space-between;
-
-		.nft-card:hover {
-			transform: scale(1.01);
-			transition: 0.3s ease;
-		}
+		align-items: center;
+		justify-content: center;
+		gap: 3rem;
+		margin-top: 2rem;
 
 		.nft-card {
-			background: rgba(255, 255, 255, 0.048);
-
+			background-color: #11131b;
 			border-radius: 10px;
-			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.302);
-			backdrop-filter: blur(15px);
+			box-shadow: rgba(21, 21, 21, 0.467) 0px 2px 20px 0px;
 
-			margin: 2rem 1rem;
-			border-radius: 0.8rem;
-
-			transform: scale(1);
-			transition: 0.3s ease;
-
-			.nft-card-center {
-				margin: 1rem 1rem 0.5rem 1rem;
-
-				.nft-card-text {
-					display: flex;
-					place-content: space-between;
-					padding-block: 1.3rem;
-
-					.nft-name,
-					.price {
-						font-weight: bold;
-						margin-bottom: 1.2rem;
+			.nft-card-text {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0 1rem 0.5rem 1rem;
+				.nft-card-text-left {
+					h4 {
+						margin: 0;
+						padding: 0;
 					}
 
-					.owner {
-						font-size: 0.9vw;
-					}
-
-					.right-text {
-						text-align: right;
-
-						button {
-							padding: 0.7rem 1.1rem;
-
-							img {
-								margin-right: 0.3rem;
-								width: 27%;
-							}
-
-							.view-text {
-								font-size: 1vw;
-							}
-						}
+					p {
+						font-size: 0.6vw;
 					}
 				}
+
+				.price-icon {
+					display: flex;
+					align-items: center;
+					font-size: 2vw;
+
+					i {
+						color: #f2a900;
+					}
+				}
+			}
+
+			img {
+				max-width: 300px;
+				height: 250px;
+				object-fit: cover;
+				border-radius: 8px;
 			}
 		}
 	}

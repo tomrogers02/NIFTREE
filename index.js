@@ -1,10 +1,5 @@
-//Loading screen?
-//Mobile carousel
-
-
-
 const countdown = () => {
-    const countDate = new Date('December 30, 2022 00:00:00');
+    const countDate = new Date('March 10, 2023 00:00:00');
     const now = new Date().getTime();
     const gap = countDate - now;
 
@@ -44,7 +39,7 @@ navToggle.addEventListener('click', () => {
     }
 
 });
-2
+
 
 mobileExit.addEventListener('click', () => {
     const visibility = primaryNav.getAttribute("data-visible")
@@ -59,10 +54,23 @@ mobileExit.addEventListener('click', () => {
 
 
 const walletNav = document.getElementById('wallet-desktop-menu');
-const walletToggle = document.getElementById('wallet');
+
+const walletToggle = document.getElementById('wallet-name');
+const walletToggleDesktop = document.getElementById('wallet');
 const walletExit = document.getElementById('wallet-exit-btn');
 
 walletToggle.addEventListener('click', () => {
+    const visibility = walletNav.getAttribute('data-visible')
+
+    console.log(visibility);
+
+    if (visibility === "false") {
+        walletNav.setAttribute("data-visible", true);
+    }
+
+});
+
+walletToggleDesktop.addEventListener('click', () => {
     const visibility = walletNav.getAttribute('data-visible')
 
     console.log(visibility);

@@ -1,343 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NiFTREE</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NiFTREE</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+			integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+			crossorigin="anonymous"
+		/>
+	</head>
 
-  <body>
-    <header>
-      <a href="index.html">
-        <img src="images/logo.svg" alt="" id="logo" href="index.html" /> </a
-      ><img
-        src="images/Hamburger.svg"
-        alt=""
-        id="mobile-cta"
-        class="hamburger"
-      />
+	<body>
+		<header>
+			<a href="index.html"> <img src="images/logo.svg" alt="" id="logo" /> </a
+			><img
+				src="images/Hamburger.svg"
+				alt=""
+				id="mobile-cta"
+				class="hamburger"
+			/>
 
-      <nav id="desktop-nav" data-visible="false">
-        <img src="images/mobile-exit.png" alt="" id="mobile-exit" />
+			<nav id="desktop-nav" data-visible="false">
+				<img src="images/mobile-exit.png" alt="" id="mobile-exit" />
 
-        <ul class="nav-menu">
-          <a href="marketplace.html">Marketplace</a>
-          <a href="">Our Project</a>
-          <a href="impact.html">Your impact</a>
+				<ul class="nav-menu">
+					<li>
+						<a href="marketplace.html">Marketplace</a>
+						<a href="">Our Project</a>
+						<a href="impact.html">Your impact</a>
 
-          <ul id="mobile-nav-buttons">
-            <a href="login.html">Account</a>
+						<ul id="mobile-nav-buttons">
+							<li>
+								<a href="login.html">Account</a>
 
-            <div id="wallet">Wallet</div>
-          </ul>
-        </ul>
+								<div id="wallet-name">Wallet</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
 
-        <div class="trio-icons">
-          <a href="login.html">
-            <img src="images/profile.svg" alt="" id="profile" />
-          </a>
-          <img src="images/wallet-icon-desktop.svg" alt="" id="wallet" />
-        </div>
-      </nav>
-      <div id="wallet-desktop-menu" data-visible="true">
-        <div class="wallet-pop-up-box">
-          <div class="pop-up-title-exit-flex">
-            <div class="pop-up-title">My Wallet</div>
-            <img src="images/wallet-exit.png" alt="" id="wallet-exit-btn" />
-          </div>
+				<div class="trio-icons">
+					<a href="login.html">
+						<img src="images/profile.svg" alt="" id="profile" />
+					</a>
+					<img src="images/wallet-icon-desktop.svg" alt="" id="wallet" />
+				</div>
+			</nav>
 
-          <div class="pop-up-sub">
-            If you don’t have a wallet yet, set one up below.
-          </div>
-          <ul>
-            <div class="logo-name-flex" id="meta-box">
-              <img src="images/wallet-meta-logo.png" alt="" />
-              <a href="">MetaMask</a>
-            </div>
+			<div id="wallet-desktop-menu" data-visible="false">
+				<div class="wallet-pop-up-box">
+					<div class="pop-up-title-exit-flex">
+						<div class="pop-up-title">My Wallet</div>
+						<img src="images/wallet-exit.png" alt="" id="wallet-exit-btn" />
+					</div>
 
-            <div class="logo-name-flex">
-              <img src="images/wallet-coin-logo.png" alt="" />
-              <a href="">Coinbase</a>
-            </div>
-            <div class="logo-name-flex">
-              <img src="images/wallet-binance-logo.png" alt="" />
-              <a href="">Binance</a>
-            </div>
-            <div class="logo-name-flex" id="rev-box">
-              <img src="images/wallet-rev-logo.png" alt="" id="rev-logo" />
-              <a href="">Revolut</a>
-            </div>
-          </ul>
-        </div>
-      </div>
-    </header>
+					<div class="pop-up-sub">
+						If you don’t have a wallet yet, set one up below.
+					</div>
+					<ul>
+						<li>
+							<div class="logo-name-flex" id="meta-box">
+								<img src="images/wallet-meta-logo.png" alt="" />
+								<a href="">MetaMask</a>
+							</div>
 
-    <div class="hero">
-      <div class="left-col">
-        <div id="title">Let’s replant the <span>earth</span>, the fun way.</div>
-        <div id="subhead">
-          With over one thousand NFT’s to choose from, planting trees has never
-          been easier.
-        </div>
+							<div class="logo-name-flex">
+								<img src="images/wallet-coin-logo.png" alt="" />
+								<a href="">Coinbase</a>
+							</div>
+							<div class="logo-name-flex">
+								<img src="images/wallet-binance-logo.png" alt="" />
+								<a href="">Binance</a>
+							</div>
+							<div class="logo-name-flex" id="rev-box">
+								<img src="images/wallet-rev-logo.png" alt="" id="rev-logo" />
+								<a href="">Revolut</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
 
-        <div class="hero-buttons">
-          <div class="explore-image-text">
+		<div class="hero">
+			<div class="left-col">
+				<h1 id="title">Let’s replant the <span>earth</span>, the fun way.</h1>
+				<p id="subhead">
+					With over one thousand NFT’s to choose from, planting trees has never
+					been easier.
+				</p>
 
-            <a href="marketplace.html">
-                <button type="button" class="explore-button">
-                
-                <img src="images/rocket.svg" alt="" id="rocket" />
-                <span class="button-text">EXPLORE</span>
-              </button>
-            </a>
-          </div>
+				<div class="hero-buttons">
+					<div class="explore-image-text">
+						<a href="marketplace.html">
+							<button type="button" class="explore-button">
+								<img src="images/rocket.svg" alt="" id="rocket" />
+								<span class="button-text">Explore</span>
+							</button>
+						</a>
+					</div>
 
-          <div class="learnmore">
-            <div class="learn-inside">
-              <button type="button" class="secondary-button">
-                <span class="button-text">Learn More</span>
-                <img src="images/learn-arrow.svg" alt="" id="learn-arrow-img" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+					<div class="learnmore">
+						<div class="learn-inside">
+							<button type="button" class="secondary-button">
+								<span class="button-text">Learn More</span>
+								<img src="images/learn-arrow.svg" alt="" id="learn-arrow-img" />
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 
-      <div class="right-col">
-        <img src="images/nft-showcase-desktop.svg" alt="" id="nft-desktop">
-        
+			<div class="right-col">
+				<img src="images/nft-showcase-desktop.svg" alt="" id="nft-desktop" />
+			</div>
+		</div>
 
-      </div>
-    </div>
+		<img src="images/wallet-sponsors.png" alt="" id="wallet-sponsors" />
 
-    <img src="images/wallet-sponsors.png" alt="" id="wallet-sponsors" />
+		<img
+			src="images/wallet-sponsors-mobile.svg"
+			alt=""
+			id="wallet-sponsors-mobile"
+		/>
 
-    <img src="images/wallet-sponsors-mobile.svg" alt="" id="wallet-sponsors-mobile">
+		<section id="nft-showcase-1">
+			<div class="flexbox-showcase">
+				<div class="left-nft-showcase">
+					<p class="nft-name">Futura Ape #345</p>
+					<div class="nft-owner-tick">
+						<div class="nft-owner-name">@TreePlanta</div>
+						<img src="images/tick.svg" alt="" />
+					</div>
 
-    <section id="nft-showcase-1">
-      <div class="flexbox-showcase">
-        <div class="left-nft-showcase">
-          <div class="nft-name">Futura Ape #345</div>
-          <div class="nft-owner-tick">
-            <div class="nft-owner-name">@TreePlanta</div>
-            <img src="images/tick.svg" alt="">
-          </div>
+					<p class="bidding-ends">Ends in</p>
+					<div class="countdown">
+						<div class="hours-timer">
+							<div class="hour">Hour</div>
+							<div class="time-name">Hours</div>
+						</div>
+						<hr />
+						<div class="hours-timer">
+							<div class="minute">Minute</div>
+							<div class="time-name">Mins</div>
+						</div>
+						<hr />
 
-          <div class="bidding-ends">Ends in</div>
-                <div class="countdown">
-                  <div class="hours-timer">
-                    <div class="hour">Hour</div>
-                    <div class="time-name">Hours</div>
-                  </div>
-                  <hr>
-                  <div class="hours-timer">
-                    <div class="minute">Minute</div>
-                    <div class="time-name">Mins</div>
-                  </div>
-                  <hr>
-                 
-                  <div class="hours-timer">
-                    <div class="second">Seconds</div>
-                    <div class="time-name">Secs</div>
-                  </div>
-                </div>
+						<div class="hours-timer">
+							<div class="second">Seconds</div>
+							<div class="time-name">Secs</div>
+						</div>
+					</div>
 
-                <button id="place-bid">
-                  <img src="images/shopping.svg" alt="" id="shopping-icon" />
-                  <span class="button-text">Place Bid</span>
-                </button>
-        </div>
+					<button id="place-bid">
+						<img src="images/shopping.svg" alt="" id="shopping-icon" />
+						<span class="button-text">Place Bid</span>
+					</button>
+				</div>
 
-        <div class="right-nft-showcase">
-          <img src="images/green-nft-showcase.svg" alt="">
-        </div>
-      </div>
-    </section>
+				<div class="right-nft-showcase">
+					<img src="images/nfts/white-tat-nft.png" alt="" />
+				</div>
+			</div>
+		</section>
 
-    <section id="nft-carousel-one">
-      <div class="sub-title">This weeks</div>
-      <div class="title">Trending Collections</div>
-      <div class="media-scroller">
-        
-        <a href="marketplace.html">
-       <div class="nft" id="yellow-nft">
-          <img src="images/yellow-nft.png" alt="" />
-          <div class="nft-overlay">
-            <div class="nft-name">Yellow Street</div>
-            <button>View</button>
-          </div>
-        </div>
+		<section id="nft-carousel-one">
+			<p class="sub-title">This weeks</p>
+			<p class="title">Trending Collections</p>
+			<div class="media-scroller">
+				<div class="nft" id="yellow-nft">
+					<img src="images/yellow-nft.png" alt="" />
+				</div>
 
-        </a>
- 
-        <a href="marketplace.html">
+				<div class="nft" id="pink-nft">
+					<img src="images/pink-nft.png" alt="" />
+				</div>
 
-          
-                  <div class="nft" id="pink-nft">
-          <img src="images/pink-nft.png" alt="" />
-          <div class="nft-overlay">
-            <div class="nft-name">Pink Gang</div>
-            <button>View</button>
-          </div>
-        </div>
+				<div class="nft" id="blue-nft">
+					<img src="images/blue-nft.png" alt="" />
+				</div>
+			</div>
 
+			<a href="marketplace.html">
+				<button>View All</button>
+			</a>
+		</section>
 
+		<section id="tree-plant">
+			<div class="left-section">
+				<p id="question">But, Where Are The <span>Trees</span> Planted?</p>
+				<p id="subtext">
+					We plant in five different locations around the globe, with the aim to
+					reduce the impact of deforestation that are relevant to these
+					locations.
+				</p>
+				<button id="learn-more-button">Learn More</button>
+			</div>
+		</section>
 
-        </a>
+		<section id="nft-carousel-title">
+			<div class="trending">The Highest Bidders</div>
+			<div class="nft-carousel-two-link">View All</div>
 
-        <a href="marketplace.html">
-               <div class="nft" id="blue-nft">
-          <img src="images/blue-nft.png" alt="" />
-          <div class="nft-overlay">
-            <div class="nft-name">Blue Stuff</div>
-            <button>View</button>
-          </div>
-        </div>
-        </a>
-   
-      </div>
-    </section>
+			<div class="nft-carousel-two">
+				<div class="nft-card" id="nft-card-1">
+					<img src="images/nfts/purple-nft..jpg" alt="" />
+					<div class="nft-card-text">
+						<div class="nft-card-text-left">
+							<h4>Hape Beast #2</h4>
+							<p>@hapeowner01</p>
+						</div>
+						<div class="price-icon">
+							<p class="price">3</p>
+							<i class="bi bi-currency-bitcoin"></i>
+						</div>
+					</div>
+				</div>
 
-    <section id="tree-plant">
-      <div class="left-section">
-        <p id="question">But, Where Are The <span>Trees</span> Planted?</p>
-        <p id="subtext">
-          We plant in five different locations around the globe, with the aim to
-          reduce the impact of deforestation that are relevant to these
-          locations.
-        </p>
-        <button id="learn-more-button">Learn More</button>
-      </div>
-      <div class="right-section">
-        
-      </div>
-    </section>
+				<div class="nft-card" id="nft-card-2">
+					<img src="images/nfts/red.png" alt="" />
+					<div class="nft-card-text">
+						<div class="nft-card-text-left">
+							<h4 class="nft-name">Hape Beast #2</h4>
+							<p class="nft-owner">@hapeowner01</p>
+						</div>
+						<div class="price-icon">
+							<p class="price">3</p>
+							<i class="bi bi-currency-bitcoin"></i>
+						</div>
+					</div>
+				</div>
+				<div class="nft-card" id="nft-card-3">
+					<img src="images/nfts/light-yellow-nft.jpeg" alt="" />
+					<div class="nft-card-text">
+						<div class="nft-card-text-left">
+							<h4>Hape Beast #2</h4>
+							<p>@hapeowner01</p>
+						</div>
+						<div class="price-icon">
+							<p class="price">3</p>
+							<i class="bi bi-currency-bitcoin"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section id="nft-carousel-title">
-      <div class="trending">The Highest Bidders</div>
-      <div class="nft-carousel-two-link">View All</div>
+		<div class="email-signup">
+			<div id="email-title">A tree for your email address, fair right?</div>
+			<div id="sub-head">
+				We’ll also plant a tree for every email address we recieve.
+			</div>
 
-      <div class="nft-carousel-two">
-        <div class="nft-card">
-          <div class="nft-card-center">
-            <img src="images/nft-1.svg" alt="" id="nft-carousel-1" />
+			<div class="flex-button-email">
+				<input id="email" type="email" placeholder="Email Address" />
 
-            <div class="nft-card-text">
-              <div class="left-text">
-                <div class="nft-name">Raging Ape #12</div>
-                <div class="owner">@TreeYeeee1</div>
-              </div>
+				<button>Subscribe</button>
+			</div>
+		</div>
+		<script src="index.js"></script>
+		<footer>
+			<div class="footer-name">The Boring Stuff...</div>
+			<div>
+				<div class="left-footer">
+					<div class="paragraph">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam
+					</div>
 
-              <div class="right-text">
-                <div class="price">4 ETH</div>
-                <button>
-                  <img src="images/shopping.svg" alt="">
-                  <div class="view-text">View</div>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+					<div class="footer-links">
+						<a href="">
+							<img src="images/footer-twitter.svg" alt="" />
+						</a>
 
-        <div class="nft-card" id="nft-card-2">
-          <div class="nft-card-center">
-            <img src="images/nft-2.svg" alt="" id="nft-carousel-1" />
+						<a href="">
+							<img src="images/footer-google.svg" alt="" />
+						</a>
 
-            <div class="nft-card-text">
-              <div class="left-text">
-                <div class="nft-name">Raging Ape #12</div>
-                <div class="owner">@TreeYeeee1</div>
-              </div>
+						<a href="">
+							<img src="images/footer-insta.svg" alt="" />
+						</a>
+					</div>
+				</div>
 
-              <div class="right-text">
-                <div class="price">4 ETH</div>
-                <button>
-                  <img src="images/shopping.svg" alt="">
-                  <div class="view-text">View</div>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="nft-card" id="nft-card-3">
-          <div class="nft-card-center">
-            <img src="images/nft-3.svg" alt="" id="nft-carousel-1" />
+				<div class="right-footer">
+					<div class="list-one">
+						<div class="list-title">My Account</div>
+						<ul>
+							<li>
+								<a href="*">Collections</a>
+								<a href="*">History</a>
+								<a href="*">Portfolio</a>
+								<a href="*">Settings</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-            <div class="nft-card-text">
-              <div class="left-text">
-                <div class="nft-name">Raging Ape #12</div>
-                <div class="owner">@TreeYeeee1</div>
-              </div>
-
-              <div class="right-text">
-                <div class="price">4 ETH</div>
-                <button>
-                  <img src="images/shopping.svg" alt="">
-                  <div class="view-text">View</div>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="email-signup">
-      <div id="title">A tree for your email address, fair right?</div>
-      <div id="sub-head">
-        We’ll also plant a tree for every email address we recieve.
-      </div>
-
-      <div class="flex-button-email">
-        <input id="email" type="email" placeholder="Email Address" />
-
-        <button>Subscribe</button>
-      </div>
-    </div>
-    <script src="index.js"></script>
-  </body>
-
-  <footer>
-    <div class="footer-name">The Boring Stuff...</div>
-    <div>
-      <div class="left-footer">
-        <div class="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam
-        </div>
-
-        <div class="footer-links">
-          <a href="">
-            <img src="images/footer-twitter.svg" alt="" />
-          </a>
-
-          <a href="">
-            <img src="images/footer-google.svg" alt="" />
-          </a>
-
-          <a href="">
-            <img src="images/footer-insta.svg" alt="" />
-          </a>
-        </div>
-      </div>
-
-      <div class="right-footer">
-        <div class="list-one">
-          <div class="list-title">My Account</div>
-          <ul>
-            <a href="*">Collections</a>
-            <a href="*">History</a>
-            <a href="*">Portfolio</a>
-            <a href="*">Settings</a>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div id="copyright">@2022 NiFTREE NFT | All Rights Reserved.</div>
-  </footer>
+			<div id="copyright">@2022 NiFTREE NFT | All Rights Reserved.</div>
+		</footer>
+	</body>
 </html>
