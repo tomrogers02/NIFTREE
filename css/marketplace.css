@@ -21,6 +21,10 @@ img {
   display: block;
 }
 
+li {
+  list-style-type: none;
+}
+
 /*         Phone CSS         */
 @media only screen and (max-width: 600px) {
   body {
@@ -93,6 +97,11 @@ img {
   body header #desktop-nav .trio-icons {
     display: none;
   }
+  body header #desktop-nav[data-visible=true] {
+    display: block;
+    transform: translateX(0%);
+    transition: 0.2s ease-out;
+  }
   body header #wallet-desktop-menu {
     position: fixed;
     overflow: hidden;
@@ -161,6 +170,11 @@ img {
   body header #wallet-desktop-menu ul img {
     width: 10%;
     margin-right: 2rem;
+  }
+  body header #wallet-desktop-menu[data-visible=true] {
+    display: block;
+    transform: translateX(0%);
+    transition: 0.2s ease-out;
   }
   body .flex-box-hero {
     margin: 3rem 2.5rem;
@@ -327,9 +341,6 @@ img {
 @media only screen and (max-width: 999px) and (min-width: 601px) {
   body {
     margin: 4rem;
-    background-color: var(--primary);
-    font-family: poppins;
-    color: white;
   }
   body section {
     margin: 12rem 2rem;
@@ -348,41 +359,276 @@ img {
     padding: 0.9em 1.8em;
     margin: auto;
   }
+  body .secondary-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--tertiary);
+    background: none;
+    border: 1px solid var(--tertiary);
+    outline: none;
+    border-radius: 0.5em;
+    font-size: 1vw;
+    cursor: pointer;
+    padding: 0.9em 1.8em;
+    margin: auto;
+  }
   body header {
+    position: sticky;
+    top: 0;
     display: flex;
     place-content: space-between;
-    align-items: center;
-  }
-  body header #mobile-cta {
-    display: none;
-  }
-  body header #mobile-exit {
-    display: none;
+    background-color: var(--background);
+    z-index: 999;
   }
   body header #logo {
-    width: 50%;
+    max-width: 6rem;
+  }
+  body header .hamburger {
+    width: 6%;
   }
   body header #desktop-nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #1b1f2b;
+    padding: 2.5rem;
+    transform: translateX(110%);
+    transition: 0.2s ease;
+    box-shadow: 1px 0px 10px #222636 inset;
+  }
+  body header #desktop-nav #mobile-exit {
+    float: right;
+    width: 8%;
+  }
+  body header #desktop-nav ul {
+    text-align: right;
+    margin-top: 3rem;
+  }
+  body header #desktop-nav ul a {
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    padding-block: 1rem;
+  }
+  body header #desktop-nav ul #mobile-nav-buttons {
+    padding: 0;
+  }
+  body header #desktop-nav .trio-icons {
+    display: none;
+  }
+  body header #wallet-desktop-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #1b1f2b;
+    padding: 2.5rem;
+    transform: translateX(110%);
+    transition: 0.2s ease;
+    box-shadow: 1px 0px 10px #222636 inset;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex {
     display: flex;
     place-content: space-between;
     align-items: center;
   }
-  body header #desktop-nav a {
-    text-decoration: none;
+  body header #wallet-desktop-menu .pop-up-title-exit-flex .pop-up-title {
     font-weight: bold;
-    font-size: 1.3vw;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex img {
+    width: 8%;
+    height: 8%;
+    transform: scale(1);
+    transition: 0.3s ease;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex img:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+  }
+  body header #wallet-desktop-menu .pop-up-sub {
+    margin-top: 3rem;
+  }
+  body header #wallet-desktop-menu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 2rem 0;
+  }
+  body header #wallet-desktop-menu ul a {
+    text-decoration: none;
     color: white;
-    margin-left: 1rem;
   }
-  body header #desktop-nav #mobile-nav-buttons {
-    display: none;
+  body header #wallet-desktop-menu ul .logo-name-flex {
+    display: flex;
+    align-items: center;
+    border: 0.1px solid rgb(98, 98, 98);
+    padding: 1rem;
   }
-  body header #desktop-nav .trio-icons {
+  body header #wallet-desktop-menu ul #rev-box {
+    border-radius: 0 0 0.6rem 0.6rem;
+  }
+  body header #wallet-desktop-menu ul #rev-logo {
+    width: 6%;
+  }
+  body header #wallet-desktop-menu ul #meta-box {
+    border-radius: 0.6rem 0.6rem 0 0;
+  }
+  body header #wallet-desktop-menu ul img {
+    width: 10%;
+    margin-right: 2rem;
+  }
+  body section .flex-box-hero {
     display: flex;
   }
-  body header #desktop-nav .trio-icons img {
-    max-width: 70%;
-    min-width: 65%;
+  body section .flex-box-hero .mobile-filter-menus {
+    display: none;
+  }
+  body section .flex-box-hero .left-flex-hero .filter-title {
+    font-size: 1.5vw;
+    font-weight: bold;
+  }
+  body section .flex-box-hero .left-flex-hero ul {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  body section .flex-box-hero .left-flex-hero ul .category-check-flex label {
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  body section .flex-box-hero .left-flex-hero ul .category-check-flex input[type=checkbox] {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    left: 20%;
+  }
+  body section .flex-box-hero .left-flex-hero ul .category-check-flex label::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    border: 0.1em solid white;
+    border-radius: 0.3rem;
+    position: absolute;
+    left: 20%;
+  }
+  body section .flex-box-hero .left-flex-hero ul .category-check-flex label:hover::before,
+  body section .flex-box-hero .left-flex-hero ul .category-check-flex input[type=checkbox]:hover + label::before {
+    background-color: var(--secondary);
+  }
+  body section .flex-box-hero .left-flex-hero ul .category-check-flex input[type=checkbox]:checked + label::before {
+    background-color: var(--tertiary);
+  }
+  body section .flex-box-hero .right-flex-hero .column {
+    display: flex;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card {
+    background-color: #12151d;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.302);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    margin: 1rem 0.4rem;
+    border-radius: 0.8rem;
+    transform: scale(1);
+    transition: 0.3s ease;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-img {
+    max-width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 8px;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center {
+    margin: 1rem 1rem 0.1rem 1rem;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center img {
+    border-radius: 0.5rem;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text {
+    display: flex;
+    place-content: space-between;
+    padding-block: 1.3rem;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .nft-name,
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .price {
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .owner {
+    font-size: 0.9vw;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text {
+    text-align: right;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text button {
+    padding: 0.7rem 1.1rem;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text button img {
+    margin-right: 0.3rem;
+    width: 27%;
+  }
+  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text button .view-text {
+    font-size: 1vw;
+  }
+  body section #filter-pop-up-menu {
+    display: none;
+  }
+  body footer {
+    margin: -4rem;
+    padding: 4rem;
+    background-color: #1b1f2c;
+  }
+  body footer .footer-name {
+    font-size: 1.5vw;
+    padding-bottom: 2rem;
+  }
+  body footer div {
+    display: flex;
+  }
+  body footer div .left-footer {
+    width: 50%;
+    display: block;
+  }
+  body footer div .left-footer .paragraph {
+    font-size: 1.3vw;
+  }
+  body footer div .left-footer .footer-links {
+    margin-block: 2rem;
+  }
+  body footer div .left-footer .footer-links img {
+    margin: 1rem;
+  }
+  body footer div .right-footer {
+    width: 50%;
+  }
+  body footer div .right-footer .list-one {
+    display: block;
+    margin: 0 6rem;
+  }
+  body footer div .right-footer .list-one .list-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  body footer div .right-footer .list-one ul {
+    margin: 0;
+    padding: 0;
+  }
+  body footer div .right-footer .list-one ul a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.4vw;
+  }
+  body footer div #copyright {
+    text-align: center;
+    margin-block: 3rem;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -551,33 +797,6 @@ img {
   body section .flex-box-hero .left-flex-hero ul {
     padding: 0;
     margin-bottom: 2rem;
-  }
-  body section .flex-box-hero .left-flex-hero ul .category-check-flex label {
-    cursor: pointer;
-    display: flex;
-    margin-bottom: 1rem;
-  }
-  body section .flex-box-hero .left-flex-hero ul .category-check-flex input[type=checkbox] {
-    cursor: pointer;
-    opacity: 0;
-    position: absolute;
-    left: 20%;
-  }
-  body section .flex-box-hero .left-flex-hero ul .category-check-flex label::before {
-    content: "";
-    width: 1em;
-    height: 1em;
-    border: 0.1em solid white;
-    border-radius: 0.3rem;
-    position: absolute;
-    left: 20%;
-  }
-  body section .flex-box-hero .left-flex-hero ul .category-check-flex label:hover::before,
-  body section .flex-box-hero .left-flex-hero ul .category-check-flex input[type=checkbox]:hover + label::before {
-    background-color: var(--secondary);
-  }
-  body section .flex-box-hero .left-flex-hero ul .category-check-flex input[type=checkbox]:checked + label::before {
-    background-color: var(--tertiary);
   }
   body section .flex-box-hero .right-flex-hero .column {
     display: flex;

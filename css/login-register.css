@@ -1,22 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
 :root {
-  --primary: #232838;
+  --background: #191d29;
   --secondary: #5ecb8c;
   --tertiary: #ae5ecb;
   --button-gradient: #6456d1;
+  --secondary-font-grey: #a7a7a7;
   --primary-button-font-size: 2.5vw;
   --secondary-button-font-size: 2.5vw;
-  --mobile-hero-title-fs: 10vw;
-  --mobile-hero-sub-title-fs: 3.5vw;
-  --desktop-hero-title-fs: 4vw;
-  --desktop-hero-sub-title: 1.2vw;
 }
 
-img,
-svg {
+html {
+  background-color: var(--background);
+  color: white;
+  font-family: poppins;
+}
+
+img {
   max-width: 100%;
   display: block;
+}
+
+li {
+  list-style-type: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -60,7 +66,6 @@ svg {
     margin: auto;
   }
   body header {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     display: flex;
@@ -207,17 +212,13 @@ svg {
     color: white;
     font-size: 2.5vw;
   }
-  .box-center input:-ms-input-placeholder {
-    color: white;
-    font-size: 2.5vw;
-  }
   .box-center input::placeholder {
     color: white;
     font-size: 2.5vw;
   }
   .box-center input,
-.box-center select,
-.box-center textarea {
+  .box-center select,
+  .box-center textarea {
     color: white;
   }
   .box-center button {
@@ -371,17 +372,13 @@ svg {
     color: white;
     font-size: vw;
   }
-  body .box-center input:-ms-input-placeholder {
-    color: white;
-    font-size: vw;
-  }
   body .box-center input::placeholder {
     color: white;
     font-size: vw;
   }
   body .box-center input,
-body .box-center select,
-body .box-center textarea {
+  body .box-center select,
+  body .box-center textarea {
     color: white;
   }
   body .box-center button {
@@ -525,7 +522,7 @@ body .box-center textarea {
     margin-left: 1rem;
   }
   body header #desktop-nav .trio-icons #profile:hover,
-body header #desktop-nav .trio-icons #wallet:hover {
+  body header #desktop-nav .trio-icons #wallet:hover {
     transform: scale(1.05);
     transition: 0.3s ease;
   }
@@ -634,17 +631,13 @@ body header #desktop-nav .trio-icons #wallet:hover {
     color: white;
     font-size: 0.9vw;
   }
-  body .box-center input:-ms-input-placeholder {
-    color: white;
-    font-size: 0.9vw;
-  }
   body .box-center input::placeholder {
     color: white;
     font-size: 0.9vw;
   }
   body .box-center input,
-body .box-center select,
-body .box-center textarea {
+  body .box-center select,
+  body .box-center textarea {
     color: white;
   }
   body .box-center button {

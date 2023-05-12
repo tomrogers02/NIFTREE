@@ -1,22 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
 :root {
-  --primary: #232838;
+  --background: #191d29;
   --secondary: #5ecb8c;
   --tertiary: #ae5ecb;
   --button-gradient: #6456d1;
+  --secondary-font-grey: #a7a7a7;
   --primary-button-font-size: 2.5vw;
   --secondary-button-font-size: 2.5vw;
-  --mobile-hero-title-fs: 10vw;
-  --mobile-hero-sub-title-fs: 3.5vw;
-  --desktop-hero-title-fs: 4vw;
-  --desktop-hero-sub-title: 1.2vw;
 }
 
-img,
-svg {
+html {
+  background-color: var(--background);
+  color: white;
+  font-family: poppins;
+}
+
+img {
   max-width: 100%;
   display: block;
+}
+
+li {
+  list-style-type: none;
 }
 
 /*         Phone CSS         */
@@ -61,7 +67,6 @@ svg {
     margin: auto;
   }
   body header {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     display: flex;
@@ -270,7 +275,7 @@ svg {
     margin-bottom: 3rem;
   }
   body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-ipad,
-body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-mobile {
+  body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-mobile {
     display: none;
   }
   body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-desktop {
@@ -297,7 +302,7 @@ body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-mobi
     margin-bottom: 3rem;
   }
   body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome-ipad,
-body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome-mobile {
+  body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome-mobile {
     display: none;
   }
   body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome-desktop {
@@ -320,7 +325,7 @@ body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome
     margin-bottom: 3rem;
   }
   body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter-ipad,
-body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter-mobile {
+  body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter-mobile {
     display: none;
   }
   body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter-desktop {
@@ -510,7 +515,7 @@ body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter
     margin-bottom: 3rem;
   }
   body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-ipad,
-body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-mobile {
+  body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-mobile {
     display: none;
   }
   body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-desktop {
@@ -555,7 +560,7 @@ body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-mobi
     margin-bottom: 3rem;
   }
   body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome-ipad,
-body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome-mobile {
+  body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome-mobile {
     display: none;
   }
   body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome-desktop {
@@ -578,7 +583,7 @@ body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome
     margin-bottom: 3rem;
   }
   body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter-ipad,
-body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter-mobile {
+  body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter-mobile {
     display: none;
   }
   body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter-desktop {
@@ -664,7 +669,7 @@ body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter
     margin-left: 1rem;
   }
   body header #desktop-nav .trio-icons #profile:hover,
-body header #desktop-nav .trio-icons #wallet:hover {
+  body header #desktop-nav .trio-icons #wallet:hover {
     transform: scale(1.05);
     transition: 0.3s ease;
   }
@@ -836,7 +841,7 @@ body header #desktop-nav .trio-icons #wallet:hover {
     margin-bottom: 3rem;
   }
   body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-ipad,
-body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-mobile {
+  body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-mobile {
     display: none;
   }
   body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-desktop {
@@ -884,7 +889,7 @@ body #impact-adv .flex-box-impact-cards .left-adv .seeds-desktop-box #seeds-mobi
     margin-bottom: 3rem;
   }
   body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome-ipad,
-body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome-mobile {
+  body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome-mobile {
     display: none;
   }
   body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome-desktop {
@@ -907,7 +912,7 @@ body #impact-adv .flex-box-impact-cards .right-adv .welcome-desktop-box #welcome
     margin-bottom: 3rem;
   }
   body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter-ipad,
-body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter-mobile {
+  body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter-mobile {
     display: none;
   }
   body #impact-adv .flex-box-impact-cards .right-adv .twitter-desktop-box #twitter-desktop {
