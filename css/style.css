@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
 :root {
-  --background: #191d29;
+  --background: #03100e;
   --secondary: #5ecb8c;
-  --tertiary: #ae5ecb;
-  --button-gradient: #6456d1;
+  --tertiary: #e59723;
+  --button-gradient: #aa6f19;
   --secondary-font-grey: #a7a7a7;
   --primary-button-font-size: 2.5vw;
   --secondary-button-font-size: 2.5vw;
@@ -30,6 +30,7 @@ li {
   body {
     margin: 0;
     padding: 0;
+    /* Hide the scrollbar for webkit-based browsers */
   }
   body section {
     margin: 10rem 2.5rem;
@@ -55,7 +56,6 @@ li {
     justify-content: space-around;
     color: var(--tertiary);
     background: none;
-    border: 1px solid var(--tertiary);
     outline: none;
     border-radius: 0.5em;
     font-size: var(--primary-button-font-size);
@@ -84,11 +84,11 @@ li {
     top: 0;
     width: 50%;
     height: 100vh;
-    background-color: #1b1f2b;
+    background-color: #031512;
     padding: 2.5rem;
     transform: translateX(110%);
     transition: 0.2s ease;
-    box-shadow: 1px 0px 10px #222636 inset;
+    box-shadow: 1px 0px 10px #02110f inset;
   }
   body header #desktop-nav #mobile-exit {
     float: right;
@@ -202,14 +202,12 @@ li {
     padding-bottom: 2rem;
   }
   body .hero .left-col #title span {
-    color: var(--secondary);
+    color: var(--tertiary);
   }
   body .hero .left-col #subhead {
     font-size: 3.5vw;
   }
   body .hero .hero-buttons {
-    display: flex;
-    place-content: space-evenly;
     margin: 5rem 1rem;
   }
   body .hero .hero-buttons .explore-image-text {
@@ -231,6 +229,7 @@ li {
     font-size: var(--primary-button-font-size);
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
   }
   body .hero .hero-buttons .learnmore .learn-inside {
     display: flex;
@@ -304,6 +303,7 @@ li {
   body #nft-carousel-one {
     text-align: center;
     margin: 0;
+    /* Hide the scrollbar for webkit-based browsers */
   }
   body #nft-carousel-one .title {
     font-size: 5vw;
@@ -319,9 +319,15 @@ li {
     grid-auto-columns: 79%;
     align-items: flex-end;
     overflow-x: scroll;
+    justify-content: center;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
   }
   body #nft-carousel-one .media-scroller .nft {
     position: relative;
+  }
+  body #nft-carousel-one .media-scroller::-webkit-scrollbar {
+    display: none;
   }
   body #nft-carousel-one a {
     text-decoration: none;
@@ -367,19 +373,20 @@ li {
     gap: 1rem;
     align-items: flex-end;
     overflow-x: scroll;
+    justify-content: center;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
   }
   body .nft-carousel-two .nft-card {
-    background-color: #11131b;
-    border-radius: 10px;
+    background-color: #020b0a;
+    border-radius: 8px;
     box-shadow: rgba(21, 21, 21, 0.467) 0px 2px 20px 0px;
   }
   body .nft-carousel-two .nft-card .nft-card-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  body .nft-carousel-two .nft-card .nft-card-text .nft-card-text-left {
-    padding: 1rem;
+    padding-inline: 1rem;
   }
   body .nft-carousel-two .nft-card .nft-card-text .nft-card-text-left h4 {
     margin: 0;
@@ -391,11 +398,11 @@ li {
   body .nft-carousel-two .nft-card .nft-card-text .price-icon {
     display: flex;
     align-items: center;
-    font-size: 3.5vw;
-    padding: 1rem;
+    font-size: 6vw;
   }
   body .nft-carousel-two .nft-card .nft-card-text .price-icon i {
     color: #f2a900;
+    font-size: 6vw;
   }
   body .nft-carousel-two .nft-card img {
     max-width: 300px;
@@ -403,6 +410,9 @@ li {
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 8px;
+  }
+  body .nft-carousel-two::-webkit-scrollbar {
+    display: none;
   }
   body .email-signup {
     text-align: center;
@@ -424,7 +434,7 @@ li {
     padding: 0.5rem;
   }
   body .email-signup input[type=email] {
-    border: 2px solid var(--tertiary);
+    border: 2px solid grey;
     background-color: var(--background);
     margin-block: 2rem;
   }
@@ -432,7 +442,7 @@ li {
     font-size: 3vw;
   }
   body footer {
-    background-color: #171a24;
+    background-color: #031512;
     box-shadow: 0 2px 15px #171a24;
     margin-top: 8rem;
     padding: 2rem;
@@ -618,7 +628,7 @@ li {
     padding-right: 9rem;
   }
   body .hero .left-col #title span {
-    color: var(--secondary);
+    color: var(--tertiary);
   }
   body .hero .left-col #subhead {
     padding-right: 14rem;
@@ -638,10 +648,6 @@ li {
   body .hero .left-col .hero-buttons #rocket {
     width: 18%;
     padding-right: 0.4rem;
-  }
-  body .hero .left-col .hero-buttons #learn-arrow-img {
-    width: 10%;
-    padding-left: 0.3rem;
   }
   body .right-col #nft-desktop {
     display: none;
@@ -792,7 +798,7 @@ li {
   }
   body .email-signup {
     text-align: center;
-    background-color: #202431;
+    background-color: #041714;
     margin-inline: 3rem;
     padding: 4rem 2rem;
     z-index: 999;
@@ -817,7 +823,7 @@ li {
     margin-inline: 1rem;
   }
   body .email-signup .flex-button-email input[type=email] {
-    border: 1px solid var(--tertiary);
+    border: 1px solid gray;
     border-radius: 0.4rem;
     background-color: var(--primary);
   }
@@ -828,7 +834,7 @@ li {
   body footer {
     margin: -4rem;
     padding: 4rem;
-    background-color: #1b1f2c;
+    background-color: #041714;
   }
   body footer .footer-name {
     font-size: 1.5vw;
@@ -969,7 +975,7 @@ li {
     font-size: 3.8vw;
   }
   body .hero .left-col #title span {
-    color: var(--secondary);
+    color: var(--tertiary);
   }
   body .hero .left-col #subhead {
     font-size: 1vw;
@@ -1163,7 +1169,7 @@ li {
   }
   body .email-signup {
     text-align: center;
-    background-color: #202431;
+    background-color: #041714;
     margin-inline: 3rem;
     padding: 5rem 2em;
     z-index: 999;
@@ -1188,7 +1194,7 @@ li {
     margin-inline: 1rem;
   }
   body .email-signup .flex-button-email input[type=email] {
-    border: 1px solid var(--tertiary);
+    border: 1px solid gray;
     border-radius: 0.4rem;
     background-color: var(--primary);
   }
@@ -1202,7 +1208,7 @@ li {
   body footer {
     margin: -4rem;
     padding: 4rem;
-    background-color: #1b1f2c;
+    background-color: #041714;
     z-index: 0;
   }
   body footer .footer-name {

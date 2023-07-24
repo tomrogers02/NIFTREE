@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
 :root {
-  --background: #191d29;
+  --background: #03100e;
   --secondary: #5ecb8c;
-  --tertiary: #ae5ecb;
-  --button-gradient: #6456d1;
+  --tertiary: #e59723;
+  --button-gradient: #aa6f19;
   --secondary-font-grey: #a7a7a7;
   --primary-button-font-size: 2.5vw;
   --secondary-button-font-size: 2.5vw;
@@ -72,7 +72,7 @@ li {
     display: flex;
     place-content: space-between;
     padding: 2rem;
-    background-color: var(--primary);
+    background-color: var(--background);
     z-index: 999;
   }
   body header #logo {
@@ -87,11 +87,11 @@ li {
     top: 0;
     width: 50%;
     height: 100vh;
-    background-color: #1b1f2b;
+    background-color: #031512;
     padding: 2.5rem;
     transform: translateX(110%);
     transition: 0.2s ease;
-    box-shadow: 1px 0px 10px #222636 inset;
+    box-shadow: 1px 0px 10px #02110f inset;
   }
   body header #desktop-nav #mobile-exit {
     float: right;
@@ -111,7 +111,7 @@ li {
   body header #desktop-nav ul #mobile-nav-buttons {
     padding: 0;
   }
-  body header #desktop-nav .trio-icons {
+  body header #desktop-nav .profile-wallet-icons {
     display: none;
   }
   body header #desktop-nav[data-visible=true] {
@@ -391,40 +391,113 @@ li {
     margin: auto;
   }
   body header {
+    position: sticky;
+    top: 0;
     display: flex;
     place-content: space-between;
-    align-items: center;
-  }
-  body header #mobile-cta {
-    display: none;
-  }
-  body header #mobile-exit {
-    display: none;
+    background-color: var(--background);
+    z-index: 999;
   }
   body header #logo {
-    width: 50%;
+    max-width: 6rem;
+  }
+  body header .hamburger {
+    width: 6%;
   }
   body header #desktop-nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #1b1f2b;
+    padding: 2.5rem;
+    transform: translateX(110%);
+    transition: 0.2s ease;
+    box-shadow: 1px 0px 10px #222636 inset;
+  }
+  body header #desktop-nav #mobile-exit {
+    float: right;
+    width: 8%;
+  }
+  body header #desktop-nav ul {
+    text-align: right;
+    margin-top: 3rem;
+  }
+  body header #desktop-nav ul a {
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    padding-block: 1rem;
+  }
+  body header #desktop-nav ul #mobile-nav-buttons {
+    padding: 0;
+  }
+  body header #desktop-nav .profile-wallet-icons {
+    display: none;
+  }
+  body header #wallet-desktop-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #1b1f2b;
+    padding: 2.5rem;
+    transform: translateX(110%);
+    transition: 0.2s ease;
+    box-shadow: 1px 0px 10px #222636 inset;
+  }
+  body header #wallet-desktop-menu .pop-up-title-exit-flex {
     display: flex;
     place-content: space-between;
     align-items: center;
   }
-  body header #desktop-nav a {
-    text-decoration: none;
+  body header #wallet-desktop-menu .pop-up-title-exit-flex .pop-up-title {
     font-weight: bold;
-    font-size: 1.3vw;
-    color: white;
-    margin-left: 1rem;
   }
-  body header #desktop-nav #mobile-nav-buttons {
-    display: none;
+  body header #wallet-desktop-menu .pop-up-title-exit-flex img {
+    width: 8%;
+    height: 8%;
+    transform: scale(1);
+    transition: 0.3s ease;
   }
-  body header #desktop-nav .trio-icons {
+  body header #wallet-desktop-menu .pop-up-title-exit-flex img:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+  }
+  body header #wallet-desktop-menu .pop-up-sub {
+    margin-top: 3rem;
+  }
+  body header #wallet-desktop-menu ul {
     display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 2rem 0;
   }
-  body header #desktop-nav .trio-icons img {
-    max-width: 70%;
-    min-width: 65%;
+  body header #wallet-desktop-menu ul a {
+    text-decoration: none;
+    color: white;
+  }
+  body header #wallet-desktop-menu ul .logo-name-flex {
+    display: flex;
+    align-items: center;
+    border: 0.1px solid rgb(98, 98, 98);
+    padding: 1rem;
+  }
+  body header #wallet-desktop-menu ul #rev-box {
+    border-radius: 0 0 0.6rem 0.6rem;
+  }
+  body header #wallet-desktop-menu ul #rev-logo {
+    width: 6%;
+  }
+  body header #wallet-desktop-menu ul #meta-box {
+    border-radius: 0.6rem 0.6rem 0 0;
+  }
+  body header #wallet-desktop-menu ul img {
+    width: 10%;
+    margin-right: 2rem;
   }
   body .hero .flex-box-hero {
     display: flex;
@@ -650,7 +723,7 @@ li {
   }
   body header #desktop-nav ul a {
     text-decoration: none;
-    margin: 1.5rem;
+    margin: 2rem;
     font-weight: bold;
     font-size: 0.9vw;
     color: white;
@@ -659,97 +732,19 @@ li {
   body header #desktop-nav ul #mobile-nav-buttons {
     display: none;
   }
-  body header #desktop-nav .trio-icons {
+  body header #desktop-nav .profile-wallet-icons {
     display: flex;
     place-content: space-between;
-    width: 30%;
+    width: 32%;
   }
-  body header #desktop-nav .trio-icons #wallet {
-    width: 45%;
+  body header #desktop-nav .profile-wallet-icons #wallet {
+    width: 43%;
     margin-left: 1rem;
   }
-  body header #desktop-nav .trio-icons #profile:hover,
-  body header #desktop-nav .trio-icons #wallet:hover {
+  body header #desktop-nav .profile-wallet-icons #profile:hover,
+  body header #desktop-nav .profile-wallet-icons #wallet:hover {
     transform: scale(1.05);
     transition: 0.3s ease;
-  }
-  body header #wallet-desktop-menu {
-    z-index: 1;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 36%;
-    height: 100vh;
-    background-color: #1b1f2b;
-    transform: translateX(110%);
-    transition: 0.2s ease;
-    box-shadow: 1px 0px 10px #222636 inset;
-  }
-  body header #wallet-desktop-menu .wallet-pop-up-box {
-    background-color: #1e2030;
-    margin: 12rem 1.5rem 1.5rem 1.5rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 2px 1px 10px #1b1e2a;
-  }
-  body header #wallet-desktop-menu .pop-up-title-exit-flex {
-    display: flex;
-    place-content: space-between;
-    align-items: center;
-  }
-  body header #wallet-desktop-menu .pop-up-title-exit-flex .pop-up-title {
-    font-weight: bold;
-    font-size: 1.5vw;
-  }
-  body header #wallet-desktop-menu .pop-up-title-exit-flex img {
-    width: 4%;
-    height: 4%;
-    transform: scale(1);
-    transition: 0.3s ease;
-  }
-  body header #wallet-desktop-menu .pop-up-title-exit-flex img:hover {
-    transform: scale(1.1);
-    transition: 0.2s ease;
-  }
-  body header #wallet-desktop-menu .pop-up-sub {
-    margin-top: 3rem;
-  }
-  body header #wallet-desktop-menu ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 2rem 0;
-  }
-  body header #wallet-desktop-menu ul a {
-    text-decoration: none;
-    color: white;
-  }
-  body header #wallet-desktop-menu ul .logo-name-flex {
-    display: flex;
-    align-items: center;
-    border: 0.1px solid rgb(98, 98, 98);
-    padding: 1rem;
-  }
-  body header #wallet-desktop-menu ul .logo-name-flex:hover {
-    box-shadow: 0.5px 0.5px 5px rgb(104, 104, 104);
-  }
-  body header #wallet-desktop-menu ul #rev-box {
-    border-radius: 0 0 0.8rem 0.8rem;
-  }
-  body header #wallet-desktop-menu ul #rev-logo {
-    width: 6%;
-  }
-  body header #wallet-desktop-menu ul #meta-box {
-    border-radius: 0.8rem 0.8rem 0 0;
-  }
-  body header #wallet-desktop-menu ul img {
-    width: 7%;
-    margin-right: 2rem;
-  }
-  body header #wallet-desktop-menu[data-visible=true] {
-    display: block;
-    transform: translateX(0%);
-    transition: 0.2s ease-out;
   }
   body .hero .flex-box-hero {
     display: flex;
