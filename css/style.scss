@@ -373,18 +373,14 @@ li {
 
 			.media-scroller {
 				display: grid;
+
 				grid-auto-flow: column;
 				grid-auto-columns: 79%;
 				align-items: flex-end;
 				overflow-x: scroll;
-				justify-content: center;
 
 				scrollbar-width: none; /* For Firefox */
 				-ms-overflow-style: none; /* For Internet Explorer and Edge */
-
-				.nft {
-					position: relative;
-				}
 			}
 
 			/* Hide the scrollbar for webkit-based browsers */
@@ -393,23 +389,6 @@ li {
 			}
 			a {
 				text-decoration: none;
-			}
-		}
-
-		#nft-carousel-title {
-			margin: 0 0.8rem 5rem 0.8rem;
-			.trending {
-				text-align: center;
-				font-size: 5vw;
-
-				span {
-					color: var(--tertiary);
-				}
-			}
-			.nft-carousel-two-link {
-				text-align: center;
-				color: var(--tertiary);
-				margin-bottom: 1rem;
 			}
 		}
 
@@ -441,63 +420,59 @@ li {
 			}
 		}
 
-		.nft-carousel-two {
-			display: grid;
-			grid-auto-flow: column;
-			gap: 1rem;
-			align-items: flex-end;
-			overflow-x: scroll;
-			justify-content: center;
+		#dynamic-nft-gallery {
+			#section-title {
+				text-align: center;
+				font-size: 5vw;
+			}
 
-			scrollbar-width: none; /* For Firefox */
-			-ms-overflow-style: none; /* For Internet Explorer and Edge */
+			.filter-buttons {
+				display: flex;
+				justify-content: space-between;
 
-			.nft-card {
-				background-color: #020b0a;
-				border-radius: 8px;
-				box-shadow: rgba(21, 21, 21, 0.467) 0px 2px 20px 0px;
+				button {
+					background: none;
+					border: 1px solid var(--tertiary);
+					margin: 2rem 0;
+				}
 
-				.nft-card-text {
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-					padding-inline: 1rem;
+				button.active {
+					color: var(--tertiary);
+				}
+			}
+			.filterable-cards {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(3, 1);
+				gap: 20px;
 
-					.nft-card-text-left {
-						h4 {
-							margin: 0;
-							padding: 0;
+				.card {
+					.card-info {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						padding: 0.4rem;
+						background-color: #171a24;
+
+						.card-info-left {
+							.nft-name {
+								font-size: 2vw;
+							}
+							.nft-owner {
+								font-size: 1.2vw;
+							}
 						}
 
-						p {
+						.card-info-right {
 							font-size: 2vw;
 						}
 					}
-
-					.price-icon {
-						display: flex;
-						align-items: center;
-						font-size: 6vw;
-
-						i {
-							color: #f2a900;
-							font-size: 6vw;
-						}
-					}
 				}
 
-				img {
-					max-width: 300px;
-					height: 250px;
-					object-fit: cover;
-					border-radius: 8px;
+				.card.hide {
+					display: none;
 				}
 			}
-		}
-
-		/* Hide the scrollbar for webkit-based browsers */
-		.nft-carousel-two::-webkit-scrollbar {
-			display: none;
 		}
 
 		.email-signup {
@@ -915,62 +890,58 @@ li {
 			}
 		}
 
-		.trending {
-			font-weight: bold;
-			text-align: center;
-
-			span {
-				color: var(--tertiary);
+		#dynamic-nft-gallery {
+			#section-title {
+				text-align: center;
+				font-size: 2.5vw;
 			}
-		}
 
-		.nft-carousel-two-link {
-			color: var(--tertiary);
-			text-align: center;
-		}
-		.nft-carousel-two {
-			display: flex;
-			justify-content: center;
-			gap: 1rem;
-			margin-top: 2rem;
+			.filter-buttons {
+				display: flex;
+				gap: 30px;
+				justify-content: center;
 
-			.nft-card {
-				background-color: #11131b;
-				border-radius: 10px;
-				box-shadow: rgba(21, 21, 21, 0.467) 0px 2px 20px 0px;
+				button {
+					background: none;
+					border: 1px solid var(--tertiary);
+					margin: 2rem 0;
+				}
 
-				.nft-card-text {
-					display: flex;
-					align-items: center;
-					justify-content: space-between;
-					padding: 0 1rem 1rem 1rem;
-					.nft-card-text-left {
-						h4 {
-							margin: 0;
-							padding: 0;
-						}
+				button.active {
+					color: var(--tertiary);
+				}
+			}
+			.filterable-cards {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(3, 1);
+				gap: 20px;
 
-						p {
-							font-size: 1vw;
-						}
-					}
-
-					.price-icon {
+				.card {
+					.card-info {
 						display: flex;
 						align-items: center;
-						font-size: 2vw;
+						justify-content: space-between;
+						padding: 1rem;
+						background-color: #171a24;
 
-						i {
-							color: #f2a900;
+						.card-info-left {
+							.nft-name {
+								font-size: 2vw;
+							}
+							.nft-owner {
+								font-size: 1.2vw;
+							}
+						}
+
+						.card-info-right {
+							font-size: 2vw;
 						}
 					}
 				}
 
-				img {
-					max-width: 300px;
-					height: 250px;
-					object-fit: cover;
-					border-radius: 8px;
+				.card.hide {
+					display: none;
 				}
 			}
 		}
@@ -1084,7 +1055,6 @@ li {
 		section {
 			margin: 14rem 8rem;
 		}
-
 		button {
 			display: flex;
 			align-items: center;
@@ -1369,60 +1339,60 @@ li {
 			}
 		}
 
-		.trending {
-			text-align: center;
-			font-size: 2vw;
+		#dynamic-nft-gallery {
+			#section-title {
+				text-align: center;
+				font-size: 2vw;
+			}
 
-			span {
+			.filter-buttons {
+				display: flex;
+				justify-content: center;
+			}
+
+			button {
+				padding: 0.6rem 1.2rem;
+				background-color: rgb(139, 139, 180);
+				margin: 2.5rem 1.5rem;
+				background: none;
+				border: 1px solid var(--tertiary);
+			}
+
+			button.active {
 				color: var(--tertiary);
 			}
-		}
 
-		.nft-carousel-two-link {
-			color: var(--tertiary);
-			text-align: center;
-			font-size: 1vw;
-		}
-		.nft-carousel-two {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 3rem;
-			margin-top: 2rem;
+			.filterable-cards {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(2, 1);
+				gap: 40px;
 
-			.nft-card {
-				background-color: #11131b;
-				border-radius: 6px;
-				box-shadow: rgba(21, 21, 21, 0.467) 0px 2px 20px 0px;
-
-				.nft-card-text {
-					display: flex;
-					align-items: center;
-					justify-content: space-between;
-					padding: 0 1rem 0rem 1rem;
-					.nft-card-text-left {
-						h4 {
-							margin: 0;
-							padding: 0;
-						}
-
-						p {
-							font-size: 0.6vw;
-						}
-					}
-
-					.price-icon {
+				.card {
+					.card-info {
 						display: flex;
 						align-items: center;
-						font-size: 2vw;
+						justify-content: space-between;
+						padding: 1rem;
+						background-color: #171a24;
+
+						.card-info-left {
+							.nft-name {
+								font-size: 1.2vw;
+							}
+							.nft-owner {
+								font-size: 0.8vw;
+							}
+						}
+
+						.card-info-right {
+							font-size: 1.5vw;
+						}
 					}
 				}
 
-				img {
-					max-width: 300px;
-					height: 250px;
-					object-fit: cover;
-					border-radius: 8px;
+				.card.hide {
+					display: none;
 				}
 			}
 		}

@@ -53,81 +53,30 @@ mobileExit.addEventListener('click', () => {
 });
 
 
-const walletNav = document.getElementById('wallet-desktop-menu');
-
-const walletToggle = document.getElementById('wallet-name');
-const walletToggleDesktop = document.getElementById('wallet');
-const walletExit = document.getElementById('wallet-exit-btn');
-
-walletToggle.addEventListener('click', () => {
-    const visibility = walletNav.getAttribute('data-visible')
-
-    console.log(visibility);
-
-    if (visibility === "false") {
-        walletNav.setAttribute("data-visible", true);
-    }
-
-});
-
-walletToggleDesktop.addEventListener('click', () => {
-    const visibility = walletNav.getAttribute('data-visible')
-
-    console.log(visibility);
-
-    if (visibility === "false") {
-        walletNav.setAttribute("data-visible", true);
-    }
-
-});
-
-walletExit.addEventListener('click', () => {
-    const visibility = walletNav.getAttribute("data-visible")
-
-    console.log(visibility)
-
-
-    if (visibility === "true") {
-        walletNav.setAttribute("data-visible", false)
-    }
-
-});
-
-
-const filterPopUp = document.getElementById('filter-pop-up-menu');
-const filterToggle = document.getElementById('filter-dropdown')
-const filterExit = document.getElementById('filter-mobile-exit-btn')
-
-filterToggle.addEventListener('click', () => {
-    const visibility = filterPopUp.getAttribute('data-visible')
-
-    console.log(visibility);
-
-    if (visibility === "false") {
-        filterPopUp.setAttribute("data-visible", true);
-    }
-
-});
-
-filterExit.addEventListener('click', () => {
-    const visibility = filterPopUp.getAttribute('data-visible')
-
-    console.log(visibility)
-
-    if (visibility === "true") {
-        filterPopUp.setAttribute("data-visible", false);
-    }
-
-});
 
 
 
-window.addEventListener('load', () => {
-    let scrollElement = document.querySelector('.media-scroller');
-    scrollElement.scrollLeft = (scrollElement.scrollWidth - scrollElement.clientWidth) / 2;
-});
 
-window.addEventListener('load', () => {
-    let scrollElement = document.querySelector('.nft-carousel-two');
-    scrollElement.scrollLeft = (scrollElement.scrollWidth - scrollElement.clientWidth) / 2;
-});
+
+
+const filterButtons = document.querySelectorAll('.filter-buttons button');
+const filterableCards = document.querySelectorAll('.filterable-cards .card');
+
+const filterCards = e => {
+    document.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active");
+    console.log(e.target);
+
+
+    filterableCards.forEach(card => {
+        card.classList.add("hide");
+
+
+        if (card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all")
+            card.classList.remove("hide");
+    });
+};
+
+
+
+filterButtons.forEach(button => button.addEventListener("click", filterCards));
