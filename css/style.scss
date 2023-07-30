@@ -323,12 +323,12 @@ li {
 						}
 					}
 					.bidding-ends {
-						margin-block: 2rem 0rem;
+						margin-block: 1.8rem 0rem;
 					}
 					.countdown {
 						display: flex;
 						justify-content: center;
-						margin-block: 2rem 4rem;
+						margin-block: 2rem 3rem;
 						text-align: center;
 						font-size: 4.5vw;
 						margin-inline: 2.7rem;
@@ -378,6 +378,7 @@ li {
 				grid-auto-columns: 79%;
 				align-items: flex-end;
 				overflow-x: scroll;
+				scroll-snap-align: center;
 
 				scrollbar-width: none; /* For Firefox */
 				-ms-overflow-style: none; /* For Internet Explorer and Edge */
@@ -406,21 +407,41 @@ li {
 				font-size: 3vw;
 			}
 
-			#learn-more-button {
+			.learn-more-button {
 				background-image: linear-gradient(to right, var(--secondary), #6fac8d);
-				margin: 4rem auto;
+				margin: 3rem auto;
 			}
 
-			img {
+			#desktop-image,
+			#desktop-button {
 				display: none;
 			}
 
 			#tree-plant-right-section {
-				display: none;
+				margin-top: 3rem;
+				#right-section-yellow-square {
+					background-color: #d5ab23;
+					padding: 2rem 2rem 0 2rem;
+					border-radius: 10px;
+
+					#square-title {
+						font-size: 5vw;
+						font-weight: bold;
+					}
+
+					#square-sub-title {
+						font-size: 3vw;
+					}
+
+					#square-sub-title {
+						margin-block: 1rem 2rem;
+					}
+				}
 			}
 		}
 
 		#dynamic-nft-gallery {
+			margin: 10rem 1.5rem;
 			#section-title {
 				text-align: center;
 				font-size: 5vw;
@@ -429,6 +450,7 @@ li {
 			.filter-buttons {
 				display: flex;
 				justify-content: space-between;
+				margin: 0rem 2rem;
 
 				button {
 					background: none;
@@ -447,24 +469,26 @@ li {
 				gap: 20px;
 
 				.card {
+					box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 					.card-info {
 						display: flex;
 						align-items: center;
 						justify-content: space-between;
-						padding: 0.4rem;
-						background-color: #171a24;
+						padding: 0.5rem;
+						background-color: #0a100a;
+						border-radius: 0 0 3px 3px;
 
 						.card-info-left {
 							.nft-name {
-								font-size: 2vw;
+								font-size: 2.5vw;
 							}
 							.nft-owner {
-								font-size: 1.2vw;
+								font-size: 1.4vw;
 							}
 						}
 
 						.card-info-right {
-							font-size: 2vw;
+							font-size: 2.6vw;
 						}
 					}
 				}
@@ -477,7 +501,7 @@ li {
 
 		.email-signup {
 			text-align: center;
-			margin-inline: 2rem;
+			margin: 10rem 2rem;
 
 			#title {
 				font: 6vw bold;
@@ -918,12 +942,14 @@ li {
 				gap: 20px;
 
 				.card {
+					box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 					.card-info {
 						display: flex;
 						align-items: center;
 						justify-content: space-between;
 						padding: 1rem;
 						background-color: #171a24;
+						border-radius: 0 0 3px 3px;
 
 						.card-info-left {
 							.nft-name {
@@ -1312,7 +1338,7 @@ li {
 					padding-right: 8rem;
 				}
 
-				#learn-more-button {
+				.learn-more-button {
 					background-image: linear-gradient(
 						to right,
 						var(--secondary),
@@ -1322,6 +1348,9 @@ li {
 				}
 			}
 			#tree-plant-right-section {
+				#mobile-button {
+					display: none;
+				}
 				#right-section-yellow-square {
 					background-color: #d5ab23;
 					padding: 2rem 2rem 0 2rem;
@@ -1334,6 +1363,10 @@ li {
 
 					#square-sub-title {
 						margin-block: 1rem 2rem;
+					}
+
+					#mobile-image {
+						display: none;
 					}
 				}
 			}
@@ -1369,12 +1402,14 @@ li {
 				gap: 40px;
 
 				.card {
+					box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 					.card-info {
 						display: flex;
 						align-items: center;
 						justify-content: space-between;
 						padding: 1rem;
 						background-color: #171a24;
+						border-radius: 0 0 3px 3px;
 
 						.card-info-left {
 							.nft-name {
