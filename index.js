@@ -1,3 +1,5 @@
+//Countdown timer on home page//
+
 const countdown = () => {
     const countDate = new Date('August 5, 2023 00:00:00');
     const now = new Date().getTime();
@@ -24,6 +26,9 @@ const countdown = () => {
 };
 
 setInterval(countdown, 1000)
+
+
+//Mobile navigation toggle on/off function for all pages//
 
 const primaryNav = document.getElementById('desktop-nav');
 const navToggle = document.getElementById('mobile-cta');
@@ -53,11 +58,49 @@ mobileExit.addEventListener('click', () => {
 });
 
 
+//Desktop wallet pop up on/off toggle//
+
+const walletMenu = document.getElementById('wallet-pop-up-menu-black-square')
+const walletDesktopToggle = document.getElementById('wallet')
+const walletMobileToggle = document.getElementById('mobile-wallet-name')
+const walletExit = document.getElementById('wallet-exit')
+
+walletDesktopToggle.addEventListener('click', () => {
+    const visibility = walletMenu.getAttribute('data-visible')
+
+    console.log(visibility);
+
+    if (visibility === "false") {
+        walletMenu.setAttribute("data-visible", true);
+    }
+
+});
+
+walletMobileToggle.addEventListener('click', () => {
+    const visibility = walletMenu.getAttribute('data-visible')
+
+    console.log(visibility);
+
+    if (visibility === "false") {
+        walletMenu.setAttribute("data-visible", true);
+    }
+
+});
+
+walletExit.addEventListener('click', () => {
+    const visibility = walletMenu.getAttribute("data-visible")
+
+    console.log(visibility)
+
+    if (visibility === "true") {
+        walletMenu.setAttribute("data-visible", false)
+    }
+
+});
 
 
 
-
-
+//Home page filter/dynamim image gallery//
 
 const filterButtons = document.querySelectorAll('.filter-buttons button');
 const filterableCards = document.querySelectorAll('.filterable-cards .card');
