@@ -81,7 +81,7 @@ li {
   body header .hamburger {
     width: 10%;
   }
-  body header #desktop-nav {
+  body header #mobile-nav {
     position: fixed;
     right: 0;
     top: 0;
@@ -93,102 +93,75 @@ li {
     transition: 0.2s ease;
     box-shadow: 1px 0px 10px #02110f inset;
   }
-  body header #desktop-nav #mobile-exit {
+  body header #mobile-nav #mobile-exit {
     float: right;
     width: 8%;
   }
-  body header #desktop-nav ul {
+  body header #mobile-nav ul {
     text-align: right;
     margin-top: 3rem;
   }
-  body header #desktop-nav ul a {
+  body header #mobile-nav ul a {
     color: white;
     font-weight: bold;
     display: block;
     text-decoration: none;
     padding-block: 1rem;
   }
-  body header #desktop-nav ul #mobile-nav-buttons {
+  body header #mobile-nav ul #mobile-nav-buttons {
     padding: 0;
   }
-  body header #desktop-nav .profile-wallet-icons {
+  body header #mobile-nav .profile-wallet-icons {
     display: none;
   }
-  body header #desktop-nav[data-visible=true] {
+  body header #mobile-nav[data-visible=true] {
     display: block;
     transform: translateX(0%);
     transition: 0.2s ease-out;
   }
-  body header #wallet-desktop-menu {
+  body #wallet-pop-up-menu-black-square {
     position: fixed;
-    overflow: hidden;
+    margin: 0;
     right: 0;
     top: 0;
     width: 50%;
     height: 100vh;
-    background-color: #1b1f2b;
-    padding: 2.6rem;
+    z-index: 999;
+    background-color: #031512;
+    padding: 2.5rem;
     transform: translateX(110%);
     transition: 0.2s ease;
-    box-shadow: 1px 0px 10px #222636 inset;
+    box-shadow: 1px 0px 10px #02110f inset;
   }
-  body header #wallet-desktop-menu body {
-    position: fixed;
-  }
-  body header #wallet-desktop-menu .pop-up-title-exit-flex {
+  body #wallet-pop-up-menu-black-square #wallet-white-overlay {
     display: flex;
-    place-content: space-between;
-    align-items: center;
   }
-  body header #wallet-desktop-menu .pop-up-title-exit-flex .pop-up-title {
-    font-weight: bold;
-  }
-  body header #wallet-desktop-menu .pop-up-title-exit-flex img {
+  body #wallet-pop-up-menu-black-square #wallet-white-overlay img {
     width: 8%;
     height: 8%;
-    transform: scale(1);
-    transition: 0.3s ease;
   }
-  body header #wallet-desktop-menu .pop-up-title-exit-flex img:hover {
-    transform: scale(1.1);
-    transition: 0.2s ease;
+  body #wallet-pop-up-menu-black-square #wallet-white-overlay #pop-up-titles {
+    margin-top: 4rem;
   }
-  body header #wallet-desktop-menu .pop-up-sub {
-    margin-top: 3rem;
-    font-size: 3.2vw;
+  body #wallet-pop-up-menu-black-square #wallet-white-overlay #pop-up-titles h2 {
+    font-size: 4vw;
   }
-  body header #wallet-desktop-menu ul {
+  body #wallet-pop-up-menu-black-square #wallet-white-overlay #pop-up-titles p {
+    font-size: 2.6vw;
+  }
+  body #wallet-pop-up-menu-black-square #wallet-providors-grid #metamask-logo,
+  body #wallet-pop-up-menu-black-square #wallet-providors-grid #opensea-logo {
     display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 2rem 0;
-  }
-  body header #wallet-desktop-menu ul a {
-    text-decoration: none;
+    gap: 20px;
+    margin-top: 1rem;
     color: white;
-    font-size: 3vw;
+    text-decoration: none;
   }
-  body header #wallet-desktop-menu ul .logo-name-flex {
-    display: flex;
-    align-items: center;
-    border: 0.1px solid rgb(50, 50, 50);
-    padding: 0.8rem;
-    background-color: #171a24;
+  body #wallet-pop-up-menu-black-square #wallet-providors-grid #metamask-logo img,
+  body #wallet-pop-up-menu-black-square #wallet-providors-grid #opensea-logo img {
+    width: 15%;
   }
-  body header #wallet-desktop-menu ul #rev-box {
-    border-radius: 0 0 0.6rem 0.6rem;
-  }
-  body header #wallet-desktop-menu ul #rev-logo {
-    width: 7%;
-  }
-  body header #wallet-desktop-menu ul #meta-box {
-    border-radius: 0.6rem 0.6rem 0 0;
-  }
-  body header #wallet-desktop-menu ul img {
-    width: 10%;
-    margin-right: 2rem;
-  }
-  body header #wallet-desktop-menu[data-visible=true] {
+  body #wallet-pop-up-menu-black-square[data-visible=true] {
     display: block;
     transform: translateX(0%);
     transition: 0.2s ease-out;
@@ -404,100 +377,90 @@ li {
   body header .hamburger {
     width: 6%;
   }
-  body header #desktop-nav {
+  body header #mobile-nav {
     position: fixed;
     right: 0;
     top: 0;
-    width: 50%;
+    width: 40%;
     height: 100vh;
-    background-color: #1b1f2b;
+    background-color: #031512;
     padding: 2.5rem;
     transform: translateX(110%);
     transition: 0.2s ease;
-    box-shadow: 1px 0px 10px #222636 inset;
+    box-shadow: 1px 0px 10px #02110f inset;
   }
-  body header #desktop-nav #mobile-exit {
+  body header #mobile-nav #mobile-exit {
     float: right;
-    width: 8%;
+    width: 6%;
   }
-  body header #desktop-nav ul {
+  body header #mobile-nav ul {
     text-align: right;
-    margin-top: 3rem;
+    margin-top: 6rem;
   }
-  body header #desktop-nav ul a {
+  body header #mobile-nav ul a {
     color: white;
     font-weight: bold;
     display: block;
     text-decoration: none;
     padding-block: 1rem;
   }
-  body header #desktop-nav ul #mobile-nav-buttons {
+  body header #mobile-nav ul #mobile-nav-buttons {
     padding: 0;
   }
-  body header #desktop-nav .profile-wallet-icons {
+  body header #mobile-nav .profile-wallet-icons {
     display: none;
   }
-  body header #wallet-desktop-menu {
+  body header #mobile-nav[data-visible=true] {
+    display: block;
+    transform: translateX(0%);
+    transition: 0.2s ease-out;
+  }
+  body #wallet-pop-up-menu-black-square {
     position: fixed;
+    margin: 0;
     right: 0;
     top: 0;
-    width: 50%;
+    width: 40%;
     height: 100vh;
-    background-color: #1b1f2b;
+    z-index: 999;
+    background-color: #031512;
     padding: 2.5rem;
     transform: translateX(110%);
     transition: 0.2s ease;
-    box-shadow: 1px 0px 10px #222636 inset;
+    box-shadow: 1px 0px 10px #02110f inset;
   }
-  body header #wallet-desktop-menu .pop-up-title-exit-flex {
+  body #wallet-pop-up-menu-black-square #wallet-white-overlay {
     display: flex;
-    place-content: space-between;
-    align-items: center;
   }
-  body header #wallet-desktop-menu .pop-up-title-exit-flex .pop-up-title {
-    font-weight: bold;
-  }
-  body header #wallet-desktop-menu .pop-up-title-exit-flex img {
+  body #wallet-pop-up-menu-black-square #wallet-white-overlay img {
     width: 8%;
     height: 8%;
-    transform: scale(1);
-    transition: 0.3s ease;
   }
-  body header #wallet-desktop-menu .pop-up-title-exit-flex img:hover {
-    transform: scale(1.1);
-    transition: 0.2s ease;
+  body #wallet-pop-up-menu-black-square #wallet-white-overlay #pop-up-titles {
+    margin-top: 4rem;
   }
-  body header #wallet-desktop-menu .pop-up-sub {
-    margin-top: 3rem;
+  body #wallet-pop-up-menu-black-square #wallet-white-overlay #pop-up-titles h2 {
+    font-size: 2vw;
   }
-  body header #wallet-desktop-menu ul {
+  body #wallet-pop-up-menu-black-square #wallet-white-overlay #pop-up-titles p {
+    font-size: 1.5vw;
+  }
+  body #wallet-pop-up-menu-black-square #wallet-providors-grid #metamask-logo,
+  body #wallet-pop-up-menu-black-square #wallet-providors-grid #opensea-logo {
     display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 2rem 0;
-  }
-  body header #wallet-desktop-menu ul a {
-    text-decoration: none;
+    gap: 30px;
+    margin-top: 1rem;
     color: white;
+    text-decoration: none;
   }
-  body header #wallet-desktop-menu ul .logo-name-flex {
-    display: flex;
-    align-items: center;
-    border: 0.1px solid rgb(98, 98, 98);
-    padding: 1rem;
+  body #wallet-pop-up-menu-black-square #wallet-providors-grid #metamask-logo img,
+  body #wallet-pop-up-menu-black-square #wallet-providors-grid #opensea-logo img {
+    width: 12%;
   }
-  body header #wallet-desktop-menu ul #rev-box {
-    border-radius: 0 0 0.6rem 0.6rem;
-  }
-  body header #wallet-desktop-menu ul #rev-logo {
-    width: 6%;
-  }
-  body header #wallet-desktop-menu ul #meta-box {
-    border-radius: 0.6rem 0.6rem 0 0;
-  }
-  body header #wallet-desktop-menu ul img {
-    width: 10%;
-    margin-right: 2rem;
+  body #wallet-pop-up-menu-black-square[data-visible=true] {
+    display: block;
+    transform: translateX(0%);
+    transition: 0.2s ease-out;
   }
   body .hero .flex-box-hero {
     display: flex;
@@ -712,16 +675,16 @@ li {
   body header #logo {
     width: 50%;
   }
-  body header #desktop-nav {
+  body header #mobile-nav {
     display: flex;
     place-content: space-around;
     align-items: center;
     z-index: 2;
   }
-  body header #desktop-nav ul {
+  body header #mobile-nav ul {
     width: 100%;
   }
-  body header #desktop-nav ul a {
+  body header #mobile-nav ul a {
     text-decoration: none;
     margin: 2rem;
     font-weight: bold;
@@ -729,22 +692,74 @@ li {
     color: white;
     padding-right: 1rem;
   }
-  body header #desktop-nav ul #mobile-nav-buttons {
+  body header #mobile-nav ul #mobile-nav-buttons {
     display: none;
   }
-  body header #desktop-nav .profile-wallet-icons {
+  body header #mobile-nav .profile-wallet-icons {
     display: flex;
     place-content: space-between;
     width: 32%;
   }
-  body header #desktop-nav .profile-wallet-icons #wallet {
+  body header #mobile-nav .profile-wallet-icons #wallet {
     width: 43%;
     margin-left: 1rem;
   }
-  body header #desktop-nav .profile-wallet-icons #profile:hover,
-  body header #desktop-nav .profile-wallet-icons #wallet:hover {
+  body header #mobile-nav .profile-wallet-icons #profile:hover,
+  body header #mobile-nav .profile-wallet-icons #wallet:hover {
     transform: scale(1.05);
     transition: 0.3s ease;
+  }
+  body #wallet-pop-up-menu-black-square {
+    position: absolute;
+    margin: 0;
+    left: 16%;
+    top: 48%;
+    transform: translate(-5%, -40%);
+    z-index: 998;
+    min-width: 70%;
+    max-width: 75%;
+    min-height: 55vh;
+    max-height: 60vh;
+    opacity: 0;
+    background-color: rgba(30, 34, 34, 0.9);
+    padding: 3.5rem;
+    transition: opacity 0.2s ease;
+    box-shadow: 1px 0px 10px #02110f inset;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  body #wallet-pop-up-menu-black-square #wallet-white-overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  body #wallet-pop-up-menu-black-square #wallet-white-overlay #wallet-exit {
+    width: 2%;
+    height: 2%;
+  }
+  body #wallet-pop-up-menu-black-square #wallet-white-overlay #wallet-exit:hover {
+    transform: scale(1.03);
+    transition: 0.2s ease;
+  }
+  body #wallet-pop-up-menu-black-square #wallet-providors-grid #metamask-logo,
+  body #wallet-pop-up-menu-black-square #wallet-providors-grid #opensea-logo {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 2rem;
+    color: white;
+    text-decoration: none;
+  }
+  body #wallet-pop-up-menu-black-square #wallet-providors-grid #metamask-logo img,
+  body #wallet-pop-up-menu-black-square #wallet-providors-grid #opensea-logo img {
+    width: 5%;
+  }
+  body #wallet-pop-up-menu-black-square[data-visible=true] {
+    display: block;
+    opacity: 1;
   }
   body .hero .flex-box-hero {
     display: flex;

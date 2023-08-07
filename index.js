@@ -30,7 +30,7 @@ setInterval(countdown, 1000)
 
 //Mobile navigation toggle on/off function for all pages//
 
-const primaryNav = document.getElementById('desktop-nav');
+const primaryNav = document.getElementById('mobile-nav');
 const navToggle = document.getElementById('mobile-cta');
 const mobileExit = document.getElementById('mobile-exit');
 

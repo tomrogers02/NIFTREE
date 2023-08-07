@@ -73,7 +73,7 @@ li {
 				width: 10%;
 			}
 
-			#desktop-nav {
+			#mobile-nav {
 				position: fixed;
 				right: 0;
 				top: 0;
@@ -111,100 +111,67 @@ li {
 				}
 			}
 
-			#desktop-nav[data-visible="true"] {
+			#mobile-nav[data-visible="true"] {
 				display: block;
 				transform: translateX(0%);
 				transition: 0.2s ease-out;
 			}
+		}
 
-			#wallet-desktop-menu {
-				position: fixed;
-				overflow: hidden;
-				right: 0;
-				top: 0;
-				width: 50%;
-				height: 100vh;
-				background-color: #1b1f2b;
-				padding: 2.6rem;
-				transform: translateX(110%);
-				transition: 0.2s ease;
-				box-shadow: 1px 0px 10px #222636 inset;
+		#wallet-pop-up-menu-black-square {
+			position: fixed;
+			margin: 0;
+			right: 0;
+			top: 0;
+			width: 50%;
+			height: 100vh;
+			z-index: 999;
+			background-color: #031512;
+			padding: 2.5rem;
+			transform: translateX(110%);
+			transition: 0.2s ease;
+			box-shadow: 1px 0px 10px #02110f inset;
 
-				body {
-					position: fixed;
+			#wallet-white-overlay {
+				display: flex;
+
+				img {
+					width: 8%;
+					height: 8%;
 				}
 
-				.pop-up-title-exit-flex {
-					display: flex;
-					place-content: space-between;
-					align-items: center;
-
-					.pop-up-title {
-						font-weight: bold;
+				#pop-up-titles {
+					margin-top: 4rem;
+					h2 {
+						font-size: 4vw;
 					}
 
-					img {
-						width: 8%;
-						height: 8%;
-						transform: scale(1);
-						transition: 0.3s ease;
-					}
-					img:hover {
-						transform: scale(1.1);
-						transition: 0.2s ease;
-					}
-				}
-
-				.pop-up-sub {
-					margin-top: 3rem;
-					font-size: 3.2vw;
-				}
-
-				ul {
-					display: flex;
-					flex-direction: column;
-
-					padding: 0;
-					margin: 2rem 0;
-
-					a {
-						text-decoration: none;
-						color: white;
-						font-size: 3vw;
-					}
-
-					.logo-name-flex {
-						display: flex;
-						align-items: center;
-						border: 0.1px solid rgb(50, 50, 50);
-						padding: 0.8rem;
-
-						background-color: #171a24;
-					}
-
-					#rev-box {
-						border-radius: 0 0 0.6rem 0.6rem;
-					}
-
-					#rev-logo {
-						width: 7%;
-					}
-
-					#meta-box {
-						border-radius: 0.6rem 0.6rem 0 0;
-					}
-
-					img {
-						width: 10%;
-						margin-right: 2rem;
+					p {
+						font-size: 2.6vw;
 					}
 				}
 			}
-			#wallet-desktop-menu[data-visible="true"] {
-				display: block;
-				transform: translateX(0%);
-				transition: 0.2s ease-out;
+
+			#wallet-providors-grid {
+				#metamask-logo,
+				#opensea-logo {
+					display: flex;
+					gap: 20px;
+					margin-top: 1rem;
+					color: white;
+					text-decoration: none;
+
+					img {
+						width: 15%;
+					}
+				}
 			}
+		}
+
+		#wallet-pop-up-menu-black-square[data-visible="true"] {
+			display: block;
+			transform: translateX(0%);
+			transition: 0.2s ease-out;
 		}
 
 		.flex-box-hero {
@@ -457,26 +424,26 @@ li {
 				width: 6%;
 			}
 
-			#desktop-nav {
+			#mobile-nav {
 				position: fixed;
 				right: 0;
 				top: 0;
-				width: 50%;
+				width: 40%;
 				height: 100vh;
-				background-color: #1b1f2b;
+				background-color: #031512;
 				padding: 2.5rem;
 				transform: translateX(110%);
 				transition: 0.2s ease;
-				box-shadow: 1px 0px 10px #222636 inset;
+				box-shadow: 1px 0px 10px #02110f inset;
 
 				#mobile-exit {
 					float: right;
-					width: 8%;
+					width: 6%;
 				}
 
 				ul {
 					text-align: right;
-					margin-top: 3rem;
+					margin-top: 6rem;
 					a {
 						color: white;
 						font-weight: bold;
@@ -490,85 +457,72 @@ li {
 					}
 				}
 
-				.trio-icons {
+				.profile-wallet-icons {
 					display: none;
 				}
 			}
 
-			#wallet-desktop-menu {
-				position: fixed;
-				right: 0;
-				top: 0;
-				width: 50%;
-				height: 100vh;
-				background-color: #1b1f2b;
-				padding: 2.5rem;
-				transform: translateX(110%);
-				transition: 0.2s ease;
-				box-shadow: 1px 0px 10px #222636 inset;
+			#mobile-nav[data-visible="true"] {
+				display: block;
+				transform: translateX(0%);
+				transition: 0.2s ease-out;
+			}
+		}
 
-				.pop-up-title-exit-flex {
-					display: flex;
-					place-content: space-between;
-					align-items: center;
+		#wallet-pop-up-menu-black-square {
+			position: fixed;
+			margin: 0;
+			right: 0;
+			top: 0;
+			width: 40%;
+			height: 100vh;
+			z-index: 999;
+			background-color: #031512;
+			padding: 2.5rem;
+			transform: translateX(110%);
+			transition: 0.2s ease;
+			box-shadow: 1px 0px 10px #02110f inset;
 
-					.pop-up-title {
-						font-weight: bold;
-					}
+			#wallet-white-overlay {
+				display: flex;
 
-					img {
-						width: 8%;
-						height: 8%;
-						transform: scale(1);
-						transition: 0.3s ease;
-					}
-					img:hover {
-						transform: scale(1.1);
-						transition: 0.2s ease;
-					}
+				img {
+					width: 8%;
+					height: 8%;
 				}
 
-				.pop-up-sub {
-					margin-top: 3rem;
-				}
-
-				ul {
-					display: flex;
-					flex-direction: column;
-
-					padding: 0;
-					margin: 2rem 0;
-
-					a {
-						text-decoration: none;
-						color: white;
+				#pop-up-titles {
+					margin-top: 4rem;
+					h2 {
+						font-size: 2vw;
 					}
 
-					.logo-name-flex {
-						display: flex;
-						align-items: center;
-						border: 0.1px solid rgb(98, 98, 98);
-						padding: 1rem;
-					}
-
-					#rev-box {
-						border-radius: 0 0 0.6rem 0.6rem;
-					}
-
-					#rev-logo {
-						width: 6%;
-					}
-
-					#meta-box {
-						border-radius: 0.6rem 0.6rem 0 0;
-					}
-
-					img {
-						width: 10%;
-						margin-right: 2rem;
+					p {
+						font-size: 1.5vw;
 					}
 				}
 			}
+
+			#wallet-providors-grid {
+				#metamask-logo,
+				#opensea-logo {
+					display: flex;
+					gap: 30px;
+					margin-top: 1rem;
+					color: white;
+					text-decoration: none;
+
+					img {
+						width: 12%;
+					}
+				}
+			}
+		}
+
+		#wallet-pop-up-menu-black-square[data-visible="true"] {
+			display: block;
+			transform: translateX(0%);
+			transition: 0.2s ease-out;
 		}
 
 		section {
@@ -810,7 +764,8 @@ li {
 			#logo {
 				width: 50%;
 			}
-			#desktop-nav {
+
+			#mobile-nav {
 				display: flex;
 				place-content: space-around;
 				align-items: center;
@@ -852,6 +807,65 @@ li {
 			}
 		}
 
+		#wallet-pop-up-menu-black-square {
+			display: none;
+			position: absolute;
+			margin: 0;
+			left: 16%;
+			top: 48%;
+			transform: translate(-5%, -40%);
+			z-index: 998;
+			min-width: 70%;
+			max-width: 75%;
+			min-height: 55vh;
+			max-height: 60vh;
+			opacity: 0;
+			background-color: rgba(30, 34, 34, 0.9);
+			padding: 3.5rem;
+			transition: opacity 0.2s ease;
+			box-shadow: 1px 0px 10px #02110f inset;
+			backdrop-filter: blur(10px);
+
+			#wallet-white-overlay {
+				width: 100%;
+				height: 100%;
+				z-index: 999;
+				opacity: 1;
+				display: flex;
+				justify-content: space-between;
+
+				#wallet-exit {
+					width: 2%;
+					height: 2%;
+				}
+
+				#wallet-exit:hover {
+					transform: scale(1.03);
+					transition: 0.2s ease;
+				}
+			}
+
+			#wallet-providors-grid {
+				#metamask-logo,
+				#opensea-logo {
+					display: flex;
+					align-items: center;
+					gap: 50px;
+					margin-top: 2rem;
+					color: white;
+					text-decoration: none;
+
+					img {
+						width: 5%;
+					}
+				}
+			}
+		}
+
+		#wallet-pop-up-menu-black-square[data-visible="true"] {
+			display: block;
+			opacity: 1;
+		}
 		section {
 			.flex-box-hero {
 				display: flex;
