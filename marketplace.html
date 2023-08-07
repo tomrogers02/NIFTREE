@@ -70,8 +70,8 @@
 		</section>
 
 		<section>
-			<div class="flex-box-hero">
-				<div class="left-flex-hero">
+			<div class="filters-nft-grid-flex-box">
+				<div class="filters-left-column">
 					<div class="mobile-filter-menus">
 						<div id="filter-dropdown">
 							<img src="images/filter-icon.svg" alt="" />
@@ -85,43 +85,73 @@
 					</div>
 
 					<div class="filter-title" id="status-filter">Status</div>
-					<ul>
-						<div class="category-check-flex">
-							<input type="checkbox" class="hexagon-check-box" />
-							<label for="CB1">Buy Now</label>
-						</div>
-						<div class="category-check-flex">
-							<input type="checkbox" class="hexagon-check-box" />
-							<label for="CB2">New</label>
-						</div>
-						<div class="category-check-flex">
-							<input type="checkbox" class="hexagon-check-box" />
-							<label for="CB3">Auction</label>
-						</div>
+					<ul class="desktop-filters">
+						<label class="cyberpunk-checkbox-label active">
+							<input
+								type="checkbox"
+								class="cyberpunk-checkbox"
+								data-name="all"
+							/>
+							All</label
+						>
+
+						<label class="cyberpunk-checkbox-label">
+							<input
+								type="checkbox"
+								class="cyberpunk-checkbox"
+								data-name="buy-now"
+							/>
+							Buy Now</label
+						>
+
+						<label class="cyberpunk-checkbox-label">
+							<input
+								type="checkbox"
+								class="cyberpunk-checkbox"
+								data-name="new"
+							/>
+							New</label
+						>
+
+						<label class="cyberpunk-checkbox-label">
+							<input
+								type="checkbox"
+								class="cyberpunk-checkbox active"
+								data-name="auction"
+							/>
+							Auction</label
+						>
 					</ul>
+
 					<div class="filter-title" id="currency-filter">Currency</div>
-					<ul>
+					<ul class="desktop-filters">
 						<div class="category-check-flex">
-							<input type="checkbox" class="hexagon-check-box" />
-							<label for="CB1">Bitcoin</label>
+							<label class="cyberpunk-checkbox-label">
+								<input type="checkbox" class="cyberpunk-checkbox" />
+								Bitcoin</label
+							>
 						</div>
 						<div class="category-check-flex">
-							<input type="checkbox" class="hexagon-check-box" />
-							<label for="CB2">Ethereum</label>
+							<label class="cyberpunk-checkbox-label">
+								<input type="checkbox" class="cyberpunk-checkbox" />
+								Ethereum</label
+							>
 						</div>
 						<div class="category-check-flex">
-							<input type="checkbox" class="hexagon-check-box" />
-							<label for="CB3">Cardano</label>
+							<label class="cyberpunk-checkbox-label">
+								<input type="checkbox" class="cyberpunk-checkbox" />
+								Cardano</label
+							>
 						</div>
 					</ul>
 				</div>
 
 				<div class="right-flex-hero">
 					<div class="column">
-						<div class="nft-card" id="nft-card-2">
+						<div class="nft-card" id="nft-card-1" data-name="buy-now">
 							<div class="nft-card-center">
 								<img
-									src="images/nfts/white-on-white.png"
+									src="images/marketplace-nft/1.svg"
 									alt=""
 									id="nft-1"
 									class="nft-img"
@@ -146,10 +176,10 @@
 							</div>
 						</div>
 
-						<div class="nft-card" id="nft-card-2">
+						<div class="nft-card" id="nft-card-2" data-name="new">
 							<div class="nft-card-center">
 								<img
-									src="images/nfts/light-yellow-nft.jpeg"
+									src="images/marketplace-nft/2.svg"
 									alt=""
 									id="nft-2"
 									class="nft-img"
@@ -171,10 +201,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="nft-card" id="nft-card-3">
+
+						<div class="nft-card" id="nft-card-3" data-name="auction">
 							<div class="nft-card-center">
 								<img
-									src="images/nfts/light-blue.png"
+									src="images/marketplace-nft/3.svg"
 									alt=""
 									id="nft-3"
 									class="nft-img"
@@ -196,12 +227,11 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="column">
-						<div class="nft-card" id="nft-card-2">
+
+						<div class="nft-card" id="nft-card-4" data-name="new">
 							<div class="nft-card-center">
 								<img
-									src="images/nfts/orange.png"
+									src="images/marketplace-nft/4.svg"
 									alt=""
 									id="nft-4"
 									class="nft-img"
@@ -223,10 +253,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="nft-card" id="nft-card-2">
+
+						<div class="nft-card" id="nft-card-5" data-name="auction">
 							<div class="nft-card-center">
 								<img
-									src="images/nfts/black-nft.jpg"
+									src="images/marketplace-nft/5.svg"
 									alt=""
 									id="nft-5"
 									class="nft-img"
@@ -248,10 +279,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="nft-card" id="nft-card-2">
+
+						<div class="nft-card" id="nft-card-6" data-name="buy-now">
 							<div class="nft-card-center">
 								<img
-									src="images/nfts/red.png"
+									src="images/marketplace-nft/6.svg"
 									alt=""
 									id="nft-6"
 									class="nft-img"
@@ -273,13 +305,11 @@
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="column">
-						<div class="nft-card" id="nft-card-2">
+						<div class="nft-card" id="nft-card-7" data-name="buy-now">
 							<div class="nft-card-center">
 								<img
-									src="images/nfts/lazer-ey.png"
+									src="images/marketplace-nft/7.svg"
 									alt=""
 									id="nft-7"
 									class="nft-img"
@@ -301,10 +331,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="nft-card" id="nft-card-2">
+
+						<div class="nft-card" id="nft-card-8" data-name="new">
 							<div class="nft-card-center">
 								<img
-									src="images/nfts/purple-nft..jpg"
+									src="images/marketplace-nft/8.svg"
 									alt=""
 									id="nft-8"
 									class="nft-img"
@@ -326,28 +357,184 @@
 								</div>
 							</div>
 						</div>
-						<div class="nft-card" id="nft-card-2">
-							<div class="nft-card-center">
-								<img
-									src="images/nfts/white-tat-nft.png"
-									alt=""
-									id="nft-9"
-									class="nft-img"
-								/>
 
-								<div class="nft-card-text">
-									<div class="left-text">
-										<div class="nft-name">Raging Ape #12</div>
-										<div class="owner">@TreeYeeee1</div>
-									</div>
+						<div class="nft-card" id="nft-card-9 data-name="auction">
+						<div class="nft-card-center">
+							<img
+								src="images/marketplace-nft/9.svg"
+								alt=""
+								id="nft-9"
+								class="nft-img"
+							/>
 
-									<div class="right-text">
-										<div class="price">4 ETH</div>
-										<button>
-											<img src="images/shopping.svg" alt="" />
-											<div class="view-text">View</div>
-										</button>
-									</div>
+							<div class="nft-card-text">
+								<div class="left-text">
+									<div class="nft-name">Raging Ape #12</div>
+									<div class="owner">@TreeYeeee1</div>
+								</div>
+
+								<div class="right-text">
+									<div class="price">4 ETH</div>
+									<button>
+										<img src="images/shopping.svg" alt="" />
+										<div class="view-text">View</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="nft-card" id="nft-card-10" data-name="buy-now">
+						<div class="nft-card-center">
+							<img
+								src="images/marketplace-nft/10.svg"
+								alt=""
+								id="nft-7"
+								class="nft-img"
+							/>
+
+							<div class="nft-card-text">
+								<div class="left-text">
+									<div class="nft-name">Raging Ape #12</div>
+									<div class="owner">@TreeYeeee1</div>
+								</div>
+
+								<div class="right-text">
+									<div class="price">4 ETH</div>
+									<button>
+										<img src="images/shopping.svg" alt="" />
+										<div class="view-text">View</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="nft-card" id="nft-card-11" data-name="buy-now">
+						<div class="nft-card-center">
+							<img
+								src="images/marketplace-nft/11.svg"
+								alt=""
+								id="nft-8"
+								class="nft-img"
+							/>
+
+							<div class="nft-card-text">
+								<div class="left-text">
+									<div class="nft-name">Raging Ape #12</div>
+									<div class="owner">@TreeYeeee1</div>
+								</div>
+
+								<div class="right-text">
+									<div class="price">4 ETH</div>
+									<button>
+										<img src="images/shopping.svg" alt="" />
+										<div class="view-text">View</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="nft-card" id="nft-card-12" data-name="new">
+						<div class="nft-card-center">
+							<img
+								src="images/marketplace-nft/12.svg"
+								alt=""
+								id="nft-9"
+								class="nft-img"
+							/>
+
+							<div class="nft-card-text">
+								<div class="left-text">
+									<div class="nft-name">Raging Ape #12</div>
+									<div class="owner">@TreeYeeee1</div>
+								</div>
+
+								<div class="right-text">
+									<div class="price">4 ETH</div>
+									<button>
+										<img src="images/shopping.svg" alt="" />
+										<div class="view-text">View</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="nft-card" id="nft-card-13" data-name="new">
+						<div class="nft-card-center">
+							<img
+								src="images/marketplace-nft/13.svg"
+								alt=""
+								id="nft-7"
+								class="nft-img"
+							/>
+
+							<div class="nft-card-text">
+								<div class="left-text">
+									<div class="nft-name">Raging Ape #12</div>
+									<div class="owner">@TreeYeeee1</div>
+								</div>
+
+								<div class="right-text">
+									<div class="price">4 ETH</div>
+									<button>
+										<img src="images/shopping.svg" alt="" />
+										<div class="view-text">View</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="nft-card" id="nft-card-14" data-name="auction">
+						<div class="nft-card-center">
+							<img
+								src="images/marketplace-nft/14.svg"
+								alt=""
+								id="nft-8"
+								class="nft-img"
+							/>
+
+							<div class="nft-card-text">
+								<div class="left-text">
+									<div class="nft-name">Raging Ape #12</div>
+									<div class="owner">@TreeYeeee1</div>
+								</div>
+
+								<div class="right-text">
+									<div class="price">4 ETH</div>
+									<button>
+										<img src="images/shopping.svg" alt="" />
+										<div class="view-text">View</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="nft-card" id="nft-card-15" data-name="auction">
+						<div class="nft-card-center">
+							<img
+								src="images/marketplace-nft/15.svg"
+								alt=""
+								id="nft-9"
+								class="nft-img"
+							/>
+
+							<div class="nft-card-text">
+								<div class="left-text">
+									<div class="nft-name">Raging Ape #12</div>
+									<div class="owner">@TreeYeeee1</div>
+								</div>
+
+								<div class="right-text">
+									<div class="price">4 ETH</div>
+									<button>
+										<img src="images/shopping.svg" alt="" />
+										<div class="view-text">View</div>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -401,7 +588,8 @@
 				</div>
 			</div>
 		</section>
-		<script src="index.js"></script>
+
+		<script src="marketplace.js"></script>
 	</body>
 	<footer>
 		<div class="footer-name">The Boring Stuff...</div>

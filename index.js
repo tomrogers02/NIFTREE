@@ -100,7 +100,7 @@ walletExit.addEventListener('click', () => {
 
 
 
-//Home page filter/dynamim image gallery//
+//Home page filter/dynamic image gallery//
 
 const filterButtons = document.querySelectorAll('.filter-buttons button');
 const filterableCards = document.querySelectorAll('.filterable-cards .card');

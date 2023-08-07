@@ -263,6 +263,10 @@ li {
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase button {
     margin-top: 6vw;
   }
+  body #nft-showcase-1 .flexbox-showcase .left-nft-showcase button a {
+    text-decoration: none;
+    color: white;
+  }
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase button span {
     padding-left: 0.5rem;
     font-size: 2.5vw;
@@ -650,6 +654,10 @@ li {
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase button {
     margin: 0;
     margin-top: 6vw;
+  }
+  body #nft-showcase-1 .flexbox-showcase .left-nft-showcase button a {
+    text-decoration: none;
+    color: white;
   }
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase button span {
     padding-left: 0.5rem;
@@ -1059,6 +1067,10 @@ li {
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase button {
     margin: 0;
     margin-top: 6vw;
+  }
+  body #nft-showcase-1 .flexbox-showcase .left-nft-showcase button a {
+    text-decoration: none;
+    color: white;
   }
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase button span {
     padding-left: 0.5rem;
