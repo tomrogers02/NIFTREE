@@ -174,150 +174,101 @@ li {
 			transition: 0.2s ease-out;
 		}
 
-		.flex-box-hero {
-			margin: 3rem 2.5rem;
-			.left-flex-hero {
-				.mobile-filter-menus {
-					display: flex;
-					place-content: space-between;
-					#filter-dropdown,
-					#sort-by-dropdown {
-						display: flex;
-
-						margin: auto;
-						padding: 0.4rem 2.5rem;
-						border: 1px solid white;
-						border-radius: 0.5rem;
-
-						#filter-title,
-						#sort-by-title {
-							margin-left: 0.3rem;
-						}
-					}
-				}
-
-				.filter-title,
-				.category-check-flex {
+		.filters-nft-grid-flex-box {
+			.filters-left-column {
+				#desktop-filters {
 					display: none;
 				}
-			}
-		}
 
-		#filter-pop-up-menu {
-			background-color: var(--primary);
-			width: 80%;
-			height: 100vh;
-			z-index: 100;
-			position: absolute;
-			top: 0;
-			padding: 2.5rem;
-			transform: translateX(-110%);
-			transition: 0.2s ease-out;
-
-			.pop-up-header {
-				display: flex;
-				place-content: space-between;
-				align-items: center;
-
-				img {
-					width: 5%;
-					height: 5%;
+				.mobile-filter-menus {
+					display: grid;
+					grid-template-columns: repeat(2, 0.5fr);
+					gap: 10px;
+					margin: 1rem;
 				}
 
-				#pop-up-title {
-					font-size: 5vw;
-					font-weight: bold;
-				}
-			}
-			.filter-pop-lists {
-				margin-top: 2rem;
-
-				.filter-pop-lists {
-					font-weight: bold;
-					font-size: 4.6vw;
-					margin-bottom: 1.4rem;
-				}
-				ul {
-					padding: 0;
-
-					.category-check-flex label {
-						cursor: pointer;
+				.status-dropdown,
+				.currency-dropdown {
+					width: 100%;
+					.status-title-icon-flex {
 						display: flex;
-						margin-bottom: 0.5rem;
+						justify-content: space-between;
+						padding: 0.6rem;
+						border: 1px solid rgb(255, 255, 255);
 					}
-					.category-check-flex input[type="checkbox"] {
-						cursor: pointer;
-						opacity: 0;
+
+					.filters {
+						display: none;
+					}
+
+					.filters[data-visible="true"] {
+						background-color: var(--background);
+						display: grid;
+						grid-template-rows: repeat(2, 1fr);
 						position: absolute;
-						left: 88%;
-					}
-
-					.category-check-flex label::before {
-						content: "";
-						width: 1em;
-						height: 1em;
-						border: 0.05em solid white;
-						border-radius: 0.2rem;
-						position: absolute;
-						left: 88%;
-					}
-
-					.category-check-flex label:hover::before,
-					.category-check-flex input[type="checkbox"]:hover + label::before {
-						background-color: var(--secondary);
-					}
-
-					.category-check-flex input[type="checkbox"]:checked + label::before {
-						background-color: var(--tertiary);
+						z-index: 999;
+						border: 1px solid white;
 					}
 				}
 			}
-		}
 
-		.nft-card {
-			background-color: #031210;
+			.right-flex-hero {
+				.column {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					gap: 10px;
 
-			border-radius: 10px;
-			box-shadow: 0 2px 15px rgba(0, 0, 0, 0.302);
-			backdrop-filter: blur(15px);
-			padding-top: 0.1rem;
-			margin-bottom: 2rem;
-
-			.nft-card-center {
-				margin: 1rem 1rem 0.5rem 1rem;
-
-				.nft-card-text {
-					display: flex;
-					place-content: space-between;
-					padding-block: 1rem;
-
-					.nft-name {
-						font-weight: bold;
-						margin-bottom: 0.8rem;
-					}
-					.price {
-						font-weight: bold;
-						margin-bottom: 0.8rem;
+					.nft-card.hide {
+						display: none;
 					}
 
-					.owner {
-						font-size: 2.4vw;
-					}
+					.nft-card {
+						background-color: #031210;
 
-					.right-text {
-						text-align: right;
+						border-radius: 10px;
+						box-shadow: 0 2px 15px rgba(0, 0, 0, 0.302);
+						backdrop-filter: blur(15px);
+						padding-top: 0.1rem;
+						margin-bottom: 2rem;
 
-						button {
-							padding: 0.7rem 1.1rem;
-							align-items: center;
+						.nft-card-center {
+							margin: 1rem 1rem 0.5rem 1rem;
 
-							img {
-								margin-right: 0.3rem;
-								width: 25%;
-							}
+							.nft-card-text {
+								display: flex;
+								place-content: space-between;
+								padding-block: 1rem;
 
-							.view-text {
-								font-size: 2.6vw;
+								.nft-name {
+									font-weight: bold;
+									margin-bottom: 0.8rem;
+								}
+								.price {
+									font-weight: bold;
+									margin-bottom: 0.8rem;
+								}
+
+								.owner {
+									font-size: 2.4vw;
+								}
+
+								.right-text {
+									text-align: right;
+
+									button {
+										padding: 0.7rem 1.1rem;
+										align-items: center;
+
+										img {
+											margin-right: 0.3rem;
+											width: 25%;
+										}
+
+										.view-text {
+											font-size: 2.6vw;
+										}
+									}
+								}
 							}
 						}
 					}
@@ -325,6 +276,7 @@ li {
 			}
 		}
 	}
+
 	footer {
 		background-color: #031512;
 		box-shadow: 0 2px 15px #171a24;
@@ -580,7 +532,9 @@ li {
 
 				.right-flex-hero {
 					.column {
-						display: flex;
+						display: grid;
+						grid-template-columns: repeat(1, 1fr);
+						gap: 20px;
 					}
 
 					.nft-card {
@@ -887,7 +841,7 @@ li {
 						font-weight: bold;
 					}
 
-					.desktop-filters {
+					.filters {
 						padding: 0;
 						margin-bottom: 2rem;
 
