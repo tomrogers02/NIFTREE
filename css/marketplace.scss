@@ -183,31 +183,82 @@ li {
 				.mobile-filter-menus {
 					display: grid;
 					grid-template-columns: repeat(2, 0.5fr);
-					gap: 10px;
+					gap: 6px;
 					margin: 1rem;
-				}
 
-				.status-dropdown,
-				.currency-dropdown {
-					width: 100%;
-					.status-title-icon-flex {
-						display: flex;
-						justify-content: space-between;
-						padding: 0.6rem;
-						border: 1px solid rgb(255, 255, 255);
-					}
+					.status-dropdown,
+					.currency-dropdown {
+						position: relative;
+						.status-title-icon-flex,
+						.currency-title-icon-flex {
+							display: flex;
+							justify-content: space-between;
+							padding: 0.6rem;
+							border: 1px solid rgb(255, 255, 255);
+						}
 
-					.filters {
-						display: none;
-					}
+						.filters {
+							display: none;
+						}
 
-					.filters[data-visible="true"] {
-						background-color: var(--background);
-						display: grid;
-						grid-template-rows: repeat(2, 1fr);
-						position: absolute;
-						z-index: 999;
-						border: 1px solid white;
+						.filters[data-visible="true"] {
+							background-color: var(--background);
+							position: absolute;
+							width: 92%;
+							display: grid;
+							grid-template-rows: repeat(2, 1fr);
+							gap: 10px;
+							z-index: 999;
+							border: 1px solid white;
+							border-top: 0px;
+							padding: 1rem;
+							margin: 0;
+							padding: 1rem 0.5rem;
+						}
+
+						.cyberpunk-checkbox {
+							appearance: none;
+							width: 15px;
+							height: 15px;
+							border: 2px solid var(--tertiary);
+							border-radius: 5px;
+							background-color: transparent;
+							display: inline-block;
+							position: relative;
+							margin-right: 10px;
+							cursor: pointer;
+						}
+
+						.cyberpunk-checkbox.active:before {
+							content: "";
+							background-color: var(--tertiary);
+							display: block;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%) scale(0);
+							width: 7.5px;
+							height: 7.5§12345px;
+							border-radius: 3px;
+							transition: all 0.3s ease-in-out;
+						}
+
+						.cyberpunk-checkbox:checked:before {
+							transform: translate(-50%, -50%) scale(1);
+						}
+
+						.cyberpunk-checkbox-label {
+							font-size: 3vw;
+							color: #fff;
+							cursor: pointer;
+							user-select: none;
+							display: flex;
+							align-items: center;
+						}
+
+						.cyberpunk-checkbox-label.active {
+							color: var(--tertiary);
+						}
 					}
 				}
 			}
@@ -216,7 +267,7 @@ li {
 				.column {
 					display: grid;
 					grid-template-columns: repeat(2, 1fr);
-					gap: 10px;
+					gap: 6px;
 
 					.nft-card.hide {
 						display: none;
@@ -242,6 +293,7 @@ li {
 								.nft-name {
 									font-weight: bold;
 									margin-bottom: 0.8rem;
+									font-size: 2.5vw;
 								}
 								.price {
 									font-weight: bold;
@@ -249,14 +301,14 @@ li {
 								}
 
 								.owner {
-									font-size: 2.4vw;
+									font-size: 2.2vw;
 								}
 
 								.right-text {
 									text-align: right;
 
 									button {
-										padding: 0.7rem 1.1rem;
+										padding: 0.6rem 0.9rem;
 										align-items: center;
 
 										img {
@@ -265,7 +317,7 @@ li {
 										}
 
 										.view-text {
-											font-size: 2.6vw;
+											font-size: 2vw;
 										}
 									}
 								}
@@ -836,6 +888,10 @@ li {
 					box-sizing: border-box;
 					padding: 20px; /* Add some padding to the left column */
 
+					.status-title-icon-flex {
+						display: flex;
+						justify-content: space-between;
+					}
 					.filter-title {
 						font-size: 1.5vw;
 						font-weight: bold;
