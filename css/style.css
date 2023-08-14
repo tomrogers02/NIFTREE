@@ -25,11 +25,32 @@ li {
   list-style-type: none;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 /*         Phone CSS         */
 @media only screen and (max-width: 600px) {
+  /* Resetting body margin and padding for mobile */
   body {
     margin: 0;
     padding: 0;
+    /* Adjusting margin for the main content section */
+    /* Styling for primary action button */
+    /* Styling for secondary action button */
+    /* Styling for the header section */
+    /* Styling for wallet pop-up menu */
+    /* Display wallet pop-up menu when data-visible attribute is true */
+    /* Styling for hero section */
+    /* Styling for mobile wallet sponsors section */
+    /* Hide desktop wallet sponsors section on mobile */
+    /* Styling for NFT showcase section */
+    /* Styling for NFT carousel section */
+    /* Styling for tree plant section */
+    /* Styling for dynamic NFT gallery section */
+    /* Styling for email signup section */
+    /* Styling for footer section */
   }
   body section {
     margin: 10rem 2.5rem;
@@ -70,6 +91,9 @@ li {
     padding: 2rem;
     background-color: var(--background);
     z-index: 999;
+    /* Logo and hamburger icon styling */
+    /* Mobile navigation menu styling */
+    /* Display mobile navigation menu when data-visible attribute is true */
   }
   body header #logo {
     max-width: 6rem;
@@ -88,6 +112,9 @@ li {
     transform: translateX(110%);
     transition: 0.2s ease;
     box-shadow: 1px 0px 10px #02110f inset;
+    /* Close button styling */
+    /* Styling for navigation links in mobile menu */
+    /* Styling for profile and wallet icons (hidden on mobile) */
   }
   body header #mobile-nav #mobile-exit {
     float: right;
@@ -128,6 +155,8 @@ li {
     transform: translateX(110%);
     transition: 0.2s ease;
     box-shadow: 1px 0px 10px #02110f inset;
+    /* Styling for wallet pop-up content */
+    /* Styling for wallet provider logos */
   }
   body #wallet-pop-up-menu-black-square #wallet-white-overlay {
     display: flex;
@@ -164,9 +193,14 @@ li {
   }
   body .hero {
     margin-inline: 2rem;
+    /* Styling for left column in hero section */
+    /* Styling for hero buttons */
+    /* Styling for right column in hero section */
   }
   body .hero .left-col {
     padding: 5rem 0;
+    /* Styling for hero title */
+    /* Styling for hero subhead */
   }
   body .hero .left-col #title {
     font-size: 10vw;
@@ -181,6 +215,8 @@ li {
   }
   body .hero .hero-buttons {
     margin: 5rem 1rem;
+    /* Styling for explore button */
+    /* Styling for learn more button */
   }
   body .hero .hero-buttons .explore-image-text {
     display: flex;
@@ -223,12 +259,22 @@ li {
   body #wallet-sponsors {
     display: none;
   }
+  body #nft-showcase-1 {
+    /* Styling for flexbox layout in NFT showcase */
+  }
   body #nft-showcase-1 .flexbox-showcase {
     display: flex;
     flex-direction: column-reverse;
+    /* Styling for left side of NFT showcase */
+    /* Styling for right side of NFT showcase */
   }
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase {
     text-align: center;
+    /* Styling for NFT name */
+    /* Styling for NFT owner and tick mark */
+    /* Styling for bidding ends text */
+    /* Styling for countdown timer */
+    /* Styling for button in NFT showcase */
   }
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase .nft-name {
     font-size: 6vw;
@@ -238,6 +284,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Styling for NFT owner name */
   }
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase .nft-owner-tick .nft-owner-name {
     font-size: 2.2vw;
@@ -279,6 +326,9 @@ li {
   body #nft-carousel-one {
     text-align: center;
     margin: 0;
+    /* Styling for NFT carousel title */
+    /* Styling for NFT carousel subtitle */
+    /* Styling for media scroller container */
     /* Hide the scrollbar for webkit-based browsers */
   }
   body #nft-carousel-one .title {
@@ -305,6 +355,13 @@ li {
   body #nft-carousel-one a {
     text-decoration: none;
   }
+  body #tree-plant {
+    /* Styling for question text */
+    /* Styling for subtext */
+    /* Styling for learn more button */
+    /* Hide desktop image and button on mobile */
+    /* Styling for right section in tree plant */
+  }
   body #tree-plant #question {
     font-size: 8vw;
     font-family: poppins;
@@ -325,11 +382,14 @@ li {
   }
   body #tree-plant #tree-plant-right-section {
     margin-top: 3rem;
+    /* Styling for yellow square background */
   }
   body #tree-plant #tree-plant-right-section #right-section-yellow-square {
     background-color: #d5ab23;
     padding: 2rem 2rem 0 2rem;
     border-radius: 10px;
+    /* Styling for square title */
+    /* Styling for square subtitle */
   }
   body #tree-plant #tree-plant-right-section #right-section-yellow-square #square-title {
     font-size: 5vw;
@@ -337,12 +397,13 @@ li {
   }
   body #tree-plant #tree-plant-right-section #right-section-yellow-square #square-sub-title {
     font-size: 3vw;
-  }
-  body #tree-plant #tree-plant-right-section #right-section-yellow-square #square-sub-title {
     margin-block: 1rem 2rem;
   }
   body #dynamic-nft-gallery {
     margin: 10rem 1.5rem;
+    /* Styling for section title */
+    /* Styling for filter buttons */
+    /* Styling for filterable cards grid */
   }
   body #dynamic-nft-gallery #section-title {
     text-align: center;
@@ -352,6 +413,8 @@ li {
     display: flex;
     justify-content: space-between;
     margin: 0rem 2rem;
+    /* Styling for individual filter button */
+    /* Styling for active filter button */
   }
   body #dynamic-nft-gallery .filter-buttons button {
     background: none;
@@ -366,9 +429,12 @@ li {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1);
     gap: 20px;
+    /* Styling for individual card */
+    /* Hide cards with 'hide' class */
   }
   body #dynamic-nft-gallery .filterable-cards .card {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* Styling for card info section */
   }
   body #dynamic-nft-gallery .filterable-cards .card .card-info {
     display: flex;
@@ -377,6 +443,12 @@ li {
     padding: 0.5rem;
     background-color: #0a100a;
     border-radius: 0 0 3px 3px;
+    /* Styling for left side of card info */
+    /* Styling for right side of card info */
+  }
+  body #dynamic-nft-gallery .filterable-cards .card .card-info .card-info-left {
+    /* Styling for NFT name */
+    /* Styling for NFT owner name */
   }
   body #dynamic-nft-gallery .filterable-cards .card .card-info .card-info-left .nft-name {
     font-size: 2.5vw;
@@ -393,6 +465,10 @@ li {
   body .email-signup {
     text-align: center;
     margin: 10rem 2rem;
+    /* Styling for signup title */
+    /* Styling for signup sub-head */
+    /* Styling for email input field */
+    /* Styling for signup button */
   }
   body .email-signup #title {
     font: 6vw bold;
@@ -422,13 +498,21 @@ li {
     box-shadow: 0 2px 15px #171a24;
     margin-top: 8rem;
     padding: 2rem;
+    /* Styling for footer name */
+    /* Styling for copyright text */
   }
   body footer .footer-name {
     font-size: 4vw;
     padding-bottom: 4rem;
   }
+  body footer div {
+    /* Styling for left side of footer */
+    /* Styling for right side of footer */
+  }
   body footer div .left-footer {
     width: 50%;
+    /* Styling for footer links */
+    /* Styling for paragraph in footer */
   }
   body footer div .left-footer .footer-links {
     display: none;
@@ -439,8 +523,9 @@ li {
   body footer div .right-footer ul {
     padding: 1rem 0rem;
     margin: 0 0 2rem 0;
+    /* Styling for footer links */
   }
-  body footer div .right-footer a {
+  body footer div .right-footer ul a {
     text-decoration: none;
     color: white;
     display: block;
@@ -454,6 +539,22 @@ li {
 @media only screen and (min-width: 601px) and (max-width: 999px) {
   body {
     margin: 4rem;
+    /* Increase margin for sections */
+    /* Styling for primary button */
+    /* Styling for secondary button */
+    /* Styling for header section */
+    /* Styling for wallet pop-up menu */
+    /* Display wallet pop-up menu when visible */
+    /* Styling for hero section */
+    /* Styling for right column of hero section */
+    /* Styling for wallet sponsors section */
+    /* Hide wallet sponsors section on mobile */
+    /* Styling for NFT showcase section */
+    /* Styling for NFT carousel section */
+    /* Styling for Tree Plant section */
+    /* Styling for dynamic NFT gallery section */
+    /* Styling for email signup section */
+    /* Styling for footer section */
   }
   body section {
     margin: 12rem 2rem;
@@ -493,6 +594,10 @@ li {
     place-content: space-between;
     background-color: var(--background);
     z-index: 999;
+    /* Styling for logo */
+    /* Styling for hamburger icon */
+    /* Styling for mobile navigation */
+    /* Display mobile navigation when visible */
   }
   body header #logo {
     max-width: 6rem;
@@ -511,6 +616,8 @@ li {
     transform: translateX(110%);
     transition: 0.2s ease;
     box-shadow: 1px 0px 10px #02110f inset;
+    /* Styling for mobile navigation exit button */
+    /* Hide profile and wallet icons */
   }
   body header #mobile-nav #mobile-exit {
     float: right;
@@ -519,6 +626,8 @@ li {
   body header #mobile-nav ul {
     text-align: right;
     margin-top: 6rem;
+    /* Styling for navigation links */
+    /* Styling for mobile navigation buttons */
   }
   body header #mobile-nav ul a {
     color: white;
@@ -551,9 +660,12 @@ li {
     transform: translateX(110%);
     transition: 0.2s ease;
     box-shadow: 1px 0px 10px #02110f inset;
+    /* Styling for white overlay within wallet pop-up */
+    /* Styling for wallet providers grid */
   }
   body #wallet-pop-up-menu-black-square #wallet-white-overlay {
     display: flex;
+    /* Styling for pop-up titles */
   }
   body #wallet-pop-up-menu-black-square #wallet-white-overlay img {
     width: 8%;
@@ -587,6 +699,11 @@ li {
   }
   body .hero {
     margin-block: 4.5rem;
+  }
+  body .hero .left-col {
+    /* Styling for hero title */
+    /* Styling for hero subhead */
+    /* Styling for hero buttons */
   }
   body .hero .left-col #title {
     font-weight: bold;
@@ -625,11 +742,20 @@ li {
   body #wallet-sponsors-mobile {
     display: none;
   }
+  body #nft-showcase-1 {
+    /* Styling for flexbox showcase */
+  }
   body #nft-showcase-1 .flexbox-showcase {
     display: flex;
+    /* Styling for left side of NFT showcase */
+    /* Styling for right side of NFT showcase */
   }
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase {
     width: 50%;
+    /* Styling for NFT owner and tick mark */
+    /* Styling for bidding ends text */
+    /* Styling for countdown timer */
+    /* Styling for button within NFT showcase */
   }
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase .nft-name {
     font-size: 2.5vw;
@@ -671,6 +797,9 @@ li {
   }
   body #nft-carousel-one {
     text-align: center;
+    /* Styling for sub-title */
+    /* Styling for title */
+    /* Styling for media scroller */
   }
   body #nft-carousel-one .sub-title {
     font-size: 1.2vw;
@@ -684,6 +813,7 @@ li {
     margin: auto;
     display: flex;
     align-items: flex-end;
+    /* Styling for individual NFT item */
   }
   body #nft-carousel-one .media-scroller .nft {
     position: relative;
@@ -693,9 +823,14 @@ li {
   }
   body #tree-plant {
     display: flex;
+    /* Styling for left section of Tree Plant */
+    /* Styling for right section of Tree Plant */
   }
   body #tree-plant #tree-plant-left-section {
     width: 80%;
+    /* Styling for question text */
+    /* Styling for subtext */
+    /* Styling for learn more button */
   }
   body #tree-plant #tree-plant-left-section #question {
     font-size: 3vw;
@@ -716,6 +851,11 @@ li {
   body #tree-plant #tree-plant-right-section {
     display: none;
   }
+  body #dynamic-nft-gallery {
+    /* Styling for section title */
+    /* Styling for filter buttons */
+    /* Styling for filterable cards grid */
+  }
   body #dynamic-nft-gallery #section-title {
     text-align: center;
     font-size: 2.5vw;
@@ -724,6 +864,7 @@ li {
     display: flex;
     gap: 30px;
     justify-content: center;
+    /* Styling for active filter button */
   }
   body #dynamic-nft-gallery .filter-buttons button {
     background: none;
@@ -738,9 +879,12 @@ li {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1);
     gap: 20px;
+    /* Styling for individual card */
+    /* Hide cards with 'hide' class */
   }
   body #dynamic-nft-gallery .filterable-cards .card {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* Styling for card info section */
   }
   body #dynamic-nft-gallery .filterable-cards .card .card-info {
     display: flex;
@@ -749,6 +893,12 @@ li {
     padding: 1rem;
     background-color: #171a24;
     border-radius: 0 0 3px 3px;
+    /* Styling for left side of card info */
+    /* Styling for right side of card info */
+  }
+  body #dynamic-nft-gallery .filterable-cards .card .card-info .card-info-left {
+    /* Styling for NFT name */
+    /* Styling for NFT owner name */
   }
   body #dynamic-nft-gallery .filterable-cards .card .card-info .card-info-left .nft-name {
     font-size: 2vw;
@@ -768,6 +918,9 @@ li {
     margin-inline: 3rem;
     padding: 4rem 2rem;
     z-index: 999;
+    /* Styling for signup title */
+    /* Styling for signup sub-head */
+    /* Styling for email input and button */
   }
   body .email-signup #title {
     margin-bottom: 2rem;
@@ -801,6 +954,7 @@ li {
     margin: -4rem;
     padding: 4rem;
     background-color: #041714;
+    /* Styling for footer name */
   }
   body footer .footer-name {
     font-size: 1.5vw;
@@ -808,10 +962,15 @@ li {
   }
   body footer div {
     display: flex;
+    /* Styling for left side of footer */
+    /* Styling for right side of footer */
+    /* Styling for copyright text */
   }
   body footer div .left-footer {
     width: 50%;
     display: block;
+    /* Styling for paragraph in footer */
+    /* Styling for footer links */
   }
   body footer div .left-footer .paragraph {
     font-size: 1.3vw;
@@ -824,10 +983,13 @@ li {
   }
   body footer div .right-footer {
     width: 50%;
+    /* Styling for first list in footer */
   }
   body footer div .right-footer .list-one {
     display: block;
     margin: 0 6rem;
+    /* Styling for list title */
+    /* Styling for list items */
   }
   body footer div .right-footer .list-one .list-title {
     font-weight: bold;
@@ -853,6 +1015,22 @@ li {
 @media only screen and (min-width: 1000px) {
   body {
     margin: 4rem;
+    /* Margin for all sections */
+    /* Styling for buttons */
+    /* Button hover effect */
+    /* Secondary button styling */
+    /* Header styling */
+    /* Wallet popup menu styling */
+    /* Display wallet popup menu when visible */
+    /* Hero section styling */
+    /* Wallet sponsors section styling */
+    /* Mobile version of wallet sponsors hidden */
+    /* NFT showcase 1 styling */
+    /* NFT carousel 1 styling */
+    /* Tree plant section styling */
+    /* Dynamic NFT gallery section styling */
+    /* Email signup section styling */
+    /* Footer section styling */
   }
   body section {
     margin: 14rem 8rem;
@@ -884,11 +1062,12 @@ li {
   }
   body header {
     display: flex;
-    place-content: space-between;
+    justify-content: space-between;
+    /* Mobile CTA and Exit buttons hidden */
+    /* Logo styling */
+    /* Mobile navigation */
   }
-  body header #mobile-cta {
-    display: none;
-  }
+  body header #mobile-cta,
   body header #mobile-exit {
     display: none;
   }
@@ -897,12 +1076,15 @@ li {
   }
   body header #mobile-nav {
     display: flex;
-    place-content: space-around;
+    justify-content: space-around;
     align-items: center;
     z-index: 2;
+    /* Profile and wallet icons */
   }
   body header #mobile-nav ul {
     width: 100%;
+    /* Styling for mobile navigation links */
+    /* Mobile navigation buttons */
   }
   body header #mobile-nav ul a {
     text-decoration: none;
@@ -917,8 +1099,9 @@ li {
   }
   body header #mobile-nav .profile-wallet-icons {
     display: flex;
-    place-content: space-between;
+    justify-content: space-between;
     width: 32%;
+    /* Hover effect for profile and wallet icons */
   }
   body header #mobile-nav .profile-wallet-icons #wallet {
     width: 43%;
@@ -948,14 +1131,16 @@ li {
     box-shadow: 1px 0px 10px #02110f inset;
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
+    /* White overlay within wallet popup */
+    /* Wallet providers logos */
   }
   body #wallet-pop-up-menu-black-square #wallet-white-overlay {
     width: 100%;
     height: 100%;
     z-index: 999;
     opacity: 1;
-    display: flex;
-    justify-content: space-between;
+    /* Wallet exit button */
+    /* Hover effect for wallet exit button */
   }
   body #wallet-pop-up-menu-black-square #wallet-white-overlay #wallet-exit {
     width: 2%;
@@ -984,14 +1169,20 @@ li {
   }
   body .hero {
     display: flex;
+    /* Left column of hero section */
+    /* Right column of hero section */
   }
   body .hero .left-col {
     width: 50%;
     margin-top: 6rem;
+    /* Hero title styling */
+    /* Hero subhead styling */
+    /* Buttons in hero section */
   }
   body .hero .left-col #title {
     font-weight: bold;
     font-size: 3.8vw;
+    /* Styling for span within title */
   }
   body .hero .left-col #title span {
     color: var(--tertiary);
@@ -1003,12 +1194,13 @@ li {
   body .hero .left-col .hero-buttons {
     display: flex;
     margin-block: 4rem 0;
-  }
-  body .hero .left-col .hero-buttons a {
-    text-decoration: none;
+    /* Explore image and text button */
+    /* Rocket image styling */
+    /* Learn arrow image styling */
   }
   body .hero .left-col .hero-buttons .explore-image-text {
     margin-right: 2rem;
+    /* Button text styling */
   }
   body .hero .left-col .hero-buttons .explore-image-text .button-text {
     font-weight: bold;
@@ -1023,6 +1215,7 @@ li {
   }
   body .hero .right-col {
     margin-top: 2rem;
+    /* Image on the right side */
   }
   body .hero .right-col img {
     width: 70%;
@@ -1036,11 +1229,21 @@ li {
   body #wallet-sponsors-mobile {
     display: none;
   }
+  body #nft-showcase-1 {
+    /* Flexbox for showcasing */
+  }
   body #nft-showcase-1 .flexbox-showcase {
     display: flex;
+    /* Left side of NFT showcase */
+    /* Right side of NFT showcase */
   }
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase {
     width: 50%;
+    /* NFT name styling */
+    /* NFT owner and tick styling */
+    /* Bidding ends styling */
+    /* Countdown styling */
+    /* Button within NFT showcase */
   }
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase .nft-name {
     font-size: 2.5vw;
@@ -1059,6 +1262,7 @@ li {
     text-align: center;
     font-size: 1.3vw;
     width: 60%;
+    /* Time name styling */
   }
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase .countdown .time-name {
     font-size: 0.8vw;
@@ -1067,6 +1271,8 @@ li {
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase button {
     margin: 0;
     margin-top: 6vw;
+    /* Link within button */
+    /* Span within button */
   }
   body #nft-showcase-1 .flexbox-showcase .left-nft-showcase button a {
     text-decoration: none;
@@ -1076,6 +1282,9 @@ li {
     padding-left: 0.5rem;
     font-size: 0.9vw;
   }
+  body #nft-showcase-1 .flexbox-showcase .right-nft-showcase {
+    /* NFT image styling */
+  }
   body #nft-showcase-1 .flexbox-showcase .right-nft-showcase img {
     width: 85%;
     float: right;
@@ -1084,6 +1293,11 @@ li {
   }
   body #nft-carousel-one {
     text-align: center;
+    /* Subtitle styling */
+    /* Title styling */
+    /* Media scroller styling */
+    /* Link styling within NFT carousel */
+    /* Button styling within NFT carousel */
   }
   body #nft-carousel-one .sub-title {
     font-size: 1vw;
@@ -1108,14 +1322,20 @@ li {
   body #tree-plant {
     display: flex;
     align-items: center;
+    /* Left section of tree plant */
+    /* Right section of tree plant */
   }
   body #tree-plant #tree-plant-left-section {
     width: 100%;
+    /* Question styling */
+    /* Subtext styling */
+    /* Learn more button styling */
   }
   body #tree-plant #tree-plant-left-section #question {
     font-size: 2.6vw;
     font-weight: bold;
     padding-right: 10rem;
+    /* Span within question styling */
   }
   body #tree-plant #tree-plant-left-section #question span {
     color: var(--secondary);
@@ -1129,6 +1349,10 @@ li {
     background-image: linear-gradient(to right, var(--secondary), #6daf89);
     margin: 0;
   }
+  body #tree-plant #tree-plant-right-section {
+    /* Mobile button hidden */
+    /* Right section yellow square styling */
+  }
   body #tree-plant #tree-plant-right-section #mobile-button {
     display: none;
   }
@@ -1136,6 +1360,9 @@ li {
     background-color: #d5ab23;
     padding: 2rem 2rem 0 2rem;
     border-radius: 10px;
+    /* Yellow square title styling */
+    /* Yellow square sub-title styling */
+    /* Mobile image hidden */
   }
   body #tree-plant #tree-plant-right-section #right-section-yellow-square #square-title {
     font-size: 2vw;
@@ -1146,6 +1373,13 @@ li {
   }
   body #tree-plant #tree-plant-right-section #right-section-yellow-square #mobile-image {
     display: none;
+  }
+  body #dynamic-nft-gallery {
+    /* Section title styling */
+    /* Filter buttons styling */
+    /* Button within filter buttons */
+    /* Active filter button styling */
+    /* Filterable cards grid styling */
   }
   body #dynamic-nft-gallery #section-title {
     text-align: center;
@@ -1170,9 +1404,12 @@ li {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1);
     gap: 40px;
+    /* Individual card styling */
+    /* Hide cards with 'hide' class */
   }
   body #dynamic-nft-gallery .filterable-cards .card {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* Card info section styling */
   }
   body #dynamic-nft-gallery .filterable-cards .card .card-info {
     display: flex;
@@ -1181,6 +1418,12 @@ li {
     padding: 1rem;
     background-color: #171a24;
     border-radius: 0 0 3px 3px;
+    /* Left side of card info styling */
+    /* Right side of card info styling */
+  }
+  body #dynamic-nft-gallery .filterable-cards .card .card-info .card-info-left {
+    /* NFT name styling */
+    /* NFT owner name styling */
   }
   body #dynamic-nft-gallery .filterable-cards .card .card-info .card-info-left .nft-name {
     font-size: 1.2vw;
@@ -1200,6 +1443,9 @@ li {
     margin-inline: 3rem;
     padding: 5rem 2em;
     z-index: 999;
+    /* Email signup title styling */
+    /* Sub-head styling */
+    /* Flexbox for email input and button */
   }
   body .email-signup #email-title {
     margin-bottom: 1.5rem;
@@ -1213,6 +1459,10 @@ li {
     margin: auto;
     margin-block: 2rem;
     width: 50%;
+    /* Email input field styling */
+    /* Input field styling */
+    /* Email signup button styling */
+    /* Button focus effect */
   }
   body .email-signup .flex-button-email #email {
     background-color: none;
@@ -1237,6 +1487,8 @@ li {
     padding: 4rem;
     background-color: #041714;
     z-index: 0;
+    /* Footer name styling */
+    /* Flexbox for footer sections */
   }
   body footer .footer-name {
     font-size: 1.5vw;
@@ -1244,10 +1496,17 @@ li {
   }
   body footer div {
     display: flex;
+    /* Left footer section styling */
+    /* Right footer section styling */
+    /* Copyright text styling */
   }
   body footer div .left-footer {
     width: 50%;
     display: block;
+    /* Footer links styling */
+  }
+  body footer div .left-footer .footer-links {
+    /* Paragraph styling */
   }
   body footer div .left-footer .footer-links img {
     margin: 1rem;
@@ -1258,10 +1517,13 @@ li {
   }
   body footer div .right-footer {
     width: 50%;
+    /* List 1 styling */
   }
   body footer div .right-footer .list-one {
     display: block;
     margin: 0 6rem;
+    /* List title styling */
+    /* Unordered list styling */
   }
   body footer div .right-footer .list-one .list-title {
     font-weight: bold;
@@ -1270,6 +1532,7 @@ li {
   body footer div .right-footer .list-one ul {
     margin: 0;
     padding: 0;
+    /* Links within list styling */
   }
   body footer div .right-footer .list-one ul a {
     color: white;

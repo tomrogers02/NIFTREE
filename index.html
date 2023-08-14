@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>NiFTREE</title>
+		<!-- Stylesheets -->
 		<link rel="stylesheet" href="css/style.css" />
 		<link
 			rel="stylesheet"
@@ -12,37 +13,34 @@
 			integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
 			crossorigin="anonymous"
 		/>
+		<!-- JavaScript -->
 		<script src="index.js" defer></script>
 	</head>
-
 	<body>
+		<!-- Header -->
 		<header>
-			<a href="index.html"> <img src="images/logo.svg" alt="" id="logo" /> </a
-			><img
+			<a href="index.html"> <img src="images/logo.svg" alt="" id="logo" /> </a>
+			<img
 				src="images/Hamburger.svg"
 				alt=""
 				id="mobile-cta"
 				class="hamburger"
 			/>
-
+			<!-- Mobile Navigation -->
 			<nav id="mobile-nav" data-visible="false">
 				<img src="images/mobile-exit.png" alt="" id="mobile-exit" />
-
 				<ul class="nav-menu">
 					<li>
 						<a href="marketplace.html">Marketplace</a>
 						<a href="impact.html">Your impact</a>
-
 						<ul id="mobile-nav-buttons">
 							<li>
 								<a href="login.html">Account</a>
-
 								<div id="mobile-wallet-name">Wallet</div>
 							</li>
 						</ul>
 					</li>
 				</ul>
-
 				<div class="profile-wallet-icons">
 					<a href="login.html">
 						<img src="images/profile.svg" alt="" id="profile" />
@@ -51,7 +49,7 @@
 				</div>
 			</nav>
 		</header>
-
+		<!-- Wallet Pop-Up Menu -->
 		<section id="wallet-pop-up-menu-black-square" data-visible="false">
 			<div id="wallet-white-overlay">
 				<div id="pop-up-titles">
@@ -63,20 +61,19 @@
 				</div>
 				<img src="images/mobile-exit.png" alt="" id="wallet-exit" />
 			</div>
-
+			<!-- Wallet Providers Grid -->
 			<div id="wallet-providors-grid">
 				<a href="https://metamask.io/" id="metamask-logo" target="_blank">
 					<img src="images/company-logos/metamask-logo.svg" alt="" />
 					<h4>MetaMask</h4>
 				</a>
-
 				<a href="https://opensea.io/" id="opensea-logo" target="_blank">
 					<img src="images/company-logos/opensea-logo.svg" alt="" />
 					<h4>OpenSea</h4>
 				</a>
 			</div>
 		</section>
-
+		<!-- Hero Section -->
 		<div class="hero">
 			<div class="left-col">
 				<h1 id="title">Let’s replant the <span>earth</span>, the fun way.</h1>
@@ -84,7 +81,7 @@
 					With over one thousand NFT’s to choose from, planting trees has never
 					been easier.
 				</p>
-
+				<!-- Hero Buttons -->
 				<div class="hero-buttons">
 					<div class="explore-image-text">
 						<a href="marketplace.html">
@@ -94,7 +91,6 @@
 							</button>
 						</a>
 					</div>
-
 					<div class="learnmore">
 						<div class="learn-inside">
 							<button type="button" class="secondary-button">
@@ -104,29 +100,27 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="right-col">
 				<img src="images/nft-showcase-desktop.svg" alt="" id="nft-desktop" />
 			</div>
 		</div>
-
+		<!-- Wallet Sponsors -->
 		<img src="images/wallet-sponsors.png" alt="" id="wallet-sponsors" />
-
 		<img
 			src="images/wallet-sponsors-mobile.svg"
 			alt=""
 			id="wallet-sponsors-mobile"
 		/>
-
+		<!-- NFT Showcase 1 -->
 		<section id="nft-showcase-1">
 			<div class="flexbox-showcase">
 				<div class="left-nft-showcase">
+					<p class="nft-name">Futura A</p>
 					<p class="nft-name">Futura Ape #345</p>
 					<div class="nft-owner-tick">
 						<div class="nft-owner-name">@TreePlanta</div>
 						<img src="images/tick.svg" alt="" />
 					</div>
-
 					<p class="bidding-ends">Ends in</p>
 					<div class="countdown">
 						<div class="hours-timer">
@@ -139,13 +133,11 @@
 							<div class="time-name">Mins</div>
 						</div>
 						<hr />
-
 						<div class="hours-timer">
 							<div class="second">Seconds</div>
 							<div class="time-name">Secs</div>
 						</div>
 					</div>
-
 					<button id="place-bid">
 						<img src="images/shopping.svg" alt="" id="shopping-icon" />
 						<a href="nft-page.html">
@@ -153,17 +145,15 @@
 						</a>
 					</button>
 				</div>
-
 				<div class="right-nft-showcase">
 					<img src="images/nfts/white-tat-nft.png" alt="" />
 				</div>
 			</div>
 		</section>
-
+		<!-- NFT Carousel 1 -->
 		<section id="nft-carousel-one">
 			<p class="sub-title">This weeks</p>
 			<p class="title">Trending Collection</p>
-
 			<div class="carousel-container">
 				<div class="media-scroller">
 					<div class="nft" id="yellow-nft">
@@ -176,9 +166,10 @@
 						<img src="images/blue-nft.png" alt="" />
 					</div>
 				</div>
+				<button><a href="marketplace.html">View All</a></button>
 			</div>
 		</section>
-
+		<!-- Tree Plant Section -->
 		<section id="tree-plant">
 			<div id="tree-plant-left-section">
 				<p id="question">But, Where Are The <span>Trees</span> Planted?</p>
@@ -207,7 +198,7 @@
 				<button class="learn-more-button" id="mobile-button">Learn More</button>
 			</div>
 		</section>
-
+		<!-- Dynamic NFT Gallery -->
 		<section id="dynamic-nft-gallery">
 			<div id="section-title">Discover Artworks</div>
 			<div class="filter-buttons">
@@ -215,11 +206,10 @@
 				<button data-name="trending">Trending</button>
 				<button data-name="new">New</button>
 			</div>
-
 			<div class="filterable-cards">
+				<!-- Card 1 -->
 				<div class="card" data-name="new">
 					<img src="images/marketplace-nft/10.svg" alt="" />
-
 					<div class="card-info">
 						<div class="card-info-left">
 							<div class="nft-name">Bulliens #72</div>
@@ -230,7 +220,7 @@
 						</div>
 					</div>
 				</div>
-
+				<!-- Card 2 -->
 				<div class="card" data-name="new">
 					<img src="images/marketplace-nft/6.svg" alt="" />
 					<div class="card-info">
@@ -243,7 +233,7 @@
 						</div>
 					</div>
 				</div>
-
+				<!-- Card 3 -->
 				<div class="card" data-name="trending">
 					<img src="images/marketplace-nft/17.svg" alt="" />
 					<div class="card-info">
@@ -256,7 +246,7 @@
 						</div>
 					</div>
 				</div>
-
+				<!-- Card 4 -->
 				<div class="card" data-name="trending">
 					<img src="images/marketplace-nft/2.svg" alt="" />
 					<div class="card-info">
@@ -269,7 +259,7 @@
 						</div>
 					</div>
 				</div>
-
+				<!-- Card 5 -->
 				<div class="card" data-name="trending">
 					<img src="images/marketplace-nft/14.svg" alt="" />
 					<div class="card-info">
@@ -282,7 +272,7 @@
 						</div>
 					</div>
 				</div>
-
+				<!-- Card 6 -->
 				<div class="card" data-name="new">
 					<img src="images/marketplace-nft/5.svg" alt="" />
 					<div class="card-info">
@@ -297,20 +287,18 @@
 				</div>
 			</div>
 		</section>
-
+		<!-- Email Signup Section -->
 		<section class="email-signup">
 			<div id="email-title">
 				We’ll also plant a tree for every email address,
 			</div>
 			<div id="sub-head">We told you it was easy…</div>
-
 			<div class="flex-button-email">
 				<input id="email" type="email" placeholder="Email Address" />
-
 				<button>Subscribe</button>
 			</div>
 		</section>
-
+		<!-- Footer -->
 		<footer>
 			<div class="footer-name">The Boring Stuff...</div>
 			<div>
@@ -321,7 +309,6 @@
 						ad minim veniam
 					</div>
 				</div>
-
 				<div class="right-footer">
 					<div class="list-one">
 						<div class="list-title">My Account</div>
@@ -336,7 +323,6 @@
 					</div>
 				</div>
 			</div>
-
 			<div id="copyright">@2022 NiFTREE NFT | All Rights Reserved.</div>
 		</footer>
 	</body>
