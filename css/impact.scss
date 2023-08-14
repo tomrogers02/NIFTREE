@@ -1170,4 +1170,46 @@ li {
 			}
 		}
 	}
+
+	footer {
+		margin: 4rem -4rem -4rem -4rem;
+		padding: 4rem;
+		background-color: #041714;
+		z-index: 0;
+
+		/* Footer name styling */
+		.footer-name {
+			font-size: 1.5vw;
+			padding-bottom: 2rem;
+		}
+
+		/* Flexbox for footer sections */
+		div {
+			display: flex;
+
+			/* Left footer section styling */
+			.left-footer {
+				width: 50%;
+				display: block;
+
+				/* Footer links styling */
+				.footer-links {
+					img {
+						margin: 1rem;
+					}
+
+					/* Paragraph styling */
+					.paragraph {
+						margin-right: 7rem;
+						font-size: 1.5vw;
+					}
+				}
+			}
+		}
+		/* Copyright text styling */
+		#copyright {
+			text-align: center;
+			margin-block: 3rem;
+		}
+	}
 }

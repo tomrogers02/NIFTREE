@@ -26,6 +26,11 @@ li {
   list-style-type: none;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 /*         Phone CSS         */
 @media only screen and (max-width: 600px) {
   body {
@@ -465,101 +470,146 @@ li {
     transform: translateX(0%);
     transition: 0.2s ease-out;
   }
-  body section .flex-box-hero {
-    display: flex;
+  body section {
+    margin: 3rem 0;
   }
-  body section .flex-box-hero .mobile-filter-menus {
+  body section .filters-nft-grid-flex-box {
+    display: flex;
+    height: 100%;
+  }
+  body section .filters-nft-grid-flex-box .mobile-filter-menus {
     display: none;
   }
-  body section .flex-box-hero .left-flex-hero .filter-title {
+  body section .filters-nft-grid-flex-box .filters-left-column {
+    flex: 1 0 20%;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 20px; /* Add some padding to the left column */
+  }
+  body section .filters-nft-grid-flex-box .filters-left-column .status-title-icon-flex,
+  body section .filters-nft-grid-flex-box .filters-left-column .status-title-icon-flex-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  body section .filters-nft-grid-flex-box .filters-left-column .filter-title {
     font-size: 1.5vw;
     font-weight: bold;
   }
-  body section .flex-box-hero .left-flex-hero ul {
+  body section .filters-nft-grid-flex-box .filters-left-column .filters {
     padding: 0;
     margin-bottom: 2rem;
   }
-  body section .flex-box-hero .left-flex-hero ul .category-check-flex label {
+  body section .filters-nft-grid-flex-box .filters-left-column .filters .cyberpunk-checkbox {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--tertiary);
+    border-radius: 5px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
     cursor: pointer;
-    display: flex;
-    margin-bottom: 1rem;
   }
-  body section .flex-box-hero .left-flex-hero ul .category-check-flex input[type=checkbox] {
-    cursor: pointer;
-    opacity: 0;
-    position: absolute;
-    left: 20%;
-  }
-  body section .flex-box-hero .left-flex-hero ul .category-check-flex label::before {
+  body section .filters-nft-grid-flex-box .filters-left-column .filters .cyberpunk-checkbox.active:before {
     content: "";
-    width: 1em;
-    height: 1em;
-    border: 0.1em solid white;
-    border-radius: 0.3rem;
-    position: absolute;
-    left: 20%;
-  }
-  body section .flex-box-hero .left-flex-hero ul .category-check-flex label:hover::before,
-  body section .flex-box-hero .left-flex-hero ul .category-check-flex input[type=checkbox]:hover + label::before {
-    background-color: var(--secondary);
-  }
-  body section .flex-box-hero .left-flex-hero ul .category-check-flex input[type=checkbox]:checked + label::before {
     background-color: var(--tertiary);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
   }
-  body section .flex-box-hero .right-flex-hero .column {
+  body section .filters-nft-grid-flex-box .filters-left-column .filters .cyberpunk-checkbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  body section .filters-nft-grid-flex-box .filters-left-column .filters .cyberpunk-checkbox-label {
+    font-size: 1.5vw;
+    color: #fff;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    display: flex;
+    align-items: center;
+  }
+  body section .filters-nft-grid-flex-box .filters-left-column .filters .cyberpunk-checkbox-label.active {
+    color: var(--tertiary);
+  }
+  body section .filters-nft-grid-flex-box .right-flex-hero {
+    flex: 4 0 80%;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap; /* Wrap the columns within the right column */
+    gap: 1rem; /* Add gap between the nft-card elements */
+    overflow: hidden; /* Prevent content overflow */
+  }
+  body section .filters-nft-grid-flex-box .right-flex-hero .column {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  body section .flex-box-hero .right-flex-hero .nft-card {
+  body section .filters-nft-grid-flex-box .right-flex-hero .nft-card {
     background-color: #031312;
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.302);
     -webkit-backdrop-filter: blur(15px);
             backdrop-filter: blur(15px);
-    margin: 1rem 0.4rem;
     border-radius: 0.8rem;
     transform: scale(1);
     transition: 0.3s ease;
+    width: 100%; /* Cards will take full width of the column */
+    flex: 1 0 calc(33.33% - 1rem); /* Adjust flex-basis for responsiveness */
   }
-  body section .flex-box-hero .right-flex-hero .nft-card .nft-img {
-    max-width: 200px;
-    height: 200px;
+  body section .filters-nft-grid-flex-box .right-flex-hero .nft-card .nft-img {
+    max-width: 100%;
+    height: auto;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 8px;
   }
-  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center {
+  body section .filters-nft-grid-flex-box .right-flex-hero .nft-card .nft-card-center {
     margin: 1rem 1rem 0.1rem 1rem;
   }
-  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center img {
+  body section .filters-nft-grid-flex-box .right-flex-hero .nft-card .nft-card-center img {
     border-radius: 0.5rem;
   }
-  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text {
+  body section .filters-nft-grid-flex-box .right-flex-hero .nft-card .nft-card-center .nft-card-text {
     display: flex;
     place-content: space-between;
     padding-block: 1.3rem;
   }
-  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .nft-name,
-  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .price {
+  body section .filters-nft-grid-flex-box .right-flex-hero .nft-card .nft-card-center .nft-card-text .nft-name,
+  body section .filters-nft-grid-flex-box .right-flex-hero .nft-card .nft-card-center .nft-card-text .price {
     font-weight: bold;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.2vw;
   }
-  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .owner {
+  body section .filters-nft-grid-flex-box .right-flex-hero .nft-card .nft-card-center .nft-card-text .owner {
     font-size: 0.9vw;
   }
-  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text {
+  body section .filters-nft-grid-flex-box .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text {
     text-align: right;
   }
-  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text button {
-    padding: 0.7rem 1.1rem;
+  body section .filters-nft-grid-flex-box .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text button {
+    padding: 0.4rem 0.8rem;
   }
-  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text button img {
+  body section .filters-nft-grid-flex-box .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text button img {
     margin-right: 0.3rem;
     width: 27%;
   }
-  body section .flex-box-hero .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text button .view-text {
+  body section .filters-nft-grid-flex-box .right-flex-hero .nft-card .nft-card-center .nft-card-text .right-text button .view-text {
     font-size: 1vw;
+  }
+  body section .filters-nft-grid-flex-box .right-flex-hero .nft-card.hide {
+    display: none;
   }
   body section #filter-pop-up-menu {
     display: none;
@@ -887,10 +937,13 @@ li {
     display: none;
   }
   footer {
-    margin: 0;
+    margin: 4rem -4rem -4rem -4rem;
     padding: 4rem;
     background-color: #041714;
     z-index: 0;
+    /* Footer name styling */
+    /* Flexbox for footer sections */
+    /* Copyright text styling */
   }
   footer .footer-name {
     font-size: 1.5vw;
@@ -898,10 +951,15 @@ li {
   }
   footer div {
     display: flex;
+    /* Left footer section styling */
   }
   footer div .left-footer {
     width: 50%;
     display: block;
+    /* Footer links styling */
+  }
+  footer div .left-footer .footer-links {
+    /* Paragraph styling */
   }
   footer div .left-footer .footer-links img {
     margin: 1rem;
@@ -910,28 +968,7 @@ li {
     margin-right: 7rem;
     font-size: 1.5vw;
   }
-  footer div .right-footer {
-    width: 50%;
-  }
-  footer div .right-footer .list-one {
-    display: block;
-    margin: 0 6rem;
-  }
-  footer div .right-footer .list-one .list-title {
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  footer div .right-footer .list-one ul {
-    margin: 0;
-    padding: 0;
-  }
-  footer div .right-footer .list-one ul a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 0.5rem;
-  }
-  footer div #copyright {
+  footer #copyright {
     text-align: center;
     margin-block: 3rem;
   }

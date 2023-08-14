@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
 :root {
-	--background: #03100e;
+	--background: #050f0e;
 	--secondary: #5ecb8c;
 	--tertiary: #e59723;
 	--button-gradient: #aa6f19;
@@ -593,22 +593,6 @@ a {
 					/* Styling for paragraph in footer */
 					.paragraph {
 						display: none;
-					}
-				}
-
-				/* Styling for right side of footer */
-				.right-footer {
-					ul {
-						padding: 1rem 0rem;
-						margin: 0 0 2rem 0;
-
-						/* Styling for footer links */
-						a {
-							text-decoration: none;
-							color: white;
-							display: block;
-							padding-block: 0.5rem;
-						}
 					}
 				}
 			}
@@ -1761,78 +1745,46 @@ a {
 		}
 
 		/* Footer section styling */
-		footer {
-			margin: -4rem;
-			padding: 4rem;
-			background-color: #041714;
-			z-index: 0;
+	}
+	footer {
+		margin: -4rem;
+		padding: 4rem;
+		background-color: #041714;
+		z-index: 0;
 
-			/* Footer name styling */
-			.footer-name {
-				font-size: 1.5vw;
-				padding-bottom: 2rem;
-			}
+		/* Footer name styling */
+		.footer-name {
+			font-size: 1.5vw;
+			padding-bottom: 2rem;
+		}
 
-			/* Flexbox for footer sections */
-			div {
-				display: flex;
+		/* Flexbox for footer sections */
+		div {
+			display: flex;
 
-				/* Left footer section styling */
-				.left-footer {
-					width: 50%;
-					display: block;
+			/* Left footer section styling */
+			.left-footer {
+				width: 50%;
+				display: block;
 
-					/* Footer links styling */
-					.footer-links {
-						img {
-							margin: 1rem;
-						}
+				/* Footer links styling */
+				.footer-links {
+					img {
+						margin: 1rem;
+					}
 
-						/* Paragraph styling */
-						.paragraph {
-							margin-right: 7rem;
-							font-size: 1.5vw;
-						}
+					/* Paragraph styling */
+					.paragraph {
+						margin-right: 7rem;
+						font-size: 1.5vw;
 					}
 				}
-
-				/* Right footer section styling */
-				.right-footer {
-					width: 50%;
-
-					/* List 1 styling */
-					.list-one {
-						display: block;
-						margin: 0 6rem;
-
-						/* List title styling */
-						.list-title {
-							font-weight: bold;
-							margin-bottom: 1rem;
-						}
-
-						/* Unordered list styling */
-						ul {
-							margin: 0;
-							padding: 0;
-
-							/* Links within list styling */
-							a {
-								color: white;
-								text-decoration: none;
-								display: block;
-								padding: 0.5rem;
-							}
-						}
-					}
-				}
-
-				/* Copyright text styling */
-				#copyright {
-					text-align: center;
-					margin-block: 3rem;
-				}
 			}
+		}
+		/* Copyright text styling */
+		#copyright {
+			text-align: center;
+			margin-block: 3rem;
 		}
 	}
 }

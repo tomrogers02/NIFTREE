@@ -932,4 +932,40 @@ li {
   body #impact-adv #start-impact-desktop-display {
     display: none;
   }
+  footer {
+    margin: 4rem -4rem -4rem -4rem;
+    padding: 4rem;
+    background-color: #041714;
+    z-index: 0;
+    /* Footer name styling */
+    /* Flexbox for footer sections */
+    /* Copyright text styling */
+  }
+  footer .footer-name {
+    font-size: 1.5vw;
+    padding-bottom: 2rem;
+  }
+  footer div {
+    display: flex;
+    /* Left footer section styling */
+  }
+  footer div .left-footer {
+    width: 50%;
+    display: block;
+    /* Footer links styling */
+  }
+  footer div .left-footer .footer-links {
+    /* Paragraph styling */
+  }
+  footer div .left-footer .footer-links img {
+    margin: 1rem;
+  }
+  footer div .left-footer .footer-links .paragraph {
+    margin-right: 7rem;
+    font-size: 1.5vw;
+  }
+  footer #copyright {
+    text-align: center;
+    margin-block: 3rem;
+  }
 }/*# sourceMappingURL=impact.css.map */

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap");
 :root {
-  --background: #03100e;
+  --background: #050f0e;
   --secondary: #5ecb8c;
   --tertiary: #e59723;
   --button-gradient: #aa6f19;
@@ -507,7 +507,6 @@ a {
   }
   body footer div {
     /* Styling for left side of footer */
-    /* Styling for right side of footer */
   }
   body footer div .left-footer {
     width: 50%;
@@ -519,17 +518,6 @@ a {
   }
   body footer div .left-footer .paragraph {
     display: none;
-  }
-  body footer div .right-footer ul {
-    padding: 1rem 0rem;
-    margin: 0 0 2rem 0;
-    /* Styling for footer links */
-  }
-  body footer div .right-footer ul a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding-block: 0.5rem;
   }
   body footer #copyright {
     text-align: center;
@@ -1482,65 +1470,39 @@ a {
     background-image: none;
     background-color: var(--secondary);
   }
-  body footer {
+  footer {
     margin: -4rem;
     padding: 4rem;
     background-color: #041714;
     z-index: 0;
     /* Footer name styling */
     /* Flexbox for footer sections */
+    /* Copyright text styling */
   }
-  body footer .footer-name {
+  footer .footer-name {
     font-size: 1.5vw;
     padding-bottom: 2rem;
   }
-  body footer div {
+  footer div {
     display: flex;
     /* Left footer section styling */
-    /* Right footer section styling */
-    /* Copyright text styling */
   }
-  body footer div .left-footer {
+  footer div .left-footer {
     width: 50%;
     display: block;
     /* Footer links styling */
   }
-  body footer div .left-footer .footer-links {
+  footer div .left-footer .footer-links {
     /* Paragraph styling */
   }
-  body footer div .left-footer .footer-links img {
+  footer div .left-footer .footer-links img {
     margin: 1rem;
   }
-  body footer div .left-footer .footer-links .paragraph {
+  footer div .left-footer .footer-links .paragraph {
     margin-right: 7rem;
     font-size: 1.5vw;
   }
-  body footer div .right-footer {
-    width: 50%;
-    /* List 1 styling */
-  }
-  body footer div .right-footer .list-one {
-    display: block;
-    margin: 0 6rem;
-    /* List title styling */
-    /* Unordered list styling */
-  }
-  body footer div .right-footer .list-one .list-title {
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  body footer div .right-footer .list-one ul {
-    margin: 0;
-    padding: 0;
-    /* Links within list styling */
-  }
-  body footer div .right-footer .list-one ul a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 0.5rem;
-  }
-  body footer div #copyright {
+  footer #copyright {
     text-align: center;
     margin-block: 3rem;
   }

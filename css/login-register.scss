@@ -792,62 +792,44 @@ li {
 	}
 
 	footer {
-		margin: 4rem -4rem 0rem -4rem;
+		margin: 9rem -4rem -4rem -4rem;
 		padding: 4rem;
 		background-color: #041714;
 		z-index: 0;
+
+		/* Footer name styling */
 		.footer-name {
 			font-size: 1.5vw;
 			padding-bottom: 2rem;
 		}
+
+		/* Flexbox for footer sections */
 		div {
 			display: flex;
 
+			/* Left footer section styling */
 			.left-footer {
 				width: 50%;
 				display: block;
 
+				/* Footer links styling */
 				.footer-links {
 					img {
 						margin: 1rem;
 					}
 
+					/* Paragraph styling */
 					.paragraph {
 						margin-right: 7rem;
 						font-size: 1.5vw;
 					}
 				}
 			}
-
-			.right-footer {
-				width: 50%;
-
-				.list-one {
-					display: block;
-					margin: 0 6rem;
-					.list-title {
-						font-weight: bold;
-						margin-bottom: 1rem;
-					}
-
-					ul {
-						margin: 0;
-						padding: 0;
-
-						a {
-							color: white;
-							text-decoration: none;
-							display: block;
-							padding: 0.5rem;
-						}
-					}
-				}
-			}
-
-			#copyright {
-				text-align: center;
-				margin-block: 3rem;
-			}
+		}
+		/* Copyright text styling */
+		#copyright {
+			text-align: center;
+			margin-block: 3rem;
 		}
 	}
 }
